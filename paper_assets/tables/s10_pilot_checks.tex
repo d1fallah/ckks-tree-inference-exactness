@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\caption{Two checks from the validity pilot of the structure- and threshold-hiding protocol (broadcast variant, 5 bins; \textsc{real} ciphertexts). The smaller ring degree failed the margin gate, and TenSEAL's symmetric encryption gave no reduction in ciphertext size. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s10_pilot_checks}
+\begin{tabular}{lrrrrr}
+\toprule
+Ring degree & Stays & Largest margin error & Gate & Decisions agreeing & One-off keys (bytes) \\
+\midrule
+8,192 & 20 & $2.87 \times 10^{-3}$ & $5.00 \times 10^{-4}$ & 20 of 20 & 63,063,693 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Serialization check: TenSEAL symmetric encryption gave 1,053,170 bytes against 1,052,708 for public-key encryption on synthetic data: no reduction.}
+\end{table*}

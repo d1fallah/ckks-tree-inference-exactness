@@ -1,0 +1,104 @@
+{
+  "seed": 456,
+  "B": 8,
+  "chain": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "reps": 5,
+  "offset": 0.0001,
+  "gates": [
+    "Question gate, M1 sign of the margin error",
+    "Validity gate, M1 sign of the margin error"
+  ],
+  "data_realism": {
+    "sample_counts": {
+      "n_sample": 100,
+      "n_plaintext_positive": 50,
+      "n_plaintext_negative": 50
+    },
+    "sample_counts_match_stored": true,
+    "stored_agreeing_sens80": {
+      "broadcast": 99,
+      "packed": 99
+    },
+    "n_candidates_per_circuit": {
+      "broadcast": 1,
+      "packed": 1
+    },
+    "n_candidates_both_circuits": 1,
+    "passes": true
+  },
+  "pilot_stays_min_gap_range": [
+    5.368861198425293,
+    7.127099990844727
+  ],
+  "positive_control": {
+    "broadcast": {
+      "tolerance_max_abs_error_stored": 0.00020059811773265324,
+      "zero_offset_signed_error_mean": -0.00018038883178164155,
+      "zero_offset_signed_error_sd": 1.6476886111397063e-05,
+      "by_offset": {
+        "+0.0001": {
+          "n_reps": 15,
+          "n_right_sign": 15,
+          "n_within_tolerance": 15,
+          "n_pass_both": 15,
+          "mean_shift": 9.980015387659102e-05,
+          "sd_shift": 9.213084109894123e-07,
+          "all_pass_both": true,
+          "pooled_mean_has_right_sign": true
+        },
+        "-0.0001": {
+          "n_reps": 15,
+          "n_right_sign": 15,
+          "n_within_tolerance": 15,
+          "n_pass_both": 15,
+          "mean_shift": -0.0001003066404616485,
+          "sd_shift": 9.499144768035718e-07,
+          "all_pass_both": true,
+          "pooled_mean_has_right_sign": true
+        }
+      },
+      "passes_every_repetition": true,
+      "passes_pooled": true
+    },
+    "packed": {
+      "tolerance_max_abs_error_stored": 0.00019430977044088138,
+      "zero_offset_signed_error_mean": -0.00018852847234439215,
+      "zero_offset_signed_error_sd": 1.689020733185501e-05,
+      "by_offset": {
+        "+0.0001": {
+          "n_reps": 15,
+          "n_right_sign": 15,
+          "n_within_tolerance": 15,
+          "n_pass_both": 15,
+          "mean_shift": 9.995392464254849e-05,
+          "sd_shift": 5.98531671138458e-07,
+          "all_pass_both": true,
+          "pooled_mean_has_right_sign": true
+        },
+        "-0.0001": {
+          "n_reps": 15,
+          "n_right_sign": 15,
+          "n_within_tolerance": 15,
+          "n_pass_both": 15,
+          "mean_shift": -9.974383445836566e-05,
+          "sd_shift": 4.802942071948244e-07,
+          "all_pass_both": true,
+          "pooled_mean_has_right_sign": true
+        }
+      },
+      "passes_every_repetition": true,
+      "passes_pooled": true
+    }
+  },
+  "runtime_seconds": 359.96542414600003
+}

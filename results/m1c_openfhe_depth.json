@@ -1,0 +1,41 @@
+{
+  "protocol": "docs/m1c_pilot3_prespec.md",
+  "backend": "REAL OpenFHE CKKS (library-level depth)",
+  "context": {
+    "ring_dim": 16384,
+    "multiplicative_depth": 7,
+    "scaling_mod_bits": 40,
+    "first_mod_bits": 60,
+    "security": "HEStd_128_classic",
+    "scaling_technique": "FLEXIBLEAUTO",
+    "key_switching": "HYBRID, num_large_digits = 8"
+  },
+  "gamma_used": 344.63398876009484,
+  "interval": [
+    -1.0,
+    1.0
+  ],
+  "n_slots": 2751,
+  "by_k": {
+    "k=9": {
+      "ok": true,
+      "levels_consumed_scalar": 3,
+      "max_abs_error_vs_numpy_interpolant": 6.166463262236022e-07
+    },
+    "k=11": {
+      "ok": true,
+      "levels_consumed_scalar": 3,
+      "max_abs_error_vs_numpy_interpolant": 7.031776159960312e-07
+    },
+    "k=13": {
+      "ok": true,
+      "levels_consumed_scalar": 3,
+      "max_abs_error_vs_numpy_interpolant": 8.516507481459712e-07
+    },
+    "k=15": {
+      "ok": true,
+      "levels_consumed_scalar": 4,
+      "max_abs_error_vs_numpy_interpolant": 8.128470181389957e-07
+    }
+  }
+}

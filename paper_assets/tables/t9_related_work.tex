@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\centering
+\caption{Comparison with existing encrypted-inference work: 24 sources, each verified against a primary record. ``NR'' = not reported by that source, never estimated; ``n/a'' = not applicable. Entries are abbreviated from the recorded fields, which are in the reproducibility package together with multiplicative depth, packing, latency, memory and utility (reported by few sources). This work's depth, latency and memory are in Tables~\ref{tab:t4_degree_grid}, \ref{tab:t6_scaling} and~\ref{tab:t8_security_resource}. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t9_related_work}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.09\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.09\textwidth}}
+\toprule
+Source & Model & Scheme & Security & Comparison degree & Execution \\
+\midrule
+Frery et al. 2023~\cite{frery2023tfhe} & Decision tree, random forest, GBDT & TFHE & NR & NR & Real \\
+Ko et al. 2024 (SilentWood)~\cite{ko2024silentwood} & Gradient-boosted forest & NR & NR & NR & NR \\
+Feng et al. 2019 (SecureGBM)~\cite{feng2019securegbm} & Gradient boosting (two-party) & SEAL (semi-homomorphic) & NR & NR & Real \\
+Meng \& Feigenbaum 2020 (PPXGB)~\cite{meng2020ppxgboost} & XGBoost & NR & NR & NR & Real \\
+Maat et al. 2025 (MIOPE)~\cite{maat2025miope} & Multi-model ensemble & NR & NR & NR & NR \\
+Kruger et al. 2025~\cite{kruger2025ckkstfhe} & n/a (scheme benchmark) & CKKS, TFHE & NR & NR & Real \\
+Jiang \& Ju 2022 (FHEBench)~\cite{jiang2022fhebench} & n/a (scheme benchmark) & Multiple FHE & NR & NR & Real \\
+Pirillo \& Colombo 2026 (ReBoot)~\cite{pirillo2026reboot} & DNN (encrypted training) & CKKS (bootstrapping) & NR & NR & Real \\
+Woo et al. 2026~\cite{woo2026degreeconstrained} & n/a (approximation method) & NR & NR & Variable (interval-optimized) & NR \\
+Ishiyama et al. 2020~\cite{ishiyama2020cnnactivation} & CNN & NR & NR & 4 (Swish activation) & NR \\
+Xue et al. 2026 (SoK)~\cite{xue2026sokfhe} & n/a (survey and benchmark) & Multiple FHE & NR & NR & NR \\
+Guerra-Manzanares et al. 2023~\cite{guerra2023pplhealthcare} & n/a (review) & n/a & NR & NR & n/a \\
+Vizitiu et al. 2020~\cite{vizitiu2020dnnmedical} & DNN & MORE & NR & NR & Real \\
+Hong et al. 2022~\cite{hong2022tumorclassification} & Shallow neural network & CKKS & NR & NR & Real \\
+Son et al. 2021~\cite{son2021breastcancer} & GRU & CKKS (+ 2PC) & 128-bit & 24 (Chebyshev, activation) & Real \\
+Chen et al. 2018~\cite{chen2018logisticregression} & Logistic regression & NR & NR & NR & NR \\
+Paddock et al. 2019~\cite{paddock2019realtimelearning} & NR & NR & NR & NR & NR \\
+Haq et al. 2025~\cite{haq2025medicaltabular} & NR & NR & NR & NR & NR \\
+Seth et al. 2026~\cite{seth2026impact} & LR, SVM, decision tree, naive Bayes & RSA, Paillier, BFV, CKKS, TFHE & NR & NR & Real \\
+Lu et al. 2026~\cite{lu2026jmirtimeseries} & NR & HE (scheme NR) & NR & NR & NR \\
+Akavia et al. 2021~\cite{akavia2021ppdt} & Decision tree & CKKS (SEAL) & 80-bit & 15 (soft-step comparison) & Real \\
+Shin et al. 2024~\cite{shin2024hbdt} & Decision tree, random forest & CKKS & NR & NR & Real \\
+Magara et al. 2021~\cite{magara2021mlhe} & XGBoost (depth 2) & BFV/CKKS (PALISADE) & NR & None (Boolean comparison) & Real \\
+Masalha et al. 2026~\cite{masalha2026xgbtraining} & XGBoost (training) & CKKS (HEaaN) & NR & NR & Real \\
+\midrule
+\textbf{This work} & XGBoost (50 trees, depth 6) & CKKS (SEAL/TenSEAL) & 128-bit (SEAL check) & 3, 5, 7, 9 (Chebyshev comparison) & Real, all four degrees ($k=9$ with the folding evaluator); utility simulated, real at the selected degree \\
+\bottomrule
+\end{tabular}
+\end{table*}

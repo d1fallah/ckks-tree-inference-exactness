@@ -1,0 +1,101 @@
+{
+  "seed": 42,
+  "smoke": true,
+  "repetitions": 2,
+  "gate": 0.0005,
+  "counts": {
+    "B=5": {
+      "n_f1": 4,
+      "n_sens80": 0,
+      "n_union": 4
+    },
+    "B=8": {
+      "n_f1": 4,
+      "n_sens80": 0,
+      "n_union": 4
+    },
+    "B=16": {
+      "n_f1": 4,
+      "n_sens80": 0,
+      "n_union": 4
+    }
+  },
+  "by_B": {
+    "B=5": {
+      "B": 5,
+      "n_union": 4,
+      "max_abs_margin_error": 2.838887581080307e-05,
+      "mean_seconds_per_evaluation": 1.1371959290000078,
+      "f1": {
+        "n_stays_within_gate": 4,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": 0.00016605854034423828
+      },
+      "sens80": {
+        "n_stays_within_gate": 0,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": null
+      }
+    },
+    "B=8": {
+      "B": 8,
+      "n_union": 4,
+      "max_abs_margin_error": 2.391131540235847e-05,
+      "mean_seconds_per_evaluation": 1.7720837305000003,
+      "f1": {
+        "n_stays_within_gate": 4,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": 0.0006481409072875977
+      },
+      "sens80": {
+        "n_stays_within_gate": 0,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": null
+      }
+    },
+    "B=16": {
+      "B": 16,
+      "n_union": 4,
+      "max_abs_margin_error": 2.8413840373220367e-05,
+      "mean_seconds_per_evaluation": 3.171338133875004,
+      "f1": {
+        "n_stays_within_gate": 4,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": 0.00176239013671875
+      },
+      "sens80": {
+        "n_stays_within_gate": 0,
+        "n_flipped_in_at_least_one_repetition": 0,
+        "flip_rates_sorted": [],
+        "n_simulated_decision_differs_from_booster": 0,
+        "min_abs_gap": null
+      }
+    }
+  },
+  "runtime_seconds": 56.47627767
+}

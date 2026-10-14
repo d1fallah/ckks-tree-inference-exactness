@@ -1,0 +1,303 @@
+{
+  "seed": 7,
+  "smoke": false,
+  "n_test_stays": 81850,
+  "n_test_subjects": 39548,
+  "full_precision": {
+    "operating_points_margin": {
+      "f1": -1.6582280766035322,
+      "sens80": -2.927825450897217
+    },
+    "utility_test": {
+      "auroc": 0.8640209017243574,
+      "auprc": 0.31672505744146023,
+      "at_f1_threshold": {
+        "f1": 0.36370489022896446,
+        "sensitivity": 0.452732817264837,
+        "specificity": 0.9430316934538002,
+        "ppv": 0.30393700787401573,
+        "predicted_positive_rate": 0.07758094074526573
+      },
+      "at_sens80_threshold": {
+        "f1": 0.25727102803738316,
+        "sensitivity": 0.8071780436312456,
+        "specificity": 0.7545207315658551,
+        "ppv": 0.15302174589762974,
+        "predicted_positive_rate": 0.2747342700061087
+      }
+    }
+  },
+  "by_B": {
+    "B=5": {
+      "B": 5,
+      "operating_points_margin": {
+        "f1": -1.6582280766035322,
+        "sens80": -2.9609265327453613
+      },
+      "utility_plain_test": {
+        "auroc": 0.8554313976914418,
+        "auprc": 0.2978180683769133,
+        "at_f1_threshold": {
+          "f1": 0.3454461396208969,
+          "sensitivity": 0.43818906873094066,
+          "specificity": 0.9396290615695928,
+          "ppv": 0.2851037851037851,
+          "predicted_positive_rate": 0.08004886988393403
+        },
+        "at_sens80_threshold": {
+          "f1": 0.24496596710153148,
+          "sensitivity": 0.810462115880835,
+          "specificity": 0.7359093662598115,
+          "ppv": 0.14428899561495093,
+          "predicted_positive_rate": 0.2925473427000611
+        }
+      },
+      "n_splits_enumerated_ok": 2577,
+      "quantization_cost": {
+        "auroc_full_precision": 0.8640209017243574,
+        "auroc_quantized": 0.8554313976914418,
+        "auroc_cost": 0.008589504032915585,
+        "auroc_cost_boot95": [
+          0.006625602777426162,
+          0.01064396320848221
+        ],
+        "f1_quantized_minus_full_precision_boot95": [
+          -0.026027808086056044,
+          -0.010336629780920538
+        ]
+      },
+      "thermometer_sim_vs_booster": {
+        "f1": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 6552,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 4.811016991013162e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        },
+        "sens80": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 23945,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 4.811016991013162e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "thermometer_sim_auroc_test": 0.8554313901329401,
+      "stays_near_threshold": {
+        "f1": {
+          "min_abs_gap": 9.5367431640625e-07,
+          "n_within_gate": 5
+        },
+        "sens80": {
+          "min_abs_gap": 4.291534423828125e-05,
+          "n_within_gate": 26
+        }
+      },
+      "stays_near_either_threshold": 31,
+      "determinism_vs_first_final_run_booster_max_abs_margin_diff": 0.0,
+      "interpolation_sim_vs_booster": {
+        "degree": 9,
+        "f1": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 6552,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 4.811016994565875e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        },
+        "sens80": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 23945,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 4.811016994565875e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "runtime_seconds": 170.304939312
+    },
+    "B=8": {
+      "B": 8,
+      "operating_points_margin": {
+        "f1": -1.5163474893680886,
+        "sens80": -2.944340229034424
+      },
+      "utility_plain_test": {
+        "auroc": 0.8589895170262825,
+        "auprc": 0.3014087689834428,
+        "at_f1_threshold": {
+          "f1": 0.35279755849440486,
+          "sensitivity": 0.4067558057705841,
+          "specificity": 0.9505973938933069,
+          "ppv": 0.31147835458954554,
+          "predicted_positive_rate": 0.0680146609651802
+        },
+        "at_sens80_threshold": {
+          "f1": 0.25224897111847616,
+          "sensitivity": 0.8123387285948862,
+          "specificity": 0.7456919329269078,
+          "ppv": 0.1493058549624903,
+          "predicted_positive_rate": 0.2833720219914478
+        }
+      },
+      "n_splits_enumerated_ok": 2643,
+      "quantization_cost": {
+        "auroc_full_precision": 0.8640209017243574,
+        "auroc_quantized": 0.8589895170262825,
+        "auroc_cost": 0.005031384698074959,
+        "auroc_cost_boot95": [
+          0.003340726387870732,
+          0.0066707872784672025
+        ],
+        "f1_quantized_minus_full_precision_boot95": [
+          -0.018399322563626523,
+          -0.0033754098490662524
+        ]
+      },
+      "thermometer_sim_vs_booster": {
+        "f1": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 5567,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 5.693094863090664e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        },
+        "sens80": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 23194,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 5.693094863090664e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "thermometer_sim_auroc_test": 0.8589895124911815,
+      "stays_near_threshold": {
+        "f1": {
+          "min_abs_gap": 3.457069396972656e-05,
+          "n_within_gate": 9
+        },
+        "sens80": {
+          "min_abs_gap": 1.430511474609375e-06,
+          "n_within_gate": 18
+        }
+      },
+      "stays_near_either_threshold": 27,
+      "runtime_seconds": 53.32509065199997
+    },
+    "B=16": {
+      "B": 16,
+      "operating_points_margin": {
+        "f1": -1.3862943611198906,
+        "sens80": -2.9640848636627197
+      },
+      "utility_plain_test": {
+        "auroc": 0.8609751399638754,
+        "auprc": 0.3107481723778413,
+        "at_f1_threshold": {
+          "f1": 0.3550925412833869,
+          "sensitivity": 0.37579169598874035,
+          "specificity": 0.9592973049608826,
+          "ppv": 0.3365546218487395,
+          "predicted_positive_rate": 0.05815516188149053
+        },
+        "at_sens80_threshold": {
+          "f1": 0.2528718918132907,
+          "sensitivity": 0.8158573774337321,
+          "specificity": 0.7452279376699705,
+          "ppv": 0.1496235749623575,
+          "predicted_positive_rate": 0.28399511301160657
+        }
+      },
+      "n_splits_enumerated_ok": 2623,
+      "quantization_cost": {
+        "auroc_full_precision": 0.8640209017243574,
+        "auroc_quantized": 0.8609751399638754,
+        "auroc_cost": 0.003045761760481991,
+        "auroc_cost_boot95": [
+          0.0014081446879687155,
+          0.00458303417877546
+        ],
+        "f1_quantized_minus_full_precision_boot95": [
+          -0.01643209793870396,
+          -0.0008388891309367396
+        ]
+      },
+      "thermometer_sim_vs_booster": {
+        "f1": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 4760,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 5.4012490622312725e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        },
+        "sens80": {
+          "n_differing": 0,
+          "differing_per_1000": 0.0,
+          "plain_positive_decisions": 23245,
+          "plain_pos_to_circuit_neg": 0,
+          "plain_neg_to_circuit_pos": 0,
+          "lost_share_of_plain_positives": 0.0,
+          "max_abs_margin_difference": 5.4012490622312725e-06,
+          "differing_per_1000_boot95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "thermometer_sim_auroc_test": 0.8609751233351717,
+      "stays_near_threshold": {
+        "f1": {
+          "min_abs_gap": 8.022785186767578e-05,
+          "n_within_gate": 8
+        },
+        "sens80": {
+          "min_abs_gap": 1.621246337890625e-05,
+          "n_within_gate": 20
+        }
+      },
+      "stays_near_either_threshold": 28,
+      "runtime_seconds": 53.31516371299995
+    }
+  },
+  "runtime_seconds": 301.13388398100005
+}

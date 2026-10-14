@@ -1,0 +1,242 @@
+{
+ "_purpose": "Source data for Table T16 (private tree-evaluation systems compared by scheme, interaction, comparison and what the client learns). Written 2026-10-13. Every cell is a fact taken from the part of the cited paper named in 'locus', or the literal 'NR' (not reported in the part read); nothing is estimated. Costs are deliberately not tabulated: the systems differ in model, hardware, precision and security level, and none was benchmarked on this study's task.",
+ "papers": [
+  {
+   "citation": "tueno2020noninteractive",
+   "short_name": "Tueno et al. 2020",
+   "locus": "Abstract (arXiv 1909.08362)",
+   "model": "Decision tree",
+   "scheme": "NR",
+   "interaction": "Non-interactive, one round",
+   "comparison": "NR",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "nr",
+    "noninteractive": "yes",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "akavia2021ppdt",
+   "short_name": "Akavia et al. 2021",
+   "locus": "Full text (ePrint 2021/768), Sections 3.1 and 5.2",
+   "model": "Decision tree",
+   "scheme": "CKKS (SEAL)",
+   "interaction": "Non-interactive",
+   "comparison": "Degree-15 soft-step polynomial",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "yes",
+    "noninteractive": "yes",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "magara2021mlhe",
+   "short_name": "Mağara et al. 2021",
+   "locus": "Full text (arXiv 2110.11446), Section 3.2",
+   "model": "XGBoost",
+   "scheme": "BFV or CKKS (PALISADE)",
+   "interaction": "NR",
+   "comparison": "Boolean expressions over one-hot bits",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "yes",
+    "noninteractive": "nr",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "mark_notes": {
+    "ckks": "BFV or CKKS (PALISADE)"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "cong2022sortinghat",
+   "short_name": "Cong et al. 2022",
+   "locus": "Abstract (ePrint 2022/757)",
+   "model": "Decision tree",
+   "scheme": "FHE (scheme NR)",
+   "interaction": "Non-interactive",
+   "comparison": "Comparison with one plaintext input, homomorphic traversal",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "nr",
+    "noninteractive": "yes",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "mahdavi2023levelup",
+   "short_name": "Akhavan Mahdavi et al. 2023",
+   "locus": "Abstract (arXiv 2309.06496)",
+   "model": "Decision tree",
+   "scheme": "Levelled HE (scheme NR)",
+   "interaction": "Non-interactive",
+   "comparison": "XXCMP and RCC comparison protocols",
+   "hidden": "Client learns the prediction and some hyperparameters only",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "nr",
+    "noninteractive": "yes",
+    "hidden": "yes",
+    "bootstrapping": "nr"
+   },
+   "mark_notes": {
+    "hidden": "the client learns the prediction and some hyperparameters only"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "shin2024hbdt",
+   "short_name": "Shin et al. 2024",
+   "locus": "Abstract (ePrint 2024/529)",
+   "model": "Decision tree, random forest",
+   "scheme": "CKKS",
+   "interaction": "NR",
+   "comparison": "NR (path evaluation by additions only)",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "yes",
+    "noninteractive": "nr",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "mark_notes": {
+    "ensemble": "decision tree and random forest"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "cong2024faster",
+   "short_name": "Cong et al. 2024",
+   "locus": "Abstract (ePrint 2024/662)",
+   "model": "Decision tree, batched input",
+   "scheme": "HE (scheme NR)",
+   "interaction": "Non-interactive",
+   "comparison": "Batched range-cover and constant-weight comparators",
+   "hidden": "NR",
+   "marks": {
+    "ensemble": "no",
+    "ckks": "nr",
+    "noninteractive": "yes",
+    "hidden": "nr",
+    "bootstrapping": "nr"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "ko2024silentwood",
+   "short_name": "Ko et al. 2026",
+   "locus": "Full text (arXiv 2411.15494 v3), Sections 1, 2.2 and 2.3",
+   "model": "Gradient-boosted forest",
+   "scheme": "BFV",
+   "interaction": "Interactive (two-party Blind Code Conversion)",
+   "comparison": "Constant-weight encoding or bitwise",
+   "hidden": "Client learns the prediction and hyperparameters only",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "no",
+    "noninteractive": "no",
+    "hidden": "yes",
+    "bootstrapping": "nr"
+   },
+   "mark_notes": {
+    "hidden": "the client learns the prediction and hyperparameters only",
+    "noninteractive": "two-party Blind Code Conversion step"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "dia2026strawhat",
+   "short_name": "Dia et al. 2026",
+   "locus": "Full text (LNCS 16403, pp. 40-59), Sections 1.2, 2.3, 3.1, 4.1 and Tables 2 and 3",
+   "model": "Gradient-boosted trees",
+   "scheme": "HE (scheme NR)",
+   "interaction": "Non-interactive, batched",
+   "comparison": "Row dichotomy comparison (RDCMP)",
+   "hidden": "Thresholds kept confidential",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "nr",
+    "noninteractive": "yes",
+    "hidden": "yes",
+    "bootstrapping": "nr"
+   },
+   "mark_notes": {
+    "hidden": "thresholds and leaf values stay in plaintext on the server and the client's knowledge of the model is listed as none (Table 2 of that paper); no security analysis in the text"
+   },
+   "log2_ring_degree": null
+  },
+  {
+   "citation": "park2026lcpdte",
+   "short_name": "Park et al. 2026",
+   "locus": "Full text (ePrint 2026/1263, read 2026-10-13), Sections 1, 4.1, 5, 6.1 and 6.4 and Table 4",
+   "model": "Decision tree; GBDT ensembles by level-major evaluation",
+   "scheme": "CKKS (Lattigo, with bootstrapping)",
+   "interaction": "Non-interactive",
+   "comparison": "One-branch-only traversal with bit-decomposed 32-bit comparison",
+   "hidden": "Stated: only the feature count and order and the output are revealed (Sec. 6.1); no formal proof in the text",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "yes",
+    "noninteractive": "yes",
+    "hidden": "yes",
+    "bootstrapping": "yes"
+   },
+   "mark_notes": {
+    "hidden": "stated only: the feature count and order and the output are revealed; no formal proof in the text"
+   },
+   "log2_ring_degree": 16
+  }
+ ],
+ "this_work": [
+  {
+   "short_name": "This work, interpolation",
+   "model": "XGBoost, 50 trees",
+   "scheme": "CKKS (SEAL, TenSEAL)",
+   "interaction": "Non-interactive",
+   "comparison": "Polynomial through the step on quantized inputs",
+   "hidden": "No: the client knows structure and thresholds",
+   "reason": "this study, Sections on the interpolation circuit and the threat model",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "yes",
+    "noninteractive": "yes",
+    "hidden": "no",
+    "bootstrapping": "no"
+   }
+  },
+  {
+   "short_name": "This work, thermometer",
+   "model": "XGBoost, 50 trees",
+   "scheme": "CKKS (SEAL, TenSEAL)",
+   "interaction": "Non-interactive",
+   "comparison": "Selection of thermometer bits by plaintext masks",
+   "hidden": "Structure and thresholds within one evaluation; leaf values open to queries",
+   "reason": "this study, Section on the structure- and threshold-hiding protocol",
+   "marks": {
+    "ensemble": "yes",
+    "ckks": "yes",
+    "noninteractive": "yes",
+    "hidden": "yes",
+    "bootstrapping": "no"
+   },
+   "mark_notes": {
+    "hidden": "structure and thresholds within one evaluation; leaf values open to queries"
+   }
+  }
+ ],
+ "_marks": "marks: yes = stated by the paper (or by this study), no = stated not, nr = not reported in the part read; each mark is read off the text cells of the same row; mark_notes become the lettered footnotes of the table; bootstrapping and log2_ring_degree (null: not reported in the part read) were added on 2026-10-13 from the full text of Park et al. (Table 4: log N = 16, bootstrapping) and from this study's own parameters"
+}

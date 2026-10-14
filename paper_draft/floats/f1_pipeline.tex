@@ -1,0 +1,72 @@
+% Pipeline figure (redrawn 2026-10-09): setup band, client and server lanes with the trust boundary, evaluation band.
+% Parameter values are the fixed study configuration (macros read from the result files); no result is shown here.
+\definecolor{pipeInk}{HTML}{1A1A1A}
+\definecolor{pipeInk2}{HTML}{52514E}
+\definecolor{pipeBlue}{HTML}{2A78D6}
+\definecolor{pipeBlueLt}{HTML}{E3EEFA}
+\definecolor{pipeGrey}{HTML}{F3F2EF}
+\providecommand{\pipesub}[1]{{\scriptsize\color{pipeInk2}#1}}
+\begin{figure*}[t]
+\centering
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\begin{tikzpicture}[
+  x=1cm, y=1cm, font=\footnotesize, text=pipeInk,
+  node/.style={draw=pipeInk2, line width=0.6pt, rounded corners=2pt, fill=white, align=left, inner sep=4pt,
+               anchor=center},
+  sub/.style={font=\scriptsize, text=pipeInk2},
+  flow/.style={-{Stealth[length=2.2mm]}, line width=1.4pt, pipeBlue, line cap=round},
+  lane/.style={rounded corners=3pt, line width=0.6pt},
+  lanelab/.style={anchor=north west, font=\footnotesize\itshape, text=pipeInk2},
+  arrlab/.style={font=\scriptsize, text=pipeInk2, align=left, inner sep=1.5pt},
+]
+  % ---- band 1: study setup (plaintext) ------------------------------------------------------
+  \node[lanelab] at (0, 0.25) {Study setup (plaintext, once)};
+  \node[node, text width=6.9cm, minimum height=1.55cm] (cohort) at (3.7, -1.15) {%
+    \textbf{Proxy cohort}\\[1pt]
+    \pipesub{\MOneCohortStays{} stays, \MOneFeatureDim{} features, \MOneNLabels{} labels;\\ patient-level 60/20/20 split}};
+  \node[node, text width=6.9cm, minimum height=1.55cm] (model) at (12.4, -1.15) {%
+    \textbf{Plaintext XGBoost}\\[1pt]
+    \pipesub{\MOneNTrees{} trees, depth \MOneMaxDepth{}; 25 models (5 labels, 5 seeds);\\ threshold tuned on validation}};
+  \draw[flow] (cohort.east) -- (model.west);
+
+  % ---- band 2a: client lane -----------------------------------------------------------------
+  \draw[lane, draw=pipeInk2, fill=pipeGrey] (0, -2.35) rectangle (16.2, -5.0);
+  \node[lanelab] at (0.15, -2.4) {Client: holds the secret key};
+  \node[node, text width=6.6cm, minimum height=1.55cm] (enc) at (3.8, -3.85) {%
+    \textbf{Encode and encrypt}\\[1pt]
+    \pipesub{one ciphertext per tree level;\\
+    $N=\MOneRingDegree{}$, \MOneChainLevelsAvailable{}-level chain, scale $2^{\MOneScaleBits{}}$}};
+  \node[node, text width=6.6cm, minimum height=1.55cm] (dec) at (12.4, -3.85) {%
+    \textbf{Decrypt and decide}\\[1pt]
+    \pipesub{margin against the frozen per-label threshold;\\ no decrypted value returns to the server}};
+
+  % ---- band 2b: server lane (encrypted domain) ----------------------------------------------
+  \draw[lane, draw=pipeBlue, dashed, fill=pipeBlueLt] (0, -6.0) rectangle (16.2, -9.25);
+  \node[lanelab] at (4.6, -6.05) {Server: public model and evaluation keys, never decrypts};
+  \node[node, text width=4.35cm, minimum height=2.05cm] (cmp) at (2.75, -7.85) {%
+    \textbf{Comparison polynomial}\\[1pt]
+    \pipesub{degree $k\in\{3,5,7,9\}$ on $[-a,a]$,\\ $a=\MOneApproxIntervalHalfWidth{}$, $\gamma=\MOneGammaValue{}$;\\ original or folding evaluator}};
+  \node[node, text width=4.35cm, minimum height=2.05cm] (path) at (8.1, -7.85) {%
+    \textbf{Balanced path product}\\[1pt]
+    \pipesub{per leaf, leaf value folded\\ into the last level's coefficients;\\ no rotations}};
+  \node[node, text width=4.35cm, minimum height=2.05cm] (sum) at (13.45, -7.85) {%
+    \textbf{Rotate-and-add sum}\\[1pt]
+    \pipesub{one encrypted ensemble score;\\ the only step that rotates}};
+  \draw[flow] (cmp.east) -- (path.west);
+  \draw[flow] (path.east) -- (sum.west);
+  \draw[flow] (enc.south) -- (enc |- cmp.north) node[arrlab, pos=0.28, anchor=west, xshift=3pt] {level ciphertexts and public keys};
+  \draw[flow] (sum.north) -- (sum |- dec.south) node[arrlab, pos=0.28, anchor=west, xshift=3pt] {encrypted score};
+
+  % ---- band 3: evaluation -------------------------------------------------------------------
+  \node[lanelab] at (0, -9.65) {Evaluation};
+  \node[node, text width=15.2cm, minimum height=1.25cm] (eval) at (8.1, -10.85) {%
+    \textbf{Backends and statistics}\\[1pt]
+    \pipesub{plaintext, simulated and real margins compared: $\Delta$F1 with a paired-bootstrap interval (tolerance \MOneUtilityTolerance{}),
+    sign agreement, depth and latency; five seeds}};
+\end{tikzpicture}
+\caption{Pipeline of the study. The client encrypts one patient's features and holds the secret key; the
+server evaluates the circuit on ciphertexts only and never decrypts. Boxes list the fixed configuration. The
+cohort is a proxy (MIMIC-IV-ED-derived), and the simulated backend replaces the encrypted stage with a NumPy
+evaluation of the same arithmetic.}
+\label{fig:pipeline}
+\end{figure*}

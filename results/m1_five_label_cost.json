@@ -1,0 +1,116 @@
+{
+  "protocol": "docs/step2_prespec_m1.md section C (added analysis S2.3b)",
+  "backend": "REAL TenSEAL/SEAL ciphertext execution via track_b/m1_runtime.py (client/server split)",
+  "k": 3,
+  "evaluator": "original",
+  "n_warmup_discarded": 5,
+  "n_timed_patients": 20,
+  "labels": [
+    "label_hypertension_uncomplicated",
+    "label_cardiac_arrhythmias",
+    "label_fluid_and_electrolyte_disorders",
+    "label_depression",
+    "label_chronic_pulmonary_disease"
+  ],
+  "per_label": {
+    "label_hypertension_uncomplicated": {
+      "encrypt_s": {
+        "mean": 0.17681721399994785,
+        "sd": 0.0033058355702373504
+      },
+      "server_s": {
+        "mean": 0.5620004271500875,
+        "sd": 0.01388150815162702
+      },
+      "decrypt_s": {
+        "mean": 0.0018884616498780816,
+        "sd": 0.00014165596977444667
+      },
+      "upload_bytes_per_patient": 9883925,
+      "return_bytes_per_patient": 459710,
+      "max_abs_margin_error_vs_simulation": 6.817801824166025e-05
+    },
+    "label_cardiac_arrhythmias": {
+      "encrypt_s": {
+        "mean": 0.1757280444501248,
+        "sd": 0.0046286159942152865
+      },
+      "server_s": {
+        "mean": 0.584123382999951,
+        "sd": 0.014935555145127982
+      },
+      "decrypt_s": {
+        "mean": 0.00184406855000816,
+        "sd": 0.0001234233334148271
+      },
+      "upload_bytes_per_patient": 9883945,
+      "return_bytes_per_patient": 459673,
+      "max_abs_margin_error_vs_simulation": 7.548681573776861e-05
+    },
+    "label_fluid_and_electrolyte_disorders": {
+      "encrypt_s": {
+        "mean": 0.17754322400010097,
+        "sd": 0.005281011642270778
+      },
+      "server_s": {
+        "mean": 0.5549477528000353,
+        "sd": 0.014176909417958869
+      },
+      "decrypt_s": {
+        "mean": 0.001902350749969628,
+        "sd": 0.00017722171209819275
+      },
+      "upload_bytes_per_patient": 9883997,
+      "return_bytes_per_patient": 459916,
+      "max_abs_margin_error_vs_simulation": 5.6088042863278176e-05
+    },
+    "label_depression": {
+      "encrypt_s": {
+        "mean": 0.17697662249979657,
+        "sd": 0.0027245545605693337
+      },
+      "server_s": {
+        "mean": 0.5582118258500941,
+        "sd": 0.014700496687874907
+      },
+      "decrypt_s": {
+        "mean": 0.0018357044499680343,
+        "sd": 0.00013853120948786898
+      },
+      "upload_bytes_per_patient": 9883637,
+      "return_bytes_per_patient": 459470,
+      "max_abs_margin_error_vs_simulation": 8.89367447562961e-05
+    },
+    "label_chronic_pulmonary_disease": {
+      "encrypt_s": {
+        "mean": 0.17582061075013372,
+        "sd": 0.003858746848899163
+      },
+      "server_s": {
+        "mean": 0.5638306744499004,
+        "sd": 0.013865996231823313
+      },
+      "decrypt_s": {
+        "mean": 0.0018288815999767394,
+        "sd": 0.0001351023819163872
+      },
+      "upload_bytes_per_patient": 9884139,
+      "return_bytes_per_patient": 459471,
+      "max_abs_margin_error_vs_simulation": 8.567542606829903e-05
+    }
+  },
+  "five_label_total_per_patient": {
+    "wall_clock_s": {
+      "mean": 3.7152992459499727,
+      "sd": 0.07314506814911934
+    },
+    "server_s_sum_over_labels": 2.8231140632500686,
+    "upload_bytes_sum_over_labels": 49419643,
+    "return_bytes_sum_over_labels": 2298240
+  },
+  "context_bytes": {
+    "public_context_incl_evaluation_keys": 415242845,
+    "secret_context": 2862256
+  },
+  "runtime_seconds": 101.07030049199966
+}

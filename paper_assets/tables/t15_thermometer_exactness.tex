@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Thermometer circuit: utility, exactness and stays within CKKS noise of a threshold, on the 81,850 test stays, 5 seeds. AUROC and F1: mean $\pm$ SD over seeds (training variability; the cost is the full-precision AUROC minus the quantized AUROC, a property of the model and not of the circuit). Differing decisions: the simulated circuit against the plaintext model, summed over seeds, at the F1 point / 80\%-sensitivity point. Near-threshold stays\added{}: test stays whose plaintext margin lies within the correctness gate of a threshold, evaluated on \textsc{real} ciphertexts with 20 fresh encryptions each for seed 42 and 5 for the other seeds; the count is stays flipped in at least one repetition out of stays, summed over seeds, at the F1 threshold / 80\%-sensitivity threshold. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t15_thermometer_exactness}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & AUROC & AUROC cost & F1 & Differing decisions & Max margin difference & Near-threshold: flipped / stays \\
+\midrule
+Full precision & 0.8640 $\pm$ 0.0005 & --- & 0.364 $\pm$ 0.003 & --- & --- & --- \\
+5 bins & 0.8545 $\pm$ 0.0006 & 0.0095 $\pm$ 0.0006 & 0.345 $\pm$ 0.001 & 0 / 0 & $4.81 \times 10^{-6}$ & 0 / 31; 1 / 85 \\
+8 bins & 0.8587 $\pm$ 0.0005 & 0.0054 $\pm$ 0.0006 & 0.350 $\pm$ 0.002 & 0 / 0 & $5.72 \times 10^{-6}$ & 1 / 28; 4 / 72 \\
+16 bins & 0.8597 $\pm$ 0.0009 & 0.0043 $\pm$ 0.0009 & 0.355 $\pm$ 0.002 & 0 / 0 & $5.40 \times 10^{-6}$ & 0 / 33; 4 / 83 \\
+\bottomrule
+\end{tabular}
+\end{table*}

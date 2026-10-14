@@ -1,0 +1,77 @@
+{
+  "note": "docs/m1c_final_ties_detail_note.md (added analysis)",
+  "tolerance": 1e-09,
+  "per_seed": {
+    "42": {
+      "decision_convention": "positive when margin >= threshold",
+      "threshold": -2.943193197250366,
+      "max_abs_margin_difference_whole_test_split": 4.780386607450282e-06,
+      "mean_abs_margin_difference_whole_test_split": 5.465286918049424e-07,
+      "n_differing": 0,
+      "n_differing_plain_positive_circuit_negative": 0,
+      "n_differing_plain_negative_circuit_positive": 0,
+      "min_signed_difference_among_differing": null,
+      "max_signed_difference_among_differing": null,
+      "n_stays_with_margin_equal_to_threshold": 0,
+      "of_those_circuit_positive": 0,
+      "of_those_circuit_negative": 0
+    },
+    "123": {
+      "decision_convention": "positive when margin >= threshold",
+      "threshold": -2.946709156036377,
+      "max_abs_margin_difference_whole_test_split": 4.337292033085305e-06,
+      "mean_abs_margin_difference_whole_test_split": 5.728885102888046e-07,
+      "n_differing": 5,
+      "n_differing_plain_positive_circuit_negative": 5,
+      "n_differing_plain_negative_circuit_positive": 0,
+      "min_signed_difference_among_differing": -5.638676330299575e-07,
+      "max_signed_difference_among_differing": -5.638676330299575e-07,
+      "n_stays_with_margin_equal_to_threshold": 5,
+      "of_those_circuit_positive": 0,
+      "of_those_circuit_negative": 5
+    },
+    "7": {
+      "decision_convention": "positive when margin >= threshold",
+      "threshold": -2.960883617401123,
+      "max_abs_margin_difference_whole_test_split": 4.811016994565875e-06,
+      "mean_abs_margin_difference_whole_test_split": 5.345996248692696e-07,
+      "n_differing": 1,
+      "n_differing_plain_positive_circuit_negative": 1,
+      "n_differing_plain_negative_circuit_positive": 0,
+      "min_signed_difference_among_differing": -4.841639098529527e-07,
+      "max_signed_difference_among_differing": -4.841639098529527e-07,
+      "n_stays_with_margin_equal_to_threshold": 1,
+      "of_those_circuit_positive": 0,
+      "of_those_circuit_negative": 1
+    },
+    "456": {
+      "decision_convention": "positive when margin >= threshold",
+      "threshold": -2.9539101123809814,
+      "max_abs_margin_difference_whole_test_split": 4.028677144773951e-06,
+      "mean_abs_margin_difference_whole_test_split": 5.156591616010601e-07,
+      "n_differing": 0,
+      "n_differing_plain_positive_circuit_negative": 0,
+      "n_differing_plain_negative_circuit_positive": 0,
+      "min_signed_difference_among_differing": null,
+      "max_signed_difference_among_differing": null,
+      "n_stays_with_margin_equal_to_threshold": 0,
+      "of_those_circuit_positive": 0,
+      "of_those_circuit_negative": 0
+    },
+    "789": {
+      "decision_convention": "positive when margin >= threshold",
+      "threshold": -2.941380739212036,
+      "max_abs_margin_difference_whole_test_split": 3.946492592277195e-06,
+      "mean_abs_margin_difference_whole_test_split": 5.430755578492466e-07,
+      "n_differing": 0,
+      "n_differing_plain_positive_circuit_negative": 0,
+      "n_differing_plain_negative_circuit_positive": 0,
+      "min_signed_difference_among_differing": null,
+      "max_signed_difference_among_differing": null,
+      "n_stays_with_margin_equal_to_threshold": 0,
+      "of_those_circuit_positive": 0,
+      "of_those_circuit_negative": 0
+    }
+  },
+  "max_abs_margin_difference_all_seeds": 4.811016994565875e-06
+}

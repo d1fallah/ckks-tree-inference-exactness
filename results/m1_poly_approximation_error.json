@@ -1,0 +1,72 @@
+{
+  "a": 0.847059,
+  "gamma": 15.022524536045237,
+  "hard_step": {
+    "k=3": {
+      "max_abs_error": 0.49999999999999983,
+      "rmse": 0.1912989840326639,
+      "max_abs_error_outside_5pct_band": 0.4268815173921623,
+      "rmse_outside_5pct_band": 0.16491070760630316,
+      "overshoot_above_1": 0.15606346641421798,
+      "undershoot_below_0": 0.15606346641421803
+    },
+    "k=5": {
+      "max_abs_error": 0.49999999999999967,
+      "rmse": 0.1602873459635094,
+      "max_abs_error_outside_5pct_band": 0.389858979355835,
+      "rmse_outside_5pct_band": 0.1287570753166478,
+      "overshoot_above_1": 0.14767052543632753,
+      "undershoot_below_0": 0.14767052543632714
+    },
+    "k=7": {
+      "max_abs_error": 0.4999999999999997,
+      "rmse": 0.1406789148769704,
+      "max_abs_error_outside_5pct_band": 0.35339855375623885,
+      "rmse_outside_5pct_band": 0.10569028632852097,
+      "overshoot_above_1": 0.1447949734357301,
+      "undershoot_below_0": 0.14479497343573022
+    },
+    "k=9": {
+      "max_abs_error": 0.4999999999999998,
+      "rmse": 0.1268617004131532,
+      "max_abs_error_outside_5pct_band": 0.31754946838970854,
+      "rmse_outside_5pct_band": 0.08960726286719588,
+      "overshoot_above_1": 0.143474243555743,
+      "undershoot_below_0": 0.1434742435557434
+    }
+  },
+  "soft_step": {
+    "k=3": {
+      "max_abs_error": 0.15842877465509086,
+      "rmse": 0.105933871930527,
+      "max_abs_error_outside_5pct_band": 0.15842877465509086,
+      "rmse_outside_5pct_band": 0.10811527926255535,
+      "overshoot_above_1": 0.14847570395508658,
+      "undershoot_below_0": 0.14847570395508647
+    },
+    "k=5": {
+      "max_abs_error": 0.11573678968676371,
+      "rmse": 0.06901002952764754,
+      "max_abs_error_outside_5pct_band": 0.11573678968676371,
+      "rmse_outside_5pct_band": 0.07043861825757688,
+      "overshoot_above_1": 0.11346798521261592,
+      "undershoot_below_0": 0.11346798521261559
+    },
+    "k=7": {
+      "max_abs_error": 0.08177278075077032,
+      "rmse": 0.04447557614221191,
+      "max_abs_error_outside_5pct_band": 0.08177278075077032,
+      "rmse_outside_5pct_band": 0.04541611237981861,
+      "overshoot_above_1": 0.07358106603346881,
+      "undershoot_below_0": 0.07358106603346895
+    },
+    "k=9": {
+      "max_abs_error": 0.0537510684832774,
+      "rmse": 0.028037899937721655,
+      "max_abs_error_outside_5pct_band": 0.0537510684832774,
+      "rmse_outside_5pct_band": 0.02864242834087623,
+      "overshoot_above_1": 0.03671706134244923,
+      "undershoot_below_0": 0.03671706134245012
+    }
+  }
+}

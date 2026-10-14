@@ -1,0 +1,51 @@
+{
+  "config": {
+    "n_estimators": 5,
+    "max_depth": 3,
+    "k": 5,
+    "seed": 42,
+    "label": "label_hypertension_uncomplicated"
+  },
+  "structure_extraction_sanity_check": {
+    "description": "exact leaf-circuit vs booster.predict(output_margin=True), zero approximation",
+    "max_abs_error": 4.131063602308416e-08,
+    "pass": true
+  },
+  "arms": [
+    {
+      "arm": "synthetic",
+      "n": 300,
+      "agreement_sign": 0.98,
+      "normalized_mae": 0.02787699696610883,
+      "normalized_rmse": 0.04304194617019131,
+      "score_mae_raw": 0.06737533401601617,
+      "score_rmse_raw": 0.10402718425666978,
+      "plain_margin_range": [
+        -1.99498117,
+        0.42189802605999993
+      ],
+      "gate_pass": true
+    },
+    {
+      "arm": "small_clinical_subset",
+      "n": 300,
+      "agreement_sign": 0.9766666666666667,
+      "normalized_mae": 0.0297532845244378,
+      "normalized_rmse": 0.04000903630699202,
+      "score_mae_raw": 0.07880317257782177,
+      "score_rmse_raw": 0.10596608217094992,
+      "plain_margin_range": [
+        -1.8603502070000002,
+        0.7882035186599999
+      ],
+      "gate_pass": true
+    }
+  ],
+  "pre_registered_thresholds": {
+    "agreement_sign_min": 0.95,
+    "normalized_mae_max": 0.1,
+    "normalized_rmse_max": 0.15,
+    "source": "m1-0-implementation-lock.md Sec 11.1, written before this experiment ran"
+  },
+  "overall_gate_pass": true
+}

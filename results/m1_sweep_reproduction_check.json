@@ -1,0 +1,156 @@
+{
+  "protocol": "closure guide 3.4 (verification, not a new protocol); originals never overwritten",
+  "backend": "SIMULATED circuit-faithful numpy evaluator",
+  "provenance": {
+    "git_head_commit": "24e60d37ecd41cbb3f70caf10ba9ca64ad6de46e",
+    "git_working_tree_clean_for_src": false,
+    "code_sha256": {
+      "eval_ckks.py": "72dff1a17b8742b0ba001aa974dd7af72bc85f539a130994d495cc9656e068fd",
+      "ckks_circuit.py": "a5d229fd2e2eba5c03108ba360766fca8efc4ffc560be2067ff18868bc9e6df8",
+      "eval_metrics.py": "fdfd4f8f9628146b46da143899f5206e1ebe24704df7e54fb07a2af873644825",
+      "splits.py": "b1543c494304bc7fe43eefbf43f63dee9fadf8444d1d537f9948c6c7bc834215",
+      "notation.py": "db3152ec5dd6cf2bb7aa01e8cc793af4c620012f442959eb93b2f7a6af663b93"
+    },
+    "data_sha256": {
+      "poly_coeffs_v1.json": "4fee9fadeaa701692838e6932242c2cefcf441fd8ef6d70817adb37c47836816",
+      "m1_cohort.parquet": "2bba1485c60362661c51a0709391680cc30ef988dcb1404cae87ef73c4dc8f10",
+      "m1_features.parquet": "7aad089d733407699bff72bc18b307d374fa578f525d1364e39a17ec689dda4b",
+      "frozen_models_25_json": "e09ea3a954dae16885fd10f547c709dcb61b814bda29e7bb5922d3f8b793fdbb"
+    },
+    "results_inputs_sha256": {
+      "m1_plaintext_baseline.json": "167ea32d61ff3ccf504bba5863d42fbd90951d4eb1f4b53bcf5bea162a76b77a",
+      "m1_circuit_params.json": "f7fdd39e79221901a9f7b0ca9d4cde19b542957d858a8ec4067df3d74053b8a3"
+    },
+    "original_result_sha256": "03882ca3376e94089373e5ef1c16e57c08ac8c67a27c8d195bd22935bc530e46",
+    "reproduction_result_sha256": "19c95038ec801059dbb56600a7f33c49b7a83431ced8afdfca503a77b0b58001"
+  },
+  "intended_configuration_checks": {
+    "coefficient_file_version": "v2",
+    "gamma_anchor_percentile_in_coefficient_file": 75,
+    "gamma_in_coefficient_file": 15.022524536045237,
+    "selection_artifact_selected_percentile": 75,
+    "coefficient_file_matches_selection_artifact": true,
+    "per_seed_differencing_then_averaging": true
+  },
+  "comparison": {
+    "k=3": {
+      "original": {
+        "delta_f1_mean": 0.0016332733647034913,
+        "ci": [
+          0.000983459470882158,
+          0.002467184190692571
+        ]
+      },
+      "reproduction": {
+        "delta_f1_mean": 0.0016332733647034913,
+        "ci": [
+          0.000983459470882158,
+          0.002467184190692571
+        ]
+      },
+      "abs_diff_mean": 0.0,
+      "abs_diff_ci_lower": 0.0,
+      "abs_diff_ci_upper": 0.0,
+      "max_abs_diff_per_seed_delta": 0.0,
+      "matches_guide_reference_at_4dp": true,
+      "signed_delta_f1_per_seed_ckks_minus_plain": [
+        0.00036452319272672895,
+        0.002388954983761238,
+        0.0026912967863319537,
+        0.0010823825581240953,
+        0.001639209302573441
+      ],
+      "all_seeds_ckks_above_plain": true
+    },
+    "k=5": {
+      "original": {
+        "delta_f1_mean": 0.0019228470267811603,
+        "ci": [
+          0.0012317171288107058,
+          0.0027024642924824024
+        ]
+      },
+      "reproduction": {
+        "delta_f1_mean": 0.0019228470267811603,
+        "ci": [
+          0.0012317171288107058,
+          0.0027024642924824024
+        ]
+      },
+      "abs_diff_mean": 0.0,
+      "abs_diff_ci_lower": 0.0,
+      "abs_diff_ci_upper": 0.0,
+      "max_abs_diff_per_seed_delta": 0.0,
+      "matches_guide_reference_at_4dp": true,
+      "signed_delta_f1_per_seed_ckks_minus_plain": [
+        0.0015029279053013767,
+        0.0030231953818085078,
+        0.002363727071727939,
+        0.0016772420698172308,
+        0.0010471427052507476
+      ],
+      "all_seeds_ckks_above_plain": true
+    },
+    "k=7": {
+      "original": {
+        "delta_f1_mean": 0.0021595878739899764,
+        "ci": [
+          0.0014813906276052518,
+          0.0028917456634378726
+        ]
+      },
+      "reproduction": {
+        "delta_f1_mean": 0.0021595878739899764,
+        "ci": [
+          0.0014813906276052518,
+          0.0028917456634378726
+        ]
+      },
+      "abs_diff_mean": 0.0,
+      "abs_diff_ci_lower": 0.0,
+      "abs_diff_ci_upper": 0.0,
+      "max_abs_diff_per_seed_delta": 0.0,
+      "matches_guide_reference_at_4dp": true,
+      "signed_delta_f1_per_seed_ckks_minus_plain": [
+        0.001911920495717645,
+        0.0033198385706083577,
+        0.002948456709115921,
+        0.0013762084153475795,
+        0.0012415151791603796
+      ],
+      "all_seeds_ckks_above_plain": true
+    },
+    "k=9": {
+      "original": {
+        "delta_f1_mean": 0.002561937149482918,
+        "ci": [
+          0.0018927475779496933,
+          0.0032917409131368257
+        ]
+      },
+      "reproduction": {
+        "delta_f1_mean": 0.002561937149482918,
+        "ci": [
+          0.0018927475779496933,
+          0.0032917409131368257
+        ]
+      },
+      "abs_diff_mean": 0.0,
+      "abs_diff_ci_lower": 0.0,
+      "abs_diff_ci_upper": 0.0,
+      "max_abs_diff_per_seed_delta": 0.0,
+      "matches_guide_reference_at_4dp": true,
+      "signed_delta_f1_per_seed_ckks_minus_plain": [
+        0.0021642553404538356,
+        0.0036241545126789454,
+        0.003161129973918486,
+        0.0018097580767714172,
+        0.0020503878435919054
+      ],
+      "all_seeds_ckks_above_plain": true
+    }
+  },
+  "worst_absolute_difference_anywhere": 0.0,
+  "verdict": "IDENTICAL",
+  "sign_disclosure": "|dF1| is the locked statistic and hides direction. CKKS macro-F1 is above plaintext macro-F1 in all 5 seeds at every k: True. If true, the reported utility 'loss' is a small utility GAIN at the macro level (docs/leakage_and_threshold_audit.md, section D)."
+}

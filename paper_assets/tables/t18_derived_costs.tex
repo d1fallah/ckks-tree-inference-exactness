@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: costs of the three exact circuits derived from the circuits and set against the measured upload. Levels, ciphertext counts, multiplications and rotation calls come from running the evaluation functions of the study on a mock ciphertext that tracks the multiplicative level, over the five saved models of each bin count (the ranges are over seeds); nothing is encrypted. A rotation call is one call of the library's rotation, which is realised by one or more key switches that are not counted. The chains that ran have 4 levels (thermometer circuits) and 7 levels (interpolation). The last column is the measured per-stay upload relative to the packed circuit (same-chain run, Table~\ref{tab:t17_samechain}); the packed circuit is the reference. At 16 bins the exact interpolation polynomial could not be constructed in double precision, so its row uses placeholder coefficients, which do not change the counts. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t18_derived_costs}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Circuit & $B$ & Client ciphertexts & Levels & $\mathrm{ct}\times\mathrm{ct}$ & $\mathrm{ct}\times\mathrm{plain}$ & Rotation calls & Upload relative to packed \\
+\midrule
+Thermometer, broadcast & 5 & 36 & 4 & 5 & 168 to 173 & 13 & 35.99 \\
+ & 8 & 63 & 4 & 5 & 258 to 265 & 13 & 62.99 \\
+ & 16 & 135 & 4 & 5 & 432 to 438 & 13 & 135.02 \\
+\midrule
+Thermometer, packed & 5 & 1 & 4 & 5 & 216 & 241 to 258 & 1.00 \\
+ & 8 & 1 & 4 & 5 & 378 & 405 to 415 & 1.00 \\
+ & 16 & 1 & 4 & 5 & 810 & 843 to 845 & 1.00 \\
+\midrule
+Exact interpolation & 5 & 6 & 7 & 95 & 54 & 31 to 48 & 6.00 \\
+ & 8 & 6 & 8 & 167 & 90 & 33 to 43 & not run \\
+ & 16 & 6 & 9 & 359 & 186 & 39 to 41 & not run \\
+\bottomrule
+\end{tabular}
+\end{table*}

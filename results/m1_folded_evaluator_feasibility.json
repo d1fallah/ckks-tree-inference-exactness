@@ -1,0 +1,86 @@
+{
+  "purpose": "E1 feasibility before pre-specification sign-off; no test data, no utility",
+  "backend": "real TenSEAL/SEAL ciphertexts",
+  "fixed_parameters": {
+    "N": 16384,
+    "coeff_mod_bit_sizes": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "scale_bits": 40
+  },
+  "probe_patient": "one row of the VALIDATION split (same as probe_multiplicative_depth.py)",
+  "probe_model": {
+    "seed": 42,
+    "label": "label_hypertension_uncomplicated"
+  },
+  "per_degree": {
+    "k=3": {
+      "poly_levels_original_evaluator": 3,
+      "poly_levels_folded_evaluator": 2,
+      "levels_available": 7,
+      "poly_value_check": {
+        "max_abs_error_folded_vs_numpy": 4.082786693615503e-06,
+        "n_slots": 64
+      },
+      "full_circuit_folded_one_validation_row": {
+        "completed": true,
+        "abs_error_vs_simulation": 6.672573876498333e-05,
+        "same_sign_as_simulation": true,
+        "seconds": 0.954
+      }
+    },
+    "k=5": {
+      "poly_levels_original_evaluator": 4,
+      "poly_levels_folded_evaluator": 3,
+      "levels_available": 7,
+      "poly_value_check": {
+        "max_abs_error_folded_vs_numpy": 5.1052783713867456e-06,
+        "n_slots": 64
+      },
+      "full_circuit_folded_one_validation_row": {
+        "completed": true,
+        "abs_error_vs_simulation": 7.420310978334399e-05,
+        "same_sign_as_simulation": true,
+        "seconds": 1.314
+      }
+    },
+    "k=7": {
+      "poly_levels_original_evaluator": 4,
+      "poly_levels_folded_evaluator": 4,
+      "levels_available": 7,
+      "poly_value_check": {
+        "max_abs_error_folded_vs_numpy": 1.942043619429512e-05,
+        "n_slots": 64
+      },
+      "full_circuit_folded_one_validation_row": {
+        "completed": true,
+        "abs_error_vs_simulation": 7.785454033371053e-05,
+        "same_sign_as_simulation": true,
+        "seconds": 1.686
+      }
+    },
+    "k=9": {
+      "poly_levels_original_evaluator": 5,
+      "poly_levels_folded_evaluator": 4,
+      "levels_available": 7,
+      "poly_value_check": {
+        "max_abs_error_folded_vs_numpy": 7.932380675712558e-05,
+        "n_slots": 64
+      },
+      "full_circuit_folded_one_validation_row": {
+        "completed": true,
+        "abs_error_vs_simulation": 8.002330983236661e-05,
+        "same_sign_as_simulation": true,
+        "seconds": 2.057
+      }
+    }
+  }
+}

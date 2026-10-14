@@ -1,0 +1,74 @@
+{
+  "representative_model": {
+    "seed": 42,
+    "label": "label_hypertension_uncomplicated"
+  },
+  "n_real_executions_per_k": 30,
+  "k_values_executed": [
+    3,
+    5,
+    7
+  ],
+  "k_value_excluded": 9,
+  "k_excluded_reason": "Real depth accounting: poly_eval depth 5 (not the tabled 4 -- the table omitted the coefficient-multiply level) + balanced path-product depth 3 = 8, exceeding the locked N=16384/[60,40x7,60] chain's empirically confirmed 7-level ceiling.",
+  "N_poly_modulus_degree": 16384,
+  "coeff_modulus_bit_sizes": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "by_k": {
+    "k=3": {
+      "n": 30,
+      "agreement_encrypted_vs_simulated": 1.0,
+      "e_score_mae_raw": 4.199086593410691e-05,
+      "e_score_mae_normalized": 7.4136806210264196e-06,
+      "e_score_max_abs": 0.0001085574956274371,
+      "online_latency_seconds_per_patient_mean": 0.7556631724333783,
+      "online_latency_seconds_per_patient_std": 0.03631788744290255,
+      "phase_breakdown_mean_seconds": {
+        "encrypt": 0.1037275460333755,
+        "poly_eval": 0.5001941962000729,
+        "path_product": 0.05285527089996928,
+        "sum_decrypt": 0.09888615929996074
+      }
+    },
+    "k=5": {
+      "n": 30,
+      "agreement_encrypted_vs_simulated": 1.0,
+      "e_score_mae_raw": 4.6453402522383023e-05,
+      "e_score_mae_normalized": 7.526846560533258e-06,
+      "e_score_max_abs": 0.00012220418424835344,
+      "online_latency_seconds_per_patient_mean": 1.0557309934997041,
+      "online_latency_seconds_per_patient_std": 0.03942942915459969,
+      "phase_breakdown_mean_seconds": {
+        "encrypt": 0.09889069923312187,
+        "poly_eval": 0.8712006474332611,
+        "path_product": 0.036987351199983705,
+        "sum_decrypt": 0.048652295633337415
+      }
+    },
+    "k=7": {
+      "n": 30,
+      "agreement_encrypted_vs_simulated": 1.0,
+      "e_score_mae_raw": 4.68411772857503e-05,
+      "e_score_mae_normalized": 7.511110136731133e-06,
+      "e_score_max_abs": 0.00012299680927707612,
+      "online_latency_seconds_per_patient_mean": 1.4014452609998747,
+      "online_latency_seconds_per_patient_std": 0.04223542995575982,
+      "phase_breakdown_mean_seconds": {
+        "encrypt": 0.09834519329995904,
+        "poly_eval": 1.2183331437332527,
+        "path_product": 0.03673305733339779,
+        "sum_decrypt": 0.04803386663326516
+      }
+    }
+  },
+  "scope_reduction_reason": "n=30 on one representative model, not the full 5-seed x 5-label x 500-sample grid -- at the measured ~1-1.4s/sample real-execution cost, the full grid would take on the order of 10 hours. Consistent with the same measured-cost scoping in eval_tfhe.py."
+}

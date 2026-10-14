@@ -1,0 +1,58 @@
+{
+  "protocol": "docs/step2_prespec_m1.md section A (added analysis S2.2)",
+  "pool": "all split nodes of the 25 frozen models x 4000 training rows (seed 42); margin z = x - tau (continuous features normalized with training-split min-max, binary features on the raw 0/1 scale)",
+  "split_test_read": false,
+  "n_splits": {
+    "continuous": 15866,
+    "binary": 49491,
+    "all": 65357,
+    "share_continuous": 0.24275900056612146
+  },
+  "continuous_feature_splits": {
+    "n_values": 63464000,
+    "n_distinct_values": 378,
+    "share_abs_lt_0.05": 0.16749087671750915,
+    "share_abs_lt_0.10": 0.31451028929786967,
+    "share_abs_lt_0.20": 0.5630120855918316,
+    "abs_quantiles": {
+      "10": 0.030303030303,
+      "25": 0.077922077922,
+      "50": 0.168831168831,
+      "75": 0.305882352941,
+      "90": 0.458823529412
+    }
+  },
+  "binary_feature_splits": {
+    "n_values": 197964000,
+    "n_distinct_values": 98982,
+    "share_abs_lt_0.05": 0.18873258774322604,
+    "share_abs_lt_0.10": 0.18873258774322604,
+    "share_abs_lt_0.20": 0.18873258774322604,
+    "abs_quantiles": {
+      "10": 0.0,
+      "25": 1.0,
+      "50": 1.0,
+      "75": 1.0,
+      "90": 1.0
+    }
+  },
+  "all_splits": {
+    "n_values": 261428000,
+    "n_distinct_values": 99360,
+    "share_abs_lt_0.05": 0.18357597120430863,
+    "share_abs_lt_0.10": 0.21926625686613524,
+    "share_abs_lt_0.20": 0.27959230457334333,
+    "abs_quantiles": {
+      "10": 0.0,
+      "25": 0.142857142857,
+      "50": 1.0,
+      "75": 1.0,
+      "90": 1.0
+    }
+  },
+  "cutoffs": [
+    0.05,
+    0.1,
+    0.2
+  ]
+}

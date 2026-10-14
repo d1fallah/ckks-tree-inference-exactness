@@ -1,0 +1,11 @@
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{f2_packing}
+\caption{Leaf-aligned packing, drawn for two trees (four and two leaves) and two levels. Each slot is one
+leaf of the whole ensemble. The ciphertext of level $d$ holds in each slot the normalized margin of the
+split on that leaf's path at level $d$; a slot whose path is shorter uses the constant polynomial $1$. The
+server applies the comparison polynomial to all slots at once, forms for each leaf a balanced product over
+the levels times the leaf value (folded into the last level's plaintext coefficients), and sums the slots
+with one rotate-and-add reduction, the only step that rotates. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{fig:packing}
+\end{figure}

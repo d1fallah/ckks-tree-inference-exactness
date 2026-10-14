@@ -1,0 +1,284 @@
+{
+  "asset_id": "s1_k_selection",
+  "records": [
+    {
+      "kind": "literal",
+      "artifact": null,
+      "pointer": null,
+      "reduce_how": null,
+      "raw": "0.03",
+      "fmt": null,
+      "formatted": "0.03",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": "notation.MAX_ACCEPTABLE_F1_LOSS, the locked utility tolerance"
+    },
+    {
+      "kind": "literal",
+      "artifact": null,
+      "pointer": null,
+      "reduce_how": null,
+      "raw": "the $\\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\\ref{tab:t5_real_vs_simulated})",
+      "fmt": null,
+      "formatted": "the $\\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\\ref{tab:t5_real_vs_simulated})",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": "fixed descriptive text; depth counts are separately recorded via m1_depth_probe.json in Table 4"
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/k_star",
+      "reduce_how": null,
+      "raw": 3,
+      "fmt": null,
+      "formatted": "3",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set",
+      "reduce_how": null,
+      "raw": [
+        {
+          "k": 3,
+          "delta_f1_mean": 0.0016332733647034913,
+          "delta_f1_95ci": [
+            0.000983459470882158,
+            0.002467184190692571
+          ],
+          "online_latency_seconds_per_patient": 0.6577964197280013,
+          "latency_sd_across_seeds": 0.020730768934781797,
+          "latency_not_measured_reason": null
+        },
+        {
+          "k": 5,
+          "delta_f1_mean": 0.0019228470267811603,
+          "delta_f1_95ci": [
+            0.0012317171288107058,
+            0.0027024642924824024
+          ],
+          "online_latency_seconds_per_patient": 0.9149951065999999,
+          "latency_sd_across_seeds": 0.01586097910462861,
+          "latency_not_measured_reason": null
+        },
+        {
+          "k": 7,
+          "delta_f1_mean": 0.0021595878739899764,
+          "delta_f1_95ci": [
+            0.0014813906276052518,
+            0.0028917456634378726
+          ],
+          "online_latency_seconds_per_patient": 1.1970351915839987,
+          "latency_sd_across_seeds": 0.020521473924440935,
+          "latency_not_measured_reason": null
+        },
+        {
+          "k": 9,
+          "delta_f1_mean": 0.002561937149482918,
+          "delta_f1_95ci": [
+            0.0018927475779496933,
+            0.0032917409131368257
+          ],
+          "online_latency_seconds_per_patient": null,
+          "latency_sd_across_seeds": null,
+          "latency_not_measured_reason": "code-derived depth 8 > 7 levels on the locked chain (results/m1_depth_probe.json; m1-0-implementation-lock.md sec 18)"
+        }
+      ],
+      "fmt": null,
+      "formatted": "[{'k': 3, 'delta_f1_mean': 0.0016332733647034913, 'delta_f1_95ci': [0.000983459470882158, 0.002467184190692571], 'online_latency_seconds_per_patient': 0.6577964197280013, 'latency_sd_across_seeds': 0.020730768934781797, 'latency_not_measured_reason': None}, {'k': 5, 'delta_f1_mean': 0.0019228470267811603, 'delta_f1_95ci': [0.0012317171288107058, 0.0027024642924824024], 'online_latency_seconds_per_patient': 0.9149951065999999, 'latency_sd_across_seeds': 0.01586097910462861, 'latency_not_measured_reason': None}, {'k': 7, 'delta_f1_mean': 0.0021595878739899764, 'delta_f1_95ci': [0.0014813906276052518, 0.0028917456634378726], 'online_latency_seconds_per_patient': 1.1970351915839987, 'latency_sd_across_seeds': 0.020521473924440935, 'latency_not_measured_reason': None}, {'k': 9, 'delta_f1_mean': 0.002561937149482918, 'delta_f1_95ci': [0.0018927475779496933, 0.0032917409131368257], 'online_latency_seconds_per_patient': None, 'latency_sd_across_seeds': None, 'latency_not_measured_reason': 'code-derived depth 8 > 7 levels on the locked chain (results/m1_depth_probe.json; m1-0-implementation-lock.md sec 18)'}]",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/0/online_latency_seconds_per_patient",
+      "reduce_how": null,
+      "raw": 0.6577964197280013,
+      "fmt": ".2f",
+      "formatted": "0.66",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/0/latency_sd_across_seeds",
+      "reduce_how": null,
+      "raw": 0.020730768934781797,
+      "fmt": ".2f",
+      "formatted": "0.02",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/0/delta_f1_mean",
+      "reduce_how": null,
+      "raw": 0.0016332733647034913,
+      "fmt": ".4f",
+      "formatted": "0.0016",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/0/k",
+      "reduce_how": null,
+      "raw": 3,
+      "fmt": null,
+      "formatted": "3",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/1/online_latency_seconds_per_patient",
+      "reduce_how": null,
+      "raw": 0.9149951065999999,
+      "fmt": ".2f",
+      "formatted": "0.91",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/1/latency_sd_across_seeds",
+      "reduce_how": null,
+      "raw": 0.01586097910462861,
+      "fmt": ".2f",
+      "formatted": "0.02",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/1/delta_f1_mean",
+      "reduce_how": null,
+      "raw": 0.0019228470267811603,
+      "fmt": ".4f",
+      "formatted": "0.0019",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/1/k",
+      "reduce_how": null,
+      "raw": 5,
+      "fmt": null,
+      "formatted": "5",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/2/online_latency_seconds_per_patient",
+      "reduce_how": null,
+      "raw": 1.1970351915839987,
+      "fmt": ".2f",
+      "formatted": "1.20",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/2/latency_sd_across_seeds",
+      "reduce_how": null,
+      "raw": 0.020521473924440935,
+      "fmt": ".2f",
+      "formatted": "0.02",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/2/delta_f1_mean",
+      "reduce_how": null,
+      "raw": 0.0021595878739899764,
+      "fmt": ".4f",
+      "formatted": "0.0022",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/2/k",
+      "reduce_how": null,
+      "raw": 7,
+      "fmt": null,
+      "formatted": "7",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/3/delta_f1_mean",
+      "reduce_how": null,
+      "raw": 0.002561937149482918,
+      "fmt": ".4f",
+      "formatted": "0.0026",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_k_selection.json",
+      "pointer": "/feasible_set/3/k",
+      "reduce_how": null,
+      "raw": 9,
+      "fmt": null,
+      "formatted": "9",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

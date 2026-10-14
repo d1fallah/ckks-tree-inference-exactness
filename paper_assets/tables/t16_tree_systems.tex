@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Private tree-evaluation systems compared by what each paper states. $\checkmark$: stated by the paper; $\times$: stated not; --: not reported in the part read, which does not mean that the paper lacks it (NR in the last column has the same meaning). Each mark is taken from the part of the cited paper named in the provenance record (an abstract or the full text). Costs are not tabulated: the systems differ in model, hardware, precision and security level, and none was measured on the task of this study. The rows of this work come from the Proxy cohort (MIMIC-IV-ED-derived) task; the other rows are what their papers state.}
+\label{tab:t16_tree_systems}
+\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.4cm}cccccc>{\raggedright\arraybackslash}p{4.4cm}}
+\toprule
+System & Gradient-boosted ensemble & CKKS & Non-interactive & Model hidden from client & Boot\-strapping & Ring degree & Comparison of an input with a threshold \\
+\midrule
+Tueno et al. 2020~\cite{tueno2020noninteractive} & $\times$ & -- & $\checkmark$ & -- & -- & -- & NR \\
+Akavia et al. 2021~\cite{akavia2021ppdt} & $\times$ & $\checkmark$ & $\checkmark$ & -- & -- & -- & Degree-15 soft-step polynomial \\
+Mağara et al. 2021~\cite{magara2021mlhe} & $\checkmark$ & $\checkmark$$^{a}$ & -- & -- & -- & -- & Boolean expressions over one-hot bits \\
+Cong et al. 2022~\cite{cong2022sortinghat} & $\times$ & -- & $\checkmark$ & -- & -- & -- & Comparison with one plaintext input, homomorphic traversal \\
+Akhavan Mahdavi et al. 2023~\cite{mahdavi2023levelup} & $\times$ & -- & $\checkmark$ & $\checkmark$$^{b}$ & -- & -- & XXCMP and RCC comparison protocols \\
+Shin et al. 2024~\cite{shin2024hbdt} & $\times$$^{c}$ & $\checkmark$ & -- & -- & -- & -- & NR (path evaluation by additions only) \\
+Cong et al. 2024~\cite{cong2024faster} & $\times$ & -- & $\checkmark$ & -- & -- & -- & Batched range-cover and constant-weight comparators \\
+Ko et al. 2026~\cite{ko2024silentwood} & $\checkmark$ & $\times$ & $\times$$^{d}$ & $\checkmark$$^{e}$ & -- & -- & Constant-weight encoding or bitwise \\
+Dia et al. 2026~\cite{dia2026strawhat} & $\checkmark$ & -- & $\checkmark$ & $\checkmark$$^{f}$ & -- & -- & Row dichotomy comparison (RDCMP) \\
+Park et al. 2026~\cite{park2026lcpdte} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$$^{g}$ & $\checkmark$ & $2^{16}$ & One-branch-only traversal with bit-decomposed 32-bit comparison \\
+\midrule
+\textbf{This work, interpolation} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$ & $\times$ & $2^{14}$ & Polynomial through the step on quantized inputs \\
+\textbf{This work, thermometer} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$$^{h}$ & $\times$ & $2^{14}$ & Selection of thermometer bits by plaintext masks \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Notes: $^{a}$~BFV or CKKS (PALISADE); $^{b}$~the client learns the prediction and some hyperparameters only; $^{c}$~decision tree and random forest; $^{d}$~two-party Blind Code Conversion step; $^{e}$~the client learns the prediction and hyperparameters only; $^{f}$~thresholds and leaf values stay in plaintext on the server and the client's knowledge of the model is listed as none (Table 2 of that paper); no security analysis in the text; $^{g}$~stated only: the feature count and order and the output are revealed; no formal proof in the text; $^{h}$~structure and thresholds within one evaluation; leaf values open to queries.}
+\end{table*}

@@ -1,0 +1,1135 @@
+{
+  "asset_id": "f5_tree_count_scaling",
+  "records": [
+    {
+      "kind": "series",
+      "artifact": "m1_scaling_multiseed.json",
+      "pointer": "/per_cell/*",
+      "reduce_how": null,
+      "raw": [
+        {
+          "seed": 42,
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_leaves": 40,
+          "f1_plain": 0.6570972886762361,
+          "f1_ckks": 0.6451124021217479,
+          "abs_delta_f1": 0.01198488655448815,
+          "signed_delta_f1_ckks_minus_plain": -0.01198488655448815,
+          "agreement": 0.9791339673160373,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.43508633930014184,
+            "poly_eval_s_mean": 0.35592911840012675,
+            "path_product_s_mean": 0.013378523400115227,
+            "input_ciphertext_bytes_per_patient": 4942040,
+            "output_ciphertext_bytes": 459311,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_leaves": 80,
+          "f1_plain": 0.6679788734704589,
+          "f1_ckks": 0.6637385689468681,
+          "abs_delta_f1": 0.00424030452359081,
+          "signed_delta_f1_ckks_minus_plain": -0.00424030452359081,
+          "agreement": 0.9754408641861324,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.443992980099938,
+            "poly_eval_s_mean": 0.3609718275999512,
+            "path_product_s_mean": 0.013326524499916559,
+            "input_ciphertext_bytes_per_patient": 4942154,
+            "output_ciphertext_bytes": 460141,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_leaves": 160,
+          "f1_plain": 0.6728388781496931,
+          "f1_ckks": 0.6703539072308371,
+          "abs_delta_f1": 0.002484970918856022,
+          "signed_delta_f1_ckks_minus_plain": -0.002484970918856022,
+          "agreement": 0.9663927615178654,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.45014761610009374,
+            "poly_eval_s_mean": 0.3618558307001877,
+            "path_product_s_mean": 0.013473207900005946,
+            "input_ciphertext_bytes_per_patient": 4941069,
+            "output_ciphertext_bytes": 459726,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_leaves": 240,
+          "f1_plain": 0.6747455492392007,
+          "f1_ckks": 0.674410163339383,
+          "abs_delta_f1": 0.0003353858998177417,
+          "signed_delta_f1_ckks_minus_plain": -0.0003353858998177417,
+          "agreement": 0.926630351152556,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4723369551998985,
+            "poly_eval_s_mean": 0.3554662368000209,
+            "path_product_s_mean": 0.013516361799975129,
+            "input_ciphertext_bytes_per_patient": 4940364,
+            "output_ciphertext_bytes": 459156,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_leaves": 399,
+          "f1_plain": 0.6750558707237407,
+          "f1_ckks": 0.6746226979589123,
+          "abs_delta_f1": 0.00043317276482846,
+          "signed_delta_f1_ckks_minus_plain": -0.00043317276482846,
+          "agreement": 0.9281075924045179,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4762963211001079,
+            "poly_eval_s_mean": 0.35655302740005934,
+            "path_product_s_mean": 0.013259005499730848,
+            "input_ciphertext_bytes_per_patient": 4941231,
+            "output_ciphertext_bytes": 460161,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_leaves": 790,
+          "f1_plain": 0.6774642981539534,
+          "f1_ckks": 0.676476571506069,
+          "abs_delta_f1": 0.0009877266478843794,
+          "signed_delta_f1_ckks_minus_plain": -0.0009877266478843794,
+          "agreement": 0.9563598313482904,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.6878817671999968,
+            "poly_eval_s_mean": 0.5253314141998089,
+            "path_product_s_mean": 0.02313902579999194,
+            "input_ciphertext_bytes_per_patient": 6588586,
+            "output_ciphertext_bytes": 459076,
+            "n_input_ciphertexts": 4
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_leaves": 1501,
+          "f1_plain": 0.6769750168804861,
+          "f1_ckks": 0.6771743131546364,
+          "abs_delta_f1": 0.0001992962741502735,
+          "signed_delta_f1_ckks_minus_plain": 0.0001992962741502735,
+          "agreement": 0.9570061243960237,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.7623450055999456,
+            "poly_eval_s_mean": 0.6002615788999719,
+            "path_product_s_mean": 0.024330441299844095,
+            "input_ciphertext_bytes_per_patient": 8236439,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 5
+          }
+        },
+        {
+          "seed": 42,
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_leaves": 2694,
+          "f1_plain": 0.6797163890490892,
+          "f1_ckks": 0.6804454700511688,
+          "abs_delta_f1": 0.0007290810020796901,
+          "signed_delta_f1_ckks_minus_plain": 0.0007290810020796901,
+          "agreement": 0.948881297510233,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.9204267035001976,
+            "poly_eval_s_mean": 0.7372244682999736,
+            "path_product_s_mean": 0.030522840000048745,
+            "input_ciphertext_bytes_per_patient": 9884733,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 6
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_leaves": 40,
+          "f1_plain": 0.6592447916666667,
+          "f1_ckks": 0.6605776033961536,
+          "abs_delta_f1": 0.0013328117294868491,
+          "signed_delta_f1_ckks_minus_plain": 0.0013328117294868491,
+          "agreement": 0.9982150001538793,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4338716510000268,
+            "poly_eval_s_mean": 0.35638632090021927,
+            "path_product_s_mean": 0.01333294020005269,
+            "input_ciphertext_bytes_per_patient": 4942411,
+            "output_ciphertext_bytes": 459733,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_leaves": 80,
+          "f1_plain": 0.6605726661782972,
+          "f1_ckks": 0.6613292751513548,
+          "abs_delta_f1": 0.0007566089730575154,
+          "signed_delta_f1_ckks_minus_plain": 0.0007566089730575154,
+          "agreement": 0.9841504324008248,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.44054597280010055,
+            "poly_eval_s_mean": 0.35740223830016477,
+            "path_product_s_mean": 0.013345937300073274,
+            "input_ciphertext_bytes_per_patient": 4941186,
+            "output_ciphertext_bytes": 458984,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_leaves": 160,
+          "f1_plain": 0.6652729541086422,
+          "f1_ckks": 0.6682617779874638,
+          "abs_delta_f1": 0.0029888238788216004,
+          "signed_delta_f1_ckks_minus_plain": 0.0029888238788216004,
+          "agreement": 0.9663004339396177,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4417571903000862,
+            "poly_eval_s_mean": 0.35402829310014566,
+            "path_product_s_mean": 0.013307988499946077,
+            "input_ciphertext_bytes_per_patient": 4943002,
+            "output_ciphertext_bytes": 458268,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_leaves": 240,
+          "f1_plain": 0.6697188151286344,
+          "f1_ckks": 0.6702555366269165,
+          "abs_delta_f1": 0.0005367214982821,
+          "signed_delta_f1_ckks_minus_plain": 0.0005367214982821,
+          "agreement": 0.9575600898655094,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.47846194540006765,
+            "poly_eval_s_mean": 0.3609507582999868,
+            "path_product_s_mean": 0.013224879999961558,
+            "input_ciphertext_bytes_per_patient": 4941436,
+            "output_ciphertext_bytes": 459244,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_leaves": 398,
+          "f1_plain": 0.6738380353156078,
+          "f1_ckks": 0.672852912142152,
+          "abs_delta_f1": 0.000985123173455782,
+          "signed_delta_f1_ckks_minus_plain": -0.000985123173455782,
+          "agreement": 0.9441110393007724,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4806413587998577,
+            "poly_eval_s_mean": 0.36274358899991055,
+            "path_product_s_mean": 0.013359615199988184,
+            "input_ciphertext_bytes_per_patient": 4940057,
+            "output_ciphertext_bytes": 460111,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_leaves": 782,
+          "f1_plain": 0.6793297652779235,
+          "f1_ckks": 0.6781762431675776,
+          "abs_delta_f1": 0.001153522110345917,
+          "signed_delta_f1_ckks_minus_plain": -0.001153522110345917,
+          "agreement": 0.9426645739082263,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.622516270899905,
+            "poly_eval_s_mean": 0.47604065139994417,
+            "path_product_s_mean": 0.02111098100012896,
+            "input_ciphertext_bytes_per_patient": 6590839,
+            "output_ciphertext_bytes": 460294,
+            "n_input_ciphertexts": 4
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_leaves": 1520,
+          "f1_plain": 0.6800792457986063,
+          "f1_ckks": 0.6777751701478526,
+          "abs_delta_f1": 0.002304075650753745,
+          "signed_delta_f1_ckks_minus_plain": -0.002304075650753745,
+          "agreement": 0.9534053488443665,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.7612460434999775,
+            "poly_eval_s_mean": 0.6013479994999216,
+            "path_product_s_mean": 0.02449351859986564,
+            "input_ciphertext_bytes_per_patient": 8234766,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 5
+          }
+        },
+        {
+          "seed": 123,
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_leaves": 2606,
+          "f1_plain": 0.677666632291774,
+          "f1_ckks": 0.6798677663872842,
+          "abs_delta_f1": 0.002201134095510149,
+          "signed_delta_f1_ckks_minus_plain": 0.002201134095510149,
+          "agreement": 0.951805004154741,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.9119517401999474,
+            "poly_eval_s_mean": 0.7301727446997575,
+            "path_product_s_mean": 0.029888767300053586,
+            "input_ciphertext_bytes_per_patient": 9882865,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 6
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_leaves": 40,
+          "f1_plain": 0.658916485865095,
+          "f1_ckks": 0.6595269968763945,
+          "abs_delta_f1": 0.0006105110112994971,
+          "signed_delta_f1_ckks_minus_plain": 0.0006105110112994971,
+          "agreement": 0.9974148278090665,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4397495049001009,
+            "poly_eval_s_mean": 0.36136540689994945,
+            "path_product_s_mean": 0.01349925489994348,
+            "input_ciphertext_bytes_per_patient": 4941947,
+            "output_ciphertext_bytes": 459481,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_leaves": 80,
+          "f1_plain": 0.6688863455068845,
+          "f1_ckks": 0.6669340016708438,
+          "abs_delta_f1": 0.0019523438360407042,
+          "signed_delta_f1_ckks_minus_plain": -0.0019523438360407042,
+          "agreement": 0.9726402609792878,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4539626777998819,
+            "poly_eval_s_mean": 0.36876718450021145,
+            "path_product_s_mean": 0.0141606208999292,
+            "input_ciphertext_bytes_per_patient": 4941911,
+            "output_ciphertext_bytes": 460241,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_leaves": 160,
+          "f1_plain": 0.6701386493757329,
+          "f1_ckks": 0.6713536129496896,
+          "abs_delta_f1": 0.0012149635739567843,
+          "signed_delta_f1_ckks_minus_plain": 0.0012149635739567843,
+          "agreement": 0.9636537100298526,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4507709210999565,
+            "poly_eval_s_mean": 0.3613376951999271,
+            "path_product_s_mean": 0.013367276000099081,
+            "input_ciphertext_bytes_per_patient": 4941323,
+            "output_ciphertext_bytes": 458746,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_leaves": 240,
+          "f1_plain": 0.6743791347719165,
+          "f1_ckks": 0.67499236433977,
+          "abs_delta_f1": 0.0006132295678534794,
+          "signed_delta_f1_ckks_minus_plain": 0.0006132295678534794,
+          "agreement": 0.9511587111070077,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.47366040200004134,
+            "poly_eval_s_mean": 0.3577115421000599,
+            "path_product_s_mean": 0.013348998400124401,
+            "input_ciphertext_bytes_per_patient": 4940679,
+            "output_ciphertext_bytes": 460209,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_leaves": 399,
+          "f1_plain": 0.6754357357683807,
+          "f1_ckks": 0.6755555555555556,
+          "abs_delta_f1": 0.00011981978717490183,
+          "signed_delta_f1_ckks_minus_plain": 0.00011981978717490183,
+          "agreement": 0.9352168159295848,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.48368362520004665,
+            "poly_eval_s_mean": 0.363782559899937,
+            "path_product_s_mean": 0.013536490899878118,
+            "input_ciphertext_bytes_per_patient": 4941552,
+            "output_ciphertext_bytes": 459991,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_leaves": 778,
+          "f1_plain": 0.6779174865757263,
+          "f1_ckks": 0.6781904385618333,
+          "abs_delta_f1": 0.0002729519861069951,
+          "signed_delta_f1_ckks_minus_plain": 0.0002729519861069951,
+          "agreement": 0.9562982796294587,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.6197949076999066,
+            "poly_eval_s_mean": 0.4784265253999365,
+            "path_product_s_mean": 0.02186114290007026,
+            "input_ciphertext_bytes_per_patient": 6589169,
+            "output_ciphertext_bytes": 459863,
+            "n_input_ciphertexts": 4
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_leaves": 1494,
+          "f1_plain": 0.6799707796520122,
+          "f1_ckks": 0.6786283113928165,
+          "abs_delta_f1": 0.001342468259195706,
+          "signed_delta_f1_ckks_minus_plain": -0.001342468259195706,
+          "agreement": 0.9575908657249254,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.7778998835002312,
+            "poly_eval_s_mean": 0.6134030253999299,
+            "path_product_s_mean": 0.02519564510002965,
+            "input_ciphertext_bytes_per_patient": 8236180,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 5
+          }
+        },
+        {
+          "seed": 7,
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_leaves": 2751,
+          "f1_plain": 0.6764355324966697,
+          "f1_ckks": 0.676926199012379,
+          "abs_delta_f1": 0.0004906665157093926,
+          "signed_delta_f1_ckks_minus_plain": 0.0004906665157093926,
+          "agreement": 0.9504816421998584,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.9928482900000745,
+            "poly_eval_s_mean": 0.7736759965998317,
+            "path_product_s_mean": 0.03277982090012301,
+            "input_ciphertext_bytes_per_patient": 9883356,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 6
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_leaves": 40,
+          "f1_plain": 0.6574789039846219,
+          "f1_ckks": 0.6595473382212305,
+          "abs_delta_f1": 0.0020684342366085184,
+          "signed_delta_f1_ckks_minus_plain": 0.0020684342366085184,
+          "agreement": 0.9980303449973841,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4530438978001257,
+            "poly_eval_s_mean": 0.3719418694999149,
+            "path_product_s_mean": 0.01329216849990189,
+            "input_ciphertext_bytes_per_patient": 4942385,
+            "output_ciphertext_bytes": 459988,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_leaves": 80,
+          "f1_plain": 0.6613154128554539,
+          "f1_ckks": 0.6637509976057462,
+          "abs_delta_f1": 0.0024355847502922634,
+          "signed_delta_f1_ckks_minus_plain": 0.0024355847502922634,
+          "agreement": 0.9741482780906657,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4397264772000199,
+            "poly_eval_s_mean": 0.3564709918000517,
+            "path_product_s_mean": 0.013254440199852979,
+            "input_ciphertext_bytes_per_patient": 4943643,
+            "output_ciphertext_bytes": 459931,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_leaves": 160,
+          "f1_plain": 0.664395874727978,
+          "f1_ckks": 0.6657787080201694,
+          "abs_delta_f1": 0.0013828332921913544,
+          "signed_delta_f1_ckks_minus_plain": 0.0013828332921913544,
+          "agreement": 0.9703628473825131,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4444299528000556,
+            "poly_eval_s_mean": 0.3541365551999661,
+            "path_product_s_mean": 0.013943323599869472,
+            "input_ciphertext_bytes_per_patient": 4943025,
+            "output_ciphertext_bytes": 458701,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_leaves": 240,
+          "f1_plain": 0.6695950855406566,
+          "f1_ckks": 0.6686466686466687,
+          "abs_delta_f1": 0.0009484168939879467,
+          "signed_delta_f1_ckks_minus_plain": -0.0009484168939879467,
+          "agreement": 0.9639922444834272,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4844419652000397,
+            "poly_eval_s_mean": 0.36483964800008833,
+            "path_product_s_mean": 0.013693085900104051,
+            "input_ciphertext_bytes_per_patient": 4941947,
+            "output_ciphertext_bytes": 459933,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_leaves": 398,
+          "f1_plain": 0.6697109161513016,
+          "f1_ckks": 0.6712749098020704,
+          "abs_delta_f1": 0.001563993650768758,
+          "signed_delta_f1_ckks_minus_plain": 0.001563993650768758,
+          "agreement": 0.9045332840919583,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4814523361001193,
+            "poly_eval_s_mean": 0.36237888589994327,
+            "path_product_s_mean": 0.013322749299913995,
+            "input_ciphertext_bytes_per_patient": 4942255,
+            "output_ciphertext_bytes": 459946,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_leaves": 785,
+          "f1_plain": 0.6795771033633284,
+          "f1_ckks": 0.6769817023093854,
+          "abs_delta_f1": 0.0025954010539430694,
+          "signed_delta_f1_ckks_minus_plain": -0.0025954010539430694,
+          "agreement": 0.9455882805527345,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.6179347646998394,
+            "poly_eval_s_mean": 0.4772926603998712,
+            "path_product_s_mean": 0.021161914900039845,
+            "input_ciphertext_bytes_per_patient": 6590231,
+            "output_ciphertext_bytes": 460211,
+            "n_input_ciphertexts": 4
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_leaves": 1511,
+          "f1_plain": 0.6769746519344576,
+          "f1_ckks": 0.6767757382282522,
+          "abs_delta_f1": 0.00019891370620539472,
+          "signed_delta_f1_ckks_minus_plain": -0.00019891370620539472,
+          "agreement": 0.949589142276798,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.777506267300123,
+            "poly_eval_s_mean": 0.6141316416000336,
+            "path_product_s_mean": 0.02494401999992988,
+            "input_ciphertext_bytes_per_patient": 8235972,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 5
+          }
+        },
+        {
+          "seed": 456,
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_leaves": 2684,
+          "f1_plain": 0.6793323381734292,
+          "f1_ckks": 0.6776940075393214,
+          "abs_delta_f1": 0.0016383306341077875,
+          "signed_delta_f1_ckks_minus_plain": -0.0016383306341077875,
+          "agreement": 0.9374326778075278,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.9404359940001086,
+            "poly_eval_s_mean": 0.7441892761001327,
+            "path_product_s_mean": 0.030622916299944337,
+            "input_ciphertext_bytes_per_patient": 9885205,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 6
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_leaves": 40,
+          "f1_plain": 0.6486166592691226,
+          "f1_ckks": 0.6523866678977011,
+          "abs_delta_f1": 0.0037700086285784584,
+          "signed_delta_f1_ckks_minus_plain": 0.0037700086285784584,
+          "agreement": 0.996583879604838,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.440668789999836,
+            "poly_eval_s_mean": 0.3622571650999816,
+            "path_product_s_mean": 0.013343829300174548,
+            "input_ciphertext_bytes_per_patient": 4940208,
+            "output_ciphertext_bytes": 459143,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_leaves": 80,
+          "f1_plain": 0.6615768248006649,
+          "f1_ckks": 0.6644713928379191,
+          "abs_delta_f1": 0.002894568037254186,
+          "signed_delta_f1_ckks_minus_plain": 0.002894568037254186,
+          "agreement": 0.9858738805281138,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.43703472709985364,
+            "poly_eval_s_mean": 0.3550542258998576,
+            "path_product_s_mean": 0.01318315190001158,
+            "input_ciphertext_bytes_per_patient": 4942055,
+            "output_ciphertext_bytes": 460242,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_leaves": 160,
+          "f1_plain": 0.6665197960596714,
+          "f1_ckks": 0.6690633869441817,
+          "abs_delta_f1": 0.002543590884510283,
+          "signed_delta_f1_ckks_minus_plain": 0.002543590884510283,
+          "agreement": 0.967962330348075,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4586440885998854,
+            "poly_eval_s_mean": 0.3677674874999866,
+            "path_product_s_mean": 0.014615640699958021,
+            "input_ciphertext_bytes_per_patient": 4942113,
+            "output_ciphertext_bytes": 459952,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_leaves": 240,
+          "f1_plain": 0.6671293375394322,
+          "f1_ckks": 0.6697870201671169,
+          "abs_delta_f1": 0.002657682627684732,
+          "signed_delta_f1_ckks_minus_plain": 0.002657682627684732,
+          "agreement": 0.9568830209583603,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.4791938777000723,
+            "poly_eval_s_mean": 0.36208405259994836,
+            "path_product_s_mean": 0.01371327979986745,
+            "input_ciphertext_bytes_per_patient": 4941053,
+            "output_ciphertext_bytes": 458792,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_leaves": 398,
+          "f1_plain": 0.6741144414168937,
+          "f1_ckks": 0.6738156103715016,
+          "abs_delta_f1": 0.0002988310453920784,
+          "signed_delta_f1_ckks_minus_plain": -0.0002988310453920784,
+          "agreement": 0.9567291416612809,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.47627102189999276,
+            "poly_eval_s_mean": 0.356819592300144,
+            "path_product_s_mean": 0.01424906819993339,
+            "input_ciphertext_bytes_per_patient": 4943151,
+            "output_ciphertext_bytes": 460056,
+            "n_input_ciphertexts": 3
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_leaves": 780,
+          "f1_plain": 0.6781185540864978,
+          "f1_ckks": 0.6749202050488442,
+          "abs_delta_f1": 0.0031983490376535917,
+          "signed_delta_f1_ckks_minus_plain": -0.0031983490376535917,
+          "agreement": 0.9311851783461054,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.6220625929996458,
+            "poly_eval_s_mean": 0.4795131523998862,
+            "path_product_s_mean": 0.020747488100005283,
+            "input_ciphertext_bytes_per_patient": 6588988,
+            "output_ciphertext_bytes": 459841,
+            "n_input_ciphertexts": 4
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_leaves": 1512,
+          "f1_plain": 0.6770006214182145,
+          "f1_ckks": 0.678266779949023,
+          "abs_delta_f1": 0.00126615853080847,
+          "signed_delta_f1_ckks_minus_plain": 0.00126615853080847,
+          "agreement": 0.9584833656479858,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.7637807770000109,
+            "poly_eval_s_mean": 0.6019122674000755,
+            "path_product_s_mean": 0.02478892419994736,
+            "input_ciphertext_bytes_per_patient": 8237475,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 5
+          }
+        },
+        {
+          "seed": 789,
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_leaves": 2644,
+          "f1_plain": 0.6772030984056411,
+          "f1_ckks": 0.6784980636470787,
+          "abs_delta_f1": 0.0012949652414375734,
+          "signed_delta_f1_ckks_minus_plain": 0.0012949652414375734,
+          "agreement": 0.9451574185209122,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "real_latency": {
+            "n_patients": 10,
+            "wall_clock_s_mean": 0.9589757453999482,
+            "poly_eval_s_mean": 0.7675642610001887,
+            "path_product_s_mean": 0.03199485530003585,
+            "input_ciphertext_bytes_per_patient": 9884448,
+            "output_ciphertext_bytes": 262291,
+            "n_input_ciphertexts": 6
+          }
+        }
+      ],
+      "fmt": null,
+      "formatted": "[{'seed': 42, 'n_estimators': 5, 'max_depth': 3, 'n_leaves': 40, 'f1_plain': 0.6570972886762361, 'f1_ckks': 0.6451124021217479, 'abs_delta_f1': 0.01198488655448815, 'signed_delta_f1_ckks_minus_plain': -0.01198488655448815, 'agreement': 0.9791339673160373, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.43508633930014184, 'poly_eval_s_mean': 0.35592911840012675, 'path_product_s_mean': 0.013378523400115227, 'input_ciphertext_bytes_per_patient': 4942040, 'output_ciphertext_bytes': 459311, 'n_input_ciphertexts': 3}}, {'seed': 42, 'n_estimators': 10, 'max_depth': 3, 'n_leaves': 80, 'f1_plain': 0.6679788734704589, 'f1_ckks': 0.6637385689468681, 'abs_delta_f1': 0.00424030452359081, 'signed_delta_f1_ckks_minus_plain': -0.00424030452359081, 'agreement': 0.9754408641861324, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.443992980099938, 'poly_eval_s_mean': 0.3609718275999512, 'path_product_s_mean': 0.013326524499916559, 'input_ciphertext_bytes_per_patient': 4942154, 'output_ciphertext_bytes': 460141, 'n_input_ciphertexts': 3}}, {'seed': 42, 'n_estimators': 20, 'max_depth': 3, 'n_leaves': 160, 'f1_plain': 0.6728388781496931, 'f1_ckks': 0.6703539072308371, 'abs_delta_f1': 0.002484970918856022, 'signed_delta_f1_ckks_minus_plain': -0.002484970918856022, 'agreement': 0.9663927615178654, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.45014761610009374, 'poly_eval_s_mean': 0.3618558307001877, 'path_product_s_mean': 0.013473207900005946, 'input_ciphertext_bytes_per_patient': 4941069, 'output_ciphertext_bytes': 459726, 'n_input_ciphertexts': 3}}, {'seed': 42, 'n_estimators': 30, 'max_depth': 3, 'n_leaves': 240, 'f1_plain': 0.6747455492392007, 'f1_ckks': 0.674410163339383, 'abs_delta_f1': 0.0003353858998177417, 'signed_delta_f1_ckks_minus_plain': -0.0003353858998177417, 'agreement': 0.926630351152556, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4723369551998985, 'poly_eval_s_mean': 0.3554662368000209, 'path_product_s_mean': 0.013516361799975129, 'input_ciphertext_bytes_per_patient': 4940364, 'output_ciphertext_bytes': 459156, 'n_input_ciphertexts': 3}}, {'seed': 42, 'n_estimators': 50, 'max_depth': 3, 'n_leaves': 399, 'f1_plain': 0.6750558707237407, 'f1_ckks': 0.6746226979589123, 'abs_delta_f1': 0.00043317276482846, 'signed_delta_f1_ckks_minus_plain': -0.00043317276482846, 'agreement': 0.9281075924045179, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4762963211001079, 'poly_eval_s_mean': 0.35655302740005934, 'path_product_s_mean': 0.013259005499730848, 'input_ciphertext_bytes_per_patient': 4941231, 'output_ciphertext_bytes': 460161, 'n_input_ciphertexts': 3}}, {'seed': 42, 'n_estimators': 50, 'max_depth': 4, 'n_leaves': 790, 'f1_plain': 0.6774642981539534, 'f1_ckks': 0.676476571506069, 'abs_delta_f1': 0.0009877266478843794, 'signed_delta_f1_ckks_minus_plain': -0.0009877266478843794, 'agreement': 0.9563598313482904, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.6878817671999968, 'poly_eval_s_mean': 0.5253314141998089, 'path_product_s_mean': 0.02313902579999194, 'input_ciphertext_bytes_per_patient': 6588586, 'output_ciphertext_bytes': 459076, 'n_input_ciphertexts': 4}}, {'seed': 42, 'n_estimators': 50, 'max_depth': 5, 'n_leaves': 1501, 'f1_plain': 0.6769750168804861, 'f1_ckks': 0.6771743131546364, 'abs_delta_f1': 0.0001992962741502735, 'signed_delta_f1_ckks_minus_plain': 0.0001992962741502735, 'agreement': 0.9570061243960237, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.7623450055999456, 'poly_eval_s_mean': 0.6002615788999719, 'path_product_s_mean': 0.024330441299844095, 'input_ciphertext_bytes_per_patient': 8236439, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 5}}, {'seed': 42, 'n_estimators': 50, 'max_depth': 6, 'n_leaves': 2694, 'f1_plain': 0.6797163890490892, 'f1_ckks': 0.6804454700511688, 'abs_delta_f1': 0.0007290810020796901, 'signed_delta_f1_ckks_minus_plain': 0.0007290810020796901, 'agreement': 0.948881297510233, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.9204267035001976, 'poly_eval_s_mean': 0.7372244682999736, 'path_product_s_mean': 0.030522840000048745, 'input_ciphertext_bytes_per_patient': 9884733, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 6}}, {'seed': 123, 'n_estimators': 5, 'max_depth': 3, 'n_leaves': 40, 'f1_plain': 0.6592447916666667, 'f1_ckks': 0.6605776033961536, 'abs_delta_f1': 0.0013328117294868491, 'signed_delta_f1_ckks_minus_plain': 0.0013328117294868491, 'agreement': 0.9982150001538793, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4338716510000268, 'poly_eval_s_mean': 0.35638632090021927, 'path_product_s_mean': 0.01333294020005269, 'input_ciphertext_bytes_per_patient': 4942411, 'output_ciphertext_bytes': 459733, 'n_input_ciphertexts': 3}}, {'seed': 123, 'n_estimators': 10, 'max_depth': 3, 'n_leaves': 80, 'f1_plain': 0.6605726661782972, 'f1_ckks': 0.6613292751513548, 'abs_delta_f1': 0.0007566089730575154, 'signed_delta_f1_ckks_minus_plain': 0.0007566089730575154, 'agreement': 0.9841504324008248, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.44054597280010055, 'poly_eval_s_mean': 0.35740223830016477, 'path_product_s_mean': 0.013345937300073274, 'input_ciphertext_bytes_per_patient': 4941186, 'output_ciphertext_bytes': 458984, 'n_input_ciphertexts': 3}}, {'seed': 123, 'n_estimators': 20, 'max_depth': 3, 'n_leaves': 160, 'f1_plain': 0.6652729541086422, 'f1_ckks': 0.6682617779874638, 'abs_delta_f1': 0.0029888238788216004, 'signed_delta_f1_ckks_minus_plain': 0.0029888238788216004, 'agreement': 0.9663004339396177, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4417571903000862, 'poly_eval_s_mean': 0.35402829310014566, 'path_product_s_mean': 0.013307988499946077, 'input_ciphertext_bytes_per_patient': 4943002, 'output_ciphertext_bytes': 458268, 'n_input_ciphertexts': 3}}, {'seed': 123, 'n_estimators': 30, 'max_depth': 3, 'n_leaves': 240, 'f1_plain': 0.6697188151286344, 'f1_ckks': 0.6702555366269165, 'abs_delta_f1': 0.0005367214982821, 'signed_delta_f1_ckks_minus_plain': 0.0005367214982821, 'agreement': 0.9575600898655094, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.47846194540006765, 'poly_eval_s_mean': 0.3609507582999868, 'path_product_s_mean': 0.013224879999961558, 'input_ciphertext_bytes_per_patient': 4941436, 'output_ciphertext_bytes': 459244, 'n_input_ciphertexts': 3}}, {'seed': 123, 'n_estimators': 50, 'max_depth': 3, 'n_leaves': 398, 'f1_plain': 0.6738380353156078, 'f1_ckks': 0.672852912142152, 'abs_delta_f1': 0.000985123173455782, 'signed_delta_f1_ckks_minus_plain': -0.000985123173455782, 'agreement': 0.9441110393007724, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4806413587998577, 'poly_eval_s_mean': 0.36274358899991055, 'path_product_s_mean': 0.013359615199988184, 'input_ciphertext_bytes_per_patient': 4940057, 'output_ciphertext_bytes': 460111, 'n_input_ciphertexts': 3}}, {'seed': 123, 'n_estimators': 50, 'max_depth': 4, 'n_leaves': 782, 'f1_plain': 0.6793297652779235, 'f1_ckks': 0.6781762431675776, 'abs_delta_f1': 0.001153522110345917, 'signed_delta_f1_ckks_minus_plain': -0.001153522110345917, 'agreement': 0.9426645739082263, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.622516270899905, 'poly_eval_s_mean': 0.47604065139994417, 'path_product_s_mean': 0.02111098100012896, 'input_ciphertext_bytes_per_patient': 6590839, 'output_ciphertext_bytes': 460294, 'n_input_ciphertexts': 4}}, {'seed': 123, 'n_estimators': 50, 'max_depth': 5, 'n_leaves': 1520, 'f1_plain': 0.6800792457986063, 'f1_ckks': 0.6777751701478526, 'abs_delta_f1': 0.002304075650753745, 'signed_delta_f1_ckks_minus_plain': -0.002304075650753745, 'agreement': 0.9534053488443665, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.7612460434999775, 'poly_eval_s_mean': 0.6013479994999216, 'path_product_s_mean': 0.02449351859986564, 'input_ciphertext_bytes_per_patient': 8234766, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 5}}, {'seed': 123, 'n_estimators': 50, 'max_depth': 6, 'n_leaves': 2606, 'f1_plain': 0.677666632291774, 'f1_ckks': 0.6798677663872842, 'abs_delta_f1': 0.002201134095510149, 'signed_delta_f1_ckks_minus_plain': 0.002201134095510149, 'agreement': 0.951805004154741, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.9119517401999474, 'poly_eval_s_mean': 0.7301727446997575, 'path_product_s_mean': 0.029888767300053586, 'input_ciphertext_bytes_per_patient': 9882865, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 6}}, {'seed': 7, 'n_estimators': 5, 'max_depth': 3, 'n_leaves': 40, 'f1_plain': 0.658916485865095, 'f1_ckks': 0.6595269968763945, 'abs_delta_f1': 0.0006105110112994971, 'signed_delta_f1_ckks_minus_plain': 0.0006105110112994971, 'agreement': 0.9974148278090665, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4397495049001009, 'poly_eval_s_mean': 0.36136540689994945, 'path_product_s_mean': 0.01349925489994348, 'input_ciphertext_bytes_per_patient': 4941947, 'output_ciphertext_bytes': 459481, 'n_input_ciphertexts': 3}}, {'seed': 7, 'n_estimators': 10, 'max_depth': 3, 'n_leaves': 80, 'f1_plain': 0.6688863455068845, 'f1_ckks': 0.6669340016708438, 'abs_delta_f1': 0.0019523438360407042, 'signed_delta_f1_ckks_minus_plain': -0.0019523438360407042, 'agreement': 0.9726402609792878, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4539626777998819, 'poly_eval_s_mean': 0.36876718450021145, 'path_product_s_mean': 0.0141606208999292, 'input_ciphertext_bytes_per_patient': 4941911, 'output_ciphertext_bytes': 460241, 'n_input_ciphertexts': 3}}, {'seed': 7, 'n_estimators': 20, 'max_depth': 3, 'n_leaves': 160, 'f1_plain': 0.6701386493757329, 'f1_ckks': 0.6713536129496896, 'abs_delta_f1': 0.0012149635739567843, 'signed_delta_f1_ckks_minus_plain': 0.0012149635739567843, 'agreement': 0.9636537100298526, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4507709210999565, 'poly_eval_s_mean': 0.3613376951999271, 'path_product_s_mean': 0.013367276000099081, 'input_ciphertext_bytes_per_patient': 4941323, 'output_ciphertext_bytes': 458746, 'n_input_ciphertexts': 3}}, {'seed': 7, 'n_estimators': 30, 'max_depth': 3, 'n_leaves': 240, 'f1_plain': 0.6743791347719165, 'f1_ckks': 0.67499236433977, 'abs_delta_f1': 0.0006132295678534794, 'signed_delta_f1_ckks_minus_plain': 0.0006132295678534794, 'agreement': 0.9511587111070077, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.47366040200004134, 'poly_eval_s_mean': 0.3577115421000599, 'path_product_s_mean': 0.013348998400124401, 'input_ciphertext_bytes_per_patient': 4940679, 'output_ciphertext_bytes': 460209, 'n_input_ciphertexts': 3}}, {'seed': 7, 'n_estimators': 50, 'max_depth': 3, 'n_leaves': 399, 'f1_plain': 0.6754357357683807, 'f1_ckks': 0.6755555555555556, 'abs_delta_f1': 0.00011981978717490183, 'signed_delta_f1_ckks_minus_plain': 0.00011981978717490183, 'agreement': 0.9352168159295848, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.48368362520004665, 'poly_eval_s_mean': 0.363782559899937, 'path_product_s_mean': 0.013536490899878118, 'input_ciphertext_bytes_per_patient': 4941552, 'output_ciphertext_bytes': 459991, 'n_input_ciphertexts': 3}}, {'seed': 7, 'n_estimators': 50, 'max_depth': 4, 'n_leaves': 778, 'f1_plain': 0.6779174865757263, 'f1_ckks': 0.6781904385618333, 'abs_delta_f1': 0.0002729519861069951, 'signed_delta_f1_ckks_minus_plain': 0.0002729519861069951, 'agreement': 0.9562982796294587, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.6197949076999066, 'poly_eval_s_mean': 0.4784265253999365, 'path_product_s_mean': 0.02186114290007026, 'input_ciphertext_bytes_per_patient': 6589169, 'output_ciphertext_bytes': 459863, 'n_input_ciphertexts': 4}}, {'seed': 7, 'n_estimators': 50, 'max_depth': 5, 'n_leaves': 1494, 'f1_plain': 0.6799707796520122, 'f1_ckks': 0.6786283113928165, 'abs_delta_f1': 0.001342468259195706, 'signed_delta_f1_ckks_minus_plain': -0.001342468259195706, 'agreement': 0.9575908657249254, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.7778998835002312, 'poly_eval_s_mean': 0.6134030253999299, 'path_product_s_mean': 0.02519564510002965, 'input_ciphertext_bytes_per_patient': 8236180, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 5}}, {'seed': 7, 'n_estimators': 50, 'max_depth': 6, 'n_leaves': 2751, 'f1_plain': 0.6764355324966697, 'f1_ckks': 0.676926199012379, 'abs_delta_f1': 0.0004906665157093926, 'signed_delta_f1_ckks_minus_plain': 0.0004906665157093926, 'agreement': 0.9504816421998584, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.9928482900000745, 'poly_eval_s_mean': 0.7736759965998317, 'path_product_s_mean': 0.03277982090012301, 'input_ciphertext_bytes_per_patient': 9883356, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 6}}, {'seed': 456, 'n_estimators': 5, 'max_depth': 3, 'n_leaves': 40, 'f1_plain': 0.6574789039846219, 'f1_ckks': 0.6595473382212305, 'abs_delta_f1': 0.0020684342366085184, 'signed_delta_f1_ckks_minus_plain': 0.0020684342366085184, 'agreement': 0.9980303449973841, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4530438978001257, 'poly_eval_s_mean': 0.3719418694999149, 'path_product_s_mean': 0.01329216849990189, 'input_ciphertext_bytes_per_patient': 4942385, 'output_ciphertext_bytes': 459988, 'n_input_ciphertexts': 3}}, {'seed': 456, 'n_estimators': 10, 'max_depth': 3, 'n_leaves': 80, 'f1_plain': 0.6613154128554539, 'f1_ckks': 0.6637509976057462, 'abs_delta_f1': 0.0024355847502922634, 'signed_delta_f1_ckks_minus_plain': 0.0024355847502922634, 'agreement': 0.9741482780906657, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4397264772000199, 'poly_eval_s_mean': 0.3564709918000517, 'path_product_s_mean': 0.013254440199852979, 'input_ciphertext_bytes_per_patient': 4943643, 'output_ciphertext_bytes': 459931, 'n_input_ciphertexts': 3}}, {'seed': 456, 'n_estimators': 20, 'max_depth': 3, 'n_leaves': 160, 'f1_plain': 0.664395874727978, 'f1_ckks': 0.6657787080201694, 'abs_delta_f1': 0.0013828332921913544, 'signed_delta_f1_ckks_minus_plain': 0.0013828332921913544, 'agreement': 0.9703628473825131, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4444299528000556, 'poly_eval_s_mean': 0.3541365551999661, 'path_product_s_mean': 0.013943323599869472, 'input_ciphertext_bytes_per_patient': 4943025, 'output_ciphertext_bytes': 458701, 'n_input_ciphertexts': 3}}, {'seed': 456, 'n_estimators': 30, 'max_depth': 3, 'n_leaves': 240, 'f1_plain': 0.6695950855406566, 'f1_ckks': 0.6686466686466687, 'abs_delta_f1': 0.0009484168939879467, 'signed_delta_f1_ckks_minus_plain': -0.0009484168939879467, 'agreement': 0.9639922444834272, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4844419652000397, 'poly_eval_s_mean': 0.36483964800008833, 'path_product_s_mean': 0.013693085900104051, 'input_ciphertext_bytes_per_patient': 4941947, 'output_ciphertext_bytes': 459933, 'n_input_ciphertexts': 3}}, {'seed': 456, 'n_estimators': 50, 'max_depth': 3, 'n_leaves': 398, 'f1_plain': 0.6697109161513016, 'f1_ckks': 0.6712749098020704, 'abs_delta_f1': 0.001563993650768758, 'signed_delta_f1_ckks_minus_plain': 0.001563993650768758, 'agreement': 0.9045332840919583, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4814523361001193, 'poly_eval_s_mean': 0.36237888589994327, 'path_product_s_mean': 0.013322749299913995, 'input_ciphertext_bytes_per_patient': 4942255, 'output_ciphertext_bytes': 459946, 'n_input_ciphertexts': 3}}, {'seed': 456, 'n_estimators': 50, 'max_depth': 4, 'n_leaves': 785, 'f1_plain': 0.6795771033633284, 'f1_ckks': 0.6769817023093854, 'abs_delta_f1': 0.0025954010539430694, 'signed_delta_f1_ckks_minus_plain': -0.0025954010539430694, 'agreement': 0.9455882805527345, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.6179347646998394, 'poly_eval_s_mean': 0.4772926603998712, 'path_product_s_mean': 0.021161914900039845, 'input_ciphertext_bytes_per_patient': 6590231, 'output_ciphertext_bytes': 460211, 'n_input_ciphertexts': 4}}, {'seed': 456, 'n_estimators': 50, 'max_depth': 5, 'n_leaves': 1511, 'f1_plain': 0.6769746519344576, 'f1_ckks': 0.6767757382282522, 'abs_delta_f1': 0.00019891370620539472, 'signed_delta_f1_ckks_minus_plain': -0.00019891370620539472, 'agreement': 0.949589142276798, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.777506267300123, 'poly_eval_s_mean': 0.6141316416000336, 'path_product_s_mean': 0.02494401999992988, 'input_ciphertext_bytes_per_patient': 8235972, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 5}}, {'seed': 456, 'n_estimators': 50, 'max_depth': 6, 'n_leaves': 2684, 'f1_plain': 0.6793323381734292, 'f1_ckks': 0.6776940075393214, 'abs_delta_f1': 0.0016383306341077875, 'signed_delta_f1_ckks_minus_plain': -0.0016383306341077875, 'agreement': 0.9374326778075278, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.9404359940001086, 'poly_eval_s_mean': 0.7441892761001327, 'path_product_s_mean': 0.030622916299944337, 'input_ciphertext_bytes_per_patient': 9885205, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 6}}, {'seed': 789, 'n_estimators': 5, 'max_depth': 3, 'n_leaves': 40, 'f1_plain': 0.6486166592691226, 'f1_ckks': 0.6523866678977011, 'abs_delta_f1': 0.0037700086285784584, 'signed_delta_f1_ckks_minus_plain': 0.0037700086285784584, 'agreement': 0.996583879604838, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.440668789999836, 'poly_eval_s_mean': 0.3622571650999816, 'path_product_s_mean': 0.013343829300174548, 'input_ciphertext_bytes_per_patient': 4940208, 'output_ciphertext_bytes': 459143, 'n_input_ciphertexts': 3}}, {'seed': 789, 'n_estimators': 10, 'max_depth': 3, 'n_leaves': 80, 'f1_plain': 0.6615768248006649, 'f1_ckks': 0.6644713928379191, 'abs_delta_f1': 0.002894568037254186, 'signed_delta_f1_ckks_minus_plain': 0.002894568037254186, 'agreement': 0.9858738805281138, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.43703472709985364, 'poly_eval_s_mean': 0.3550542258998576, 'path_product_s_mean': 0.01318315190001158, 'input_ciphertext_bytes_per_patient': 4942055, 'output_ciphertext_bytes': 460242, 'n_input_ciphertexts': 3}}, {'seed': 789, 'n_estimators': 20, 'max_depth': 3, 'n_leaves': 160, 'f1_plain': 0.6665197960596714, 'f1_ckks': 0.6690633869441817, 'abs_delta_f1': 0.002543590884510283, 'signed_delta_f1_ckks_minus_plain': 0.002543590884510283, 'agreement': 0.967962330348075, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4586440885998854, 'poly_eval_s_mean': 0.3677674874999866, 'path_product_s_mean': 0.014615640699958021, 'input_ciphertext_bytes_per_patient': 4942113, 'output_ciphertext_bytes': 459952, 'n_input_ciphertexts': 3}}, {'seed': 789, 'n_estimators': 30, 'max_depth': 3, 'n_leaves': 240, 'f1_plain': 0.6671293375394322, 'f1_ckks': 0.6697870201671169, 'abs_delta_f1': 0.002657682627684732, 'signed_delta_f1_ckks_minus_plain': 0.002657682627684732, 'agreement': 0.9568830209583603, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.4791938777000723, 'poly_eval_s_mean': 0.36208405259994836, 'path_product_s_mean': 0.01371327979986745, 'input_ciphertext_bytes_per_patient': 4941053, 'output_ciphertext_bytes': 458792, 'n_input_ciphertexts': 3}}, {'seed': 789, 'n_estimators': 50, 'max_depth': 3, 'n_leaves': 398, 'f1_plain': 0.6741144414168937, 'f1_ckks': 0.6738156103715016, 'abs_delta_f1': 0.0002988310453920784, 'signed_delta_f1_ckks_minus_plain': -0.0002988310453920784, 'agreement': 0.9567291416612809, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.47627102189999276, 'poly_eval_s_mean': 0.356819592300144, 'path_product_s_mean': 0.01424906819993339, 'input_ciphertext_bytes_per_patient': 4943151, 'output_ciphertext_bytes': 460056, 'n_input_ciphertexts': 3}}, {'seed': 789, 'n_estimators': 50, 'max_depth': 4, 'n_leaves': 780, 'f1_plain': 0.6781185540864978, 'f1_ckks': 0.6749202050488442, 'abs_delta_f1': 0.0031983490376535917, 'signed_delta_f1_ckks_minus_plain': -0.0031983490376535917, 'agreement': 0.9311851783461054, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.6220625929996458, 'poly_eval_s_mean': 0.4795131523998862, 'path_product_s_mean': 0.020747488100005283, 'input_ciphertext_bytes_per_patient': 6588988, 'output_ciphertext_bytes': 459841, 'n_input_ciphertexts': 4}}, {'seed': 789, 'n_estimators': 50, 'max_depth': 5, 'n_leaves': 1512, 'f1_plain': 0.6770006214182145, 'f1_ckks': 0.678266779949023, 'abs_delta_f1': 0.00126615853080847, 'signed_delta_f1_ckks_minus_plain': 0.00126615853080847, 'agreement': 0.9584833656479858, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.7637807770000109, 'poly_eval_s_mean': 0.6019122674000755, 'path_product_s_mean': 0.02478892419994736, 'input_ciphertext_bytes_per_patient': 8237475, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 5}}, {'seed': 789, 'n_estimators': 50, 'max_depth': 6, 'n_leaves': 2644, 'f1_plain': 0.6772030984056411, 'f1_ckks': 0.6784980636470787, 'abs_delta_f1': 0.0012949652414375734, 'signed_delta_f1_ckks_minus_plain': 0.0012949652414375734, 'agreement': 0.9451574185209122, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'real_latency': {'n_patients': 10, 'wall_clock_s_mean': 0.9589757453999482, 'poly_eval_s_mean': 0.7675642610001887, 'path_product_s_mean': 0.03199485530003585, 'input_ciphertext_bytes_per_patient': 9884448, 'output_ciphertext_bytes': 262291, 'n_input_ciphertexts': 6}}]",
+      "note": "SIMULATED utility, REAL latency. Proxy cohort (MIMIC-IV-ED-derived). k=5, one label, 5 seeds.",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "series",
+      "artifact": "m1_scaling_multiseed.json",
+      "pointer": "/aggregated_across_seeds/*",
+      "reduce_how": null,
+      "raw": [
+        {
+          "n_estimators": 5,
+          "max_depth": 3,
+          "n_seeds": 5,
+          "n_leaves_mean": 40.0,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.003953330432092295,
+            "sd_across_seeds": 0.0046404173909606865
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": -0.0008406241897029654,
+            "sd_across_seeds": 0.006339257776630636
+          },
+          "agreement": {
+            "mean": 0.993875603976241,
+            "sd_across_seeds": 0.008265424153968526
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.4404840366000462,
+            "sd_across_seeds": 0.007602344432261673
+          },
+          "real_input_ciphertext_bytes_per_patient": 4942040
+        },
+        {
+          "n_estimators": 10,
+          "max_depth": 3,
+          "n_seeds": 5,
+          "n_leaves_mean": 80.0,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.002455882024047096,
+            "sd_across_seeds": 0.0012765285604896825
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": -2.1177319805509854e-05,
+            "sd_across_seeds": 0.00302789699497857
+          },
+          "agreement": {
+            "mean": 0.9784507432370049,
+            "sd_across_seeds": 0.006101674075825551
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.4430525669999589,
+            "sd_across_seeds": 0.006585498830167119
+          },
+          "real_input_ciphertext_bytes_per_patient": 4942154
+        },
+        {
+          "n_estimators": 20,
+          "max_depth": 3,
+          "n_seeds": 5,
+          "n_leaves_mean": 160.0,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.0021230365096672086,
+            "sd_across_seeds": 0.000779414448010996
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": 0.0011290481421248,
+            "sd_across_seeds": 0.0021559579714013127
+          },
+          "agreement": {
+            "mean": 0.9669344166435847,
+            "sd_across_seeds": 0.0024631841255294555
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.4491499537800155,
+            "sd_across_seeds": 0.006532473158308534
+          },
+          "real_input_ciphertext_bytes_per_patient": 4941069
+        },
+        {
+          "n_estimators": 30,
+          "max_depth": 3,
+          "n_seeds": 5,
+          "n_leaves_mean": 240.0,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.0010182872975251999,
+            "sd_across_seeds": 0.0009427129234551729
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": 0.0005047661800029246,
+            "sd_across_seeds": 0.0013661470677904471
+          },
+          "agreement": {
+            "mean": 0.9512448835133721,
+            "sd_across_seeds": 0.014491793072674113
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.47761902910002385,
+            "sd_across_seeds": 0.004829962376405092
+          },
+          "real_input_ciphertext_bytes_per_patient": 4940364
+        },
+        {
+          "n_estimators": 50,
+          "max_depth": 3,
+          "n_seeds": 5,
+          "n_leaves_mean": 398.4,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.000680188084323996,
+            "sd_across_seeds": 0.0005904574657671656
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": -6.662709146532108e-06,
+            "sd_across_seeds": 0.0009627587012508139
+          },
+          "agreement": {
+            "mean": 0.9337395746776229,
+            "sd_across_seeds": 0.019512792882751852
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.47966893262002486,
+            "sd_across_seeds": 0.0032849734734737555
+          },
+          "real_input_ciphertext_bytes_per_patient": 4941231
+        },
+        {
+          "n_estimators": 50,
+          "max_depth": 4,
+          "n_seeds": 5,
+          "n_leaves_mean": 783.0,
+          "code_derived_depth": 6,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.0016415901671867905,
+            "sd_across_seeds": 0.0012116282215642966
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": -0.0015324093727439926,
+            "sd_across_seeds": 0.0013788465057628636
+          },
+          "agreement": {
+            "mean": 0.9464192287569629,
+            "sd_across_seeds": 0.010527053551348857
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.6340380606998588,
+            "sd_across_seeds": 0.0301558109903815
+          },
+          "real_input_ciphertext_bytes_per_patient": 6588586
+        },
+        {
+          "n_estimators": 50,
+          "max_depth": 5,
+          "n_seeds": 5,
+          "n_leaves_mean": 1507.6,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.001062182484222718,
+            "sd_across_seeds": 0.0008877317408629327
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": -0.0004760005622392205,
+            "sd_across_seeds": 0.0013838845731878782
+          },
+          "agreement": {
+            "mean": 0.9552149693780198,
+            "sd_across_seeds": 0.0036898574151296272
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.7685555953800576,
+            "sd_across_seeds": 0.008399852870144671
+          },
+          "real_input_ciphertext_bytes_per_patient": 8236439
+        },
+        {
+          "n_estimators": 50,
+          "max_depth": 6,
+          "n_seeds": 5,
+          "n_leaves_mean": 2675.8,
+          "code_derived_depth": 7,
+          "fits_locked_chain_and_slots": true,
+          "abs_delta_f1": {
+            "mean": 0.0012708354977689184,
+            "sd_across_seeds": 0.0006897919930835718
+          },
+          "signed_delta_f1_ckks_minus_plain": {
+            "mean": 0.0006155032441258034,
+            "sd_across_seeds": 0.001421631551175423
+          },
+          "agreement": {
+            "mean": 0.9467516080386545,
+            "sd_across_seeds": 0.005774284485247178
+          },
+          "real_latency_wall_clock_s": {
+            "mean": 0.9449276946200553,
+            "sd_across_seeds": 0.03240994717105218
+          },
+          "real_input_ciphertext_bytes_per_patient": 9884733
+        }
+      ],
+      "fmt": null,
+      "formatted": "[{'n_estimators': 5, 'max_depth': 3, 'n_seeds': 5, 'n_leaves_mean': 40.0, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.003953330432092295, 'sd_across_seeds': 0.0046404173909606865}, 'signed_delta_f1_ckks_minus_plain': {'mean': -0.0008406241897029654, 'sd_across_seeds': 0.006339257776630636}, 'agreement': {'mean': 0.993875603976241, 'sd_across_seeds': 0.008265424153968526}, 'real_latency_wall_clock_s': {'mean': 0.4404840366000462, 'sd_across_seeds': 0.007602344432261673}, 'real_input_ciphertext_bytes_per_patient': 4942040}, {'n_estimators': 10, 'max_depth': 3, 'n_seeds': 5, 'n_leaves_mean': 80.0, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.002455882024047096, 'sd_across_seeds': 0.0012765285604896825}, 'signed_delta_f1_ckks_minus_plain': {'mean': -2.1177319805509854e-05, 'sd_across_seeds': 0.00302789699497857}, 'agreement': {'mean': 0.9784507432370049, 'sd_across_seeds': 0.006101674075825551}, 'real_latency_wall_clock_s': {'mean': 0.4430525669999589, 'sd_across_seeds': 0.006585498830167119}, 'real_input_ciphertext_bytes_per_patient': 4942154}, {'n_estimators': 20, 'max_depth': 3, 'n_seeds': 5, 'n_leaves_mean': 160.0, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.0021230365096672086, 'sd_across_seeds': 0.000779414448010996}, 'signed_delta_f1_ckks_minus_plain': {'mean': 0.0011290481421248, 'sd_across_seeds': 0.0021559579714013127}, 'agreement': {'mean': 0.9669344166435847, 'sd_across_seeds': 0.0024631841255294555}, 'real_latency_wall_clock_s': {'mean': 0.4491499537800155, 'sd_across_seeds': 0.006532473158308534}, 'real_input_ciphertext_bytes_per_patient': 4941069}, {'n_estimators': 30, 'max_depth': 3, 'n_seeds': 5, 'n_leaves_mean': 240.0, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.0010182872975251999, 'sd_across_seeds': 0.0009427129234551729}, 'signed_delta_f1_ckks_minus_plain': {'mean': 0.0005047661800029246, 'sd_across_seeds': 0.0013661470677904471}, 'agreement': {'mean': 0.9512448835133721, 'sd_across_seeds': 0.014491793072674113}, 'real_latency_wall_clock_s': {'mean': 0.47761902910002385, 'sd_across_seeds': 0.004829962376405092}, 'real_input_ciphertext_bytes_per_patient': 4940364}, {'n_estimators': 50, 'max_depth': 3, 'n_seeds': 5, 'n_leaves_mean': 398.4, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.000680188084323996, 'sd_across_seeds': 0.0005904574657671656}, 'signed_delta_f1_ckks_minus_plain': {'mean': -6.662709146532108e-06, 'sd_across_seeds': 0.0009627587012508139}, 'agreement': {'mean': 0.9337395746776229, 'sd_across_seeds': 0.019512792882751852}, 'real_latency_wall_clock_s': {'mean': 0.47966893262002486, 'sd_across_seeds': 0.0032849734734737555}, 'real_input_ciphertext_bytes_per_patient': 4941231}, {'n_estimators': 50, 'max_depth': 4, 'n_seeds': 5, 'n_leaves_mean': 783.0, 'code_derived_depth': 6, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.0016415901671867905, 'sd_across_seeds': 0.0012116282215642966}, 'signed_delta_f1_ckks_minus_plain': {'mean': -0.0015324093727439926, 'sd_across_seeds': 0.0013788465057628636}, 'agreement': {'mean': 0.9464192287569629, 'sd_across_seeds': 0.010527053551348857}, 'real_latency_wall_clock_s': {'mean': 0.6340380606998588, 'sd_across_seeds': 0.0301558109903815}, 'real_input_ciphertext_bytes_per_patient': 6588586}, {'n_estimators': 50, 'max_depth': 5, 'n_seeds': 5, 'n_leaves_mean': 1507.6, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.001062182484222718, 'sd_across_seeds': 0.0008877317408629327}, 'signed_delta_f1_ckks_minus_plain': {'mean': -0.0004760005622392205, 'sd_across_seeds': 0.0013838845731878782}, 'agreement': {'mean': 0.9552149693780198, 'sd_across_seeds': 0.0036898574151296272}, 'real_latency_wall_clock_s': {'mean': 0.7685555953800576, 'sd_across_seeds': 0.008399852870144671}, 'real_input_ciphertext_bytes_per_patient': 8236439}, {'n_estimators': 50, 'max_depth': 6, 'n_seeds': 5, 'n_leaves_mean': 2675.8, 'code_derived_depth': 7, 'fits_locked_chain_and_slots': True, 'abs_delta_f1': {'mean': 0.0012708354977689184, 'sd_across_seeds': 0.0006897919930835718}, 'signed_delta_f1_ckks_minus_plain': {'mean': 0.0006155032441258034, 'sd_across_seeds': 0.001421631551175423}, 'agreement': {'mean': 0.9467516080386545, 'sd_across_seeds': 0.005774284485247178}, 'real_latency_wall_clock_s': {'mean': 0.9449276946200553, 'sd_across_seeds': 0.03240994717105218}, 'real_input_ciphertext_bytes_per_patient': 9884733}]",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "series",
+      "artifact": "m1_scaling_multiseed.json",
+      "pointer": "/aggregated_across_seeds/*/abs_delta_f1/mean",
+      "reduce_how": null,
+      "raw": [
+        0.003953330432092295,
+        0.002455882024047096,
+        0.0021230365096672086,
+        0.0010182872975251999,
+        0.000680188084323996,
+        0.0016415901671867905,
+        0.001062182484222718,
+        0.0012708354977689184
+      ],
+      "fmt": null,
+      "formatted": "[0.003953330432092295, 0.002455882024047096, 0.0021230365096672086, 0.0010182872975251999, 0.000680188084323996, 0.0016415901671867905, 0.001062182484222718, 0.0012708354977689184]",
+      "note": "tree-count scaling series",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

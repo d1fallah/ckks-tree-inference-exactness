@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\caption{Continuous-feature task: predictive utility of the plaintext models on the 81,850 test stays. Mean $\pm$ SD over 5 training seeds. The first row is the full-precision model; the other rows quantize every input to bins and are the models the exact circuits evaluate. The cost of quantization is a property of the model, not of the circuit, and is reported here separately from circuit error (Table~\ref{tab:t11_continuous_fidelity}). Columns 4 to 6: the F1-maximizing threshold set on the validation split. Columns 7 and 8: the threshold set on the validation split to reach 80\% sensitivity. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t12_continuous_utility}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & AUROC & AUPRC & F1 & Sens. & PPV & Spec. & PPV \\
+\midrule
+Full precision & 0.8640 $\pm$ 0.0005 & 0.3177 $\pm$ 0.0027 & 0.364 $\pm$ 0.003 & 0.414 $\pm$ 0.023 & 0.326 $\pm$ 0.014 & 0.754 $\pm$ 0.001 & 0.153 $\pm$ 0.000 \\
+5 bins & 0.8545 $\pm$ 0.0006 & 0.2965 $\pm$ 0.0016 & 0.345 $\pm$ 0.001 & 0.415 $\pm$ 0.013 & 0.296 $\pm$ 0.006 & 0.738 $\pm$ 0.002 & 0.145 $\pm$ 0.001 \\
+8 bins & 0.8587 $\pm$ 0.0005 & 0.3025 $\pm$ 0.0019 & 0.350 $\pm$ 0.002 & 0.385 $\pm$ 0.021 & 0.322 $\pm$ 0.011 & 0.746 $\pm$ 0.002 & 0.149 $\pm$ 0.001 \\
+\bottomrule
+\end{tabular}
+\end{table*}

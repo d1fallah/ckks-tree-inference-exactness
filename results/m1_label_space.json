@@ -1,0 +1,171 @@
+{
+  "top_k": 5,
+  "selected_labels": [
+    "hypertension, uncomplicated",
+    "cardiac arrhythmias",
+    "fluid and electrolyte disorders",
+    "depression",
+    "chronic pulmonary disease"
+  ],
+  "full_prevalence_table_all_elixhauser_categories": [
+    {
+      "category": "hypertension, uncomplicated",
+      "n_admissions": 62792,
+      "prevalence": 0.3883
+    },
+    {
+      "category": "cardiac arrhythmias",
+      "n_admissions": 37744,
+      "prevalence": 0.2334
+    },
+    {
+      "category": "fluid and electrolyte disorders",
+      "n_admissions": 36898,
+      "prevalence": 0.2282
+    },
+    {
+      "category": "depression",
+      "n_admissions": 36608,
+      "prevalence": 0.2264
+    },
+    {
+      "category": "chronic pulmonary disease",
+      "n_admissions": 34057,
+      "prevalence": 0.2106
+    },
+    {
+      "category": "hypertension, complicated",
+      "n_admissions": 31449,
+      "prevalence": 0.1945
+    },
+    {
+      "category": "renal failure",
+      "n_admissions": 30634,
+      "prevalence": 0.1894
+    },
+    {
+      "category": "congestive heart failure",
+      "n_admissions": 29180,
+      "prevalence": 0.1804
+    },
+    {
+      "category": "diabetes, uncomplicated",
+      "n_admissions": 25977,
+      "prevalence": 0.1606
+    },
+    {
+      "category": "hypothyroidism",
+      "n_admissions": 21619,
+      "prevalence": 0.1337
+    },
+    {
+      "category": "diabetes, complicated",
+      "n_admissions": 20741,
+      "prevalence": 0.1283
+    },
+    {
+      "category": "other neurological disorders",
+      "n_admissions": 17174,
+      "prevalence": 0.1062
+    },
+    {
+      "category": "obesity",
+      "n_admissions": 15923,
+      "prevalence": 0.0985
+    },
+    {
+      "category": "liver disease",
+      "n_admissions": 14472,
+      "prevalence": 0.0895
+    },
+    {
+      "category": "alcohol abuse",
+      "n_admissions": 13473,
+      "prevalence": 0.0833
+    },
+    {
+      "category": "coagulopathy",
+      "n_admissions": 13424,
+      "prevalence": 0.083
+    },
+    {
+      "category": "solid tumor without metastasis",
+      "n_admissions": 13189,
+      "prevalence": 0.0816
+    },
+    {
+      "category": "valvular disease",
+      "n_admissions": 13065,
+      "prevalence": 0.0808
+    },
+    {
+      "category": "peripheral vascular disorders",
+      "n_admissions": 10668,
+      "prevalence": 0.066
+    },
+    {
+      "category": "weight loss",
+      "n_admissions": 9692,
+      "prevalence": 0.0599
+    },
+    {
+      "category": "drug abuse",
+      "n_admissions": 9144,
+      "prevalence": 0.0565
+    },
+    {
+      "category": "metastatic cancer",
+      "n_admissions": 8926,
+      "prevalence": 0.0552
+    },
+    {
+      "category": "pulmonary circulation disorders",
+      "n_admissions": 8607,
+      "prevalence": 0.0532
+    },
+    {
+      "category": "deficiency anemia",
+      "n_admissions": 8214,
+      "prevalence": 0.0508
+    },
+    {
+      "category": "rheumatoid arthritis",
+      "n_admissions": 6800,
+      "prevalence": 0.042
+    },
+    {
+      "category": "psychoses",
+      "n_admissions": 4692,
+      "prevalence": 0.029
+    },
+    {
+      "category": "lymphoma",
+      "n_admissions": 3306,
+      "prevalence": 0.0204
+    },
+    {
+      "category": "paralysis",
+      "n_admissions": 3262,
+      "prevalence": 0.0202
+    },
+    {
+      "category": "peptic ulcer disease excluding bleeding",
+      "n_admissions": 1668,
+      "prevalence": 0.0103
+    },
+    {
+      "category": "blood loss anemia",
+      "n_admissions": 1464,
+      "prevalence": 0.0091
+    },
+    {
+      "category": "AIDS/HIV",
+      "n_admissions": 1375,
+      "prevalence": 0.0085
+    }
+  ],
+  "cohort_size_for_prevalence": 161718,
+  "n_stays_with_at_least_one_selected_label": 123616,
+  "fraction_stays_with_at_least_one_selected_label": 0.7644,
+  "gender_field_mismatch_edstays_vs_patients": 49
+}

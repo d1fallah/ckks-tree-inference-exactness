@@ -1,0 +1,285 @@
+{
+  "purpose": "independent addition to (not replacement of) SEAL's TC128 enforcement; closure guide 4.2",
+  "target_security_bits": 128,
+  "parameters": {
+    "N": 16384,
+    "primes": [
+      1152921504606683137,
+      1099504549889,
+      1099505827841,
+      1099506352129,
+      1099506515969,
+      1099507695617,
+      1099508121601,
+      1099510054913,
+      1152921504606748673
+    ],
+    "prime_bit_lengths": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "scale_bits": 40,
+    "log2_q_full_chain": 399.9999576491809,
+    "secret": "ternary uniform {-1,0,1}",
+    "error": "discrete Gaussian sigma=3.2"
+  },
+  "estimator": {
+    "name": "lattice-estimator (Albrecht, Player, Scott)",
+    "repository": "https://github.com/malb/lattice-estimator",
+    "commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+    "python": "3.11.16",
+    "sage_distribution": "passagemath-standard 10.8.11"
+  },
+  "invocation": "LWE.estimate(LWE.Parameters(n=N, q=prod(primes), Xs=ND.UniformMod(3), Xe=ND.DiscreteGaussian(3.2)), red_cost_model=<RC.ADPS16 | RC.MATZOV>, deny_list=('arora-gb','bkw'))",
+  "modelling_notes": [
+    "RLWE is treated as LWE with n = N (conservative standard treatment).",
+    "q is the full product of the chain including the special prime.",
+    "Secret and error distributions are SEAL's documented defaults, not read back from the binary."
+  ],
+  "toolchain_sanity_check": {
+    "parameter_set": "HE Standard published row: n=1024, log2 q=27 (128-bit)",
+    "n": 1024,
+    "log2_q": 27.0,
+    "cost_model": "ADPS16 classical core-SVP (HE Standard basis)",
+    "estimated_security_bits": 99.853,
+    "cheapest_attack": "dual_hybrid",
+    "per_attack": {
+      "usvp": {
+        "log2_rop": 101.324,
+        "beta": 347.0,
+        "d": "1948"
+      },
+      "bdd": {
+        "log2_rop": 102.061,
+        "beta": 347.0,
+        "d": "1986"
+      },
+      "bdd_hybrid": {
+        "log2_rop": 102.061,
+        "beta": 347.0,
+        "zeta": 0.0,
+        "d": "2014"
+      },
+      "bdd_mitm_hybrid": {
+        "log2_rop": 181.921,
+        "beta": 347.0,
+        "zeta": 125.0,
+        "d": "1887"
+      },
+      "dual": {
+        "log2_rop": 103.66,
+        "m": "1006",
+        "beta": 355.0,
+        "d": "2030"
+      },
+      "dual_hybrid": {
+        "log2_rop": 99.853,
+        "beta": "340",
+        "zeta": 0.0,
+        "m": 1024.0
+      }
+    },
+    "meets_128_bit_target": false,
+    "estimator_seconds": 35.7
+  },
+  "runs": [
+    {
+      "parameter_set": "locked chain (400 bits)",
+      "n": 16384,
+      "log2_q": 399.999958,
+      "cost_model": "ADPS16 classical core-SVP (HE Standard basis)",
+      "estimated_security_bits": 107.164,
+      "cheapest_attack": "usvp",
+      "per_attack": {
+        "usvp": {
+          "log2_rop": 107.164,
+          "beta": 367.0,
+          "d": "31860"
+        },
+        "bdd": {
+          "log2_rop": 107.175,
+          "beta": 367.0,
+          "d": "32600"
+        },
+        "bdd_hybrid": {
+          "log2_rop": 107.175,
+          "beta": 367.0,
+          "zeta": 0.0,
+          "d": "32741"
+        },
+        "bdd_mitm_hybrid": {
+          "log2_rop": 191.517,
+          "beta": 367.0,
+          "zeta": 120.0,
+          "d": "32621"
+        },
+        "dual": {
+          "log2_rop": 107.456,
+          "m": "16388",
+          "beta": "368",
+          "d": "32772"
+        },
+        "dual_hybrid": {
+          "log2_rop": 107.164,
+          "beta": "367",
+          "zeta": 0.0,
+          "m": 16384.0
+        }
+      },
+      "meets_128_bit_target": false,
+      "estimator_seconds": 729.2
+    },
+    {
+      "parameter_set": "HE Standard 128-bit ceiling at N=16384 (438 bits), reference",
+      "n": 16384,
+      "log2_q": 438.0,
+      "cost_model": "ADPS16 classical core-SVP (HE Standard basis)",
+      "estimated_security_bits": 93.732,
+      "cheapest_attack": "usvp",
+      "per_attack": {
+        "usvp": {
+          "log2_rop": 93.732,
+          "beta": 321.0,
+          "d": "31995"
+        },
+        "bdd": {
+          "log2_rop": 93.777,
+          "beta": 321.0,
+          "d": "32576"
+        },
+        "bdd_hybrid": {
+          "log2_rop": 93.777,
+          "beta": 321.0,
+          "zeta": 0.0,
+          "d": "32748"
+        },
+        "bdd_mitm_hybrid": {
+          "log2_rop": 173.914,
+          "beta": 321.0,
+          "zeta": 105.0,
+          "d": "32643"
+        },
+        "dual": {
+          "log2_rop": 94.024,
+          "m": "16399",
+          "beta": 322.0,
+          "d": "32783"
+        },
+        "dual_hybrid": {
+          "log2_rop": 93.732,
+          "beta": "321",
+          "zeta": 0.0,
+          "m": 16384.0
+        }
+      },
+      "meets_128_bit_target": false,
+      "estimator_seconds": 735.2
+    },
+    {
+      "parameter_set": "locked chain (400 bits)",
+      "n": 16384,
+      "log2_q": 399.999958,
+      "cost_model": "MATZOV (estimator default)",
+      "estimated_security_bits": 138.493,
+      "cheapest_attack": "bdd",
+      "per_attack": {
+        "usvp": {
+          "log2_rop": 138.679,
+          "beta": 367.0,
+          "d": "31860"
+        },
+        "bdd": {
+          "log2_rop": 138.493,
+          "beta": "366",
+          "d": "32663"
+        },
+        "bdd_hybrid": {
+          "log2_rop": 138.495,
+          "beta": "366",
+          "zeta": 0.0,
+          "d": "32711"
+        },
+        "bdd_mitm_hybrid": {
+          "log2_rop": 193.833,
+          "beta": 367.0,
+          "zeta": 139.0,
+          "d": "32602"
+        },
+        "dual": {
+          "log2_rop": 139.951,
+          "m": "16388",
+          "beta": "368",
+          "d": "32772"
+        },
+        "dual_hybrid": {
+          "log2_rop": 139.377,
+          "beta": "366",
+          "zeta": 0.0,
+          "m": 16384.0
+        }
+      },
+      "meets_128_bit_target": true,
+      "estimator_seconds": 747.4
+    },
+    {
+      "parameter_set": "HE Standard 128-bit ceiling at N=16384 (438 bits), reference",
+      "n": 16384,
+      "log2_q": 438.0,
+      "cost_model": "MATZOV (estimator default)",
+      "estimated_security_bits": 125.923,
+      "cheapest_attack": "bdd",
+      "per_attack": {
+        "usvp": {
+          "log2_rop": 125.936,
+          "beta": 321.0,
+          "d": "31995"
+        },
+        "bdd": {
+          "log2_rop": 125.923,
+          "beta": 321.0,
+          "d": "31586"
+        },
+        "bdd_hybrid": {
+          "log2_rop": 125.97,
+          "beta": 321.0,
+          "zeta": 0.0,
+          "d": "32748"
+        },
+        "bdd_mitm_hybrid": {
+          "log2_rop": 176.216,
+          "beta": 321.0,
+          "zeta": 123.0,
+          "d": "32625"
+        },
+        "dual": {
+          "log2_rop": 127.209,
+          "m": "16399",
+          "beta": 322.0,
+          "d": "32783"
+        },
+        "dual_hybrid": {
+          "log2_rop": 126.635,
+          "beta": "320",
+          "zeta": 0.0,
+          "m": 16384.0
+        }
+      },
+      "meets_128_bit_target": false,
+      "estimator_seconds": 756.6
+    }
+  ],
+  "conclusion": {
+    "locked_chain_bits_by_cost_model": {
+      "ADPS16 classical core-SVP (HE Standard basis)": 107.164,
+      "MATZOV (estimator default)": 138.493
+    },
+    "all_locked_chain_runs_meet_target": false
+  }
+}

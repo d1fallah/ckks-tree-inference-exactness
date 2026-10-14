@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Polynomial degree $k$ versus predictive utility, latency on real ciphertexts, multiplicative depth, and feasibility on the fixed modulus chain (7 levels available), for the original and the coefficient-folding polynomial evaluator. $\Delta$F1 is simulated (full test split, 5 seeds; tolerance $\le 0.03$) and does not depend on the evaluator. Latency is the mean $\pm$ SD across 5 seeds $\times$ 25 patients for one label, measured on real ciphertexts. Lowest value per column in bold, among $k\in\{3,5,7,9\}$. Proxy cohort (MIMIC-IV-ED-derived). $\dagger$ $k=1$ is an additional diagnostic arm outside the evaluated degree family $\{3,5,7,9\}$. $\ddagger$ the $\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\ref{tab:t5_real_vs_simulated}).}
+\label{tab:t4_degree_grid}
+\begin{tabular}{lrlrrcrrc}
+\toprule
+ & & & \multicolumn{3}{c}{Original evaluator} & \multicolumn{3}{c}{Folding evaluator} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+$k$ & $\Delta$F1 & 95\% CI & Real latency (s) & Depth & Fits chain & Real latency (s) & Depth & Fits chain \\
+\midrule
+1$^\dagger$ & 0.0043 & [0.0031, 0.0055] & n/a & 4 & \checkmark & n/a & n/a & n/a \\
+3 & \textbf{0.0016} & [0.0010, 0.0025] & \textbf{0.658 $\pm$ 0.021} & \textbf{6} & \checkmark & \textbf{0.870 $\pm$ 0.026} & \textbf{5} & \checkmark \\
+5 & 0.0019 & [0.0012, 0.0027] & 0.915 $\pm$ 0.016 & 7 & \checkmark & 1.313 $\pm$ 0.036 & 6 & \checkmark \\
+7 & 0.0022 & [0.0015, 0.0029] & 1.197 $\pm$ 0.021 & 7 & \checkmark & 1.672 $\pm$ 0.012 & 7 & \checkmark \\
+9 & 0.0026 & [0.0019, 0.0033] & n/a$^\ddagger$ & 8 & $\times$ & 2.101 $\pm$ 0.012 & 7 & \checkmark \\
+\bottomrule
+\end{tabular}
+\end{table*}

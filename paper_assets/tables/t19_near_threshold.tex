@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: stays whose plaintext margin lies within the correctness gate of a decision threshold, summed over the five seeds, and what happened to them (thermometer circuits, full test split). The range is per seed and bin count, over stays within the gate of either threshold. Flipped: changed decision in at least one repetition on \textsc{real} ciphertexts with fresh encryptions; with fewer repetitions for four of the five seeds the flip counts are lower bounds. Simulated: decisions of the \textsc{simulated} circuit that differ from the plaintext model. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t19_near_threshold}
+\begin{tabular}{rrrrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{F1 threshold} & \multicolumn{3}{c}{80\% sensitivity threshold} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+$B$ & Per seed, range & Stays & Flipped & Simulated & Stays & Flipped & Simulated \\
+\midrule
+5 & 12 to 31 & 31 & 0 & 0 & 85 & 1 & 0 \\
+8 & 13 to 27 & 28 & 1 & 0 & 72 & 4 & 0 \\
+16 & 18 to 29 & 33 & 0 & 0 & 83 & 4 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,444 @@
+{
+  "protocol": "docs/m1c_pilot_prespec.md",
+  "backend": "SIMULATED (circuit-faithful NumPy)",
+  "scope": "seed 42, one outcome (M2 critical outcome), train and validation splits only",
+  "flow": {
+    "n_ed_stays": 425087,
+    "n_after_merges": 425087,
+    "n_adult": 425011,
+    "n_with_a_triage_vital": 411663
+  },
+  "n_train_stays": 246839,
+  "n_val_stays": 82974,
+  "n_val_subjects": 39546,
+  "median_imputation_values_used": "training medians (not printed per patient; per-feature scalars)",
+  "data_realism": {
+    "per_feature": {
+      "triage_temperature": {
+        "q0.1": 35.0,
+        "q99.9": 39.72222222222222,
+        "limits": [
+          30.0,
+          43.0
+        ],
+        "share_outside_limits": 0.00014552167441396344,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_heartrate": {
+        "q0.1": 38.0,
+        "q99.9": 160.0,
+        "limits": [
+          20.0,
+          250.0
+        ],
+        "share_outside_limits": 5.724309096336033e-05,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_resprate": {
+        "q0.1": 11.0,
+        "q99.9": 38.0,
+        "limits": [
+          4.0,
+          80.0
+        ],
+        "share_outside_limits": 0.0001277623455518097,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_o2sat": {
+        "q0.1": 81.0,
+        "q99.9": 100.0,
+        "limits": [
+          50.0,
+          100.0
+        ],
+        "share_outside_limits": 0.00027224353421606237,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_sbp": {
+        "q0.1": 69.0,
+        "q99.9": 228.0,
+        "limits": [
+          40.0,
+          300.0
+        ],
+        "share_outside_limits": 0.0004182299034380958,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_dbp": {
+        "q0.1": 31.0,
+        "q99.9": 139.0,
+        "limits": [
+          20.0,
+          200.0
+        ],
+        "share_outside_limits": 0.0004976270182682579,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "triage_pain": {
+        "q0.1": 0.0,
+        "q99.9": 10.0,
+        "limits": [
+          0.0,
+          10.0
+        ],
+        "share_outside_limits": 0.0,
+        "D1_ok": true,
+        "D2_ok": true
+      },
+      "age": {
+        "q0.1": 18.0,
+        "q99.9": 97.0,
+        "limits": [
+          18.0,
+          105.0
+        ],
+        "share_outside_limits": 0.0,
+        "D1_ok": true,
+        "D2_ok": true
+      }
+    },
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "prevalence": {
+      "train": 0.05232155372530273,
+      "val": 0.05210065803745752
+    },
+    "prevalence_reference": 0.0515
+  },
+  "positive_control": {
+    "auroc_full_val": 0.8114770813238418,
+    "auroc_age_only_val": 0.6803159139601289,
+    "auroc_gain_over_age_only": 0.13116116736371286,
+    "P1": true,
+    "P2": true,
+    "tuned_threshold": 0.16,
+    "tuned_threshold_margin": -1.6582280766035322,
+    "predicted_positive_rate": 0.06292332537903439,
+    "f1_plain_val": 0.3310980720871752,
+    "n_internal_splits": 2556,
+    "splits_per_feature": {
+      "triage_sbp": 433,
+      "triage_heartrate": 424,
+      "age": 340,
+      "triage_dbp": 339,
+      "triage_temperature": 332,
+      "triage_resprate": 244,
+      "triage_o2sat": 244,
+      "triage_pain": 200
+    },
+    "binary_splits": 0
+  },
+  "variants": {
+    "A_data_bounds": {
+      "a_half_width": 0.95,
+      "interval_quantiles": {
+        "50": 0.070588,
+        "75": 0.170732,
+        "90": 0.35,
+        "95": 0.494118,
+        "99": 0.75,
+        "99.9": 0.95,
+        "100": 1.0
+      },
+      "anchor_candidates_k5_val": [
+        {
+          "percentile": 50,
+          "z_ref": 0.070588,
+          "gamma": 65.09774820273402,
+          "agreement": 0.9199146720659483,
+          "nmae": 0.26589488470249956
+        },
+        {
+          "percentile": 75,
+          "z_ref": 0.170732,
+          "gamma": 26.914227269255846,
+          "agreement": 0.9189866705232964,
+          "nmae": 0.26652468663846524
+        },
+        {
+          "percentile": 90,
+          "z_ref": 0.35,
+          "gamma": 13.128913857527397,
+          "agreement": 0.8852170559452358,
+          "nmae": 0.2834403345505176
+        },
+        {
+          "percentile": 95,
+          "z_ref": 0.494118,
+          "gamma": 9.299640673148092,
+          "agreement": 0.7963699472123797,
+          "nmae": 0.3067144297564664
+        },
+        {
+          "percentile": 99.9,
+          "z_ref": 0.95,
+          "gamma": 4.836968263299568,
+          "agreement": 0.2558512305059416,
+          "nmae": 0.3574596933997961
+        }
+      ],
+      "selected_anchor_percentile": 50,
+      "gamma": 65.09774820273402,
+      "tie_break_used": true,
+      "cells": {
+        "k=1": {
+          "disagree_per_1000": 937.0766746209656,
+          "disagree_boot95_per_1000": [
+            934.4907213594026,
+            939.3575648437383
+          ],
+          "n_plain_pos_to_ckks_neg": 0,
+          "n_plain_neg_to_ckks_pos": 77753,
+          "f1_ckks_val": 0.09904120416509159,
+          "f1_delta_plain_minus_ckks": 0.23205686792208358,
+          "auroc_ckks_val": 0.675263592777344,
+          "auroc_delta_plain_minus_ckks": 0.13621348854649773,
+          "prob_abs_error_mean": 0.5643123841475931,
+          "prob_abs_error_max": 0.727626022037142
+        },
+        "k=3": {
+          "disagree_per_1000": 937.0766746209656,
+          "disagree_boot95_per_1000": [
+            934.4907213594026,
+            939.3575648437383
+          ],
+          "n_plain_pos_to_ckks_neg": 0,
+          "n_plain_neg_to_ckks_pos": 77753,
+          "f1_ckks_val": 0.09904120416509159,
+          "f1_delta_plain_minus_ckks": 0.23205686792208358,
+          "auroc_ckks_val": 0.7218768850368532,
+          "auroc_delta_plain_minus_ckks": 0.08960019628698856,
+          "prob_abs_error_mean": 0.43376111750754115,
+          "prob_abs_error_max": 0.7649845935956369
+        },
+        "k=5": {
+          "disagree_per_1000": 896.7387374358232,
+          "disagree_boot95_per_1000": [
+            893.8460229531045,
+            899.3384744255997
+          ],
+          "n_plain_pos_to_ckks_neg": 0,
+          "n_plain_neg_to_ckks_pos": 74406,
+          "f1_ckks_val": 0.10263251935675997,
+          "f1_delta_plain_minus_ckks": 0.2284655527304152,
+          "auroc_ckks_val": 0.7489400441735723,
+          "auroc_delta_plain_minus_ckks": 0.06253703715026948,
+          "prob_abs_error_mean": 0.27247476130042875,
+          "prob_abs_error_max": 0.7410626110008866
+        },
+        "k=7": {
+          "disagree_per_1000": 503.9048376599898,
+          "disagree_boot95_per_1000": [
+            497.0822954270207,
+            510.71513160462024
+          ],
+          "n_plain_pos_to_ckks_neg": 37,
+          "n_plain_neg_to_ckks_pos": 41774,
+          "f1_ckks_val": 0.14757902537002007,
+          "f1_delta_plain_minus_ckks": 0.1835190467171551,
+          "auroc_ckks_val": 0.7653677826833349,
+          "auroc_delta_plain_minus_ckks": 0.046109298640506835,
+          "prob_abs_error_mean": 0.16121700217674903,
+          "prob_abs_error_max": 0.672479318639695
+        },
+        "k=9": {
+          "disagree_per_1000": 281.97989731723186,
+          "disagree_boot95_per_1000": [
+            276.1562623695835,
+            287.77381994731263
+          ],
+          "n_plain_pos_to_ckks_neg": 310,
+          "n_plain_neg_to_ckks_pos": 23087,
+          "f1_ckks_val": 0.19225890288048017,
+          "f1_delta_plain_minus_ckks": 0.138839169206695,
+          "auroc_ckks_val": 0.7750824433616061,
+          "auroc_delta_plain_minus_ckks": 0.03639463796223563,
+          "prob_abs_error_mean": 0.09989431070489971,
+          "prob_abs_error_max": 0.6760261010046658
+        }
+      },
+      "k1_minus_k9_disagree_per_1000": 655.0967773037337,
+      "k1_minus_k9_boot95_per_1000": [
+        648.0969672927015,
+        661.8267756602141
+      ],
+      "P3": true,
+      "runtime_seconds": 741.506180901
+    },
+    "B_clinical_limits": {
+      "a_half_width": 1.04,
+      "interval_quantiles": {
+        "50": 0.103846,
+        "75": 0.211111,
+        "90": 0.367816,
+        "95": 0.505747,
+        "99": 0.781609,
+        "99.9": 1.04,
+        "100": 1.8
+      },
+      "anchor_candidates_k5_val": [
+        {
+          "percentile": 50,
+          "z_ref": 0.103846,
+          "gamma": 44.24936781517429,
+          "agreement": 0.9893822161158917,
+          "nmae": 0.21347424697782202
+        },
+        {
+          "percentile": 75,
+          "z_ref": 0.211111,
+          "gamma": 21.766368640831548,
+          "agreement": 0.9892858003712006,
+          "nmae": 0.21524245624027272
+        },
+        {
+          "percentile": 90,
+          "z_ref": 0.367816,
+          "gamma": 12.492985215799719,
+          "agreement": 0.9862848603176899,
+          "nmae": 0.23402559621617844
+        },
+        {
+          "percentile": 95,
+          "z_ref": 0.505747,
+          "gamma": 9.085807429672522,
+          "agreement": 0.9727505001566756,
+          "nmae": 0.26132949632002467
+        },
+        {
+          "percentile": 99.9,
+          "z_ref": 1.04,
+          "gamma": 4.418384471283258,
+          "agreement": 0.4676886735603924,
+          "nmae": 0.3411275584982243
+        }
+      ],
+      "selected_anchor_percentile": 50,
+      "gamma": 44.24936781517429,
+      "tie_break_used": true,
+      "cells": {
+        "k=1": {
+          "disagree_per_1000": 937.0766746209656,
+          "disagree_boot95_per_1000": [
+            934.4907213594026,
+            939.3575648437383
+          ],
+          "n_plain_pos_to_ckks_neg": 0,
+          "n_plain_neg_to_ckks_pos": 77753,
+          "f1_ckks_val": 0.09904120416509159,
+          "f1_delta_plain_minus_ckks": 0.23205686792208358,
+          "auroc_ckks_val": 0.6928034836375878,
+          "auroc_delta_plain_minus_ckks": 0.11867359768625396,
+          "prob_abs_error_mean": 0.5875049226631025,
+          "prob_abs_error_max": 0.7383091819291061
+        },
+        "k=3": {
+          "disagree_per_1000": 937.0766746209656,
+          "disagree_boot95_per_1000": [
+            934.4907213594026,
+            939.3575648437383
+          ],
+          "n_plain_pos_to_ckks_neg": 0,
+          "n_plain_neg_to_ckks_pos": 77753,
+          "f1_ckks_val": 0.09904120416509159,
+          "f1_delta_plain_minus_ckks": 0.23205686792208358,
+          "auroc_ckks_val": 0.7385988428581559,
+          "auroc_delta_plain_minus_ckks": 0.07287823846568586,
+          "prob_abs_error_mean": 0.33054590096555203,
+          "prob_abs_error_max": 0.6629031004361009
+        },
+        "k=5": {
+          "disagree_per_1000": 600.694193361776,
+          "disagree_boot95_per_1000": [
+            594.0203247338688,
+            607.325630471433
+          ],
+          "n_plain_pos_to_ckks_neg": 25,
+          "n_plain_neg_to_ckks_pos": 49817,
+          "f1_ckks_val": 0.13276931373870837,
+          "f1_delta_plain_minus_ckks": 0.1983287583484668,
+          "auroc_ckks_val": 0.7617254683682357,
+          "auroc_delta_plain_minus_ckks": 0.04975161295560604,
+          "prob_abs_error_mean": 0.1715543941241763,
+          "prob_abs_error_max": 0.6236485787556109
+        },
+        "k=7": {
+          "disagree_per_1000": 228.93918576903607,
+          "disagree_boot95_per_1000": [
+            223.73147810086158,
+            234.08162156723643
+          ],
+          "n_plain_pos_to_ckks_neg": 448,
+          "n_plain_neg_to_ckks_pos": 18548,
+          "f1_ckks_val": 0.2066994646216177,
+          "f1_delta_plain_minus_ckks": 0.12439860746555748,
+          "auroc_ckks_val": 0.7759849625776606,
+          "auroc_delta_plain_minus_ckks": 0.03549211874618119,
+          "prob_abs_error_mean": 0.08210734867767167,
+          "prob_abs_error_max": 0.6325089883186994
+        },
+        "k=9": {
+          "disagree_per_1000": 108.75696001156989,
+          "disagree_boot95_per_1000": [
+            105.72363625542161,
+            111.83313034953929
+          ],
+          "n_plain_pos_to_ckks_neg": 835,
+          "n_plain_neg_to_ckks_pos": 8189,
+          "f1_ckks_val": 0.25210084033613445,
+          "f1_delta_plain_minus_ckks": 0.07899723175104073,
+          "auroc_ckks_val": 0.7823738335919843,
+          "auroc_delta_plain_minus_ckks": 0.029103247731857462,
+          "prob_abs_error_mean": 0.04803258548214567,
+          "prob_abs_error_max": 0.6706968395547679
+        }
+      },
+      "k1_minus_k9_disagree_per_1000": 828.3197146093956,
+      "k1_minus_k9_boot95_per_1000": [
+        823.5012189411515,
+        832.566700279792
+      ],
+      "P3": true,
+      "runtime_seconds": 739.9269462779998
+    }
+  },
+  "missingness_by_outcome_train": {
+    "triage_temperature": {
+      "outcome0": 0.02051948496092748,
+      "outcome1": 0.1180797522260937
+    },
+    "triage_heartrate": {
+      "outcome0": 0.006677382397701818,
+      "outcome1": 0.054665118079752224
+    },
+    "triage_resprate": {
+      "outcome0": 0.013782254065422958,
+      "outcome1": 0.07564847077042199
+    },
+    "triage_o2sat": {
+      "outcome0": 0.01459448367845967,
+      "outcome1": 0.0770421989934185
+    },
+    "triage_sbp": {
+      "outcome0": 0.00962278346813495,
+      "outcome1": 0.05443283004258614
+    },
+    "triage_dbp": {
+      "outcome0": 0.012431387972161898,
+      "outcome1": 0.06016260162601626
+    },
+    "triage_pain": {
+      "outcome0": 0.05295309587729348,
+      "outcome1": 0.19736740224545102
+    }
+  },
+  "runtime_seconds": 1489.928942648
+}

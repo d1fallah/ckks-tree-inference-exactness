@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: decision disagreement between the plaintext model and the simulated CKKS circuit, as a fraction of the 32,493 test stays, at the frozen per-label decision thresholds. Mean $\pm$ SD over the five training seeds (training variability). The last row is the mean over the five labels with a patient-cluster bootstrap 95\% interval (sampling uncertainty), reported separately. Below: mean absolute difference of the predicted probability and mean AUROC difference (plaintext minus CKKS). $k=1$ is the additional diagnostic arm. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s4_decision_agreement}
+\begin{tabular}{lrrrrr}
+\toprule
+Label & $k=1$ & $k=3$ & $k=5$ & $k=7$ & $k=9$ \\
+\midrule
+cardiac arrhythmias & 0.0887 $\pm$ 0.0071 & 0.0504 $\pm$ 0.0021 & 0.0422 $\pm$ 0.0028 & 0.0381 $\pm$ 0.0019 & 0.0358 $\pm$ 0.0013 \\
+chronic pulmonary disease & 0.0187 $\pm$ 0.0023 & 0.0149 $\pm$ 0.0016 & 0.0123 $\pm$ 0.0017 & 0.0108 $\pm$ 0.0014 & 0.0101 $\pm$ 0.0014 \\
+depression & 0.0300 $\pm$ 0.0030 & 0.0240 $\pm$ 0.0024 & 0.0222 $\pm$ 0.0029 & 0.0199 $\pm$ 0.0025 & 0.0190 $\pm$ 0.0017 \\
+fluid and electrolyte disorders & 0.1633 $\pm$ 0.0155 & 0.1104 $\pm$ 0.0164 & 0.0932 $\pm$ 0.0064 & 0.0853 $\pm$ 0.0029 & 0.0762 $\pm$ 0.0010 \\
+uncomplicated hypertension & 0.0987 $\pm$ 0.0136 & 0.0647 $\pm$ 0.0052 & 0.0580 $\pm$ 0.0035 & 0.0500 $\pm$ 0.0052 & 0.0455 $\pm$ 0.0047 \\
+\midrule
+Mean over labels & 0.0799 $\pm$ 0.0023 & 0.0529 $\pm$ 0.0030 & 0.0456 $\pm$ 0.0024 & 0.0408 $\pm$ 0.0017 & 0.0373 $\pm$ 0.0012 \\
+Bootstrap 95\% interval & [0.0786, 0.0811] & [0.0519, 0.0539] & [0.0448, 0.0464] & [0.0401, 0.0416] & [0.0366, 0.0381] \\
+\midrule
+Mean $|\Delta p|$ (probability) & 0.0504 & 0.0333 & 0.0282 & 0.0250 & 0.0233 \\
+Mean AUROC difference & +0.00618 & +0.00031 & -0.00081 & -0.00125 & -0.00166 \\
+\bottomrule
+\end{tabular}
+\end{table*}

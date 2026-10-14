@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Continuous-feature task: fidelity of the simulated CKKS circuit to its own plaintext model on the 81,850 test stays, at the F1-maximizing decision threshold. Mean $\pm$ SD over 5 training seeds (training variability); patient-cluster bootstrap intervals are in the text (sampling uncertainty, reported separately). Approximate rows: full-precision inputs, soft-step comparison polynomial of degree $k$ on a per-feature interval. Exact rows: inputs quantized to bins, comparison polynomial interpolating the step exactly at the finitely many possible values (degree $2B-1$ for $B$ bins); the 8-bin row is simulation only because no evaluator for degree 15 is built into the circuit. $k=1$ is an additional diagnostic arm outside the evaluated degree family. The 5-bin degree-9 circuit also runs on real ciphertexts (Table~\ref{tab:t13_continuous_real}). Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t11_continuous_fidelity}
+\begin{tabular}{llrrr}
+\toprule
+Comparison & Degree & Differing decisions / 1,000 stays & Plaintext positives lost & Circuit AUROC \\
+\midrule
+Approximate, full precision & $k=1$ & 743.0 $\pm$ 88.5 & 0.0\% $\pm$ 0.0\% & 0.8406 $\pm$ 0.0029 \\
+ & $k=3$ & 296.5 $\pm$ 57.3 & 0.6\% $\pm$ 0.5\% & 0.8507 $\pm$ 0.0022 \\
+ & $k=5$ & 137.3 $\pm$ 38.9 & 4.5\% $\pm$ 2.3\% & 0.8536 $\pm$ 0.0022 \\
+ & $k=7$ & 55.1 $\pm$ 6.6 & 19.1\% $\pm$ 2.5\% & 0.8495 $\pm$ 0.0009 \\
+ & $k=9$ & 41.4 $\pm$ 6.0 & 19.6\% $\pm$ 2.5\% & 0.8541 $\pm$ 0.0008 \\
+\midrule
+Exact, 5 bins & $k=9$ & 0.0 $\pm$ 0.0 & 0.0\% $\pm$ 0.0\% & 0.8545 $\pm$ 0.0006 \\
+Exact, 8 bins (simulation only) & $k=15$ & 0.0 $\pm$ 0.0 & 0.0\% $\pm$ 0.0\% & 0.8587 $\pm$ 0.0005 \\
+\bottomrule
+\end{tabular}
+\end{table*}

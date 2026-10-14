@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: per-query latency (s) of the original and the coefficient-folding evaluator re-timed in interleaved order on one day (round 2 in the opposite order to round 1; one label's 50-tree, depth-6 model; 20 timed queries per cell, mean $\pm$ SD over queries). The last column is the folding-to-original ratio, mean of the two rounds. The $\Delta$F1 of $k=9$ is simulation only, and the original evaluator cannot execute $k=9$ (8 levels needed, 7 available). Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s5_interleaved_latency}
+\begin{tabular}{lcccc|c}
+\toprule
+$k$ & Original, round 1 & Original, round 2 & Folding, round 1 & Folding, round 2 & Ratio \\
+\midrule
+3 & 0.666 $\pm$ 0.033 & 0.676 $\pm$ 0.023 & 0.856 $\pm$ 0.037 & 0.843 $\pm$ 0.010 & 1.27 \\
+5 & 0.906 $\pm$ 0.008 & 0.915 $\pm$ 0.027 & 1.278 $\pm$ 0.017 & 1.301 $\pm$ 0.032 & 1.42 \\
+7 & 1.196 $\pm$ 0.027 & 1.213 $\pm$ 0.030 & 1.666 $\pm$ 0.041 & 1.667 $\pm$ 0.032 & 1.38 \\
+9 & n/a$^\dagger$ & n/a$^\dagger$ & 2.131 $\pm$ 0.076 & 2.114 $\pm$ 0.059 & n/a \\
+\bottomrule
+\end{tabular}
+\\[2pt]
+{\footnotesize $\dagger$ the $\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\ref{tab:t5_real_vs_simulated}).}
+\end{table*}

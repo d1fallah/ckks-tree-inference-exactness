@@ -1,0 +1,19 @@
+{
+  "rule": "add triage acuity if the 5-bin validation AUROC (seed 42) rises by at least 0.01",
+  "bins": 5,
+  "seed": 42,
+  "split_used": "train and validation only; test not loaded",
+  "results": {
+    "without_acuity": {
+      "auroc_val": 0.7771291862065957,
+      "f1_at_f1_threshold_val": 0.27069011695384343
+    },
+    "with_acuity": {
+      "auroc_val": 0.8467285853365104,
+      "f1_at_f1_threshold_val": 0.33928221219847027
+    }
+  },
+  "auroc_gain": 0.06959939912991475,
+  "use_acuity": true,
+  "acuity_missing_rate_train": 0.0005509664194069819
+}

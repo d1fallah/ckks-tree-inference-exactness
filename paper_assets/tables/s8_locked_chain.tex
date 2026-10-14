@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Added arm: the thermometer circuit on the locked 7-level chain, seed 42, 50 test stays per bin count on \textsc{real} ciphertexts. This arm separates the protocol from the shorter chain used in Table~\ref{tab:t14_thermometer_real}. No threshold is applied to these costs; they are reported next to the four-level and interpolation rows of that table. Seconds are wall-clock per stay for one label. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s8_locked_chain}
+\begin{tabular}{lrrrrl}
+\toprule
+Circuit & $B$ & Upload (MB) & Seconds per stay & Max margin error & Agreeing decisions \\
+\midrule
+Thermometer, broadcast & 5 & 59.31 & 1.78 $\pm$ 0.03 & $1.74 \times 10^{-4}$ & 50 of 50 \\
+ & 8 & 103.78 & 2.74 $\pm$ 0.01 & $1.76 \times 10^{-4}$ & 50 of 50 \\
+ & 16 & 222.39 & 4.83 $\pm$ 0.05 & $1.87 \times 10^{-4}$ & 50 of 50 \\
+\midrule
+Thermometer, packed & 5 & 1.65 & 2.88 $\pm$ 0.02 & $1.70 \times 10^{-4}$ & 50 of 50 \\
+ & 8 & 1.65 & 5.08 $\pm$ 0.06 & $1.77 \times 10^{-4}$ & 50 of 50 \\
+ & 16 & 1.65 & 11.27 $\pm$ 0.06 & $1.83 \times 10^{-4}$ & 50 of 50 \\
+\bottomrule
+\end{tabular}
+\end{table*}

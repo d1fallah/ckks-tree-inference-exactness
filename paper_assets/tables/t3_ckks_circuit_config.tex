@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{CKKS configuration and circuit parameters (SEAL/TenSEAL 0.3.17), fixed for every experiment. Proxy cohort (MIMIC-IV-ED-derived). Utility values are simulated; the chain, slot and security parameters are those of the executed configuration. Packing: leaf-aligned, one slot per leaf, one ciphertext per tree level, zero rotations in the packing and the path product (the final ensemble sum is one rotate-and-add reduction).}
+\label{tab:t3_ckks_circuit_config}
+\begin{tabular}{lr}
+\toprule
+Parameter & Value \\
+\midrule
+Ring degree $N$ & 16,384 \\
+Coefficient modulus chain (bits) & [60, 40, 40, 40, 40, 40, 40, 40, 60] (sum 400) \\
+Scale & $2^{40}$ \\
+Security level & 128-bit (TC128 SEAL-enforced: True, ceiling 438 bits; TC192 satisfied: False) \\
+Approximation interval $[-a,a]$ & $a=0.847059$ (pre-specified percentile 99.9 of train-split margin quantiles) \\
+Comparison polynomial coefficients & $\gamma=15.022525$ (anchor percentile 75, selected on the validation split) \\
+Normalization & per-feature min-max to [0,1], bounds from the TRAINING split only \\
+Tree depth (levels per model) & 6 \\
+Leaves per model (max over 25 frozen models) & 2,751 of 8,192 slots (33.6\% occupancy) \\
+\bottomrule
+\end{tabular}
+\end{table*}

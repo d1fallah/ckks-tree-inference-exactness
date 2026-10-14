@@ -1,0 +1,46 @@
+{
+  "rule": "minimize L(k) s.t. DeltaF1(k) <= 0.03 (M1-0 Sec 0, supervisor override recorded)",
+  "utility_tolerance": 0.03,
+  "feasible_set": [
+    {
+      "k": 3,
+      "delta_f1_mean": 0.0016332733647034913,
+      "delta_f1_95ci": [
+        0.000983459470882158,
+        0.002467184190692571
+      ],
+      "online_latency_seconds_per_patient": 0.7556631724333783
+    },
+    {
+      "k": 5,
+      "delta_f1_mean": 0.0019228470267811603,
+      "delta_f1_95ci": [
+        0.0012317171288107058,
+        0.0027024642924824024
+      ],
+      "online_latency_seconds_per_patient": 1.0557309934997041
+    },
+    {
+      "k": 7,
+      "delta_f1_mean": 0.0021595878739899764,
+      "delta_f1_95ci": [
+        0.0014813906276052518,
+        0.0028917456634378726
+      ],
+      "online_latency_seconds_per_patient": 1.4014452609998747
+    },
+    {
+      "k": 9,
+      "delta_f1_mean": 0.002561937149482918,
+      "delta_f1_95ci": [
+        0.0018927475779496933,
+        0.0032917409131368257
+      ],
+      "online_latency_seconds_per_patient": null
+    }
+  ],
+  "infeasible_set": [],
+  "backend_for_delta_f1": "SIMULATED (circuit-faithful numpy, NOT real ciphertext execution -- see Amendment v1.1 Sec 15.5)",
+  "k_star": 3,
+  "outcome": "k*=3 selected: cheapest measured-latency k among the feasible set."
+}

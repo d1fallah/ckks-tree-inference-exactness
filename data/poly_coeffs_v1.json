@@ -1,0 +1,254 @@
+{
+  "version": "v2",
+  "v2_correction": "gamma now anchored at the p75 reference point of the pooled |z| distribution, not the interval edge (p99.9) used in v1. See M1_Gate_A_Report.md and m1-0-implementation-lock.md Amendment v1.2 for the measured comparison across candidate anchors.",
+  "generated_from_interval": 0.847059,
+  "interval": [
+    -0.847059,
+    0.847059
+  ],
+  "interval_source": "results/m1_circuit_params.json (pooled over all 5 seeds, training split only)",
+  "sigmoid_edge_level_preregistered": 0.99,
+  "gamma_anchor_percentile": 75,
+  "gamma_anchor_z_ref": 0.305882,
+  "gamma": 15.022524536045237,
+  "approximation_method": "Chebyshev interpolation at Chebyshev nodes (numpy Chebyshev.interpolate)",
+  "targets": {
+    "hard_step": {
+      "k=3": {
+        "degree": 3,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6532814824381883,
+          0.0,
+          0.27059805007309856
+        ],
+        "coefficients_power_basis": [
+          0.5,
+          -1.7296028171089426,
+          0.0,
+          1.7809169628562536
+        ],
+        "max_abs_error": 0.49999999999999983,
+        "rmse": 0.1912989840326639,
+        "max_abs_error_outside_5pct_band": 0.4268815173921623,
+        "rmse_outside_5pct_band": 0.16491070760630316,
+        "value_at_minus_a": 0.8826834323650897,
+        "value_at_plus_a": 0.11731656763491027,
+        "overshoot_above_1": 0.15606346641421798,
+        "undershoot_below_0": 0.15606346641421803
+      },
+      "k=5": {
+        "degree": 5,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6439505508593788,
+          -1.8503717077085943e-16,
+          0.2357022603955161,
+          -2.590520390792032e-16,
+          -0.17254603006834682
+        ],
+        "coefficients_power_basis": [
+          0.49999999999999994,
+          -2.6134985666732318,
+          2.3725724568638087e-15,
+          7.229235067675504,
+          -4.025523416830417e-15,
+          -6.330771640213111
+        ],
+        "max_abs_error": 0.49999999999999967,
+        "rmse": 0.1602873459635094,
+        "max_abs_error_outside_5pct_band": 0.389858979355835,
+        "rmse_outside_5pct_band": 0.1287570753166478,
+        "value_at_minus_a": 1.080794320532209,
+        "value_at_plus_a": -0.08079432053221003,
+        "overshoot_above_1": 0.14767052543632753,
+        "undershoot_below_0": 0.14767052543632714
+      },
+      "k=7": {
+        "degree": 7,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6407288619353766,
+          0.0,
+          0.22499405578410392,
+          2.7755575615628914e-17,
+          -0.15033622173376127,
+          -1.1102230246251565e-16,
+          0.12744889477604004
+        ],
+        "coefficients_power_basis": [
+          0.5000000000000001,
+          -3.4938940515227097,
+          -3.094659726344098e-15,
+          18.171010274099814,
+          1.0782652009367188e-14,
+          -38.24888481530008,
+          -9.617855346594168e-15,
+          26.06876273098104
+        ],
+        "max_abs_error": 0.4999999999999997,
+        "rmse": 0.1406789148769704,
+        "max_abs_error_outside_5pct_band": 0.35339855375623885,
+        "rmse_outside_5pct_band": 0.10569028632852097,
+        "value_at_minus_a": 0.9386221331089939,
+        "value_at_plus_a": 0.061377866891005994,
+        "overshoot_above_1": 0.1447949734357301,
+        "undershoot_below_0": 0.14479497343573022
+      },
+      "k=9": {
+        "degree": 9,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6392453221499661,
+          -6.661338147750939e-17,
+          0.22026892645852675,
+          0.0,
+          -0.14142135623730961,
+          2.220446049250313e-16,
+          0.11223262376343575,
+          3.9968028886505636e-16,
+          -0.10124651257880082
+        ],
+        "coefficients_power_basis": [
+          0.5000000000000002,
+          -4.372783787511085,
+          -1.2440532099903275e-14,
+          36.43487395684372,
+          1.0351345928992501e-13,
+          -134.31251328832764,
+          -2.5775852328872367e-13,
+          209.33965343718808,
+          1.9302493312611072e-13,
+          -115.45083744186564
+        ],
+        "max_abs_error": 0.4999999999999998,
+        "rmse": 0.1268617004131532,
+        "max_abs_error_outside_5pct_band": 0.31754946838970854,
+        "rmse_outside_5pct_band": 0.08960726286719588,
+        "value_at_minus_a": 1.0494116407441145,
+        "value_at_plus_a": -0.04941164074411353,
+        "overshoot_above_1": 0.143474243555743,
+        "undershoot_below_0": 0.1434742435557434
+      }
+    },
+    "soft_step": {
+      "k=3": {
+        "degree": 3,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6503590698498998,
+          5.551115123125783e-17,
+          0.26356320743119177
+        ],
+        "coefficients_power_basis": [
+          0.49999999999999994,
+          -1.7012376849115292,
+          1.5473298631720492e-16,
+          1.7346177726417937
+        ],
+        "max_abs_error": 0.15842877465509086,
+        "rmse": 0.105933871930527,
+        "max_abs_error_outside_5pct_band": 0.15842877465509086,
+        "rmse_outside_5pct_band": 0.10811527926255535,
+        "value_at_minus_a": 0.886795862418708,
+        "value_at_plus_a": 0.113204137581292,
+        "overshoot_above_1": 0.14847570395508658,
+        "undershoot_below_0": 0.14847570395508647
+      },
+      "k=5": {
+        "degree": 5,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.637712825050308,
+          -2.250473367230478e-16,
+          0.21877168026003146,
+          -1.976545735531595e-16,
+          -0.14955259567668436
+        ],
+        "coefficients_power_basis": [
+          0.5,
+          -2.410447022242635,
+          1.5764847473991452e-15,
+          6.3611617611494715,
+          -3.071441232850538e-15,
+          -5.487134830370673
+        ],
+        "max_abs_error": 0.11573678968676371,
+        "rmse": 0.06901002952764754,
+        "max_abs_error_outside_5pct_band": 0.11573678968676371,
+        "rmse_outside_5pct_band": 0.07043861825757688,
+        "value_at_minus_a": 1.0684937404669606,
+        "value_at_plus_a": -0.06849374046696133,
+        "overshoot_above_1": 0.11346798521261592,
+        "undershoot_below_0": 0.11346798521261559
+      },
+      "k=7": {
+        "degree": 7,
+        "coefficients_chebyshev_basis": [
+          0.5,
+          -0.6329603233182125,
+          2.7755575615628914e-17,
+          0.20316114247577757,
+          0.0,
+          -0.11821452786525671,
+          -1.6653345369377348e-16,
+          0.0899897268750105
+        ],
+        "coefficients_power_basis": [
+          0.5000000000000001,
+          -2.908232458656247,
+          -4.10042413740593e-15,
+          13.518810089502352,
+          1.552701889348875e-14,
+          -27.44960318281642,
+          -1.442678301989125e-14,
+          18.40675701623629
+        ],
+        "max_abs_error": 0.08177278075077032,
+        "rmse": 0.04447557614221191,
+        "max_abs_error_outside_5pct_band": 0.08177278075077032,
+        "rmse_outside_5pct_band": 0.04541611237981861,
+        "value_at_minus_a": 0.958023981832681,
+        "value_at_plus_a": 0.041976018167318774,
+        "overshoot_above_1": 0.07358106603346881,
+        "undershoot_below_0": 0.07358106603346895
+      },
+      "k=9": {
+        "degree": 9,
+        "coefficients_chebyshev_basis": [
+          0.4999999999999999,
+          -0.6311230844875595,
+          -4.1925420383656655e-17,
+          0.19718956990326444,
+          2.843747948981599e-17,
+          -0.10659004882297204,
+          1.9799496786022942e-16,
+          0.0696204030910372,
+          4.980662150072535e-16,
+          -0.054829707156840636
+        ],
+        "coefficients_power_basis": [
+          0.5000000000000002,
+          -3.2305332029540317,
+          -1.7680002660050086e-14,
+          22.04586189853132,
+          1.367749114085494e-13,
+          -76.10804464907486,
+          -3.280272765355961e-13,
+          115.17558809386212,
+          2.40540253103674e-13,
+          -62.522011343578065
+        ],
+        "max_abs_error": 0.0537510684832774,
+        "rmse": 0.028037899937721655,
+        "max_abs_error_outside_5pct_band": 0.0537510684832774,
+        "rmse_outside_5pct_band": 0.02864242834087623,
+        "value_at_minus_a": 1.025732867473071,
+        "value_at_plus_a": -0.02573286747307002,
+        "overshoot_above_1": 0.03671706134244923,
+        "undershoot_below_0": 0.03671706134245012
+      }
+    }
+  },
+  "note": "Both target families are frozen here. M1-0 selects ONE as the locked branch-smoothing function; the other is retained only as the justification evidence for that choice and is never used in the sweep."
+}

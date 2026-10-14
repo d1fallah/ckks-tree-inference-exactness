@@ -1,0 +1,128 @@
+{
+  "note": "docs/m1c_final_ties_note.md (added analysis)",
+  "tolerance": 1e-09,
+  "per_seed": {
+    "42": {
+      "f1": {
+        "threshold": -1.5856272637403817,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80": {
+        "threshold": -2.943193197250366,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80_tie_free": {
+        "threshold": -2.9431936740875244,
+        "n_differing": 0,
+        "n_test_stays_with_margin_within_1e-6_of_threshold": 1,
+        "sensitivity_test_at_run_threshold": 0.8097583861130659,
+        "sensitivity_test_at_tie_free_threshold": 0.8097583861130659,
+        "sensitivity_validation_at_tie_free_threshold": 0.8001387925052047
+      }
+    },
+    "123": {
+      "f1": {
+        "threshold": -1.5856272637403817,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80": {
+        "threshold": -2.946709156036377,
+        "n_test_stays_with_margin_equal_to_threshold": 5,
+        "n_differing": 5,
+        "n_differing_that_are_ties": 5,
+        "n_differing_not_ties": 0
+      },
+      "sens80_tie_free": {
+        "threshold": -2.9467639923095703,
+        "n_differing": 0,
+        "n_test_stays_with_margin_within_1e-6_of_threshold": 0,
+        "sensitivity_test_at_run_threshold": 0.8078817733990148,
+        "sensitivity_test_at_tie_free_threshold": 0.8078817733990148,
+        "sensitivity_validation_at_tie_free_threshold": 0.8001387925052047
+      }
+    },
+    "7": {
+      "f1": {
+        "threshold": -1.6582280766035322,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80": {
+        "threshold": -2.960883617401123,
+        "n_test_stays_with_margin_equal_to_threshold": 1,
+        "n_differing": 1,
+        "n_differing_that_are_ties": 1,
+        "n_differing_not_ties": 0
+      },
+      "sens80_tie_free": {
+        "threshold": -2.9609265327453613,
+        "n_differing": 0,
+        "n_test_stays_with_margin_within_1e-6_of_threshold": 0,
+        "sensitivity_test_at_run_threshold": 0.810462115880835,
+        "sensitivity_test_at_tie_free_threshold": 0.810462115880835,
+        "sensitivity_validation_at_tie_free_threshold": 0.8001387925052047
+      }
+    },
+    "456": {
+      "f1": {
+        "threshold": -1.5856272637403817,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80": {
+        "threshold": -2.9539101123809814,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80_tie_free": {
+        "threshold": -2.954011917114258,
+        "n_differing": 0,
+        "n_test_stays_with_margin_within_1e-6_of_threshold": 0,
+        "sensitivity_test_at_run_threshold": 0.812807881773399,
+        "sensitivity_test_at_tie_free_threshold": 0.812807881773399,
+        "sensitivity_validation_at_tie_free_threshold": 0.8001387925052047
+      }
+    },
+    "789": {
+      "f1": {
+        "threshold": -1.5856272637403817,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80": {
+        "threshold": -2.941380739212036,
+        "n_test_stays_with_margin_equal_to_threshold": 0,
+        "n_differing": 0,
+        "n_differing_that_are_ties": 0,
+        "n_differing_not_ties": 0
+      },
+      "sens80_tie_free": {
+        "threshold": -2.9414424896240234,
+        "n_differing": 0,
+        "n_test_stays_with_margin_within_1e-6_of_threshold": 0,
+        "sensitivity_test_at_run_threshold": 0.80623973727422,
+        "sensitivity_test_at_tie_free_threshold": 0.80623973727422,
+        "sensitivity_validation_at_tie_free_threshold": 0.8001387925052047
+      }
+    }
+  },
+  "all_differing_decisions_are_ties": true,
+  "tie_free_threshold_zero_differing_all_seeds": true
+}

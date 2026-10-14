@@ -1,0 +1,203 @@
+{
+  "gate": "GATES.md Question gate, M1 continuous-feature task (signed 2026-10-11); Validity pilot step 1",
+  "outcome_definition": "M2 critical outcome: in-hospital death or ICU stay starting within 12 h of ED exit (vendored helpers.py functions)",
+  "inputs": [
+    "triage_temperature",
+    "triage_heartrate",
+    "triage_resprate",
+    "triage_o2sat",
+    "triage_sbp",
+    "triage_dbp",
+    "triage_pain",
+    "age"
+  ],
+  "input_source": "ed/triage.csv.gz (+ patients.anchor_age/anchor_year for age); ed/vitalsign is not read",
+  "flow": {
+    "n_ed_stays": 425087,
+    "n_after_merges": 425087,
+    "n_adult": 425011,
+    "n_with_a_triage_vital": 411663
+  },
+  "n_stays": 411663,
+  "n_subjects": 197734,
+  "split_seed": 42,
+  "split": {
+    "train": {
+      "stays": 246839,
+      "subjects": 118640,
+      "outcome_prevalence": 0.05232155372530273
+    },
+    "val": {
+      "stays": 82974,
+      "subjects": 39546,
+      "outcome_prevalence": 0.05210065803745752
+    },
+    "test": {
+      "stays": 81850,
+      "subjects": 39548,
+      "outcome_prevalence": 0.052083078802687845
+    }
+  },
+  "features": {
+    "triage_temperature": {
+      "missing_rate": 0.02562775862780964,
+      "n_distinct": 399,
+      "min": 26.0,
+      "max": 44.111111111111114,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        35.0,
+        35.55555555555556,
+        36.38888888888889,
+        36.66666666666667,
+        37.0,
+        38.5,
+        39.72222222222222
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.02072985067741092,
+        "outcome1": 0.1145063020324636
+      }
+    },
+    "triage_heartrate": {
+      "missing_rate": 0.009097247020013943,
+      "n_distinct": 213,
+      "min": 1.0,
+      "max": 256.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        38.0,
+        51.0,
+        72.0,
+        84.0,
+        96.0,
+        134.0,
+        160.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.006669024661550843,
+        "outcome1": 0.053160318124738384
+      }
+    },
+    "triage_resprate": {
+      "missing_rate": 0.017011487551710988,
+      "n_distinct": 80,
+      "min": 0.0,
+      "max": 209.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        11.0,
+        14.0,
+        16.0,
+        18.0,
+        18.0,
+        26.0,
+        38.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.013886539437464438,
+        "outcome1": 0.0737175015115576
+      }
+    },
+    "triage_o2sat": {
+      "missing_rate": 0.017694084724641273,
+      "n_distinct": 73,
+      "min": 0.0,
+      "max": 100.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        82.0,
+        92.0,
+        97.0,
+        99.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.014524735878942593,
+        "outcome1": 0.07520580438119158
+      }
+    },
+    "triage_sbp": {
+      "missing_rate": 0.012038973626485741,
+      "n_distinct": 258,
+      "min": 1.0,
+      "max": 312.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        69.0,
+        90.0,
+        120.0,
+        133.0,
+        148.0,
+        198.0,
+        228.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.009744670162650387,
+        "outcome1": 0.05367192223617506
+      }
+    },
+    "triage_dbp": {
+      "missing_rate": 0.014900537575638325,
+      "n_distinct": 231,
+      "min": 0.0,
+      "max": 375.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        31.0,
+        44.0,
+        68.0,
+        77.0,
+        87.0,
+        115.0,
+        138.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.012476868582793814,
+        "outcome1": 0.05888098227989396
+      }
+    },
+    "triage_pain": {
+      "missing_rate": 0.060435356104386356,
+      "n_distinct": 21,
+      "min": 0.0,
+      "max": 10.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        8.0,
+        10.0,
+        10.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.052942111225593474,
+        "outcome1": 0.19640946932700803
+      }
+    },
+    "age": {
+      "missing_rate": 0.0,
+      "n_distinct": 86,
+      "min": 18.0,
+      "max": 103.0,
+      "quantiles_0.1_1_25_50_75_99_99.9": [
+        18.0,
+        19.0,
+        35.0,
+        53.0,
+        69.0,
+        93.0,
+        97.0
+      ],
+      "is_binary": false,
+      "missing_rate_by_outcome": {
+        "outcome0": 0.0,
+        "outcome1": 0.0
+      }
+    }
+  }
+}

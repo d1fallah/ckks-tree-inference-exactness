@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Real-versus-simulated CKKS validation: execution on TenSEAL/SEAL ciphertexts compared with the circuit-faithful simulated evaluator, 5 seeds $\times$ 25 test patients per degree, label uncomplicated hypertension, for the original and the coefficient-folding polynomial evaluator. The real executions reproduced the simulated margins within the tested scope. Best value per column in bold (agreement is bold only where it differs between rows). The $\Delta$F1 of $k=9$ is simulation only, and the original evaluator cannot execute $k=9$ (8 levels needed, 7 available). Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t5_real_vs_simulated}
+\begin{tabular}{llrrrrr}
+\toprule
+Evaluator & $k$ & Completed & Agreement & Norm.\ MAE & Max abs.\ error & Latency (s) \\
+\midrule
+Original & 3 & 125/125 & 1.0000 & 7.25e-06 & \textbf{8.67e-05} & \textbf{0.658 $\pm$ 0.021} \\
+Original & 5 & 125/125 & 1.0000 & 7.07e-06 & 1.01e-04 & 0.915 $\pm$ 0.016 \\
+Original & 7 & 125/125 & 1.0000 & 6.95e-06 & 9.94e-05 & 1.197 $\pm$ 0.021 \\
+\midrule
+Folding & 3 & 125/125 & 1.0000 & \textbf{5.63e-06} & 1.03e-04 & 0.870 $\pm$ 0.026 \\
+Folding & 5 & 125/125 & 1.0000 & 5.97e-06 & 1.22e-04 & 1.313 $\pm$ 0.036 \\
+Folding & 7 & 125/125 & 1.0000 & 6.47e-06 & 1.33e-04 & 1.672 $\pm$ 0.012 \\
+Folding & 9 & 125/125 & 1.0000 & 6.70e-06 & 1.33e-04 & 2.101 $\pm$ 0.012 \\
+\bottomrule
+\end{tabular}
+\\[2pt]
+{\footnotesize Total real-ciphertext evaluations: 875.}
+\end{table*}

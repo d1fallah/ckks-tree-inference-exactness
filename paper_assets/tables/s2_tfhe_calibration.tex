@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Quantized-TFHE reference (Concrete-ML, $n_\text{bits}=6$), a calibration reference rather than a comparison of CKKS and TFHE in either direction. Quantization effect: full 5-seed$\times$5-label grid (clear simulation). Real encrypted execution: one representative model (seed 42, hypertension), n=20. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s2_tfhe}
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Quantization agreement (mean, 25 models) & 0.9883 \\
+Quantization normalized MAE (mean, 25 models) & 0.00888 \\
+Agreement(TFHE, quantized-clear) & 1.0000 \\
+Real FHE online latency (s/sample) & 87.30 $\pm$ 0.90 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,49 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,decorations.pathreplacing}
+\begin{document}
+
+\begin{tikzpicture}[
+  font=\scriptsize,
+  stage/.style={draw, rounded corners, align=center, minimum height=1.1cm, minimum width=2.05cm,
+                fill=blue!6, inner sep=3pt},
+  client/.style={draw, rounded corners, align=center, minimum height=1.1cm, minimum width=1.9cm,
+                 fill=green!8, inner sep=3pt},
+  arr/.style={-{Stealth[length=2.2mm]}, thick},
+  every node/.style={font=\scriptsize}
+]
+  \node[client] (feat) {Plaintext\\ patient features $x$};
+  \node[client, right=1.0cm of feat] (enc) {Encode \&\\ encrypt};
+  \node[stage, right=1.0cm of enc] (cmp) {Polynomial\\ comparison\\ (degree $k$, per split)};
+  \node[stage, right=1.0cm of cmp] (path) {Balanced path\\ product (per leaf,\\ zero rotations)};
+  \node[stage, right=1.0cm of path] (agg) {Leaf-aligned\\ aggregation\\ (rotate-and-add)};
+  \node[client, right=1.0cm of agg] (dec) {Decrypt \&\\ decode};
+  \node[client, right=1.0cm of dec] (score) {Margin-space\\ score};
+
+  \draw[arr] (feat) -- (enc);
+  \draw[arr] (enc) -- (cmp);
+  \draw[arr] (cmp) -- (path);
+  \draw[arr] (path) -- (agg);
+  \draw[arr] (agg) -- (dec);
+  \draw[arr] (dec) -- (score);
+
+  \begin{scope}[on background layer]
+    \node[draw=red!60, dashed, thick, rounded corners, fit=(cmp)(path)(agg),
+          inner sep=8pt, label={[red!70, font=\scriptsize]above:Server -- encrypted domain, no decryption key}]
+      (serverbox) {};
+  \end{scope}
+  \node[below=0.15cm of feat, text width=1.9cm, align=center, font=\scriptsize, gray] {Client};
+  \node[below=0.15cm of score, text width=1.9cm, align=center, font=\scriptsize, gray] {Client};
+
+  \node[below=1.15cm of cmp, text width=2.05cm, align=center, font=\scriptsize, blue!60]
+    {$k\in\{3,5,7,9\}$ locked family};
+  \node[below=1.15cm of path, text width=2.05cm, align=center, font=\scriptsize, blue!60]
+    {depth $\lceil\log_2 D\rceil$, folds leaf coeff.};
+  \node[below=1.15cm of agg, text width=2.05cm, align=center, font=\scriptsize, blue!60]
+    {real, measured cost (latency results)};
+\end{tikzpicture}
+\end{document}

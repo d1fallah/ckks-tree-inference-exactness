@@ -1,0 +1,274 @@
+{
+  "status": "supplementary per-label view of the locked rule; SIMULATED utility; latency measured for hypertension only",
+  "utility_tolerance": 0.03,
+  "assumption": "per-label latency ordering k=3<5<7 is assumed equal to the measured hypertension ordering (holds in each of the 5 seeds there); per-label latency was not measured",
+  "latency_ordering_holds_every_seed_hypertension": true,
+  "real_latency_s_by_k": {
+    "3": 0.6577964197280013,
+    "5": 0.9149951065999999,
+    "7": 1.1970351915839987
+  },
+  "labels": {
+    "label_cardiac_arrhythmias": {
+      "n_leaves_seed42_model": 2671,
+      "by_k": {
+        "k=3": {
+          "abs_delta_f1_mean": 0.004727740809683545,
+          "abs_delta_f1_sd_across_seeds": 0.002576404487994792,
+          "abs_delta_f1_max_seed": 0.008208657429524147,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.004349891326065803,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.15759136032278484,
+          "meets_tolerance": true
+        },
+        "k=5": {
+          "abs_delta_f1_mean": 0.004216414420792858,
+          "abs_delta_f1_sd_across_seeds": 0.0034902842360322955,
+          "abs_delta_f1_max_seed": 0.007947546318839871,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.004196607582538569,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.14054714735976193,
+          "meets_tolerance": true
+        },
+        "k=7": {
+          "abs_delta_f1_mean": 0.004816958996371112,
+          "abs_delta_f1_sd_across_seeds": 0.0028760945602089886,
+          "abs_delta_f1_max_seed": 0.008085035701067667,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.004816958996371112,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.16056529987903706,
+          "meets_tolerance": true
+        },
+        "k=9": {
+          "abs_delta_f1_mean": 0.004973160974196556,
+          "abs_delta_f1_sd_across_seeds": 0.002557042238582257,
+          "abs_delta_f1_max_seed": 0.007999920449234588,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.004973160974196556,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.16577203247321853,
+          "meets_tolerance": true
+        }
+      },
+      "feasible_k": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "k_star": 3
+    },
+    "label_chronic_pulmonary_disease": {
+      "n_leaves_seed42_model": 2695,
+      "by_k": {
+        "k=3": {
+          "abs_delta_f1_mean": 0.001397996522583811,
+          "abs_delta_f1_sd_across_seeds": 0.0002663985321756508,
+          "abs_delta_f1_max_seed": 0.0018036938267921299,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0009448287914340491,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.04659988408612703,
+          "meets_tolerance": true
+        },
+        "k=5": {
+          "abs_delta_f1_mean": 0.001589607269056259,
+          "abs_delta_f1_sd_across_seeds": 0.0010013673464189738,
+          "abs_delta_f1_max_seed": 0.002609992911435488,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0014920309222248296,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.05298690896854197,
+          "meets_tolerance": true
+        },
+        "k=7": {
+          "abs_delta_f1_mean": 0.001785778474177202,
+          "abs_delta_f1_sd_across_seeds": 0.0011636145226482288,
+          "abs_delta_f1_max_seed": 0.002718177635628316,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0017392606722268721,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.05952594913924007,
+          "meets_tolerance": true
+        },
+        "k=9": {
+          "abs_delta_f1_mean": 0.0017526723196932936,
+          "abs_delta_f1_sd_across_seeds": 0.0011333926561003494,
+          "abs_delta_f1_max_seed": 0.002897390526035326,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0017526723196932936,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.05842241065644312,
+          "meets_tolerance": true
+        }
+      },
+      "feasible_k": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "k_star": 3
+    },
+    "label_depression": {
+      "n_leaves_seed42_model": 2630,
+      "by_k": {
+        "k=3": {
+          "abs_delta_f1_mean": 0.0026585147964101274,
+          "abs_delta_f1_sd_across_seeds": 0.0010846884922941966,
+          "abs_delta_f1_max_seed": 0.0036049666673577674,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0026585147964101274,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.08861715988033758,
+          "meets_tolerance": true
+        },
+        "k=5": {
+          "abs_delta_f1_mean": 0.0023722552419381594,
+          "abs_delta_f1_sd_across_seeds": 0.001217350573182238,
+          "abs_delta_f1_max_seed": 0.0038362056773527664,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0023722552419381594,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.07907517473127199,
+          "meets_tolerance": true
+        },
+        "k=7": {
+          "abs_delta_f1_mean": 0.002263081303267178,
+          "abs_delta_f1_sd_across_seeds": 0.0012913981780837782,
+          "abs_delta_f1_max_seed": 0.003574870864675006,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.002263081303267178,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.07543604344223927,
+          "meets_tolerance": true
+        },
+        "k=9": {
+          "abs_delta_f1_mean": 0.002282935651992801,
+          "abs_delta_f1_sd_across_seeds": 0.001256137790382749,
+          "abs_delta_f1_max_seed": 0.0034067206400520966,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.002282935651992801,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.0760978550664267,
+          "meets_tolerance": true
+        }
+      },
+      "feasible_k": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "k_star": 3
+    },
+    "label_fluid_and_electrolyte_disorders": {
+      "n_leaves_seed42_model": 2601,
+      "by_k": {
+        "k=3": {
+          "abs_delta_f1_mean": 0.001840720167683385,
+          "abs_delta_f1_sd_across_seeds": 0.001181226820241824,
+          "abs_delta_f1_max_seed": 0.003233196319634646,
+          "signed_delta_f1_mean_ckks_minus_plain": -0.0009906427625883674,
+          "n_seeds_ckks_above_plain": 2,
+          "fraction_of_tolerance_mean": 0.0613573389227795,
+          "meets_tolerance": true
+        },
+        "k=5": {
+          "abs_delta_f1_mean": 0.0012488027719173122,
+          "abs_delta_f1_sd_across_seeds": 0.0013534416636405882,
+          "abs_delta_f1_max_seed": 0.002840520807748159,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0009378381430784066,
+          "n_seeds_ckks_above_plain": 3,
+          "fraction_of_tolerance_mean": 0.04162675906391041,
+          "meets_tolerance": true
+        },
+        "k=7": {
+          "abs_delta_f1_mean": 0.0017622083557545687,
+          "abs_delta_f1_sd_across_seeds": 0.0010915386614687521,
+          "abs_delta_f1_max_seed": 0.003065665960385766,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.001611541364659319,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.0587402785251523,
+          "meets_tolerance": true
+        },
+        "k=9": {
+          "abs_delta_f1_mean": 0.0024335081104528977,
+          "abs_delta_f1_sd_across_seeds": 0.0008778702444908897,
+          "abs_delta_f1_max_seed": 0.0038233985721807806,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0024335081104528977,
+          "n_seeds_ckks_above_plain": 5,
+          "fraction_of_tolerance_mean": 0.08111693701509659,
+          "meets_tolerance": true
+        }
+      },
+      "feasible_k": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "k_star": 3
+    },
+    "label_hypertension_uncomplicated": {
+      "n_leaves_seed42_model": 2694,
+      "by_k": {
+        "k=3": {
+          "abs_delta_f1_mean": 0.001971601289687164,
+          "abs_delta_f1_sd_across_seeds": 0.0010195287601489772,
+          "abs_delta_f1_max_seed": 0.003214597337962033,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0012037746721959897,
+          "n_seeds_ckks_above_plain": 3,
+          "fraction_of_tolerance_mean": 0.06572004298957214,
+          "meets_tolerance": true
+        },
+        "k=5": {
+          "abs_delta_f1_mean": 0.0012708354977689184,
+          "abs_delta_f1_sd_across_seeds": 0.0006897919930835718,
+          "abs_delta_f1_max_seed": 0.002201134095510149,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0006155032441258034,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.04236118325896395,
+          "meets_tolerance": true
+        },
+        "k=7": {
+          "abs_delta_f1_mean": 0.0013496894568491903,
+          "abs_delta_f1_sd_across_seeds": 0.000759692663636435,
+          "abs_delta_f1_max_seed": 0.0024564810585594454,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.000367097033425412,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.04498964856163968,
+          "meets_tolerance": true
+        },
+        "k=9": {
+          "abs_delta_f1_mean": 0.0017663551043381575,
+          "abs_delta_f1_sd_across_seeds": 0.0006619302337388951,
+          "abs_delta_f1_max_seed": 0.0027394175787804897,
+          "signed_delta_f1_mean_ckks_minus_plain": 0.0013674086910792083,
+          "n_seeds_ckks_above_plain": 4,
+          "fraction_of_tolerance_mean": 0.05887850347793858,
+          "meets_tolerance": true
+        }
+      },
+      "feasible_k": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "k_star": 3
+    }
+  },
+  "k_star_by_label": {
+    "label_cardiac_arrhythmias": 3,
+    "label_chronic_pulmonary_disease": 3,
+    "label_depression": 3,
+    "label_fluid_and_electrolyte_disorders": 3,
+    "label_hypertension_uncomplicated": 3
+  },
+  "labels_where_k_star_differs_from_3": [],
+  "n_label_seed_k_cells": 100,
+  "n_cells_at_or_above_tolerance": 0,
+  "largest_cell": {
+    "label": "label_cardiac_arrhythmias",
+    "k": 3,
+    "abs_delta_f1": 0.008208657429524147,
+    "fraction_of_tolerance": 0.27362191431747157
+  },
+  "largest_label_mean": [
+    "label_cardiac_arrhythmias",
+    9,
+    0.004973160974196556
+  ]
+}

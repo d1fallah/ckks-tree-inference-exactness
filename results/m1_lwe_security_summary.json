@@ -1,0 +1,41 @@
+{
+  "rule": {
+    "on_standard_scale_iff": "all five published 128-bit rows scored within 5.0 bits of 128",
+    "meets_128_iff": "on the Standard's scale AND locked-chain estimate >= 128; off-scale models are not compared with 128"
+  },
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "models": {
+    "ADPS16 classical core-SVP (HE Standard basis)": {
+      "locked_chain_bits": 107.164,
+      "locked_chain_cheapest_attack": "usvp",
+      "standard_438_bit_row_bits_same_model": 93.732,
+      "margin_over_standard_row_bits": 13.432,
+      "published_128bit_rows_scored_gap_bits": [
+        -28.15,
+        -30.18,
+        -32.81,
+        -33.39,
+        -34.27
+      ],
+      "on_standard_scale": false,
+      "locked_chain_meets_128": null,
+      "reading": "NOT on the Standard's scale (undershoots the published rows by 28-34 bits); its absolute number is not compared with 128; locked chain is +13.4 bits relative to the Standard's own 438-bit row"
+    },
+    "MATZOV (estimator default)": {
+      "locked_chain_bits": 138.493,
+      "locked_chain_cheapest_attack": "bdd",
+      "standard_438_bit_row_bits_same_model": 125.923,
+      "margin_over_standard_row_bits": 12.57,
+      "published_128bit_rows_scored_gap_bits": [
+        -1.82,
+        -1.73,
+        -2.9,
+        -2.25,
+        -2.08
+      ],
+      "on_standard_scale": true,
+      "locked_chain_meets_128": true,
+      "reading": "on the Standard's scale (all published rows within 5.0 bits of 128); locked chain meets 128"
+    }
+  }
+}

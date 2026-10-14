@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{Dataset and prediction task. Proxy cohort (MIMIC-IV-ED-derived); a research cohort, not a clinical-validation dataset. Patient-level split; five random seeds.}
+\label{tab:t1_dataset_task}
+\begin{tabular}{lr}
+\toprule
+Quantity & Value \\
+\midrule
+ED stays in cohort & 161,718 \\
+Feature dimension & 134 (ATC-1: 14, ATC-2: 86, + ETC/aggregate/demographic) \\
+Medication-code coverage (row-weighted) & 0.8393 \\
+Prediction labels (Elixhauser, top-5 by prevalence) & see below \\
+Train / validation / test stays (60/20/20 by patient) & 96,788 / 32,437 / 32,493 \\
+Model seeds & {42, 123, 7, 456, 789} \\
+\midrule
+\multicolumn{2}{l}{\textit{Label prevalence (fraction of stays)}} \\
+\quad hypertension, uncomplicated & 0.3883 \\
+\quad cardiac arrhythmias & 0.2334 \\
+\quad fluid and electrolyte disorders & 0.2282 \\
+\quad depression & 0.2264 \\
+\quad chronic pulmonary disease & 0.2106 \\
+\bottomrule
+\end{tabular}
+\end{table*}

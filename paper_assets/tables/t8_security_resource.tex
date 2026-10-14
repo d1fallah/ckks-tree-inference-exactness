@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Security and resource analysis. Independent LWE estimate: lattice-estimator (Albrecht, Player, Scott), commit \texttt{53da598259}. The 128-bit level holds under the estimator's default MATZOV cost model, which reproduces the HE Security Standard's published rows within 5 bits. It is not claimed under every cost model: raw core-SVP scores the chain lower and is not on the Standard's scale. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t8_security_resource}
+\begin{tabular}{lr}
+\toprule
+Quantity & Value \\
+\midrule
+Security, MATZOV (estimator default) & 138.5 bits (meets 128: True) \\
+Security, raw core-SVP (ADPS16) & 107.2 bits (on Standard's scale: False; not compared with 128) \\\\
+SEAL TC128 enforcement & satisfied (Table~\ref{tab:t3_ckks_circuit_config}) \\
+Galois (rotation) keys, $k=5$ & 398,044,556 bytes \\
+Evaluation context with keys, $k=5$ & 415,243,211 bytes \\
+Input ciphertexts per patient, $k=5$ & 9,883,482 bytes \\
+Peak evaluation-phase RSS (max over scaling grid) & 1,991,808 KiB \\
+\bottomrule
+\end{tabular}
+\end{table*}

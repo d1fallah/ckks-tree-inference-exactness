@@ -1,0 +1,60 @@
+{
+  "protocol": "docs/step2_prespec_m1.md section D (added analysis S2.4a)",
+  "backend": "REAL TenSEAL/SEAL, locked parameters",
+  "n_slots": 2751,
+  "n_warmup_discarded": 5,
+  "interleaving": "original and folding alternate within every repetition (order swapped on odd repetitions)",
+  "input": "2751 uniform values on [-a, a], a = 0.847059, seed 42; same scalar coefficients in every slot",
+  "by_k": {
+    "k=3": {
+      "folding": {
+        "mean_s": 0.09221912835005242,
+        "sd_s": 0.006003139798899003,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 4.309628686666178e-06
+      },
+      "original": {
+        "mean_s": 0.06984965789997659,
+        "sd_s": 0.005264944979377905,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 6.569376188994558e-06
+      }
+    },
+    "k=5": {
+      "folding": {
+        "mean_s": 0.18014983224998105,
+        "sd_s": 0.014044227647989498,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 5.955297733728493e-06
+      },
+      "original": {
+        "mean_s": 0.12292706605001058,
+        "sd_s": 0.0064272724728566015,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 5.339089007183606e-06
+      }
+    },
+    "k=7": {
+      "folding": {
+        "mean_s": 0.24965177050000875,
+        "sd_s": 0.007375262020877661,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 2.259413117366993e-05
+      },
+      "original": {
+        "mean_s": 0.17388031220000358,
+        "sd_s": 0.007951916487296201,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 3.174845516262792e-06
+      }
+    },
+    "k=9": {
+      "folding": {
+        "mean_s": 0.319610923400046,
+        "sd_s": 0.010823211543365416,
+        "n_timed": 20,
+        "max_abs_error_vs_frozen_polynomial": 8.560525680012532e-05
+      }
+    }
+  }
+}

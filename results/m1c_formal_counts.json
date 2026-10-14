@@ -1,0 +1,845 @@
+{
+  "note": "docs/DEVIATIONS.md entry 'formal counts' (added). Counts from running the real evaluation functions on a depth-tracking mock; rules of the mock in the module docstring. Saved model files only; no patient data.",
+  "slot_count": 8192,
+  "seeds": [
+    42,
+    123,
+    7,
+    456,
+    789
+  ],
+  "by_B": {
+    "B=5": {
+      "seeds": {
+        "42": {
+          "leaf_slots": 2660,
+          "n_features": 9,
+          "bit_columns": 36,
+          "used_bit_columns_per_level": [
+            19,
+            28,
+            31,
+            31,
+            31,
+            31
+          ],
+          "broadcast": {
+            "client_ciphertexts": 36,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 171,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 216,
+            "rotation_calls": 247,
+            "rotation_calls_in_matrix_product": 210,
+            "rotation_calls_in_sum": 37,
+            "nonzero_diagonals_per_level": [
+              36,
+              36,
+              36,
+              36,
+              36,
+              36
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 7,
+            "ct_ct_multiplications": 95,
+            "ct_plain_multiplications": 54,
+            "rotation_calls": 37,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 37,
+            "degree": 9,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "123": {
+          "leaf_slots": 2670,
+          "n_features": 9,
+          "bit_columns": 36,
+          "used_bit_columns_per_level": [
+            18,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "broadcast": {
+            "client_ciphertexts": 36,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 173,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 216,
+            "rotation_calls": 253,
+            "rotation_calls_in_matrix_product": 210,
+            "rotation_calls_in_sum": 43,
+            "nonzero_diagonals_per_level": [
+              36,
+              36,
+              36,
+              36,
+              36,
+              36
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 7,
+            "ct_ct_multiplications": 95,
+            "ct_plain_multiplications": 54,
+            "rotation_calls": 43,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 43,
+            "degree": 9,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "7": {
+          "leaf_slots": 2627,
+          "n_features": 9,
+          "bit_columns": 36,
+          "used_bit_columns_per_level": [
+            20,
+            29,
+            31,
+            31,
+            31,
+            31
+          ],
+          "broadcast": {
+            "client_ciphertexts": 36,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 173,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 216,
+            "rotation_calls": 241,
+            "rotation_calls_in_matrix_product": 210,
+            "rotation_calls_in_sum": 31,
+            "nonzero_diagonals_per_level": [
+              36,
+              36,
+              36,
+              36,
+              36,
+              36
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 7,
+            "ct_ct_multiplications": 95,
+            "ct_plain_multiplications": 54,
+            "rotation_calls": 31,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 31,
+            "degree": 9,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "456": {
+          "leaf_slots": 2676,
+          "n_features": 9,
+          "bit_columns": 36,
+          "used_bit_columns_per_level": [
+            18,
+            27,
+            30,
+            31,
+            31,
+            31
+          ],
+          "broadcast": {
+            "client_ciphertexts": 36,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 168,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 216,
+            "rotation_calls": 252,
+            "rotation_calls_in_matrix_product": 210,
+            "rotation_calls_in_sum": 42,
+            "nonzero_diagonals_per_level": [
+              36,
+              36,
+              36,
+              36,
+              36,
+              36
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 7,
+            "ct_ct_multiplications": 95,
+            "ct_plain_multiplications": 54,
+            "rotation_calls": 42,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 42,
+            "degree": 9,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "789": {
+          "leaf_slots": 2686,
+          "n_features": 9,
+          "bit_columns": 36,
+          "used_bit_columns_per_level": [
+            13,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "broadcast": {
+            "client_ciphertexts": 36,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 168,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 216,
+            "rotation_calls": 258,
+            "rotation_calls_in_matrix_product": 210,
+            "rotation_calls_in_sum": 48,
+            "nonzero_diagonals_per_level": [
+              36,
+              36,
+              36,
+              36,
+              36,
+              36
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 7,
+            "ct_ct_multiplications": 95,
+            "ct_plain_multiplications": 54,
+            "rotation_calls": 48,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 48,
+            "degree": 9,
+            "exact_interpolant_constructed": true
+          }
+        }
+      },
+      "interpolant_check": {
+        "nodes": 10,
+        "degree": 9,
+        "max_node_residual": 6.8833827526759706e-15,
+        "condition_number": 4027.5832726398157,
+        "passes_code_assertion_1e-8": true
+      },
+      "design": {
+        "bit_columns": 36,
+        "levels": {
+          "broadcast": 4,
+          "packed": 4,
+          "interpolation": 7
+        },
+        "client_ciphertexts": {
+          "broadcast": 36,
+          "packed": 1,
+          "interpolation": 6
+        },
+        "interpolation_degree": 9
+      },
+      "measured_upload_ratio_broadcast_to_packed": 35.992411706411346,
+      "expected_ratio_bit_columns": 36,
+      "measured_upload_ratio_interpolation_to_packed": 6.000370717268724
+    },
+    "B=8": {
+      "seeds": {
+        "42": {
+          "leaf_slots": 2712,
+          "n_features": 9,
+          "bit_columns": 63,
+          "used_bit_columns_per_level": [
+            24,
+            39,
+            48,
+            51,
+            51,
+            51
+          ],
+          "broadcast": {
+            "client_ciphertexts": 63,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 264,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 378,
+            "rotation_calls": 410,
+            "rotation_calls_in_matrix_product": 372,
+            "rotation_calls_in_sum": 38,
+            "nonzero_diagonals_per_level": [
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 8,
+            "ct_ct_multiplications": 167,
+            "ct_plain_multiplications": 90,
+            "rotation_calls": 38,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 38,
+            "degree": 15,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "123": {
+          "leaf_slots": 2713,
+          "n_features": 9,
+          "bit_columns": 63,
+          "used_bit_columns_per_level": [
+            19,
+            39,
+            47,
+            51,
+            51,
+            51
+          ],
+          "broadcast": {
+            "client_ciphertexts": 63,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 258,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 378,
+            "rotation_calls": 411,
+            "rotation_calls_in_matrix_product": 372,
+            "rotation_calls_in_sum": 39,
+            "nonzero_diagonals_per_level": [
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 8,
+            "ct_ct_multiplications": 167,
+            "ct_plain_multiplications": 90,
+            "rotation_calls": 39,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 39,
+            "degree": 15,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "7": {
+          "leaf_slots": 2693,
+          "n_features": 9,
+          "bit_columns": 63,
+          "used_bit_columns_per_level": [
+            21,
+            42,
+            49,
+            51,
+            51,
+            51
+          ],
+          "broadcast": {
+            "client_ciphertexts": 63,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 265,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 378,
+            "rotation_calls": 405,
+            "rotation_calls_in_matrix_product": 372,
+            "rotation_calls_in_sum": 33,
+            "nonzero_diagonals_per_level": [
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 8,
+            "ct_ct_multiplications": 167,
+            "ct_plain_multiplications": 90,
+            "rotation_calls": 33,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 33,
+            "degree": 15,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "456": {
+          "leaf_slots": 2731,
+          "n_features": 9,
+          "bit_columns": 63,
+          "used_bit_columns_per_level": [
+            20,
+            37,
+            48,
+            51,
+            51,
+            51
+          ],
+          "broadcast": {
+            "client_ciphertexts": 63,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 258,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 378,
+            "rotation_calls": 414,
+            "rotation_calls_in_matrix_product": 372,
+            "rotation_calls_in_sum": 42,
+            "nonzero_diagonals_per_level": [
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 8,
+            "ct_ct_multiplications": 167,
+            "ct_plain_multiplications": 90,
+            "rotation_calls": 42,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 42,
+            "degree": 15,
+            "exact_interpolant_constructed": true
+          }
+        },
+        "789": {
+          "leaf_slots": 2733,
+          "n_features": 9,
+          "bit_columns": 63,
+          "used_bit_columns_per_level": [
+            18,
+            38,
+            50,
+            51,
+            51,
+            51
+          ],
+          "broadcast": {
+            "client_ciphertexts": 63,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 259,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 378,
+            "rotation_calls": 415,
+            "rotation_calls_in_matrix_product": 372,
+            "rotation_calls_in_sum": 43,
+            "nonzero_diagonals_per_level": [
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 8,
+            "ct_ct_multiplications": 167,
+            "ct_plain_multiplications": 90,
+            "rotation_calls": 43,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 43,
+            "degree": 15,
+            "exact_interpolant_constructed": true
+          }
+        }
+      },
+      "interpolant_check": {
+        "nodes": 16,
+        "degree": 15,
+        "max_node_residual": 1.0503709013676144e-11,
+        "condition_number": 2891878.3222587216,
+        "passes_code_assertion_1e-8": true
+      },
+      "design": {
+        "bit_columns": 63,
+        "levels": {
+          "broadcast": 4,
+          "packed": 4,
+          "interpolation": 8
+        },
+        "client_ciphertexts": {
+          "broadcast": 63,
+          "packed": 1,
+          "interpolation": 6
+        },
+        "interpolation_degree": 15
+      },
+      "measured_upload_ratio_broadcast_to_packed": 62.9945143699301,
+      "expected_ratio_bit_columns": 63
+    },
+    "B=16": {
+      "seeds": {
+        "42": {
+          "leaf_slots": 2737,
+          "n_features": 9,
+          "bit_columns": 135,
+          "used_bit_columns_per_level": [
+            26,
+            51,
+            74,
+            92,
+            95,
+            95
+          ],
+          "broadcast": {
+            "client_ciphertexts": 135,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 433,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 810,
+            "rotation_calls": 845,
+            "rotation_calls_in_matrix_product": 804,
+            "rotation_calls_in_sum": 41,
+            "nonzero_diagonals_per_level": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 9,
+            "ct_ct_multiplications": 359,
+            "ct_plain_multiplications": 186,
+            "rotation_calls": 41,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 41,
+            "degree": 31,
+            "exact_interpolant_constructed": false
+          }
+        },
+        "123": {
+          "leaf_slots": 2710,
+          "n_features": 9,
+          "bit_columns": 135,
+          "used_bit_columns_per_level": [
+            19,
+            56,
+            78,
+            89,
+            95,
+            95
+          ],
+          "broadcast": {
+            "client_ciphertexts": 135,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 432,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 810,
+            "rotation_calls": 843,
+            "rotation_calls_in_matrix_product": 804,
+            "rotation_calls_in_sum": 39,
+            "nonzero_diagonals_per_level": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 9,
+            "ct_ct_multiplications": 359,
+            "ct_plain_multiplications": 186,
+            "rotation_calls": 39,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 39,
+            "degree": 31,
+            "exact_interpolant_constructed": false
+          }
+        },
+        "7": {
+          "leaf_slots": 2673,
+          "n_features": 9,
+          "bit_columns": 135,
+          "used_bit_columns_per_level": [
+            25,
+            47,
+            79,
+            91,
+            95,
+            95
+          ],
+          "broadcast": {
+            "client_ciphertexts": 135,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 432,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 810,
+            "rotation_calls": 844,
+            "rotation_calls_in_matrix_product": 804,
+            "rotation_calls_in_sum": 40,
+            "nonzero_diagonals_per_level": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 9,
+            "ct_ct_multiplications": 359,
+            "ct_plain_multiplications": 186,
+            "rotation_calls": 40,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 40,
+            "degree": 31,
+            "exact_interpolant_constructed": false
+          }
+        },
+        "456": {
+          "leaf_slots": 2711,
+          "n_features": 9,
+          "bit_columns": 135,
+          "used_bit_columns_per_level": [
+            23,
+            58,
+            77,
+            90,
+            95,
+            95
+          ],
+          "broadcast": {
+            "client_ciphertexts": 135,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 438,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 810,
+            "rotation_calls": 844,
+            "rotation_calls_in_matrix_product": 804,
+            "rotation_calls_in_sum": 40,
+            "nonzero_diagonals_per_level": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 9,
+            "ct_ct_multiplications": 359,
+            "ct_plain_multiplications": 186,
+            "rotation_calls": 40,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 40,
+            "degree": 31,
+            "exact_interpolant_constructed": false
+          }
+        },
+        "789": {
+          "leaf_slots": 2730,
+          "n_features": 9,
+          "bit_columns": 135,
+          "used_bit_columns_per_level": [
+            22,
+            54,
+            80,
+            88,
+            95,
+            95
+          ],
+          "broadcast": {
+            "client_ciphertexts": 135,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 434,
+            "rotation_calls": 13,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 13
+          },
+          "packed": {
+            "client_ciphertexts": 1,
+            "levels": 4,
+            "ct_ct_multiplications": 5,
+            "ct_plain_multiplications": 810,
+            "rotation_calls": 845,
+            "rotation_calls_in_matrix_product": 804,
+            "rotation_calls_in_sum": 41,
+            "nonzero_diagonals_per_level": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ]
+          },
+          "interpolation": {
+            "client_ciphertexts": 6,
+            "levels": 9,
+            "ct_ct_multiplications": 359,
+            "ct_plain_multiplications": 186,
+            "rotation_calls": 41,
+            "rotation_calls_in_matrix_product": 0,
+            "rotation_calls_in_sum": 41,
+            "degree": 31,
+            "exact_interpolant_constructed": false
+          }
+        }
+      },
+      "interpolant_check": {
+        "nodes": 32,
+        "degree": 31,
+        "max_node_residual": 0.0005414381806610469,
+        "condition_number": 154373971860737.5,
+        "passes_code_assertion_1e-8": false
+      },
+      "design": {
+        "bit_columns": 135,
+        "levels": {
+          "broadcast": 4,
+          "packed": 4,
+          "interpolation": 9
+        },
+        "client_ciphertexts": {
+          "broadcast": 135,
+          "packed": 1,
+          "interpolation": 6
+        },
+        "interpolation_degree": 31
+      },
+      "measured_upload_ratio_broadcast_to_packed": 135.01685070046008,
+      "expected_ratio_bit_columns": 135
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "N_poly_modulus_degree": 16384,
+  "coeff_modulus_bit_sizes": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "actual_total_bits": 400,
+  "method": "tenseal.sealapi (Microsoft SEAL C++ API bindings): CoeffModulus.MaxBitCount() against the Homomorphic Encryption Security Standard tables, cross-checked by constructing a SEALContext with security-level enforcement and reading parameters_set().",
+  "by_security_level": {
+    "TC128": {
+      "standard_max_bits_for_N": 438,
+      "parameters_set_under_enforcement": true
+    },
+    "TC192": {
+      "standard_max_bits_for_N": 305,
+      "parameters_set_under_enforcement": false
+    }
+  },
+  "conclusion": "N=16384, 400-bit chain satisfies TC128 (ceiling 438 bits) but not TC192 -- lambda=128 is confirmed, not merely asserted."
+}

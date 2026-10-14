@@ -1,0 +1,44 @@
+{
+  "N_poly_modulus_degree": 16384,
+  "requested_bit_sizes": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "scale_bits": 40,
+  "primes": [
+    1152921504606683137,
+    1099504549889,
+    1099505827841,
+    1099506352129,
+    1099506515969,
+    1099507695617,
+    1099508121601,
+    1099510054913,
+    1152921504606748673
+  ],
+  "prime_bit_lengths": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "total_modulus_bits_sum_of_bit_lengths": 400,
+  "log2_of_product_of_primes": 399.999958,
+  "note": "Key-generation security is with respect to the FULL modulus including the special (last) prime; ciphertexts at deeper levels use a prefix of the chain but are encrypted under the same secret and public key, so the full product is the relevant q for the security estimate.",
+  "tenseal_version": "0.3.17",
+  "seal_reference": "Microsoft SEAL as bundled with TenSEAL (version string not exposed by tenseal.sealapi)",
+  "seal_secret_key_distribution": "ternary {-1, 0, 1}, uniform (SEAL documented default; not read back from the binary)",
+  "seal_error_distribution": "centered discrete Gaussian, standard deviation 3.20 (SEAL default), truncated at 6 sigma (SEAL documented default; not read back from the binary)"
+}

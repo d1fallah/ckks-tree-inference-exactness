@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Supplementary: how the continuous-feature configuration was reached. Seed 42, validation split, simulated; exploratory analyses\added{}, each pre-specified in a committed note before it ran. Columns: decisions differing from the plaintext model per 1,000 stays, and the share of plaintext positives lost (``--'': not recorded in that artifact). The degrees $k=15$ and $k=63$ lie outside the evaluated family and are additional diagnostic arms. All rows use the seven triage vital signs and age only, without triage acuity, so they are not comparable in level to Table~\ref{tab:t11_continuous_fidelity}. The last row counts differing decisions, which is zero, with no positive lost. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s7_pilot_trajectory}
+\begin{tabular}{llrr}
+\toprule
+Configuration & Degree & Differing / 1,000 & Positives lost \\
+\midrule
+Full precision, one pooled interval & $k=9$ & 107.9 & -- \\
+Full precision, per-feature interval & $k=9$ & 35.0 & -- \\
+Full precision, per-feature interval & $k=15$ & 28.6 & 28.6\% \\
+Full precision, per-feature interval & $k=63$ & 19.4 & 21.9\% \\
+8 bins, approximate comparison & $k=9$ & 28.9 & 39.6\% \\
+8 bins, approximate comparison & $k=15$ & 12.8 & 9.1\% \\
+5 bins, exact comparison & $k=9$ & 0.0 & 0\% \\
+\bottomrule
+\end{tabular}
+\end{table*}

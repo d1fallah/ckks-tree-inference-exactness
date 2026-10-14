@@ -1,0 +1,65 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,decorations.pathreplacing}
+\begin{document}
+
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{inkb}{HTML}{52514E}
+\definecolor{mut}{HTML}{898781}
+\definecolor{blu}{HTML}{2A78D6}
+\definecolor{blul}{HTML}{DCE9F8}
+\definecolor{blum}{HTML}{9EC5F4}
+\definecolor{padg}{HTML}{E6E5DF}
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\begin{tikzpicture}[
+  x=1cm, y=1cm, font=\small, text=ink,
+  cell/.style={draw=inkb, line width=0.5pt, minimum width=1.3cm, minimum height=0.78cm, inner sep=1pt,
+               fill=blul},
+  padc/.style={cell, fill=padg, text=inkb},
+  rowlab/.style={anchor=east, align=right, text width=3.0cm, font=\small},
+  note/.style={anchor=west, align=left, text width=3.7cm, font=\footnotesize, text=inkb},
+  flow/.style={line width=1.6pt, line cap=round},
+]
+  % slot c is centred at x = 4.25 + 1.4 (c-1); cells are 1.3 cm wide
+  \draw[decorate, decoration={brace, amplitude=3pt}, inkb] (3.6, 5.45) -- (9.1, 5.45)
+    node[midway, above=3pt, text=ink] {tree 1 (four leaves)};
+  \draw[decorate, decoration={brace, amplitude=3pt}, inkb] (9.2, 5.45) -- (11.9, 5.45)
+    node[midway, above=3pt, text=ink] {tree 2 (two leaves)};
+  \node[rowlab, text=inkb] at (3.45, 4.85) {slot (one per leaf)};
+  \foreach \c in {1,...,6} {\node[text=inkb, font=\footnotesize] at ({4.25+1.4*(\c-1)}, 4.85) {\c};}
+
+  \node[rowlab] at (3.45, 3.85) {level-1 ciphertext};
+  \foreach \c/\t in {1/a, 2/a, 3/a, 4/a, 5/d, 6/d} {
+    \node[cell] at ({4.25+1.4*(\c-1)}, 3.85) {$z_{\t}$};
+  }
+  \node[rowlab] at (3.45, 2.85) {level-2 ciphertext};
+  \foreach \c/\t in {1/b, 2/b, 3/c, 4/c} {
+    \node[cell] at ({4.25+1.4*(\c-1)}, 2.85) {$z_{\t}$};
+  }
+  \foreach \c in {5,6} {\node[padc] at ({4.25+1.4*(\c-1)}, 2.85) {\footnotesize pad};}
+  \node[note] at (12.3, 3.35) {\textbf{Client.} One margin $z$ per slot and level; a padded slot
+    holds the constant $1$.};
+
+  \draw[-{Stealth[length=2.2mm]}, flow, blu] (7.75, 2.2) -- (7.75, 1.5);
+  \node[anchor=west, font=\footnotesize, text=inkb, align=left, text width=4.0cm] at (8.0, 1.85)
+    {server: comparison polynomial $b_k(z)$ on all slots at once};
+
+  \node[rowlab] at (3.45, 0.85) {path product $\times$ leaf value};
+  \foreach \c in {1,...,6} {
+    \node[cell, fill=blum] at ({4.25+1.4*(\c-1)}, 0.85) {$p_{\c}v_{\c}$};
+  }
+  \node[note] at (12.3, 0.85) {\textbf{Server, no rotations.} Balanced product over the levels
+    ($\lceil\log_2 D\rceil$ deep); the leaf value $v_\ell$ is folded into the last level's coefficients.};
+
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, inkb] (3.6, 0.3) -- (11.9, 0.3);
+  \draw[-{Stealth[length=2.2mm]}, flow, blu] (7.75, -0.2) -- (7.75, -0.75);
+  \node[draw=blu, line width=1.3pt, fill=blum, minimum width=5.4cm, minimum height=0.8cm,
+        rounded corners=2pt] at (7.75, -1.3) {encrypted score $\sum_\ell p_\ell v_\ell$};
+  \node[note] at (12.3, -1.3) {\textbf{Server, rotations.} Rotate-and-add over the slots: the only
+    step that rotates.};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Plaintext baseline, {Proxy cohort (MIMIC-IV-ED-derived)}, 5 seeds, 50 trees / depth 6, one binary XGBoost model per label. Plaintext inference without encryption.}
+\label{tab:t2_plaintext_baseline}
+\begin{tabular}{lrrrr}
+\toprule
+Label & Test prevalence & F1 (tuned, mean $\pm$ SD) & AUROC & AUPRC \\
+\midrule
+hypertension uncomplicated & 0.380 & 0.6781 $\pm$ 0.0014 & 0.8050 & 0.6907 \\
+cardiac arrhythmias & 0.229 & 0.5507 $\pm$ 0.0025 & 0.7933 & 0.5783 \\
+fluid and electrolyte disorders & 0.229 & 0.4226 $\pm$ 0.0012 & 0.6548 & 0.3362 \\
+depression & 0.224 & 0.5701 $\pm$ 0.0009 & 0.7997 & 0.4892 \\
+chronic pulmonary disease & 0.210 & 0.6406 $\pm$ 0.0011 & 0.8223 & 0.6597 \\
+\midrule
+\textbf{Macro (mean over 5 seeds)} & -- & \textbf{0.5724 $\pm$ 0.0007} & 0.7750 & 0.5508 \\
+Macro F1 at fixed 0.5 threshold (untuned) & -- & 0.4452 $\pm$ 0.0017 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

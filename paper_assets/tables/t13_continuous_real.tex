@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Continuous-feature task, 5-bin exact circuit of degree 9 on \textsc{real} ciphertexts (coefficient-folding evaluator, locked parameters). Per seed: a frozen stratified test sample (plaintext-positive and plaintext-negative stays at the F1-maximizing threshold); decisions agreeing with the plaintext model; largest absolute difference between the decrypted margin and the simulated margin (correctness gate $5.00 \times 10^{-4}$); wall-clock seconds per stay for one label. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t13_continuous_real}
+\begin{tabular}{rrrrr}
+\toprule
+Seed & Stays & Agreeing decisions & Max margin difference & Seconds per stay \\
+\midrule
+42 & 200 & 200 & $2.65 \times 10^{-4}$ & 2.13 \\
+123 & 200 & 200 & $2.46 \times 10^{-4}$ & 2.15 \\
+7 & 200 & 200 & $5.37 \times 10^{-4}$ & 2.13 \\
+456 & 200 & 200 & $3.12 \times 10^{-4}$ & 2.14 \\
+789 & 200 & 200 & $3.77 \times 10^{-4}$ & 2.15 \\
+\midrule
+All & 1,000 & 1,000 & $5.37 \times 10^{-4}$ & 2.14 \\
+\bottomrule
+\end{tabular}
+\end{table*}

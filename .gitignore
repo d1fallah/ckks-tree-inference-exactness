@@ -1,0 +1,42 @@
+# Credentialed, patient-level data must never be committed.
+# The two small public inputs below are the only files tracked under data/.
+data/*
+!data/poly_coeffs_v1.json
+!data/atc_crosswalk.json
+data/models/
+*.parquet
+*.csv
+*.csv.gz
+*.gz
+*.zip
+*.rar
+*.7z
+
+# Models trained on credentialed data, and key material
+*.ubj
+*.pkl
+keys/
+*.key
+*.pem
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build output and editor/OS files
+build/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+.DS_Store
+Thumbs.db
+
+# Office documents
+*.docx
+*.pptx
+*.xlsx

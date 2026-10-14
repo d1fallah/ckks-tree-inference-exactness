@@ -1,0 +1,40 @@
+{
+  "protocol": "unit costs for the design memo; measured, not estimated; SEAL API through tenseal.sealapi",
+  "slots": 8192,
+  "rotate_by_1_power_of_two": {
+    "mean_s": 0.016923538133354062,
+    "sd_s": 0.0003680227914927559,
+    "n_timed": 30
+  },
+  "rotate_by_16_power_of_two": {
+    "mean_s": 0.016588831466833653,
+    "sd_s": 0.0001991332210024119,
+    "n_timed": 30
+  },
+  "rotate_by_15_non_power_of_two": {
+    "mean_s": 0.03342611193317377,
+    "sd_s": 0.0005585868708161511,
+    "n_timed": 30
+  },
+  "rotate_by_37_non_power_of_two": {
+    "mean_s": 0.05028506439994089,
+    "sd_s": 0.0010948984589032003,
+    "n_timed": 30
+  },
+  "multiply_plain_preencoded_and_rescale": {
+    "mean_s": 0.0036497619000328994,
+    "sd_s": 0.00013768934480952092,
+    "n_timed": 30
+  },
+  "add_plain_preencoded": {
+    "mean_s": 0.0002453516000059608,
+    "sd_s": 4.1632925853046035e-05,
+    "n_timed": 30
+  },
+  "key_sizes_bytes": {
+    "evaluation_context_with_galois_keys_bytes": 415248863,
+    "evaluation_context_without_galois_keys_bytes": 17198228,
+    "galois_keys_bytes": 398050635
+  },
+  "default_galois_key_count": 26
+}

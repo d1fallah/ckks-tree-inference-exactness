@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: the polynomial step on one ciphertext of 2,751 slots, same comparison polynomial, through the two SEAL evaluators and OpenFHE's Paterson--Stockmeyer Chebyshev evaluation (levels consumed; time in s, mean over 20 timed repetitions). SEAL levels are the polynomial depths of the circuit's evaluators; the OpenFHE levels were read from the library. ``+ per-slot'' adds the per-slot affine step that the circuit's per-slot coefficients need (one more level). The libraries differ in RNS layout, rescaling and key switching (OpenFHE: hybrid key switching, one digit per tower, ring degree 16,384 at 128-bit security), so this compares libraries, not evaluators inside one. The $\Delta$F1 of $k=9$ is simulation only, and the original evaluator cannot execute $k=9$ (8 levels needed, 7 available). Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s6_ps_benchmark}
+\begin{tabular}{lcccccccc}
+\toprule
+& \multicolumn{2}{c}{SEAL original} & \multicolumn{2}{c}{SEAL folding} & \multicolumn{2}{c}{OpenFHE PS} & \multicolumn{2}{c}{OpenFHE PS + per-slot} \\
+$k$ & levels & time & levels & time & levels & time & levels & time \\
+\midrule
+3 & 3 & 0.070 & 2 & 0.092 & 3 & 0.054 & 4 & 0.060 \\
+5 & 4 & 0.123 & 3 & 0.180 & 3 & 0.088 & 4 & 0.097 \\
+7 & 4 & 0.174 & 4 & 0.250 & 4 & 0.130 & 5 & 0.117 \\
+9 & 5 & n/a$^\dagger$ & 4 & 0.320 & 4 & 0.145 & 5 & 0.137 \\
+\bottomrule
+\end{tabular}
+\\[2pt]
+{\footnotesize $\dagger$ the $\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\ref{tab:t5_real_vs_simulated}).}
+\end{table*}

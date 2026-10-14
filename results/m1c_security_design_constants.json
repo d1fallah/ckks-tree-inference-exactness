@@ -1,0 +1,9 @@
+{
+  "note": "Size of a single-bit probe set of the thermometer protocol: n_inputs x (B - 1). A design constant. It is not an estimate of the cost of recovering the model, and no attack was run.",
+  "n_inputs": 9,
+  "single_bit_probe_set_size": {
+    "B=5": 36,
+    "B=8": 63,
+    "B=16": 135
+  }
+}

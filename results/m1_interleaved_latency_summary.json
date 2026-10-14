@@ -1,0 +1,140 @@
+{
+  "protocol": "docs/step2_prespec_m1.md section C (added analysis S2.3a)",
+  "order": {
+    "round_1": [
+      [
+        "original",
+        3
+      ],
+      [
+        "folding",
+        3
+      ],
+      [
+        "original",
+        5
+      ],
+      [
+        "folding",
+        5
+      ],
+      [
+        "original",
+        7
+      ],
+      [
+        "folding",
+        7
+      ],
+      [
+        "folding",
+        9
+      ]
+    ],
+    "round_2": [
+      [
+        "folding",
+        9
+      ],
+      [
+        "folding",
+        7
+      ],
+      [
+        "original",
+        7
+      ],
+      [
+        "folding",
+        5
+      ],
+      [
+        "original",
+        5
+      ],
+      [
+        "folding",
+        3
+      ],
+      [
+        "original",
+        3
+      ]
+    ]
+  },
+  "by_k": {
+    "k=3": {
+      "original": {
+        "round_1_mean_s": 0.6657300486500389,
+        "round_1_sd_s": 0.03314484240683826,
+        "round_2_mean_s": 0.6758417078499861,
+        "round_2_sd_s": 0.022772093857825807,
+        "mean_of_round_means_s": 0.6707858782500125,
+        "n_timed_per_round": 20
+      },
+      "folding": {
+        "round_1_mean_s": 0.855825673300069,
+        "round_1_sd_s": 0.03727580582814969,
+        "round_2_mean_s": 0.8434448427501138,
+        "round_2_sd_s": 0.010090157073607033,
+        "mean_of_round_means_s": 0.8496352580250914,
+        "n_timed_per_round": 20
+      },
+      "folding_over_original_ratio_round_1": 1.2855446063092753,
+      "folding_over_original_ratio_round_2": 1.247991701242164,
+      "folding_over_original_ratio_mean": 1.2667681537757196
+    },
+    "k=5": {
+      "original": {
+        "round_1_mean_s": 0.9059595407499955,
+        "round_1_sd_s": 0.007566589425825221,
+        "round_2_mean_s": 0.9146408930501366,
+        "round_2_sd_s": 0.027258246144098358,
+        "mean_of_round_means_s": 0.910300216900066,
+        "n_timed_per_round": 20
+      },
+      "folding": {
+        "round_1_mean_s": 1.278393731300025,
+        "round_1_sd_s": 0.016614714145315356,
+        "round_2_mean_s": 1.3008748371000138,
+        "round_2_sd_s": 0.03219913426696866,
+        "mean_of_round_means_s": 1.2896342842000195,
+        "n_timed_per_round": 20
+      },
+      "folding_over_original_ratio_round_1": 1.4110936237193454,
+      "folding_over_original_ratio_round_2": 1.4222793305926522,
+      "folding_over_original_ratio_mean": 1.4166864771559988
+    },
+    "k=7": {
+      "original": {
+        "round_1_mean_s": 1.1962843241999963,
+        "round_1_sd_s": 0.027488866218137464,
+        "round_2_mean_s": 1.2132415140000377,
+        "round_2_sd_s": 0.030422706491234477,
+        "mean_of_round_means_s": 1.204762919100017,
+        "n_timed_per_round": 20
+      },
+      "folding": {
+        "round_1_mean_s": 1.6663167225500275,
+        "round_1_sd_s": 0.04128846617384907,
+        "round_2_mean_s": 1.6667250868500105,
+        "round_2_sd_s": 0.03154308372692242,
+        "mean_of_round_means_s": 1.6665209047000191,
+        "n_timed_per_round": 20
+      },
+      "folding_over_original_ratio_round_1": 1.3929102712805008,
+      "folding_over_original_ratio_round_2": 1.3737784831932143,
+      "folding_over_original_ratio_mean": 1.3833443772368574
+    },
+    "k=9": {
+      "folding": {
+        "round_1_mean_s": 2.13069468074998,
+        "round_1_sd_s": 0.0764561616653068,
+        "round_2_mean_s": 2.1142965283000423,
+        "round_2_sd_s": 0.058907632675679084,
+        "mean_of_round_means_s": 2.122495604525011,
+        "n_timed_per_round": 20
+      }
+    }
+  }
+}

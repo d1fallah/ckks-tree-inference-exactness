@@ -1,0 +1,86 @@
+{
+  "purpose": "revision E1: code-derived depth of the folding evaluator vs real-ciphertext measurement",
+  "measured_source": "results/m1_folded_evaluator_feasibility.json",
+  "per_degree": {
+    "k=3": {
+      "polynomial_operations_original": {
+        "ct_x_ct": 2,
+        "ct_x_pt": 3
+      },
+      "polynomial_operations_folded": {
+        "ct_x_ct": 3,
+        "ct_x_pt": 3
+      },
+      "polynomial_depth_original": 3,
+      "polynomial_depth_folded": 2,
+      "total_depth_original": 6,
+      "total_depth_folded": 5,
+      "levels_available": 7,
+      "fits_original": true,
+      "fits_folded": true,
+      "measured_polynomial_levels_original": 3,
+      "measured_polynomial_levels_folded": 2,
+      "code_derived_equals_measured": true
+    },
+    "k=5": {
+      "polynomial_operations_original": {
+        "ct_x_ct": 4,
+        "ct_x_pt": 5
+      },
+      "polynomial_operations_folded": {
+        "ct_x_ct": 7,
+        "ct_x_pt": 5
+      },
+      "polynomial_depth_original": 4,
+      "polynomial_depth_folded": 3,
+      "total_depth_original": 7,
+      "total_depth_folded": 6,
+      "levels_available": 7,
+      "fits_original": true,
+      "fits_folded": true,
+      "measured_polynomial_levels_original": 4,
+      "measured_polynomial_levels_folded": 3,
+      "code_derived_equals_measured": true
+    },
+    "k=7": {
+      "polynomial_operations_original": {
+        "ct_x_ct": 6,
+        "ct_x_pt": 7
+      },
+      "polynomial_operations_folded": {
+        "ct_x_ct": 11,
+        "ct_x_pt": 7
+      },
+      "polynomial_depth_original": 4,
+      "polynomial_depth_folded": 4,
+      "total_depth_original": 7,
+      "total_depth_folded": 7,
+      "levels_available": 7,
+      "fits_original": true,
+      "fits_folded": true,
+      "measured_polynomial_levels_original": 4,
+      "measured_polynomial_levels_folded": 4,
+      "code_derived_equals_measured": true
+    },
+    "k=9": {
+      "polynomial_operations_original": {
+        "ct_x_ct": 8,
+        "ct_x_pt": 9
+      },
+      "polynomial_operations_folded": {
+        "ct_x_ct": 15,
+        "ct_x_pt": 9
+      },
+      "polynomial_depth_original": 5,
+      "polynomial_depth_folded": 4,
+      "total_depth_original": 8,
+      "total_depth_folded": 7,
+      "levels_available": 7,
+      "fits_original": false,
+      "fits_folded": true,
+      "measured_polynomial_levels_original": 5,
+      "measured_polynomial_levels_folded": 4,
+      "code_derived_equals_measured": true
+    }
+  }
+}

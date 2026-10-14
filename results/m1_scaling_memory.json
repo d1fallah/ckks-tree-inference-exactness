@@ -1,0 +1,157 @@
+{
+  "protocol": "see src/measure_scaling_memory.py docstring (closure log Entry 10 open item)",
+  "backend": "REAL TenSEAL/SEAL ciphertext execution",
+  "k": 5,
+  "label": "label_hypertension_uncomplicated",
+  "model_seed": 42,
+  "n_warmup_discarded": 2,
+  "n_timed": 10,
+  "limit": "one model seed; memory depends on ciphertext count and size, not on the training seed, but this was not tested across seeds; one machine (WSL2), host load not controlled",
+  "process_isolation": "one fresh process per configuration; the parent trains and never reports its own memory",
+  "per_configuration": [
+    {
+      "n_leaves": 40,
+      "n_input_ciphertexts": 3,
+      "input_ciphertext_bytes_per_patient": 4942126,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209300,
+        "context_and_keys_increment": 1049172,
+        "rss_after_model_load": 1914788,
+        "rss_immediately_before_evaluation": 1914788,
+        "peak_rss_during_evaluation_phase": 1967244,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 52456
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.45518112009999995,
+      "fidelity_abs_diff_vs_simulation_first_patient": 5.643444842107215e-06,
+      "n_estimators": 5,
+      "max_depth": 3
+    },
+    {
+      "n_leaves": 80,
+      "n_input_ciphertexts": 3,
+      "input_ciphertext_bytes_per_patient": 4941596,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209504,
+        "context_and_keys_increment": 1049176,
+        "rss_after_model_load": 1914956,
+        "rss_immediately_before_evaluation": 1914956,
+        "peak_rss_during_evaluation_phase": 1967488,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 52532
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.4582826011999995,
+      "fidelity_abs_diff_vs_simulation_first_patient": 1.617677449006205e-05,
+      "n_estimators": 10,
+      "max_depth": 3
+    },
+    {
+      "n_leaves": 160,
+      "n_input_ciphertexts": 3,
+      "input_ciphertext_bytes_per_patient": 4940528,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209240,
+        "context_and_keys_increment": 1049180,
+        "rss_after_model_load": 1921396,
+        "rss_immediately_before_evaluation": 1921396,
+        "peak_rss_during_evaluation_phase": 1973516,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 52120
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.4631779901999991,
+      "fidelity_abs_diff_vs_simulation_first_patient": 1.4568432873507398e-05,
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    {
+      "n_leaves": 240,
+      "n_input_ciphertexts": 3,
+      "input_ciphertext_bytes_per_patient": 4941932,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209504,
+        "context_and_keys_increment": 1049180,
+        "rss_after_model_load": 1919468,
+        "rss_immediately_before_evaluation": 1919468,
+        "peak_rss_during_evaluation_phase": 1972688,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 53220
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.5000280991999994,
+      "fidelity_abs_diff_vs_simulation_first_patient": 2.133461257347591e-05,
+      "n_estimators": 30,
+      "max_depth": 3
+    },
+    {
+      "n_leaves": 399,
+      "n_input_ciphertexts": 3,
+      "input_ciphertext_bytes_per_patient": 4941485,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209496,
+        "context_and_keys_increment": 1049180,
+        "rss_after_model_load": 1920164,
+        "rss_immediately_before_evaluation": 1920164,
+        "peak_rss_during_evaluation_phase": 1974304,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 54140
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.4887161847999998,
+      "fidelity_abs_diff_vs_simulation_first_patient": 3.863077053645192e-05,
+      "n_estimators": 50,
+      "max_depth": 3
+    },
+    {
+      "n_leaves": 790,
+      "n_input_ciphertexts": 4,
+      "input_ciphertext_bytes_per_patient": 6589831,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209552,
+        "context_and_keys_increment": 1049172,
+        "rss_after_model_load": 1923084,
+        "rss_immediately_before_evaluation": 1923084,
+        "peak_rss_during_evaluation_phase": 1979172,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 56088
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.6295641253999961,
+      "fidelity_abs_diff_vs_simulation_first_patient": 1.3603602143863469e-05,
+      "n_estimators": 50,
+      "max_depth": 4
+    },
+    {
+      "n_leaves": 1501,
+      "n_input_ciphertexts": 5,
+      "input_ciphertext_bytes_per_patient": 8238011,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209296,
+        "context_and_keys_increment": 1049244,
+        "rss_after_model_load": 1922564,
+        "rss_immediately_before_evaluation": 1922564,
+        "peak_rss_during_evaluation_phase": 1981736,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 59172
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.7692400362,
+      "fidelity_abs_diff_vs_simulation_first_patient": 1.1573599519865141e-05,
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    {
+      "n_leaves": 2694,
+      "n_input_ciphertexts": 6,
+      "input_ciphertext_bytes_per_patient": 9883971,
+      "memory_kb": {
+        "peak_rss_reset_supported": true,
+        "rss_at_process_start": 209220,
+        "context_and_keys_increment": 1049240,
+        "rss_after_model_load": 1929112,
+        "rss_immediately_before_evaluation": 1929112,
+        "peak_rss_during_evaluation_phase": 1991808,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 62696
+      },
+      "latency_wall_clock_s_mean_crosscheck": 0.9451201244000018,
+      "fidelity_abs_diff_vs_simulation_first_patient": 2.9306301074560892e-05,
+      "n_estimators": 50,
+      "max_depth": 6
+    }
+  ]
+}

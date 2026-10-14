@@ -1,0 +1,13 @@
+\begin{table*}[t]
+\centering
+\caption{Staged feasibility check on a reduced model (5 trees, depth $\le$3, $k=5$), after the correction of the sigmoid steepness $\gamma$. Pre-specified thresholds: agreement $\ge 0.95$, normalized MAE $\le 0.10$, normalized RMSE $\le 0.15$. simulated. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s3_gate_m1a}
+\begin{tabular}{lrrrl}
+\toprule
+Arm & Agreement & Norm.\ MAE & Norm.\ RMSE & Pass \\
+\midrule
+synthetic & 0.9800 & 0.0279 & 0.0430 & \checkmark \\
+small clinical subset & 0.9767 & 0.0298 & 0.0400 & \checkmark \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,43 @@
+% Figure 1 of the JISA version: the structure- and threshold-hiding protocol as a sequence diagram (client and server lifelines, numbered steps, set-up above
+% the dashed rule and the evaluation of one input below it). No result is shown; the one value is the level count read from the result files.
+\begin{\jisawide}[t]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tikzpicture}[
+  x=1cm, y=1cm, font=\footnotesize, >={Stealth[length=2.4mm]},
+  party/.style={font=\small\bfseries, align=center},
+  msg/.style={->, line width=1pt},
+  cstep/.style={anchor=east, align=left, text width=5.0cm, inner sep=1pt},
+  sstep/.style={anchor=west, align=left, text width=5.5cm, inner sep=1pt},
+  mlab/.style={font=\scriptsize, above, align=center, inner sep=1.5pt},
+  phase/.style={font=\footnotesize\itshape, inner sep=1pt},
+]
+  % parties and lifelines
+  \node[party] (C) at (5.3,0) {Client\\[-1pt]{\scriptsize\mdseries holds the secret key and its inputs}};
+  \node[party] (S) at (10.6,0) {Server\\[-1pt]{\scriptsize\mdseries holds the model; never decrypts}};
+  \draw[dashed] (5.3,-0.9) -- (5.3,-10.7);
+  \draw[dashed] (10.6,-0.9) -- (10.6,-10.7);
+
+  % set-up
+  \node[phase, anchor=north west] at (0,-0.95) {Set-up, once};
+  \node[cstep] at (5.15,-1.9) {1.\ generate keys; keep the secret key};
+  \draw[msg] (5.3,-1.9) -- node[mlab] {evaluation keys} (10.6,-1.9);
+  \draw[dashed] (0,-2.55) -- (16.3,-2.55);
+
+  % evaluation of one input
+  \node[phase, anchor=north west] at (0,-2.6) {Evaluation of one input};
+  \node[cstep] at (5.15,-3.85) {2.\ bin the inputs with the public edges; form the bits $b_{f,m}=[x_f\ge m]$};
+  \node[cstep] at (5.15,-5.5) {3.\ encrypt the bits (one ciphertext per bit, or one packed ciphertext)};
+  \draw[msg] (5.3,-5.5) -- node[mlab] {encrypted bits} (10.6,-5.5);
+
+  \node[sstep, draw, rounded corners=2pt, fill=black!6, inner sep=3pt] at (10.75,-6.5)
+    {4.\ \textbf{selection} (one level): $a_d=\boldsymbol{\alpha}_d+\sum_j\boldsymbol{\mu}_{d,j}\odot c_j$; the masks $\boldsymbol{\mu}$ hold the structure and thresholds};
+  \node[sstep] at (10.75,-7.9) {5.\ balanced product of the $a_d$, leaf values folded in (three levels)};
+  \node[sstep] at (10.75,-8.85) {6.\ rotate-and-add over the slots (no level)};
+  \draw[msg] (10.6,-9.65) -- node[mlab] {one ciphertext} (5.3,-9.65);
+  \node[cstep] at (5.15,-10.25) {7.\ decrypt $f_M(x)$; nothing decrypted goes back to the server};
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Protocol of the structure- and threshold-hiding circuit, between a client and a semi-honest server. The client sends only model-independent thermometer bits of its binned inputs, and the structure and thresholds enter only through the server's plaintext masks. The circuit needs \MOneTMChainLevelsFour{} data levels and contains no polynomial approximation. In the interpolation circuit the client instead forms a normalized margin in every slot and must know the thresholds; in the client-computed baseline it knows the structure and thresholds and sends each leaf's path indicator.}
+\label{fig:protocol}
+\end{\jisawide}

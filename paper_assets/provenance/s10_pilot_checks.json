@@ -1,0 +1,122 @@
+{
+  "asset_id": "s10_pilot_checks",
+  "records": [
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/protocol",
+      "reduce_how": null,
+      "raw": "docs/m1c_thermo_pilot_prespec.md",
+      "fmt": null,
+      "formatted": "docs/m1c_thermo_pilot_prespec.md",
+      "note": "Validity pilot of the structure- and threshold-hiding protocol (added study). Proxy cohort (MIMIC-IV-ED-derived).",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "literal",
+      "artifact": null,
+      "pointer": null,
+      "reduce_how": null,
+      "raw": "8,192",
+      "fmt": null,
+      "formatted": "8,192",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": "ring degree tested in the pilot, a design parameter and not a result"
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/results/B=5/broadcast_thermometer_ring8192/n_stays",
+      "reduce_how": null,
+      "raw": 20,
+      "fmt": null,
+      "formatted": "20",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/results/B=5/broadcast_thermometer_ring8192/max_abs_margin_error",
+      "reduce_how": null,
+      "raw": 0.002872973680496216,
+      "fmt": "sci2",
+      "formatted": "$2.87 \\times 10^{-3}$",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/results/B=5/broadcast_thermometer_ring8192/gate",
+      "reduce_how": null,
+      "raw": 0.0005,
+      "fmt": "sci2",
+      "formatted": "$5.00 \\times 10^{-4}$",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/results/B=5/broadcast_thermometer_ring8192/decisions_agreeing",
+      "reduce_how": null,
+      "raw": 20,
+      "fmt": null,
+      "formatted": "20",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/results/B=5/broadcast_thermometer_ring8192/n_stays",
+      "reduce_how": null,
+      "raw": 20,
+      "fmt": null,
+      "formatted": "20",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/key_bytes_one_off/n8192/total",
+      "reduce_how": null,
+      "raw": 63063693,
+      "fmt": ",",
+      "formatted": "63,063,693",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_pilot.json",
+      "pointer": "/seeded_serialization_check",
+      "reduce_how": null,
+      "raw": "TenSEAL symmetric encryption gave 1,053,170 bytes against 1,052,708 for public-key encryption on synthetic data: no reduction",
+      "fmt": null,
+      "formatted": "TenSEAL symmetric encryption gave 1,053,170 bytes against 1,052,708 for public-key encryption on synthetic data: no reduction",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

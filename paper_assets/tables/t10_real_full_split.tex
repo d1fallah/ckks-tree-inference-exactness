@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Full test split on real ciphertexts: 32,493 test stays and five labels (162,465 real evaluations, 0 failed), models of training seed 42, degree $k=3$, original evaluator, frozen validation-tuned thresholds. F1 per label for the plaintext model, the circuit-faithful simulated evaluator, and real TenSEAL/SEAL ciphertexts; counts of evaluations on which the real and simulated margins differ in sign or in the decision at the threshold; largest absolute margin error. The macro-F1 deviation of the real execution from plaintext is 0.00036 (95\% CI [0.00003, 0.00190], paired bootstrap), against 0.00036 for the simulator and a tolerance of 0.03. One seed and one degree. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t10_real_full_split}
+\begin{tabular}{lrrrrrr}
+\toprule
+Label & F1 plaintext & F1 simulated & F1 real & Sign differs & Decision differs & Max abs.\ error \\
+\midrule
+hypertension uncomplicated & 0.6797 & 0.6822 & 0.6822 & 0 & 0 & 1.80e-04 \\
+cardiac arrhythmias & 0.5551 & 0.5541 & 0.5541 & 2 & 0 & 1.52e-04 \\
+fluid and electrolyte disorders & 0.4227 & 0.4195 & 0.4195 & 0 & 0 & 1.14e-04 \\
+depression & 0.5710 & 0.5727 & 0.5727 & 0 & 0 & 1.48e-04 \\
+chronic pulmonary disease & 0.6388 & 0.6406 & 0.6406 & 0 & 0 & 1.61e-04 \\
+\midrule
+Macro-F1 & 0.5735 & 0.5738 & 0.5738 & & & 1.80e-04 \\
+\bottomrule
+\end{tabular}
+\end{table*}

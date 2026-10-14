@@ -1,0 +1,190 @@
+{
+  "asset_id": "s3_gate_m1a",
+  "records": [
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms",
+      "reduce_how": null,
+      "raw": [
+        {
+          "arm": "synthetic",
+          "n": 300,
+          "agreement_sign": 0.98,
+          "normalized_mae": 0.02787699696610883,
+          "normalized_rmse": 0.04304194617019131,
+          "score_mae_raw": 0.06737533401601617,
+          "score_rmse_raw": 0.10402718425666978,
+          "plain_margin_range": [
+            -1.99498117,
+            0.42189802605999993
+          ],
+          "gate_pass": true
+        },
+        {
+          "arm": "small_clinical_subset",
+          "n": 300,
+          "agreement_sign": 0.9766666666666667,
+          "normalized_mae": 0.0297532845244378,
+          "normalized_rmse": 0.04000903630699202,
+          "score_mae_raw": 0.07880317257782177,
+          "score_rmse_raw": 0.10596608217094992,
+          "plain_margin_range": [
+            -1.8603502070000002,
+            0.7882035186599999
+          ],
+          "gate_pass": true
+        }
+      ],
+      "fmt": null,
+      "formatted": "[{'arm': 'synthetic', 'n': 300, 'agreement_sign': 0.98, 'normalized_mae': 0.02787699696610883, 'normalized_rmse': 0.04304194617019131, 'score_mae_raw': 0.06737533401601617, 'score_rmse_raw': 0.10402718425666978, 'plain_margin_range': [-1.99498117, 0.42189802605999993], 'gate_pass': True}, {'arm': 'small_clinical_subset', 'n': 300, 'agreement_sign': 0.9766666666666667, 'normalized_mae': 0.0297532845244378, 'normalized_rmse': 0.04000903630699202, 'score_mae_raw': 0.07880317257782177, 'score_rmse_raw': 0.10596608217094992, 'plain_margin_range': [-1.8603502070000002, 0.7882035186599999], 'gate_pass': True}]",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "literal",
+      "artifact": null,
+      "pointer": null,
+      "reduce_how": null,
+      "raw": "pre-specified thresholds agreement >= 0.95, normalized MAE <= 0.10, normalized RMSE <= 0.15, after the Amendment v1.2 gamma-recalibration correction",
+      "fmt": null,
+      "formatted": "pre-specified thresholds agreement >= 0.95, normalized MAE <= 0.10, normalized RMSE <= 0.15, after the Amendment v1.2 gamma-recalibration correction",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": "declared, pre-specified gate thresholds and amendment reference (m1-0-implementation-lock.md), not values measured by any results/*.json artifact"
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/0/arm",
+      "reduce_how": null,
+      "raw": "synthetic",
+      "fmt": null,
+      "formatted": "synthetic",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/0/agreement_sign",
+      "reduce_how": null,
+      "raw": 0.98,
+      "fmt": ".4f",
+      "formatted": "0.9800",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/0/normalized_mae",
+      "reduce_how": null,
+      "raw": 0.02787699696610883,
+      "fmt": ".4f",
+      "formatted": "0.0279",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/0/normalized_rmse",
+      "reduce_how": null,
+      "raw": 0.04304194617019131,
+      "fmt": ".4f",
+      "formatted": "0.0430",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/0/gate_pass",
+      "reduce_how": null,
+      "raw": true,
+      "fmt": null,
+      "formatted": "True",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/1/arm",
+      "reduce_how": null,
+      "raw": "small_clinical_subset",
+      "fmt": null,
+      "formatted": "small_clinical_subset",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/1/agreement_sign",
+      "reduce_how": null,
+      "raw": 0.9766666666666667,
+      "fmt": ".4f",
+      "formatted": "0.9767",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/1/normalized_mae",
+      "reduce_how": null,
+      "raw": 0.0297532845244378,
+      "fmt": ".4f",
+      "formatted": "0.0298",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/1/normalized_rmse",
+      "reduce_how": null,
+      "raw": 0.04000903630699202,
+      "fmt": ".4f",
+      "formatted": "0.0400",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_gate_a_report.json",
+      "pointer": "/arms/1/gate_pass",
+      "reduce_how": null,
+      "raw": true,
+      "fmt": null,
+      "formatted": "True",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

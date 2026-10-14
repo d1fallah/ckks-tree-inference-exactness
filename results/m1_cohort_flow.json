@@ -1,0 +1,8 @@
+{
+  "total_ed_stays": 425087,
+  "ed_stays_with_hadm_id": 203016,
+  "stays_linked_to_patients_table": 202990,
+  "stays_with_at_least_one_hosp_diagnosis": 202934,
+  "stays_with_at_least_one_medrecon_entry": 161718,
+  "final_cohort_size": 161718
+}

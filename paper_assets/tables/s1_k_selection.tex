@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Cheapest-feasible-degree selection under the pre-specified rule minimize $L(k)$ s.t.\ $\Delta$F1$(k)\le 0.03$. The selected $k^*$ is the lowest degree of the evaluated family in every tested seed and label, so the utility constraint never binds (Table~\ref{tab:t4_degree_grid}). This is not an adaptive-selection result. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s1_k_selection}
+\begin{tabular}{lccc}
+\toprule
+$k$ & $\Delta$F1 & Latency (s) & Feasible \\
+\midrule
+3 & 0.0016 & 0.66 $\pm$ 0.02 & \checkmark $\leftarrow k^*$ \\
+5 & 0.0019 & 0.91 $\pm$ 0.02 & \checkmark \\
+7 & 0.0022 & 1.20 $\pm$ 0.02 & \checkmark \\
+9 & 0.0026 & n/a$^\dagger$ & \checkmark \\
+\bottomrule
+\end{tabular}
+\\[2pt]
+{\footnotesize $\dagger$ the $\Delta$F1 of $k=9$ is simulation only; the original evaluator cannot execute $k=9$ (8 levels needed, 7 available), and real execution at $k=9$ uses the coefficient-folding evaluator (Table~\ref{tab:t5_real_vs_simulated}).}
+\end{table*}

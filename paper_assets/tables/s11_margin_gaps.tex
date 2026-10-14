@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Added analysis: distance between an attained plaintext margin and a decision threshold, smallest over the five seeds, and the number of test stays lying within the correctness gate ($5\times10^{-4}$) of a threshold. The \emph{sample} columns are over the sampled stays of each seed (the stays run on ciphertexts); the \emph{full split} columns are over the whole held-out test split. The count is the range over seeds of the test stays that could change decision under an error of at most the gate; it bounds, and does not count, the flips. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:s11_margin_gaps}
+\begin{tabular}{lrrrr}
+\toprule
+Threshold & $B$ & Smallest gap, sample & Smallest gap, full split & Stays within gate (min--max over seeds) \\
+\midrule
+F1 point & 5 & $3.94 \times 10^{-3}$ & $9.54 \times 10^{-7}$ & 3--9 \\
+ & 8 & $4.48 \times 10^{-3}$ & $8.94 \times 10^{-6}$ & 1--9 \\
+ & 16 & $5.53 \times 10^{-3}$ & $4.12 \times 10^{-5}$ & 4--9 \\
+\midrule
+80\% sensitivity & 5 & $1.08 \times 10^{-2}$ & $4.77 \times 10^{-7}$ & 6--26 \\
+ & 8 & $1.43 \times 10^{-6}$ & $1.43 \times 10^{-6}$ & 12--18 \\
+ & 16 & $5.82 \times 10^{-3}$ & $2.38 \times 10^{-6}$ & 13--21 \\
+\bottomrule
+\end{tabular}
+\end{table*}

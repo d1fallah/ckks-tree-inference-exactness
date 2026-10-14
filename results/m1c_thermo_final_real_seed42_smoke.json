@@ -1,0 +1,223 @@
+{
+  "seed": 42,
+  "smoke": true,
+  "sample": "4 stays (2 plaintext-positive, 2 plaintext-negative at the F1 threshold), generator seed 42",
+  "chains": {
+    "four_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "locked_seven_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ]
+  },
+  "key_bytes_one_off": {
+    "n16384_four_level": {
+      "public_key_and_params": 1316252,
+      "relin_keys": 6586238,
+      "galois_keys": 171597250,
+      "total": 179499740
+    },
+    "n16384_locked_seven_level": {
+      "public_key_and_params": 1909862,
+      "relin_keys": 15289683,
+      "galois_keys": 398046560,
+      "total": 415246105
+    }
+  },
+  "by_B": {
+    "B=5": {
+      "B": 5,
+      "broadcast_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00017261505126953125,
+        "mean_abs_margin_error": 7.842481136322021e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.1317436539999903,
+        "sd_seconds_per_stay": 0.010762422403483284,
+        "client_upload_bytes": 37929454,
+        "min_abs_gap_to_f1_threshold_sampled": 0.11015284061431885,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.4677191972732544,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00019168853759765625,
+        "mean_abs_margin_error": 9.779632091522217e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.431625680499991,
+        "sd_seconds_per_stay": 0.02520401249667277,
+        "client_upload_bytes": 1053195,
+        "min_abs_gap_to_f1_threshold_sampled": 0.11015284061431885,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.4677191972732544,
+        "error_below_min_gap_sens80": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 2.002716064453125e-05,
+        "mean_abs_margin_error": 1.2360513210296631e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09273381849997975,
+        "sd_seconds_per_stay": 0.0016296667608514176,
+        "client_upload_bytes": 1053105,
+        "min_abs_gap_to_f1_threshold_sampled": 0.11015284061431885,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.4677191972732544,
+        "error_below_min_gap_sens80": true
+      },
+      "exact_interpolation_7level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00021076202392578125,
+        "mean_abs_margin_error": 8.054077625274658e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.0580025827500066,
+        "sd_seconds_per_stay": 0.0065377206605936235,
+        "client_upload_bytes": 9887334,
+        "min_abs_gap_to_f1_threshold_sampled": 0.11015284061431885,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.4677191972732544,
+        "error_below_min_gap_sens80": true,
+        "degree": 9
+      }
+    },
+    "B=8": {
+      "B": 8,
+      "broadcast_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00012493133544921875,
+        "mean_abs_margin_error": 6.812065839767456e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.8475125119999802,
+        "sd_seconds_per_stay": 0.07231790855464576,
+        "client_upload_bytes": 66376762,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5054036974906921,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 2.0564725399017334,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00014734268188476562,
+        "mean_abs_margin_error": 9.035319089889526e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.5589351969999967,
+        "sd_seconds_per_stay": 0.04553821073793536,
+        "client_upload_bytes": 1052438,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5054036974906921,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 2.0564725399017334,
+        "error_below_min_gap_sens80": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 1.621246337890625e-05,
+        "mean_abs_margin_error": 1.0907649993896484e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.0904582387499886,
+        "sd_seconds_per_stay": 0.0012378270001852864,
+        "client_upload_bytes": 1053217,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5054036974906921,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 2.0564725399017334,
+        "error_below_min_gap_sens80": true
+      }
+    },
+    "B=16": {
+      "B": 16,
+      "broadcast_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00010251998901367188,
+        "mean_abs_margin_error": 5.048513412475586e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 3.272994152999999,
+        "sd_seconds_per_stay": 0.11021920234874831,
+        "client_upload_bytes": 142228482,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5777324438095093,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.727182149887085,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 0.00012540817260742188,
+        "mean_abs_margin_error": 6.981194019317627e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 5.624431023,
+        "sd_seconds_per_stay": 0.07567485601296241,
+        "client_upload_bytes": 1053945,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5777324438095093,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.727182149887085,
+        "error_below_min_gap_sens80": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 4,
+        "max_abs_margin_error": 1.4781951904296875e-05,
+        "mean_abs_margin_error": 1.0356307029724121e-05,
+        "decisions_agreeing": 4,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.0928095742500119,
+        "sd_seconds_per_stay": 0.0037072446869274214,
+        "client_upload_bytes": 1053001,
+        "min_abs_gap_to_f1_threshold_sampled": 0.5777324438095093,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 4,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.727182149887085,
+        "error_below_min_gap_sens80": true
+      }
+    }
+  },
+  "runtime_seconds": 90.013792604
+}

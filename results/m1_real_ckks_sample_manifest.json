@@ -1,0 +1,56 @@
+{
+  "protocol": "docs/real_ckks_multiseed_protocol.md",
+  "label": "label_hypertension_uncomplicated",
+  "sampling_subseed": 20260921,
+  "n_positive": 12,
+  "n_negative": 13,
+  "population": "TEST split (fidelity measurement only; nothing selected from it)",
+  "stratum_rule": "plaintext margin >= frozen validation-tuned margin threshold",
+  "seeds": {
+    "42": {
+      "file": "seed42.csv",
+      "sha256": "12ce44f1b2ebc925bc5f15220dc020bd64b03224926f6957fbdda97246ff8ccd",
+      "frozen_margin_threshold": -0.6190392084062235,
+      "n_test_rows": 32493,
+      "n_predicted_positive_in_test": 17143,
+      "n_sampled": 25,
+      "distinct_subjects": 25
+    },
+    "123": {
+      "file": "seed123.csv",
+      "sha256": "27e045b4f03fc8946b701f0db46545b729938aa577372c4d0e54a24ffeb03658",
+      "frozen_margin_threshold": -0.5753641449035618,
+      "n_test_rows": 32493,
+      "n_predicted_positive_in_test": 16757,
+      "n_sampled": 25,
+      "distinct_subjects": 25
+    },
+    "7": {
+      "file": "seed7.csv",
+      "sha256": "a50e6fa6a7a0cdafd9d7ff6226e3dc00c023ea3f59c67cdd9f00e2b7bfe47579",
+      "frozen_margin_threshold": -0.5322168137473082,
+      "n_test_rows": 32493,
+      "n_predicted_positive_in_test": 16192,
+      "n_sampled": 25,
+      "distinct_subjects": 25
+    },
+    "456": {
+      "file": "seed456.csv",
+      "sha256": "f287067d1b7007856d3689f58251b4590a8c595eca0381e58b3691d7cc07db44",
+      "frozen_margin_threshold": -0.6190392084062235,
+      "n_test_rows": 32493,
+      "n_predicted_positive_in_test": 17142,
+      "n_sampled": 25,
+      "distinct_subjects": 25
+    },
+    "789": {
+      "file": "seed789.csv",
+      "sha256": "9da85a4434756fdc7be85c18c928601c0cb41aa6d2dae65120f79a0097e4efa8",
+      "frozen_margin_threshold": -0.5322168137473082,
+      "n_test_rows": 32493,
+      "n_predicted_positive_in_test": 16455,
+      "n_sampled": 25,
+      "distinct_subjects": 25
+    }
+  }
+}

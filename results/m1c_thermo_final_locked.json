@@ -1,0 +1,136 @@
+{
+  "seed": 42,
+  "smoke": false,
+  "chain": [
+    60,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    60
+  ],
+  "key_bytes_one_off": {
+    "public_key_and_params": 1910003,
+    "relin_keys": 15288775,
+    "galois_keys": 398044923,
+    "total": 415243701
+  },
+  "sample": "50 stays: first 25 plaintext-positive and first 25 plaintext-negative stays of the stage-2 sample",
+  "by_B": {
+    "B=5": {
+      "B": 5,
+      "broadcast_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.0001735687255859375,
+        "mean_abs_margin_error": 5.088299440103583e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.7817337971200322,
+        "sd_seconds_per_stay": 0.034652048335517584,
+        "client_upload_bytes": 59306748,
+        "min_abs_gap_to_f1_threshold_sampled": 0.032570481300354004,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.05587029457092285,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.0001697540283203125,
+        "mean_abs_margin_error": 4.8786401748657227e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.8751340922199233,
+        "sd_seconds_per_stay": 0.023333550059222167,
+        "client_upload_bytes": 1647735,
+        "min_abs_gap_to_f1_threshold_sampled": 0.032570481300354004,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.05587029457092285,
+        "error_below_min_gap_sens80": true
+      }
+    },
+    "B=8": {
+      "B": 8,
+      "broadcast_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.00017642974853515625,
+        "mean_abs_margin_error": 4.293114034226164e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.7364840040401033,
+        "sd_seconds_per_stay": 0.008796267619961847,
+        "client_upload_bytes": 103777684,
+        "min_abs_gap_to_f1_threshold_sampled": 0.00880134105682373,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.011592864990234375,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.0001773834228515625,
+        "mean_abs_margin_error": 4.242122304276563e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 5.080933746319897,
+        "sd_seconds_per_stay": 0.062218086209723564,
+        "client_upload_bytes": 1647884,
+        "min_abs_gap_to_f1_threshold_sampled": 0.00880134105682373,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.011592864990234375,
+        "error_below_min_gap_sens80": true
+      }
+    },
+    "B=16": {
+      "B": 16,
+      "broadcast_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.000186920166015625,
+        "mean_abs_margin_error": 5.0632283091545105e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 4.830547258400148,
+        "sd_seconds_per_stay": 0.051107356549988416,
+        "client_upload_bytes": 222390069,
+        "min_abs_gap_to_f1_threshold_sampled": 0.06754958629608154,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.005823373794555664,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_locked_chain": {
+        "n_stays": 50,
+        "max_abs_margin_error": 0.00018310546875,
+        "mean_abs_margin_error": 4.759386138175614e-05,
+        "decisions_agreeing": 50,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 11.27426952918002,
+        "sd_seconds_per_stay": 0.06435662044302896,
+        "client_upload_bytes": 1647630,
+        "min_abs_gap_to_f1_threshold_sampled": 0.06754958629608154,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 50,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.005823373794555664,
+        "error_below_min_gap_sens80": true
+      }
+    }
+  },
+  "runtime_seconds": 1442.54478758
+}

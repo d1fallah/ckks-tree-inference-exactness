@@ -1,0 +1,272 @@
+{
+  "freeze_list": {
+    "n_bits": 6,
+    "execution_mode": "execute",
+    "compiler": "Concrete-ML 1.9.0",
+    "xgboost_pin": "1.6.2"
+  },
+  "quantization_effect_full_grid": [
+    {
+      "seed": 42,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_sign": 0.978,
+      "normalized_mae": 0.005864743899085175,
+      "f1_plain": 0.6652173913043479,
+      "f1_quant_clear": 0.6608695652173913,
+      "delta_f1_quantization_only": 0.004347826086956608
+    },
+    {
+      "seed": 42,
+      "label": "label_cardiac_arrhythmias",
+      "agreement_sign": 0.996,
+      "normalized_mae": 0.008319281178420445,
+      "f1_plain": 0.5916666666666667,
+      "f1_quant_clear": 0.5916666666666667,
+      "delta_f1_quantization_only": 0.0
+    },
+    {
+      "seed": 42,
+      "label": "label_fluid_and_electrolyte_disorders",
+      "agreement_sign": 0.992,
+      "normalized_mae": 0.009921331765694699,
+      "f1_plain": 0.3902439024390244,
+      "f1_quant_clear": 0.3842364532019704,
+      "delta_f1_quantization_only": 0.006007449237053986
+    },
+    {
+      "seed": 42,
+      "label": "label_depression",
+      "agreement_sign": 0.974,
+      "normalized_mae": 0.009512525763692442,
+      "f1_plain": 0.6066066066066066,
+      "f1_quant_clear": 0.6121212121212121,
+      "delta_f1_quantization_only": 0.005514605514605475
+    },
+    {
+      "seed": 42,
+      "label": "label_chronic_pulmonary_disease",
+      "agreement_sign": 0.996,
+      "normalized_mae": 0.01123413886083701,
+      "f1_plain": 0.6857142857142857,
+      "f1_quant_clear": 0.6857142857142857,
+      "delta_f1_quantization_only": 0.0
+    },
+    {
+      "seed": 123,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_sign": 0.978,
+      "normalized_mae": 0.005743821518968125,
+      "f1_plain": 0.6695652173913044,
+      "f1_quant_clear": 0.6768558951965066,
+      "delta_f1_quantization_only": 0.007290677805202206
+    },
+    {
+      "seed": 123,
+      "label": "label_cardiac_arrhythmias",
+      "agreement_sign": 0.984,
+      "normalized_mae": 0.008488198652092651,
+      "f1_plain": 0.5483870967741935,
+      "f1_quant_clear": 0.5542168674698795,
+      "delta_f1_quantization_only": 0.005829770695686021
+    },
+    {
+      "seed": 123,
+      "label": "label_fluid_and_electrolyte_disorders",
+      "agreement_sign": 0.998,
+      "normalized_mae": 0.009870291356661582,
+      "f1_plain": 0.37922077922077924,
+      "f1_quant_clear": 0.3856041131105398,
+      "delta_f1_quantization_only": 0.00638333388976059
+    },
+    {
+      "seed": 123,
+      "label": "label_depression",
+      "agreement_sign": 0.978,
+      "normalized_mae": 0.010598186132547595,
+      "f1_plain": 0.6043613707165109,
+      "f1_quant_clear": 0.610062893081761,
+      "delta_f1_quantization_only": 0.005701522365250122
+    },
+    {
+      "seed": 123,
+      "label": "label_chronic_pulmonary_disease",
+      "agreement_sign": 0.992,
+      "normalized_mae": 0.006013157099730908,
+      "f1_plain": 0.6948356807511737,
+      "f1_quant_clear": 0.6915887850467289,
+      "delta_f1_quantization_only": 0.0032468957044448077
+    },
+    {
+      "seed": 7,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_sign": 0.988,
+      "normalized_mae": 0.0062676907434087055,
+      "f1_plain": 0.6561085972850679,
+      "f1_quant_clear": 0.6605922551252847,
+      "delta_f1_quantization_only": 0.00448365784021687
+    },
+    {
+      "seed": 7,
+      "label": "label_cardiac_arrhythmias",
+      "agreement_sign": 0.992,
+      "normalized_mae": 0.008683273043182385,
+      "f1_plain": 0.5289256198347108,
+      "f1_quant_clear": 0.5306122448979592,
+      "delta_f1_quantization_only": 0.0016866250632484592
+    },
+    {
+      "seed": 7,
+      "label": "label_fluid_and_electrolyte_disorders",
+      "agreement_sign": 0.992,
+      "normalized_mae": 0.014119010560555399,
+      "f1_plain": 0.38235294117647056,
+      "f1_quant_clear": 0.38213399503722084,
+      "delta_f1_quantization_only": 0.0002189461392497205
+    },
+    {
+      "seed": 7,
+      "label": "label_depression",
+      "agreement_sign": 0.988,
+      "normalized_mae": 0.0100474755674359,
+      "f1_plain": 0.6158536585365854,
+      "f1_quant_clear": 0.617737003058104,
+      "delta_f1_quantization_only": 0.001883344521518615
+    },
+    {
+      "seed": 7,
+      "label": "label_chronic_pulmonary_disease",
+      "agreement_sign": 0.996,
+      "normalized_mae": 0.009374865918388825,
+      "f1_plain": 0.6857142857142857,
+      "f1_quant_clear": 0.6824644549763034,
+      "delta_f1_quantization_only": 0.003249830737982351
+    },
+    {
+      "seed": 456,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_sign": 0.994,
+      "normalized_mae": 0.006684985763694488,
+      "f1_plain": 0.6578366445916115,
+      "f1_quant_clear": 0.6651785714285714,
+      "delta_f1_quantization_only": 0.007341926836959889
+    },
+    {
+      "seed": 456,
+      "label": "label_cardiac_arrhythmias",
+      "agreement_sign": 0.988,
+      "normalized_mae": 0.006647176532817801,
+      "f1_plain": 0.5542168674698795,
+      "f1_quant_clear": 0.56,
+      "delta_f1_quantization_only": 0.005783132530120527
+    },
+    {
+      "seed": 456,
+      "label": "label_fluid_and_electrolyte_disorders",
+      "agreement_sign": 0.994,
+      "normalized_mae": 0.012907987695603048,
+      "f1_plain": 0.4040920716112532,
+      "f1_quant_clear": 0.38974358974358975,
+      "delta_f1_quantization_only": 0.014348481867663465
+    },
+    {
+      "seed": 456,
+      "label": "label_depression",
+      "agreement_sign": 0.974,
+      "normalized_mae": 0.010208669779114915,
+      "f1_plain": 0.6024096385542169,
+      "f1_quant_clear": 0.6111111111111112,
+      "delta_f1_quantization_only": 0.00870147255689424
+    },
+    {
+      "seed": 456,
+      "label": "label_chronic_pulmonary_disease",
+      "agreement_sign": 0.99,
+      "normalized_mae": 0.013795820160566076,
+      "f1_plain": 0.6857142857142857,
+      "f1_quant_clear": 0.6824644549763034,
+      "delta_f1_quantization_only": 0.003249830737982351
+    },
+    {
+      "seed": 789,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_sign": 0.982,
+      "normalized_mae": 0.006179789313522047,
+      "f1_plain": 0.6518847006651884,
+      "f1_quant_clear": 0.6621923937360179,
+      "delta_f1_quantization_only": 0.01030769307082946
+    },
+    {
+      "seed": 789,
+      "label": "label_cardiac_arrhythmias",
+      "agreement_sign": 0.994,
+      "normalized_mae": 0.006031321225842306,
+      "f1_plain": 0.532258064516129,
+      "f1_quant_clear": 0.5142857142857142,
+      "delta_f1_quantization_only": 0.01797235023041477
+    },
+    {
+      "seed": 789,
+      "label": "label_fluid_and_electrolyte_disorders",
+      "agreement_sign": 1.0,
+      "normalized_mae": 0.00888139770648438,
+      "f1_plain": 0.3783783783783784,
+      "f1_quant_clear": 0.37410071942446044,
+      "delta_f1_quantization_only": 0.004277658953917962
+    },
+    {
+      "seed": 789,
+      "label": "label_depression",
+      "agreement_sign": 0.976,
+      "normalized_mae": 0.008950173011619258,
+      "f1_plain": 0.6,
+      "f1_quant_clear": 0.5981873111782477,
+      "delta_f1_quantization_only": 0.0018126888217522286
+    },
+    {
+      "seed": 789,
+      "label": "label_chronic_pulmonary_disease",
+      "agreement_sign": 0.994,
+      "normalized_mae": 0.007616965980737362,
+      "f1_plain": 0.6834170854271356,
+      "f1_quant_clear": 0.6834170854271356,
+      "delta_f1_quantization_only": 0.0
+    }
+  ],
+  "real_fhe_execution": {
+    "n_bits": 6,
+    "representative_model": {
+      "seed": 42,
+      "label": "label_hypertension_uncomplicated"
+    },
+    "n_real_fhe_executions": 20,
+    "compile_time_seconds": 3.9644346259999566,
+    "online_latency_seconds_per_sample": [
+      85.78258282900015,
+      87.12544365999997,
+      86.61240543100007,
+      86.17460089200017,
+      88.08232588700002,
+      87.34346805300015,
+      88.02515005100008,
+      86.50478262599995,
+      87.66253365599982,
+      86.71676325099997,
+      87.84415358200022,
+      89.12043692199995,
+      86.7755295259999,
+      87.50586793299999,
+      85.60812501500004,
+      88.79891341700022,
+      86.84945032400037,
+      87.73367279899958,
+      87.90262831600012,
+      87.8095131240002
+    ],
+    "online_latency_seconds_mean": 87.29891736470005,
+    "online_latency_seconds_std": 0.9046159871751414,
+    "agreement_tfhe_vs_quantized_clear": 1.0,
+    "max_abs_proba_diff_tfhe_vs_quantized_clear": 8.326672684688674e-17,
+    "exactness_note": "'Agreement(TFHE, quantized-clear)' measured directly, per Sec 3.9 -- 'exact' language is used below ONLY to the extent this agreement supports it.",
+    "scope_reduction_reason": "A single real fhe='execute' call on the full 50-tree/depth-6 model was measured (pre-registered smoke test, this session) at ~90s/sample, dominated by one-time key generation. Running real FHE across all 5 seeds x 5 labels x 500 samples would take on the order of 300+ hours. Scoped to n=20 real executions on one representative model; quantization effect (the cheap, non-cryptographic part of the decomposition) is still measured across the full grid above."
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "protocol": "docs/real_ckks_multiseed_protocol.md",
+  "backend": "REAL TenSEAL/SEAL ciphertext execution, compared against the SIMULATED circuit-faithful numpy evaluator",
+  "label_same_for_all_seeds": "label_hypertension_uncomplicated",
+  "seeds": [
+    42,
+    123,
+    7,
+    456,
+    789
+  ],
+  "k_executed": [
+    3,
+    5,
+    7
+  ],
+  "n_per_seed": 25,
+  "population": "TEST split, frozen stratified samples (12 pred-positive + 13 pred-negative)",
+  "k_excluded": 9,
+  "k_excluded_reason": "code-derived depth 8 > 7 levels on the locked chain (results/m1_depth_probe.json; m1-0-implementation-lock.md sec 18)",
+  "locked_parameters": {
+    "N": 16384,
+    "coeff_modulus_bit_sizes": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "scale_bits": 40
+  },
+  "coefficients": {
+    "file": "poly_coeffs_v1.json",
+    "sha256": "4fee9fadeaa701692838e6932242c2cefcf441fd8ef6d70817adb37c47836816",
+    "version": "v2",
+    "gamma": 15.022524536045237,
+    "gamma_anchor_percentile": 75
+  },
+  "sample_manifest_sha256": "352583383a6304ddb3a2dcc8f93e6fdc7483ac5f4c094cf5d381f21185bc6915",
+  "per_cell": [
+    {
+      "seed": 42,
+      "k": 3,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.84,
+      "normalized_mae_real_vs_simulated": 6.301347441013504e-06,
+      "max_abs_error_real_vs_simulated": 7.3057449267111e-05,
+      "latency_wall_clock_s_mean": 0.6270506383998145,
+      "latency_wall_clock_s_std_within_cell": 0.011179947634639172,
+      "latency_phase_sum_s_mean": 0.6033381228405051
+    },
+    {
+      "seed": 42,
+      "k": 5,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.84,
+      "normalized_mae_real_vs_simulated": 6.802267959364206e-06,
+      "max_abs_error_real_vs_simulated": 7.860186673003255e-05,
+      "latency_wall_clock_s_mean": 0.8793370469199726,
+      "latency_wall_clock_s_std_within_cell": 0.011634849045034675,
+      "latency_phase_sum_s_mean": 0.8552831164007512
+    },
+    {
+      "seed": 42,
+      "k": 7,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 7.062166615550468e-06,
+      "max_abs_error_real_vs_simulated": 7.769184822459252e-05,
+      "latency_wall_clock_s_mean": 1.149343188279745,
+      "latency_wall_clock_s_std_within_cell": 0.0032795898958071115,
+      "latency_phase_sum_s_mean": 1.1257681980803318
+    },
+    {
+      "seed": 123,
+      "k": 3,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 6.337215001099654e-06,
+      "max_abs_error_real_vs_simulated": 0.0001340643217737636,
+      "latency_wall_clock_s_mean": 0.6259275277202687,
+      "latency_wall_clock_s_std_within_cell": 0.0019194910543674248,
+      "latency_phase_sum_s_mean": 0.6024221776403283
+    },
+    {
+      "seed": 123,
+      "k": 5,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.92,
+      "normalized_mae_real_vs_simulated": 6.37963453432095e-06,
+      "max_abs_error_real_vs_simulated": 0.00016118955440802551,
+      "latency_wall_clock_s_mean": 0.8806121649601846,
+      "latency_wall_clock_s_std_within_cell": 0.01896839299151608,
+      "latency_phase_sum_s_mean": 0.8565357870798471
+    },
+    {
+      "seed": 123,
+      "k": 7,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.92,
+      "normalized_mae_real_vs_simulated": 6.216033960415191e-06,
+      "max_abs_error_real_vs_simulated": 0.00015672154030799135,
+      "latency_wall_clock_s_mean": 1.1581534849601303,
+      "latency_wall_clock_s_std_within_cell": 0.012846037236556711,
+      "latency_phase_sum_s_mean": 1.1341980609192979
+    },
+    {
+      "seed": 7,
+      "k": 3,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.92,
+      "normalized_mae_real_vs_simulated": 7.299076138131492e-06,
+      "max_abs_error_real_vs_simulated": 0.00014070084686945705,
+      "latency_wall_clock_s_mean": 0.6581086520798999,
+      "latency_wall_clock_s_std_within_cell": 0.001871628886058426,
+      "latency_phase_sum_s_mean": 0.634263634559029
+    },
+    {
+      "seed": 7,
+      "k": 5,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.96,
+      "normalized_mae_real_vs_simulated": 7.528258893161764e-06,
+      "max_abs_error_real_vs_simulated": 0.00015306673473602928,
+      "latency_wall_clock_s_mean": 0.8897524174399587,
+      "latency_wall_clock_s_std_within_cell": 0.004724354472518175,
+      "latency_phase_sum_s_mean": 0.8662404780400539
+    },
+    {
+      "seed": 7,
+      "k": 7,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.96,
+      "normalized_mae_real_vs_simulated": 7.6195733219163134e-06,
+      "max_abs_error_real_vs_simulated": 0.00015850017671414918,
+      "latency_wall_clock_s_mean": 1.167817639520217,
+      "latency_wall_clock_s_std_within_cell": 0.0034121622949123877,
+      "latency_phase_sum_s_mean": 1.1441314246808907
+    },
+    {
+      "seed": 456,
+      "k": 3,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 6.633256310622554e-06,
+      "max_abs_error_real_vs_simulated": 0.00014531115414939677,
+      "latency_wall_clock_s_mean": 0.6629881817600836,
+      "latency_wall_clock_s_std_within_cell": 0.011734256535400193,
+      "latency_phase_sum_s_mean": 0.6384034672802227
+    },
+    {
+      "seed": 456,
+      "k": 5,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 6.869443990804847e-06,
+      "max_abs_error_real_vs_simulated": 0.0001623787558715506,
+      "latency_wall_clock_s_mean": 0.8851403281198873,
+      "latency_wall_clock_s_std_within_cell": 0.0036025936513561984,
+      "latency_phase_sum_s_mean": 0.8611485574806284
+    },
+    {
+      "seed": 456,
+      "k": 7,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.92,
+      "normalized_mae_real_vs_simulated": 6.702989500557417e-06,
+      "max_abs_error_real_vs_simulated": 0.00015930447333722952,
+      "latency_wall_clock_s_mean": 1.1620786183598102,
+      "latency_wall_clock_s_std_within_cell": 0.0024484507696729005,
+      "latency_phase_sum_s_mean": 1.1382166735197097
+    },
+    {
+      "seed": 789,
+      "k": 3,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 7.685001517989758e-06,
+      "max_abs_error_real_vs_simulated": 0.00013378620530790641,
+      "latency_wall_clock_s_mean": 0.6253177208799753,
+      "latency_wall_clock_s_std_within_cell": 0.0018735969872771692,
+      "latency_phase_sum_s_mean": 0.6018517287997384
+    },
+    {
+      "seed": 789,
+      "k": 5,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.84,
+      "normalized_mae_real_vs_simulated": 7.597750881681313e-06,
+      "max_abs_error_real_vs_simulated": 0.00015691372068893372,
+      "latency_wall_clock_s_mean": 0.872070944119987,
+      "latency_wall_clock_s_std_within_cell": 0.001923890669835438,
+      "latency_phase_sum_s_mean": 0.8484160869612242
+    },
+    {
+      "seed": 789,
+      "k": 7,
+      "n": 25,
+      "label": "label_hypertension_uncomplicated",
+      "agreement_real_vs_simulated": 1.0,
+      "agreement_real_vs_plaintext_xgboost": 0.88,
+      "normalized_mae_real_vs_simulated": 7.5956456476184635e-06,
+      "max_abs_error_real_vs_simulated": 0.0001541248966887565,
+      "latency_wall_clock_s_mean": 1.165885600319889,
+      "latency_wall_clock_s_std_within_cell": 0.019025540772969578,
+      "latency_phase_sum_s_mean": 1.1421686093606696
+    }
+  ],
+  "pooled_across_seeds": {
+    "k=3": {
+      "n_seeds": 5,
+      "n_patient_evaluations": 125,
+      "agreement_real_vs_simulated": {
+        "mean": 1.0,
+        "sd_across_seeds": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "agreement_real_vs_plaintext_xgboost": {
+        "mean": 0.8800000000000001,
+        "sd_across_seeds": 0.028284271247461926,
+        "min": 0.84,
+        "max": 0.92
+      },
+      "normalized_mae_real_vs_simulated": {
+        "mean": 6.8511792817713915e-06,
+        "sd_across_seeds": 6.143768940604411e-07,
+        "min": 6.301347441013504e-06,
+        "max": 7.685001517989758e-06
+      },
+      "max_abs_error_real_vs_simulated": {
+        "mean": 0.00012538399547352698,
+        "sd_across_seeds": 2.9646712390457423e-05,
+        "min": 7.3057449267111e-05,
+        "max": 0.00014531115414939677
+      },
+      "latency_wall_clock_s_mean": {
+        "mean": 0.6398785441680083,
+        "sd_across_seeds": 0.018957820188937574,
+        "min": 0.6253177208799753,
+        "max": 0.6629881817600836
+      }
+    },
+    "k=5": {
+      "n_seeds": 5,
+      "n_patient_evaluations": 125,
+      "agreement_real_vs_simulated": {
+        "mean": 1.0,
+        "sd_across_seeds": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "agreement_real_vs_plaintext_xgboost": {
+        "mean": 0.8879999999999999,
+        "sd_across_seeds": 0.052153619241621194,
+        "min": 0.84,
+        "max": 0.96
+      },
+      "normalized_mae_real_vs_simulated": {
+        "mean": 7.035471251866616e-06,
+        "sd_across_seeds": 5.17462237426196e-07,
+        "min": 6.37963453432095e-06,
+        "max": 7.597750881681313e-06
+      },
+      "max_abs_error_real_vs_simulated": {
+        "mean": 0.00014243012648691434,
+        "sd_across_seeds": 3.587067963497076e-05,
+        "min": 7.860186673003255e-05,
+        "max": 0.0001623787558715506
+      },
+      "latency_wall_clock_s_mean": {
+        "mean": 0.8813825803119979,
+        "sd_across_seeds": 0.006626823473219587,
+        "min": 0.872070944119987,
+        "max": 0.8897524174399587
+      }
+    },
+    "k=7": {
+      "n_seeds": 5,
+      "n_patient_evaluations": 125,
+      "agreement_real_vs_simulated": {
+        "mean": 1.0,
+        "sd_across_seeds": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "agreement_real_vs_plaintext_xgboost": {
+        "mean": 0.9119999999999999,
+        "sd_across_seeds": 0.03346640106136301,
+        "min": 0.88,
+        "max": 0.96
+      },
+      "normalized_mae_real_vs_simulated": {
+        "mean": 7.039281809211569e-06,
+        "sd_across_seeds": 5.995065079240146e-07,
+        "min": 6.216033960415191e-06,
+        "max": 7.6195733219163134e-06
+      },
+      "max_abs_error_real_vs_simulated": {
+        "mean": 0.00014126858705454381,
+        "sd_across_seeds": 3.559600068165949e-05,
+        "min": 7.769184822459252e-05,
+        "max": 0.00015930447333722952
+      },
+      "latency_wall_clock_s_mean": {
+        "mean": 1.1606557062879583,
+        "sd_across_seeds": 0.007329801041508029,
+        "min": 1.149343188279745,
+        "max": 1.167817639520217
+      }
+    }
+  },
+  "limitation": "n=25 per seed: coarse agreement resolution (1/25); this supports 'the simulation is faithful across independently trained models', not an estimate of encrypted accuracy.",
+  "runtime_seconds": 350.3
+}

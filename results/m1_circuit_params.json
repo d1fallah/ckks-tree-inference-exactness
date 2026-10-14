@@ -1,0 +1,403 @@
+{
+  "n_frozen_models": 25,
+  "n_binary_features": 131,
+  "n_continuous_features": 3,
+  "continuous_features": [
+    "age",
+    "n_meds",
+    "n_distinct_meds"
+  ],
+  "split_census": {
+    "per_model": [
+      {
+        "model": "xgb_float_seed123_label_cardiac_arrhythmias.json",
+        "n_trees": 50,
+        "n_internal_splits": 2674,
+        "n_leaves": 2724,
+        "n_binary_splits": 2045,
+        "n_continuous_splits": 629
+      },
+      {
+        "model": "xgb_float_seed123_label_chronic_pulmonary_disease.json",
+        "n_trees": 50,
+        "n_internal_splits": 2576,
+        "n_leaves": 2626,
+        "n_binary_splits": 2003,
+        "n_continuous_splits": 573
+      },
+      {
+        "model": "xgb_float_seed123_label_depression.json",
+        "n_trees": 50,
+        "n_internal_splits": 2611,
+        "n_leaves": 2661,
+        "n_binary_splits": 1950,
+        "n_continuous_splits": 661
+      },
+      {
+        "model": "xgb_float_seed123_label_fluid_and_electrolyte_disorders.json",
+        "n_trees": 50,
+        "n_internal_splits": 2570,
+        "n_leaves": 2620,
+        "n_binary_splits": 1945,
+        "n_continuous_splits": 625
+      },
+      {
+        "model": "xgb_float_seed123_label_hypertension_uncomplicated.json",
+        "n_trees": 50,
+        "n_internal_splits": 2556,
+        "n_leaves": 2606,
+        "n_binary_splits": 1918,
+        "n_continuous_splits": 638
+      },
+      {
+        "model": "xgb_float_seed42_label_cardiac_arrhythmias.json",
+        "n_trees": 50,
+        "n_internal_splits": 2621,
+        "n_leaves": 2671,
+        "n_binary_splits": 2057,
+        "n_continuous_splits": 564
+      },
+      {
+        "model": "xgb_float_seed42_label_chronic_pulmonary_disease.json",
+        "n_trees": 50,
+        "n_internal_splits": 2645,
+        "n_leaves": 2695,
+        "n_binary_splits": 2012,
+        "n_continuous_splits": 633
+      },
+      {
+        "model": "xgb_float_seed42_label_depression.json",
+        "n_trees": 50,
+        "n_internal_splits": 2580,
+        "n_leaves": 2630,
+        "n_binary_splits": 1932,
+        "n_continuous_splits": 648
+      },
+      {
+        "model": "xgb_float_seed42_label_fluid_and_electrolyte_disorders.json",
+        "n_trees": 50,
+        "n_internal_splits": 2551,
+        "n_leaves": 2601,
+        "n_binary_splits": 1937,
+        "n_continuous_splits": 614
+      },
+      {
+        "model": "xgb_float_seed42_label_hypertension_uncomplicated.json",
+        "n_trees": 50,
+        "n_internal_splits": 2644,
+        "n_leaves": 2694,
+        "n_binary_splits": 2014,
+        "n_continuous_splits": 630
+      },
+      {
+        "model": "xgb_float_seed456_label_cardiac_arrhythmias.json",
+        "n_trees": 50,
+        "n_internal_splits": 2645,
+        "n_leaves": 2695,
+        "n_binary_splits": 2067,
+        "n_continuous_splits": 578
+      },
+      {
+        "model": "xgb_float_seed456_label_chronic_pulmonary_disease.json",
+        "n_trees": 50,
+        "n_internal_splits": 2597,
+        "n_leaves": 2647,
+        "n_binary_splits": 1966,
+        "n_continuous_splits": 631
+      },
+      {
+        "model": "xgb_float_seed456_label_depression.json",
+        "n_trees": 50,
+        "n_internal_splits": 2558,
+        "n_leaves": 2608,
+        "n_binary_splits": 1882,
+        "n_continuous_splits": 676
+      },
+      {
+        "model": "xgb_float_seed456_label_fluid_and_electrolyte_disorders.json",
+        "n_trees": 50,
+        "n_internal_splits": 2602,
+        "n_leaves": 2652,
+        "n_binary_splits": 1971,
+        "n_continuous_splits": 631
+      },
+      {
+        "model": "xgb_float_seed456_label_hypertension_uncomplicated.json",
+        "n_trees": 50,
+        "n_internal_splits": 2634,
+        "n_leaves": 2684,
+        "n_binary_splits": 1978,
+        "n_continuous_splits": 656
+      },
+      {
+        "model": "xgb_float_seed789_label_cardiac_arrhythmias.json",
+        "n_trees": 50,
+        "n_internal_splits": 2649,
+        "n_leaves": 2699,
+        "n_binary_splits": 2009,
+        "n_continuous_splits": 640
+      },
+      {
+        "model": "xgb_float_seed789_label_chronic_pulmonary_disease.json",
+        "n_trees": 50,
+        "n_internal_splits": 2633,
+        "n_leaves": 2683,
+        "n_binary_splits": 1946,
+        "n_continuous_splits": 687
+      },
+      {
+        "model": "xgb_float_seed789_label_depression.json",
+        "n_trees": 50,
+        "n_internal_splits": 2580,
+        "n_leaves": 2630,
+        "n_binary_splits": 1920,
+        "n_continuous_splits": 660
+      },
+      {
+        "model": "xgb_float_seed789_label_fluid_and_electrolyte_disorders.json",
+        "n_trees": 50,
+        "n_internal_splits": 2617,
+        "n_leaves": 2667,
+        "n_binary_splits": 1930,
+        "n_continuous_splits": 687
+      },
+      {
+        "model": "xgb_float_seed789_label_hypertension_uncomplicated.json",
+        "n_trees": 50,
+        "n_internal_splits": 2594,
+        "n_leaves": 2644,
+        "n_binary_splits": 1928,
+        "n_continuous_splits": 666
+      },
+      {
+        "model": "xgb_float_seed7_label_cardiac_arrhythmias.json",
+        "n_trees": 50,
+        "n_internal_splits": 2689,
+        "n_leaves": 2739,
+        "n_binary_splits": 2108,
+        "n_continuous_splits": 581
+      },
+      {
+        "model": "xgb_float_seed7_label_chronic_pulmonary_disease.json",
+        "n_trees": 50,
+        "n_internal_splits": 2612,
+        "n_leaves": 2662,
+        "n_binary_splits": 1999,
+        "n_continuous_splits": 613
+      },
+      {
+        "model": "xgb_float_seed7_label_depression.json",
+        "n_trees": 50,
+        "n_internal_splits": 2635,
+        "n_leaves": 2685,
+        "n_binary_splits": 1969,
+        "n_continuous_splits": 666
+      },
+      {
+        "model": "xgb_float_seed7_label_fluid_and_electrolyte_disorders.json",
+        "n_trees": 50,
+        "n_internal_splits": 2583,
+        "n_leaves": 2633,
+        "n_binary_splits": 1953,
+        "n_continuous_splits": 630
+      },
+      {
+        "model": "xgb_float_seed7_label_hypertension_uncomplicated.json",
+        "n_trees": 50,
+        "n_internal_splits": 2701,
+        "n_leaves": 2751,
+        "n_binary_splits": 2052,
+        "n_continuous_splits": 649
+      }
+    ],
+    "total_internal_splits": 65357,
+    "total_binary_splits": 49491,
+    "total_continuous_splits": 15866,
+    "fraction_continuous_splits": 0.242759,
+    "max_internal_splits_in_one_model": 2701,
+    "top_20_features_by_split_count": [
+      [
+        "age",
+        8192
+      ],
+      [
+        "n_meds",
+        4172
+      ],
+      [
+        "n_distinct_meds",
+        3502
+      ],
+      [
+        "gender_M",
+        1249
+      ],
+      [
+        "atc2_C03",
+        1103
+      ],
+      [
+        "atc2_C07",
+        937
+      ],
+      [
+        "atc2_C09",
+        894
+      ],
+      [
+        "atc2_C08",
+        879
+      ],
+      [
+        "atc2_A10",
+        841
+      ],
+      [
+        "atc2_N06",
+        821
+      ],
+      [
+        "atc2_C10",
+        818
+      ],
+      [
+        "atc2_C01",
+        799
+      ],
+      [
+        "atc2_N05",
+        747
+      ],
+      [
+        "atc2_A11",
+        735
+      ],
+      [
+        "atc2_N03",
+        702
+      ],
+      [
+        "atc2_C05",
+        689
+      ],
+      [
+        "atc2_A01",
+        684
+      ],
+      [
+        "atc2_A02",
+        659
+      ],
+      [
+        "atc2_A06",
+        655
+      ],
+      [
+        "etc_701",
+        648
+      ]
+    ]
+  },
+  "normalization_rule": "per-feature min-max to [0,1], bounds from the TRAINING split only",
+  "normalization_bounds_continuous_only": {
+    "age": {
+      "min": 18.0,
+      "max": 103.0
+    },
+    "n_meds": {
+      "min": 1.0,
+      "max": 78.0
+    },
+    "n_distinct_meds": {
+      "min": 0.0,
+      "max": 66.0
+    }
+  },
+  "approximation_interval": {
+    "interval_percentile_preregistered": 99.9,
+    "a_half_width": 0.847059,
+    "interval": [
+      -0.847059,
+      0.847059
+    ],
+    "n_sampled_rows": 4000,
+    "n_pooled_difference_values": 63464000,
+    "abs_diff_quantiles": {
+      "50": 0.168831,
+      "75": 0.305882,
+      "90": 0.458824,
+      "95": 0.564706,
+      "99": 0.729412,
+      "99.9": 0.847059,
+      "100": 0.976471
+    },
+    "fraction_outside_interval_clamped": 0.00090662,
+    "per_feature": {
+      "age": {
+        "n_distinct_thresholds": 83,
+        "n_splits": 8192,
+        "abs_diff_p99_9": 0.8705882352941177,
+        "abs_diff_max": 0.9764705882352941
+      },
+      "n_distinct_meds": {
+        "n_distinct_thresholds": 50,
+        "n_splits": 3502,
+        "abs_diff_p99_9": 0.6666666666666666,
+        "abs_diff_max": 0.7727272727272727
+      },
+      "n_meds": {
+        "n_distinct_thresholds": 64,
+        "n_splits": 4172,
+        "abs_diff_p99_9": 0.7532467532467533,
+        "abs_diff_max": 0.8701298701298701
+      }
+    }
+  },
+  "depth_budget": {
+    "k=3": {
+      "comparison_polynomial_depth": 3,
+      "path_product_depth": 3,
+      "leaf_scaling_depth": 0,
+      "ensemble_aggregation_depth": 0,
+      "total_multiplicative_depth": 6,
+      "coeff_modulus_bits_required": 360,
+      "min_poly_modulus_degree_at_128bit": 16384,
+      "slots_at_that_degree": 8192,
+      "all_ensemble_splits_fit_in_one_ciphertext": true
+    },
+    "k=5": {
+      "comparison_polynomial_depth": 4,
+      "path_product_depth": 3,
+      "leaf_scaling_depth": 0,
+      "ensemble_aggregation_depth": 0,
+      "total_multiplicative_depth": 7,
+      "coeff_modulus_bits_required": 400,
+      "min_poly_modulus_degree_at_128bit": 16384,
+      "slots_at_that_degree": 8192,
+      "all_ensemble_splits_fit_in_one_ciphertext": true
+    },
+    "k=7": {
+      "comparison_polynomial_depth": 4,
+      "path_product_depth": 3,
+      "leaf_scaling_depth": 0,
+      "ensemble_aggregation_depth": 0,
+      "total_multiplicative_depth": 7,
+      "coeff_modulus_bits_required": 400,
+      "min_poly_modulus_degree_at_128bit": 16384,
+      "slots_at_that_degree": 8192,
+      "all_ensemble_splits_fit_in_one_ciphertext": true
+    },
+    "k=9": {
+      "comparison_polynomial_depth": 5,
+      "path_product_depth": 3,
+      "leaf_scaling_depth": 0,
+      "ensemble_aggregation_depth": 0,
+      "total_multiplicative_depth": 8,
+      "coeff_modulus_bits_required": 440,
+      "min_poly_modulus_degree_at_128bit": 32768,
+      "slots_at_that_degree": 16384,
+      "all_ensemble_splits_fit_in_one_ciphertext": true
+    }
+  },
+  "tree_depth": 6
+}

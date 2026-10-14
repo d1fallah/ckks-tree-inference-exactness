@@ -1,0 +1,481 @@
+{
+  "protocol": "closure guide 4.1; see src/measure_ckks_latency.py docstring",
+  "backend": "REAL TenSEAL/SEAL ciphertext execution",
+  "locked_parameters": {
+    "N": 16384,
+    "coeff_modulus_bit_sizes": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "scale_bits": 40
+  },
+  "hardware": {
+    "cpu_model": "12th Gen Intel(R) Core(TM) i3-12100F",
+    "logical_cpus": 8,
+    "total_memory_kb": 8044164,
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.11.16",
+    "tenseal": "0.3.17",
+    "env_OMP_NUM_THREADS": null,
+    "note": "WSL2 guest; host load not controlled"
+  },
+  "protocol_detail": {
+    "model": {
+      "seed": 42,
+      "label": "label_hypertension_uncomplicated"
+    },
+    "patients": "frozen seed-42 test-split sample (data/m1_real_ckks_samples/seed42.csv)",
+    "warmup": "5 evaluations on patients 20-24, discarded",
+    "timed": "20 evaluations, one per distinct patient 0-19",
+    "process_isolation": "one fresh process per k for per-k peak memory",
+    "decomposition_note": "encode, encrypt, decrypt and decode are measured by pushing the same data through SEAL directly after the online path; they are not part of wall_clock_total_s",
+    "k9": "measured with the coefficient-folding evaluator",
+    "polynomial_evaluator": "coefficient-folding (ckks_circuit.eval_poly_tenseal_folded)"
+  },
+  "by_k": {
+    "k=3": {
+      "k": 3,
+      "n_warmup_discarded": 5,
+      "n_timed": 20,
+      "context_and_keygen_s_one_off": 1.9514779650000946,
+      "key_sizes_bytes": {
+        "evaluation_context_with_galois_keys_bytes": 415245213,
+        "evaluation_context_without_galois_keys_bytes": 17197822,
+        "galois_keys_bytes": 398047391
+      },
+      "ciphertext_bytes": {
+        "input_each_level": [
+          1647783,
+          1647051,
+          1647212,
+          1646781,
+          1647296,
+          1646769
+        ],
+        "input_total_per_patient": 9882892,
+        "output_per_patient": 658077
+      },
+      "timing_per_patient": {
+        "client_preprocess_s": {
+          "mean_s": 0.02448616925000806,
+          "sd_s": 0.0007514680298699025
+        },
+        "encode_encrypt_fused_s": {
+          "mean_s": 0.08755965980000155,
+          "sd_s": 0.010975469420679292
+        },
+        "poly_eval_s": {
+          "mean_s": 0.5430052849999981,
+          "sd_s": 0.013024532371704428
+        },
+        "path_product_s": {
+          "mean_s": 0.058044510599995644,
+          "sd_s": 0.0033260555965352614
+        },
+        "sum_rotations_s": {
+          "mean_s": 0.13382314990000738,
+          "sd_s": 0.004712831610193969
+        },
+        "decrypt_decode_fused_s": {
+          "mean_s": 0.0019756068499930278,
+          "sd_s": 0.0002018465814685011
+        },
+        "wall_clock_total_s": {
+          "mean_s": 0.848946899099991,
+          "sd_s": 0.018947939579812535
+        },
+        "sum_of_buckets_s": {
+          "mean_s": 0.8488943814000038,
+          "sd_s": 0.01894461223384409
+        },
+        "encode_s": {
+          "mean_s": 0.013479719149984248,
+          "sd_s": 0.0006422752908836932
+        },
+        "encrypt_s": {
+          "mean_s": 0.0705636706499945,
+          "sd_s": 0.0022084939357654874
+        },
+        "decrypt_s": {
+          "mean_s": 0.00029897145000745695,
+          "sd_s": 1.4848560155289258e-05
+        },
+        "decode_s": {
+          "mean_s": 0.0016203484499840216,
+          "sd_s": 4.258029464973062e-05
+        },
+        "tenseal_wrapper_overhead_encode_encrypt_s": {
+          "mean_s": 0.0035162700000228144,
+          "sd_s": 0.011543785775029155
+        },
+        "tenseal_wrapper_overhead_decrypt_decode_s": {
+          "mean_s": 5.628695000154948e-05,
+          "sd_s": 0.0001927446962834071
+        }
+      },
+      "memory_kb": {
+        "rss_at_process_start": 209160,
+        "rss_after_context_and_keygen": 1258336,
+        "rss_after_model_load": 1937736,
+        "rss_immediately_before_evaluation": 1937736,
+        "peak_rss_reset_supported": true,
+        "peak_rss_during_evaluation_phase": 2009364,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 71628,
+        "context_and_keys_increment": 1049176,
+        "note": "evaluation_phase_increment = peak RSS reached during the warm-up and timed evaluations minus RSS immediately before them; context_and_keys_increment is the one-off resident cost of the context, public/relinearization/Galois keys. Loading the cohort table and the model before evaluation is NOT counted in either."
+      },
+      "fidelity_gate": [
+        {
+          "patient": 0,
+          "abs_diff_vs_committed_evaluator": 1.204246324881808e-06,
+          "abs_diff_vs_simulation": 4.8255854772083495e-05
+        },
+        {
+          "patient": 1,
+          "abs_diff_vs_committed_evaluator": 1.1774690002464006e-06,
+          "abs_diff_vs_simulation": 1.3498639689246694e-05
+        },
+        {
+          "patient": 2,
+          "abs_diff_vs_committed_evaluator": 1.397038380535065e-07,
+          "abs_diff_vs_simulation": 3.671794976567444e-05
+        }
+      ]
+    },
+    "k=5": {
+      "k": 5,
+      "n_warmup_discarded": 5,
+      "n_timed": 20,
+      "context_and_keygen_s_one_off": 1.8254144960000076,
+      "key_sizes_bytes": {
+        "evaluation_context_with_galois_keys_bytes": 415243102,
+        "evaluation_context_without_galois_keys_bytes": 17198048,
+        "galois_keys_bytes": 398045054
+      },
+      "ciphertext_bytes": {
+        "input_each_level": [
+          1647615,
+          1647597,
+          1647809,
+          1647221,
+          1647841,
+          1647779
+        ],
+        "input_total_per_patient": 9885862,
+        "output_per_patient": 459125
+      },
+      "timing_per_patient": {
+        "client_preprocess_s": {
+          "mean_s": 0.02445718014999443,
+          "sd_s": 0.0008861234750810209
+        },
+        "encode_encrypt_fused_s": {
+          "mean_s": 0.0855567569499783,
+          "sd_s": 0.0018668811533169652
+        },
+        "poly_eval_s": {
+          "mean_s": 1.0473443905999715,
+          "sd_s": 0.010125891804278043
+        },
+        "path_product_s": {
+          "mean_s": 0.04277115199997752,
+          "sd_s": 0.0007885785711747443
+        },
+        "sum_rotations_s": {
+          "mean_s": 0.08018509590001485,
+          "sd_s": 0.002113467582556425
+        },
+        "decrypt_decode_fused_s": {
+          "mean_s": 0.0013082094000196776,
+          "sd_s": 6.189780201184467e-05
+        },
+        "wall_clock_total_s": {
+          "mean_s": 1.281677931749988,
+          "sd_s": 0.011767544546236212
+        },
+        "sum_of_buckets_s": {
+          "mean_s": 1.2816227849999564,
+          "sd_s": 0.011766436870853426
+        },
+        "encode_s": {
+          "mean_s": 0.01326251524999975,
+          "sd_s": 0.00026695271093685744
+        },
+        "encrypt_s": {
+          "mean_s": 0.07095673300001408,
+          "sd_s": 0.0017122916826248283
+        },
+        "decrypt_s": {
+          "mean_s": 0.00024140825001381928,
+          "sd_s": 5.820065307916525e-05
+        },
+        "decode_s": {
+          "mean_s": 0.0011497717499935334,
+          "sd_s": 0.00026484417743460046
+        },
+        "tenseal_wrapper_overhead_encode_encrypt_s": {
+          "mean_s": 0.0013375086999644736,
+          "sd_s": 0.0031037338952292957
+        },
+        "tenseal_wrapper_overhead_decrypt_decode_s": {
+          "mean_s": -8.297059998767509e-05,
+          "sd_s": 0.00028258603033109184
+        }
+      },
+      "memory_kb": {
+        "rss_at_process_start": 209404,
+        "rss_after_context_and_keygen": 1258516,
+        "rss_after_model_load": 1942136,
+        "rss_immediately_before_evaluation": 1942136,
+        "peak_rss_reset_supported": true,
+        "peak_rss_during_evaluation_phase": 2014208,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 72072,
+        "context_and_keys_increment": 1049112,
+        "note": "evaluation_phase_increment = peak RSS reached during the warm-up and timed evaluations minus RSS immediately before them; context_and_keys_increment is the one-off resident cost of the context, public/relinearization/Galois keys. Loading the cohort table and the model before evaluation is NOT counted in either."
+      },
+      "fidelity_gate": [
+        {
+          "patient": 0,
+          "abs_diff_vs_committed_evaluator": 6.272840393783952e-07,
+          "abs_diff_vs_simulation": 1.4701047277076995e-05
+        },
+        {
+          "patient": 1,
+          "abs_diff_vs_committed_evaluator": 9.373262885234435e-07,
+          "abs_diff_vs_simulation": 1.4610800704570326e-05
+        },
+        {
+          "patient": 2,
+          "abs_diff_vs_committed_evaluator": 3.532733481304007e-07,
+          "abs_diff_vs_simulation": 1.1865825483403647e-05
+        }
+      ]
+    },
+    "k=7": {
+      "k": 7,
+      "n_warmup_discarded": 5,
+      "n_timed": 20,
+      "context_and_keygen_s_one_off": 1.7813212879998446,
+      "key_sizes_bytes": {
+        "evaluation_context_with_galois_keys_bytes": 415243845,
+        "evaluation_context_without_galois_keys_bytes": 17198572,
+        "galois_keys_bytes": 398045273
+      },
+      "ciphertext_bytes": {
+        "input_each_level": [
+          1647947,
+          1646933,
+          1647658,
+          1646785,
+          1647647,
+          1647675
+        ],
+        "input_total_per_patient": 9884645,
+        "output_per_patient": 262291
+      },
+      "timing_per_patient": {
+        "client_preprocess_s": {
+          "mean_s": 0.024738016850005807,
+          "sd_s": 0.0009478597083280193
+        },
+        "encode_encrypt_fused_s": {
+          "mean_s": 0.08531042504996549,
+          "sd_s": 0.0017465423758640174
+        },
+        "poly_eval_s": {
+          "mean_s": 1.4703452737000133,
+          "sd_s": 0.012414957351276363
+        },
+        "path_product_s": {
+          "mean_s": 0.030242382599988106,
+          "sd_s": 0.0006866015581689812
+        },
+        "sum_rotations_s": {
+          "mean_s": 0.0398155440000096,
+          "sd_s": 0.0011883420132956148
+        },
+        "decrypt_decode_fused_s": {
+          "mean_s": 0.0007158143999959066,
+          "sd_s": 4.480562813148601e-05
+        },
+        "wall_clock_total_s": {
+          "mean_s": 1.6512284973999727,
+          "sd_s": 0.012642903391041668
+        },
+        "sum_of_buckets_s": {
+          "mean_s": 1.6511674565999783,
+          "sd_s": 0.012642541186431665
+        },
+        "encode_s": {
+          "mean_s": 0.013278651899952365,
+          "sd_s": 0.00042238772701462887
+        },
+        "encrypt_s": {
+          "mean_s": 0.07065633390002404,
+          "sd_s": 0.002064572944250068
+        },
+        "decrypt_s": {
+          "mean_s": 0.00012309749999985797,
+          "sd_s": 2.074384286923122e-05
+        },
+        "decode_s": {
+          "mean_s": 0.0005895307499940827,
+          "sd_s": 6.168297578671915e-05
+        },
+        "tenseal_wrapper_overhead_encode_encrypt_s": {
+          "mean_s": 0.0013754392499890854,
+          "sd_s": 0.002931259513260924
+        },
+        "tenseal_wrapper_overhead_decrypt_decode_s": {
+          "mean_s": 3.1861500019658707e-06,
+          "sd_s": 8.419335694510458e-05
+        }
+      },
+      "memory_kb": {
+        "rss_at_process_start": 209720,
+        "rss_after_context_and_keygen": 1258892,
+        "rss_after_model_load": 1940484,
+        "rss_immediately_before_evaluation": 1940484,
+        "peak_rss_reset_supported": true,
+        "peak_rss_during_evaluation_phase": 2011800,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 71316,
+        "context_and_keys_increment": 1049172,
+        "note": "evaluation_phase_increment = peak RSS reached during the warm-up and timed evaluations minus RSS immediately before them; context_and_keys_increment is the one-off resident cost of the context, public/relinearization/Galois keys. Loading the cohort table and the model before evaluation is NOT counted in either."
+      },
+      "fidelity_gate": [
+        {
+          "patient": 0,
+          "abs_diff_vs_committed_evaluator": 6.191841708247381e-07,
+          "abs_diff_vs_simulation": 2.2550751807681735e-05
+        },
+        {
+          "patient": 1,
+          "abs_diff_vs_committed_evaluator": 2.1952504357380942e-07,
+          "abs_diff_vs_simulation": 1.0719912577020208e-05
+        },
+        {
+          "patient": 2,
+          "abs_diff_vs_committed_evaluator": 8.616891000734483e-08,
+          "abs_diff_vs_simulation": 2.3320123049952457e-05
+        }
+      ]
+    },
+    "k=9": {
+      "k": 9,
+      "n_warmup_discarded": 5,
+      "n_timed": 20,
+      "context_and_keygen_s_one_off": 1.731717043000117,
+      "key_sizes_bytes": {
+        "evaluation_context_with_galois_keys_bytes": 415241267,
+        "evaluation_context_without_galois_keys_bytes": 17199054,
+        "galois_keys_bytes": 398042213
+      },
+      "ciphertext_bytes": {
+        "input_each_level": [
+          1646933,
+          1647293,
+          1646794,
+          1646954,
+          1646786,
+          1647326
+        ],
+        "input_total_per_patient": 9882086,
+        "output_per_patient": 262291
+      },
+      "timing_per_patient": {
+        "client_preprocess_s": {
+          "mean_s": 0.02502797490000148,
+          "sd_s": 0.0005357958742281406
+        },
+        "encode_encrypt_fused_s": {
+          "mean_s": 0.0853704622500004,
+          "sd_s": 0.001998229121178697
+        },
+        "poly_eval_s": {
+          "mean_s": 1.9050077603500086,
+          "sd_s": 0.026566154428363995
+        },
+        "path_product_s": {
+          "mean_s": 0.02990639370001418,
+          "sd_s": 0.00047898225805298987
+        },
+        "sum_rotations_s": {
+          "mean_s": 0.0393731818499532,
+          "sd_s": 0.0009256434830148853
+        },
+        "decrypt_decode_fused_s": {
+          "mean_s": 0.0007514969499538892,
+          "sd_s": 8.480073710272409e-05
+        },
+        "wall_clock_total_s": {
+          "mean_s": 2.0855021411499477,
+          "sd_s": 0.028582437137921992
+        },
+        "sum_of_buckets_s": {
+          "mean_s": 2.0854372699999315,
+          "sd_s": 0.028584210630038562
+        },
+        "encode_s": {
+          "mean_s": 0.01315614855000149,
+          "sd_s": 0.00018863313103783947
+        },
+        "encrypt_s": {
+          "mean_s": 0.07010289534999856,
+          "sd_s": 0.0006996926473702851
+        },
+        "decrypt_s": {
+          "mean_s": 0.00011672580001231836,
+          "sd_s": 2.1420441929722375e-05
+        },
+        "decode_s": {
+          "mean_s": 0.0005535694499940291,
+          "sd_s": 2.7151768192075043e-05
+        },
+        "tenseal_wrapper_overhead_encode_encrypt_s": {
+          "mean_s": 0.0021114183500003493,
+          "sd_s": 0.0018221805722953345
+        },
+        "tenseal_wrapper_overhead_decrypt_decode_s": {
+          "mean_s": 8.120169994754178e-05,
+          "sd_s": 9.805222091526894e-05
+        }
+      },
+      "memory_kb": {
+        "rss_at_process_start": 209504,
+        "rss_after_context_and_keygen": 1258676,
+        "rss_after_model_load": 1942612,
+        "rss_immediately_before_evaluation": 1942612,
+        "peak_rss_reset_supported": true,
+        "peak_rss_during_evaluation_phase": 2014804,
+        "evaluation_phase_increment_over_pre_evaluation_rss": 72192,
+        "context_and_keys_increment": 1049172,
+        "note": "evaluation_phase_increment = peak RSS reached during the warm-up and timed evaluations minus RSS immediately before them; context_and_keys_increment is the one-off resident cost of the context, public/relinearization/Galois keys. Loading the cohort table and the model before evaluation is NOT counted in either."
+      },
+      "fidelity_gate": [
+        {
+          "patient": 0,
+          "abs_diff_vs_committed_evaluator": 8.337053536422445e-07,
+          "abs_diff_vs_simulation": 5.378015949863979e-05
+        },
+        {
+          "patient": 1,
+          "abs_diff_vs_committed_evaluator": 2.3281271796515846e-07,
+          "abs_diff_vs_simulation": 2.186007062945916e-05
+        },
+        {
+          "patient": 2,
+          "abs_diff_vs_committed_evaluator": 1.0452066145916206e-07,
+          "abs_diff_vs_simulation": 6.297851284897682e-05
+        }
+      ]
+    }
+  }
+}

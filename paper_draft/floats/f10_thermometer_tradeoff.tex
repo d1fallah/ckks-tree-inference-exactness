@@ -1,0 +1,10 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\linewidth]{f10_thermometer_tradeoff}
+\caption{Structure- and threshold-hiding thermometer protocol, cost against bin count $B$ (triage task; test split, five seeds; \textsc{real} ciphertexts for the two left panels, plaintext models
+for the right panel). Left: per-stay upload in MB on a logarithmic axis. Middle: seconds per stay for one label (mean $\pm$ SD over seeds). Right: AUROC cost of quantization relative to the full-precision model (mean $\pm$ SD over seeds).
+Circles: broadcast thermometer; squares: packed thermometer; triangles: client knows the structure and thresholds and sends its path indicators. The packed and client-indicator lines coincide in the left panel at the same upload. The diamond is the interpolation circuit
+(client knows the thresholds, 5 bins, locked chain); the other circuits run on a four-level chain, so the diamond is not a like-for-like comparison (Supplementary Table~\ref{tab:s8_locked_chain}). One-off keys are not included
+(Supplementary Table~\ref{tab:s9_keys}). Proxy cohort (MIMIC-IV-ED-derived).}
+\label{fig:thermometer-tradeoff}
+\end{figure*}

@@ -1,0 +1,645 @@
+{
+  "protocol": "closure guide 3.3; probe of the LOCKED parameters, none changed",
+  "locked_parameters": {
+    "N_poly_modulus_degree": 16384,
+    "coeff_modulus_bit_sizes": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "scale_bits": 40
+  },
+  "backend": "REAL TenSEAL/SEAL ciphertexts",
+  "evaluator_note": "The committed evaluator is a balanced power ladder (ckks_circuit._ct_power) with a plaintext coefficient multiply per power. It is NOT Paterson-Stockmeyer, which is not implemented (a baby-step/giant-step scheme could fold the coefficient multiply in and recover a level; noted as possible future work only).",
+  "sequential_multiplication_probe": {
+    "fresh_chain_index": 7,
+    "sequential_ct_x_ct_trace": [
+      {
+        "multiplication": 1,
+        "chain_index_after": 6
+      },
+      {
+        "multiplication": 2,
+        "chain_index_after": 5
+      },
+      {
+        "multiplication": 3,
+        "chain_index_after": 4
+      },
+      {
+        "multiplication": 4,
+        "chain_index_after": 3
+      },
+      {
+        "multiplication": 5,
+        "chain_index_after": 2
+      },
+      {
+        "multiplication": 6,
+        "chain_index_after": 1
+      },
+      {
+        "multiplication": 7,
+        "chain_index_after": 0
+      }
+    ],
+    "max_successful_sequential_multiplications": 7,
+    "first_failure_at_multiplication": 8,
+    "first_failure_message": "scale out of bounds",
+    "levels_consumed_by_one_ct_x_pt_multiply": 1
+  },
+  "per_degree": {
+    "k=3": {
+      "code_derived": {
+        "polynomial_depth": 3,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 6
+      },
+      "closed_form_previously_tabled": {
+        "polynomial_depth": 2,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 5
+      },
+      "closed_form_undercount_levels": 1,
+      "measured_polynomial_levels_real_ciphertext": 3,
+      "levels_available_on_locked_chain": 7,
+      "fits_locked_chain": true,
+      "slack_levels": 1,
+      "coeff_modulus_bits_needed_for_this_depth": 360,
+      "tc128_max_bits_at_N16384": 438,
+      "would_fit_N16384_at_128_bit_security": true,
+      "full_circuit_real_execution_one_patient": {
+        "completed": true,
+        "abs_error_vs_simulation": 7.396011026905569e-05,
+        "seconds": 0.656
+      },
+      "polynomial_operation_graph": [
+        {
+          "op": "ct*pt",
+          "a": "z",
+          "a_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "z",
+          "b_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*z)",
+          "a_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        }
+      ],
+      "path_product_operation_graph": [
+        {
+          "op": "ct*ct",
+          "a": "P1",
+          "a_level": 3,
+          "b": "P2",
+          "b_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "P0",
+          "a_level": 3,
+          "b": "(P1*P2)",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "P4",
+          "a_level": 3,
+          "b": "P5",
+          "b_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "P3",
+          "a_level": 3,
+          "b": "(P4*P5)",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "(P0*(P1*P2))",
+          "a_level": 5,
+          "b": "(P3*(P4*P5))",
+          "b_level": 5,
+          "out_level": 6
+        }
+      ]
+    },
+    "k=5": {
+      "code_derived": {
+        "polynomial_depth": 4,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 7
+      },
+      "closed_form_previously_tabled": {
+        "polynomial_depth": 3,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 6
+      },
+      "closed_form_undercount_levels": 1,
+      "measured_polynomial_levels_real_ciphertext": 4,
+      "levels_available_on_locked_chain": 7,
+      "fits_locked_chain": true,
+      "slack_levels": 0,
+      "coeff_modulus_bits_needed_for_this_depth": 400,
+      "tc128_max_bits_at_N16384": 438,
+      "would_fit_N16384_at_128_bit_security": true,
+      "full_circuit_real_execution_one_patient": {
+        "completed": true,
+        "abs_error_vs_simulation": 7.926793162038592e-05,
+        "seconds": 0.897
+      },
+      "polynomial_operation_graph": [
+        {
+          "op": "ct*pt",
+          "a": "z",
+          "a_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "z",
+          "b_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*z)",
+          "a_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        }
+      ],
+      "path_product_operation_graph": [
+        {
+          "op": "ct*ct",
+          "a": "P1",
+          "a_level": 4,
+          "b": "P2",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "P0",
+          "a_level": 4,
+          "b": "(P1*P2)",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "P4",
+          "a_level": 4,
+          "b": "P5",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "P3",
+          "a_level": 4,
+          "b": "(P4*P5)",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "(P0*(P1*P2))",
+          "a_level": 6,
+          "b": "(P3*(P4*P5))",
+          "b_level": 6,
+          "out_level": 7
+        }
+      ]
+    },
+    "k=7": {
+      "code_derived": {
+        "polynomial_depth": 4,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 7
+      },
+      "closed_form_previously_tabled": {
+        "polynomial_depth": 3,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 6
+      },
+      "closed_form_undercount_levels": 1,
+      "measured_polynomial_levels_real_ciphertext": 4,
+      "levels_available_on_locked_chain": 7,
+      "fits_locked_chain": true,
+      "slack_levels": 0,
+      "coeff_modulus_bits_needed_for_this_depth": 400,
+      "tc128_max_bits_at_N16384": 438,
+      "would_fit_N16384_at_128_bit_security": true,
+      "full_circuit_real_execution_one_patient": {
+        "completed": true,
+        "abs_error_vs_simulation": 7.330181863363094e-05,
+        "seconds": 1.172
+      },
+      "polynomial_operation_graph": [
+        {
+          "op": "ct*pt",
+          "a": "z",
+          "a_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "z",
+          "b_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*z)",
+          "a_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "b": "(z*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*(z*z))*(z*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "b": "((z*z)*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*(z*z))*((z*z)*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        }
+      ],
+      "path_product_operation_graph": [
+        {
+          "op": "ct*ct",
+          "a": "P1",
+          "a_level": 4,
+          "b": "P2",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "P0",
+          "a_level": 4,
+          "b": "(P1*P2)",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "P4",
+          "a_level": 4,
+          "b": "P5",
+          "b_level": 4,
+          "out_level": 5
+        },
+        {
+          "op": "ct*ct",
+          "a": "P3",
+          "a_level": 4,
+          "b": "(P4*P5)",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "(P0*(P1*P2))",
+          "a_level": 6,
+          "b": "(P3*(P4*P5))",
+          "b_level": 6,
+          "out_level": 7
+        }
+      ]
+    },
+    "k=9": {
+      "code_derived": {
+        "polynomial_depth": 5,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 8
+      },
+      "closed_form_previously_tabled": {
+        "polynomial_depth": 4,
+        "path_product_depth": 3,
+        "total_multiplicative_depth": 7
+      },
+      "closed_form_undercount_levels": 1,
+      "measured_polynomial_levels_real_ciphertext": 5,
+      "levels_available_on_locked_chain": 7,
+      "fits_locked_chain": false,
+      "slack_levels": -1,
+      "coeff_modulus_bits_needed_for_this_depth": 440,
+      "tc128_max_bits_at_N16384": 438,
+      "would_fit_N16384_at_128_bit_security": false,
+      "full_circuit_real_execution_one_patient": {
+        "completed": false,
+        "exception_type": "ValueError",
+        "exception_message": "scale out of bounds",
+        "seconds": 1.359
+      },
+      "polynomial_operation_graph": [
+        {
+          "op": "ct*pt",
+          "a": "z",
+          "a_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "z",
+          "b_level": 0,
+          "out_level": 1
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*z)",
+          "a_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*ct",
+          "a": "z",
+          "a_level": 0,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*z)",
+          "b_level": 1,
+          "out_level": 2
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*z))",
+          "a_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*z)",
+          "a_level": 1,
+          "b": "(z*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*z)*(z*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "b": "(z*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*(z*z))*(z*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "(z*(z*z))",
+          "a_level": 2,
+          "b": "((z*z)*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "((z*(z*z))*((z*z)*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "((z*z)*(z*z))",
+          "a_level": 2,
+          "b": "((z*z)*(z*z))",
+          "b_level": 2,
+          "out_level": 3
+        },
+        {
+          "op": "ct*pt",
+          "a": "(((z*z)*(z*z))*((z*z)*(z*z)))",
+          "a_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*ct",
+          "a": "((z*z)*(z*z))",
+          "a_level": 2,
+          "b": "((z*z)*(z*(z*z)))",
+          "b_level": 3,
+          "out_level": 4
+        },
+        {
+          "op": "ct*pt",
+          "a": "(((z*z)*(z*z))*((z*z)*(z*(z*z))))",
+          "a_level": 4,
+          "out_level": 5
+        }
+      ],
+      "path_product_operation_graph": [
+        {
+          "op": "ct*ct",
+          "a": "P1",
+          "a_level": 5,
+          "b": "P2",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "P0",
+          "a_level": 5,
+          "b": "(P1*P2)",
+          "b_level": 6,
+          "out_level": 7
+        },
+        {
+          "op": "ct*ct",
+          "a": "P4",
+          "a_level": 5,
+          "b": "P5",
+          "b_level": 5,
+          "out_level": 6
+        },
+        {
+          "op": "ct*ct",
+          "a": "P3",
+          "a_level": 5,
+          "b": "(P4*P5)",
+          "b_level": 6,
+          "out_level": 7
+        },
+        {
+          "op": "ct*ct",
+          "a": "(P0*(P1*P2))",
+          "a_level": 7,
+          "b": "(P3*(P4*P5))",
+          "b_level": 7,
+          "out_level": 8
+        }
+      ]
+    }
+  },
+  "probe_patient": "one row of the VALIDATION split; no label used",
+  "probe_model": {
+    "seed": 42,
+    "label": "label_hypertension_uncomplicated"
+  }
+}

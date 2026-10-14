@@ -1,0 +1,115 @@
+{
+  "status": "descriptive, exploratory, post hoc; not pre-registered; 5 seeds; sign test uncorrected for the two contrasts",
+  "source_artifacts": [
+    "m1_ckks_sweep_simulated.json",
+    "m1_ckks_sweep_k1_simulated.json",
+    "m1_scaling_multiseed.json"
+  ],
+  "utility_tolerance": 0.03,
+  "utility_headroom": {
+    "k_sweep_delta_f1_mean_by_k": {
+      "k=3": 0.0016332733647034913,
+      "k=5": 0.0019228470267811603,
+      "k=7": 0.0021595878739899764,
+      "k=9": 0.002561937149482918
+    },
+    "k_sweep_largest_mean": 0.002561937149482918,
+    "k_sweep_largest_mean_as_fraction_of_tolerance": 0.08539790498276394,
+    "k_sweep_largest_per_seed_value": 0.0036241545126789454,
+    "k1_delta_f1_mean": 0.00433040514033165,
+    "k1_as_fraction_of_tolerance": 0.144346838011055,
+    "scaling_grid_largest_cell": 0.01198488655448815,
+    "scaling_grid_largest_cell_as_fraction_of_tolerance": 0.39949621848293837,
+    "scaling_grid_largest_cell_is": {
+      "seed": 42,
+      "n_estimators": 5,
+      "max_depth": 3
+    },
+    "n_scaling_cells": 40,
+    "n_scaling_cells_at_or_above_tolerance": 0
+  },
+  "pilot_cell_extremeness": {
+    "pilot_seed42_5tree_depth3": 0.01198488655448815,
+    "five_tree_depth3_values_all_seeds_sorted": [
+      0.0006105110112994971,
+      0.0013328117294868491,
+      0.0020684342366085184,
+      0.0037700086285784584,
+      0.01198488655448815
+    ],
+    "five_tree_depth3_values_excluding_seed42_sorted": [
+      0.0006105110112994971,
+      0.0013328117294868491,
+      0.0020684342366085184,
+      0.0037700086285784584
+    ],
+    "pilot_value_over_largest_other_seed_value": 3.1790077252441837
+  },
+  "paired_scaling_checks": {
+    "tree_count_5_vs_50_at_depth3_abs_delta_f1": {
+      "contrast": "abs_delta_f1: (trees=5, depth=3) minus (trees=50, depth=3)",
+      "per_seed_values_a": {
+        "42": 0.01198488655448815,
+        "123": 0.0013328117294868491,
+        "7": 0.0006105110112994971,
+        "456": 0.0020684342366085184,
+        "789": 0.0037700086285784584
+      },
+      "per_seed_values_b": {
+        "42": 0.00043317276482846,
+        "123": 0.000985123173455782,
+        "7": 0.00011981978717490183,
+        "456": 0.001563993650768758,
+        "789": 0.0002988310453920784
+      },
+      "per_seed_difference": {
+        "42": 0.01155171378965969,
+        "123": 0.0003476885560310672,
+        "7": 0.0004906912241245953,
+        "456": 0.0005044405858397605,
+        "789": 0.00347117758318638
+      },
+      "mean_paired_difference": 0.0032731423477682987,
+      "sd_paired_difference": 0.004809885306910364,
+      "seeds_a_greater_than_b": 5,
+      "seeds_a_less_than_b": 0,
+      "n_seeds": 5,
+      "exact_one_sided_sign_test_p_if_direction_named_in_advance": 0.03125,
+      "median_paired_difference": 0.0005044405858397605,
+      "largest_single_seed_share_of_summed_difference": 0.7058485432224423
+    },
+    "depth_6_vs_3_at_50_trees_abs_delta_f1": {
+      "contrast": "abs_delta_f1: (trees=50, depth=6) minus (trees=50, depth=3)",
+      "per_seed_values_a": {
+        "42": 0.0007290810020796901,
+        "123": 0.002201134095510149,
+        "7": 0.0004906665157093926,
+        "456": 0.0016383306341077875,
+        "789": 0.0012949652414375734
+      },
+      "per_seed_values_b": {
+        "42": 0.00043317276482846,
+        "123": 0.000985123173455782,
+        "7": 0.00011981978717490183,
+        "456": 0.001563993650768758,
+        "789": 0.0002988310453920784
+      },
+      "per_seed_difference": {
+        "42": 0.00029590823725123006,
+        "123": 0.001216010922054367,
+        "7": 0.00037084672853449074,
+        "456": 7.43369833390295e-05,
+        "789": 0.000996134196045495
+      },
+      "mean_paired_difference": 0.0005906474134449224,
+      "sd_paired_difference": 0.000489198076465618,
+      "seeds_a_greater_than_b": 5,
+      "seeds_a_less_than_b": 0,
+      "n_seeds": 5,
+      "exact_one_sided_sign_test_p_if_direction_named_in_advance": 0.03125,
+      "median_paired_difference": 0.00037084672853449074,
+      "largest_single_seed_share_of_summed_difference": 0.4117552686676615
+    }
+  },
+  "read_this_as": "Direction and size are separate questions. The direction of the tree-count effect may hold in every seed while its size is a fraction of what the single-seed pilot showed; the smallest one-sided sign-test probability 5 seeds can give is 1/32 = 0.031, so it is not a substitute for the locked bootstrap."
+}

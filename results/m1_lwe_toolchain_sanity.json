@@ -1,0 +1,93 @@
+{
+  "purpose": "does this estimator and cost model reproduce the HE Standard's own published 128-bit rows?",
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "secret": "ternary uniform",
+  "error": "discrete Gaussian sigma=3.2",
+  "rows": [
+    {
+      "n": 1024,
+      "log2_q": 27,
+      "published_security_bits": 128,
+      "ADPS16 classical core-SVP": {
+        "estimated_bits": 99.85,
+        "cheapest_attack": "dual_hybrid",
+        "gap_to_published_128": -28.15,
+        "seconds": 35.5
+      },
+      "MATZOV (estimator default)": {
+        "estimated_bits": 126.18,
+        "cheapest_attack": "dual_hybrid",
+        "gap_to_published_128": -1.82,
+        "seconds": 42.8
+      }
+    },
+    {
+      "n": 2048,
+      "log2_q": 54,
+      "published_security_bits": 128,
+      "ADPS16 classical core-SVP": {
+        "estimated_bits": 97.82,
+        "cheapest_attack": "dual_hybrid",
+        "gap_to_published_128": -30.18,
+        "seconds": 58.4
+      },
+      "MATZOV (estimator default)": {
+        "estimated_bits": 126.27,
+        "cheapest_attack": "bdd",
+        "gap_to_published_128": -1.73,
+        "seconds": 64.5
+      }
+    },
+    {
+      "n": 4096,
+      "log2_q": 109,
+      "published_security_bits": 128,
+      "ADPS16 classical core-SVP": {
+        "estimated_bits": 95.19,
+        "cheapest_attack": "dual_hybrid",
+        "gap_to_published_128": -32.81,
+        "seconds": 95.6
+      },
+      "MATZOV (estimator default)": {
+        "estimated_bits": 125.1,
+        "cheapest_attack": "bdd",
+        "gap_to_published_128": -2.9,
+        "seconds": 104.5
+      }
+    },
+    {
+      "n": 8192,
+      "log2_q": 218,
+      "published_security_bits": 128,
+      "ADPS16 classical core-SVP": {
+        "estimated_bits": 94.61,
+        "cheapest_attack": "dual_hybrid",
+        "gap_to_published_128": -33.39,
+        "seconds": 215.8
+      },
+      "MATZOV (estimator default)": {
+        "estimated_bits": 125.75,
+        "cheapest_attack": "bdd",
+        "gap_to_published_128": -2.25,
+        "seconds": 221.0
+      }
+    },
+    {
+      "n": 16384,
+      "log2_q": 438,
+      "published_security_bits": 128,
+      "ADPS16 classical core-SVP": {
+        "estimated_bits": 93.73,
+        "cheapest_attack": "usvp",
+        "gap_to_published_128": -34.27,
+        "seconds": 711.9
+      },
+      "MATZOV (estimator default)": {
+        "estimated_bits": 125.92,
+        "cheapest_attack": "bdd",
+        "gap_to_published_128": -2.08,
+        "seconds": 687.2
+      }
+    }
+  ]
+}

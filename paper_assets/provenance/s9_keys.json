@@ -1,0 +1,122 @@
+{
+  "asset_id": "s9_keys",
+  "records": [
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/source",
+      "reduce_how": null,
+      "raw": "m1c_thermo_final_*.json (Analysis-plan gate, M1 model-private thermometer protocol)",
+      "fmt": null,
+      "formatted": "m1c_thermo_final_*.json (Analysis-plan gate, M1 model-private thermometer protocol)",
+      "note": "One-off key material of the REAL runs. Proxy cohort (MIMIC-IV-ED-derived). Structure- and threshold-hiding thermometer protocol, final run (added study; Analysis-plan gate in GATES.md). Test split, five seeds.",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_four_level/public_key_and_params_mb",
+      "reduce_how": null,
+      "raw": 1.3161,
+      "fmt": ".1f",
+      "formatted": "1.3",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_four_level/relin_keys_mb",
+      "reduce_how": null,
+      "raw": 6.586135,
+      "fmt": ".1f",
+      "formatted": "6.6",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_four_level/galois_keys_mb",
+      "reduce_how": null,
+      "raw": 171.601413,
+      "fmt": ".1f",
+      "formatted": "171.6",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_four_level/total_mb",
+      "reduce_how": null,
+      "raw": 179.503648,
+      "fmt": ".1f",
+      "formatted": "179.5",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_locked_seven_level/public_key_and_params_mb",
+      "reduce_how": null,
+      "raw": 1.910094,
+      "fmt": ".1f",
+      "formatted": "1.9",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_locked_seven_level/relin_keys_mb",
+      "reduce_how": null,
+      "raw": 15.288521,
+      "fmt": ".1f",
+      "formatted": "15.3",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_locked_seven_level/galois_keys_mb",
+      "reduce_how": null,
+      "raw": 398.052642,
+      "fmt": ".1f",
+      "formatted": "398.1",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1c_thermo_final_summary.json",
+      "pointer": "/key_bytes_one_off/n16384_locked_seven_level/total_mb",
+      "reduce_how": null,
+      "raw": 415.251257,
+      "fmt": ".1f",
+      "formatted": "415.3",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

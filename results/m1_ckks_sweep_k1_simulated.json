@@ -1,0 +1,82 @@
+{
+  "protocol": "closure guide 4.5; identical to eval_ckks.py except k=1 (separate arm; K_APPROX_DEGREE_VALUES unchanged)",
+  "backend": "SIMULATED (circuit-faithful numpy, NOT real ciphertext execution)",
+  "k": 1,
+  "gamma": 15.022524536045237,
+  "a_half_width": 0.847059,
+  "degree1_polynomial": {
+    "c0": 0.49999999999999994,
+    "c1": -0.8345722194482965,
+    "value_at_plus_a": -0.20693190963365465,
+    "value_at_minus_a": 1.2069319096336546
+  },
+  "n_test_stays": 32493,
+  "n_bootstrap_resamples": 2000,
+  "seeds": [
+    42,
+    123,
+    7,
+    456,
+    789
+  ],
+  "per_seed": [
+    {
+      "seed": 42,
+      "f1_plain": 0.5734589030968535,
+      "f1_ckks": 0.5688372933201874,
+      "delta_f1": 0.004621609776666147,
+      "signed_delta_f1_ckks_minus_plain": -0.004621609776666147,
+      "agreement_mean_over_labels": 0.943741728987782
+    },
+    {
+      "seed": 123,
+      "f1_plain": 0.5722812683597256,
+      "f1_ckks": 0.5695598021789758,
+      "delta_f1": 0.002721466180749754,
+      "signed_delta_f1_ckks_minus_plain": -0.002721466180749754,
+      "agreement_mean_over_labels": 0.9458098667405288
+    },
+    {
+      "seed": 7,
+      "f1_plain": 0.571419822928108,
+      "f1_ckks": 0.5658971694025331,
+      "delta_f1": 0.005522653525574905,
+      "signed_delta_f1_ckks_minus_plain": -0.005522653525574905,
+      "agreement_mean_over_labels": 0.9409595912965869
+    },
+    {
+      "seed": 456,
+      "f1_plain": 0.572603203935939,
+      "f1_ckks": 0.5691368274112071,
+      "delta_f1": 0.003466376524731918,
+      "signed_delta_f1_ckks_minus_plain": -0.003466376524731918,
+      "agreement_mean_over_labels": 0.944689625457791
+    },
+    {
+      "seed": 789,
+      "f1_plain": 0.5723066358843325,
+      "f1_ckks": 0.566986716190397,
+      "delta_f1": 0.0053199196939355264,
+      "signed_delta_f1_ckks_minus_plain": -0.0053199196939355264,
+      "agreement_mean_over_labels": 0.9393838672944941
+    }
+  ],
+  "delta_f1_mean_over_seeds": 0.00433040514033165,
+  "signed_delta_f1_mean_over_seeds": -0.00433040514033165,
+  "paired_bootstrap": {
+    "point_estimate": 0.00433040514033165,
+    "ci_95_lower": 0.003134574360806048,
+    "ci_95_upper": 0.005513858776183041,
+    "per_seed_delta_f1": [
+      0.004621609776666147,
+      0.002721466180749754,
+      0.005522653525574905,
+      0.003466376524731918,
+      0.0053199196939355264
+    ]
+  },
+  "utility_tolerance": 0.03,
+  "meets_utility_tolerance": true,
+  "verdict": "k=1 PASSES the utility tolerance: no infeasible boundary is reached at the cheapest degree; k*=3 is the lowest degree of the locked family {3,5,7,9}, not a feasibility boundary",
+  "runtime_seconds": 605.6
+}

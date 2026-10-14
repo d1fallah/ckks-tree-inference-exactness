@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Error decomposition. A: float$\to$quantized (clear, 25 models). B: float$\to$CKKS (simulated for all $k$, including $k=9$, which is simulation only here). B$'$: simulated$\to$real CKKS (real ciphertexts, original evaluator, $k\in\{3,5,7\}$; Table~\ref{tab:t5_real_vs_simulated} adds the folding evaluator and $k=9$). A and B use different populations and metrics and are not additive. No quantized$\to$CKKS stage exists: the CKKS pipeline never quantizes and the TFHE pipeline never uses the polynomial approximation. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{tab:t7_error_decomposition}
+\begin{tabular}{llrrr}
+\toprule
+Step & $k$ & Agreement & Norm.\ MAE & $\Delta$F1 \\
+\midrule
+A: float $\to$ quantized & -- & 0.9883 & 0.00888 & 0.00519 \\
+\midrule
+B: float $\to$ CKKS & 3 & 0.9589 & 0.0307 & 0.00163 \\
+B: float $\to$ CKKS & 5 & 0.9644 & 0.0256 & 0.00192 \\
+B: float $\to$ CKKS & 7 & 0.9693 & 0.0230 & 0.00216 \\
+B: float $\to$ CKKS & 9 & 0.9713 & 0.0215 & 0.00256 \\
+\midrule
+B$'$: simulated $\to$ real CKKS & 3 & 1.0000 & 7.25e-06 & -- \\
+B$'$: simulated $\to$ real CKKS & 5 & 1.0000 & 7.07e-06 & -- \\
+B$'$: simulated $\to$ real CKKS & 7 & 1.0000 & 6.95e-06 & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

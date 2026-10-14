@@ -1,0 +1,223 @@
+{
+  "seed": 456,
+  "smoke": false,
+  "sample": "100 stays (50 plaintext-positive, 50 plaintext-negative at the F1 threshold), generator seed 42",
+  "chains": {
+    "four_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "locked_seven_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ]
+  },
+  "key_bytes_one_off": {
+    "n16384_four_level": {
+      "public_key_and_params": 1315570,
+      "relin_keys": 6586051,
+      "galois_keys": 171596165,
+      "total": 179497786
+    },
+    "n16384_locked_seven_level": {
+      "public_key_and_params": 1909243,
+      "relin_keys": 15288293,
+      "galois_keys": 398048247,
+      "total": 415245783
+    }
+  },
+  "by_B": {
+    "B=5": {
+      "B": 5,
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00017833709716796875,
+        "mean_abs_margin_error": 5.5705124395899475e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.10729025808997,
+        "sd_seconds_per_stay": 0.022236518977227494,
+        "client_upload_bytes": 37927473,
+        "min_abs_gap_to_f1_threshold_sampled": 0.008095622062683105,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.010754108428955078,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.000194549560546875,
+        "mean_abs_margin_error": 7.214755896711722e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.4201788867100276,
+        "sd_seconds_per_stay": 0.020854827201521833,
+        "client_upload_bytes": 1053504,
+        "min_abs_gap_to_f1_threshold_sampled": 0.008095622062683105,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.010754108428955078,
+        "error_below_min_gap_sens80": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 2.193450927734375e-05,
+        "mean_abs_margin_error": 1.1949521649512462e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09060011971997482,
+        "sd_seconds_per_stay": 0.0012941553493036214,
+        "client_upload_bytes": 1054154,
+        "min_abs_gap_to_f1_threshold_sampled": 0.008095622062683105,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.010754108428955078,
+        "error_below_min_gap_sens80": true
+      },
+      "exact_interpolation_7level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00027871131896972656,
+        "mean_abs_margin_error": 7.42858464946039e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.053825780260004,
+        "sd_seconds_per_stay": 0.020164972018730278,
+        "client_upload_bytes": 9885912,
+        "min_abs_gap_to_f1_threshold_sampled": 0.008095622062683105,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.010754108428955078,
+        "error_below_min_gap_sens80": true,
+        "degree": 9
+      }
+    },
+    "B=8": {
+      "B": 8,
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00020599365234375,
+        "mean_abs_margin_error": 5.611177402897738e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.7516343140999744,
+        "sd_seconds_per_stay": 0.03202671266578148,
+        "client_upload_bytes": 66380166,
+        "min_abs_gap_to_f1_threshold_sampled": 0.007874727249145508,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 99,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.430511474609375e-06,
+        "error_below_min_gap_sens80": false
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00022125244140625,
+        "mean_abs_margin_error": 7.081173680489883e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.503052402459998,
+        "sd_seconds_per_stay": 0.024370795157460746,
+        "client_upload_bytes": 1053803,
+        "min_abs_gap_to_f1_threshold_sampled": 0.007874727249145508,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 99,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.430511474609375e-06,
+        "error_below_min_gap_sens80": false
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 2.47955322265625e-05,
+        "mean_abs_margin_error": 1.1917278243345208e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09040162427003452,
+        "sd_seconds_per_stay": 0.0015324754796407001,
+        "client_upload_bytes": 1053061,
+        "min_abs_gap_to_f1_threshold_sampled": 0.007874727249145508,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 99,
+        "min_abs_gap_to_sens80_threshold_sampled": 1.430511474609375e-06,
+        "error_below_min_gap_sens80": false
+      }
+    },
+    "B=16": {
+      "B": 16,
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00019073486328125,
+        "mean_abs_margin_error": 5.5892021919135004e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 3.192216610289888,
+        "sd_seconds_per_stay": 0.05398046265110702,
+        "client_upload_bytes": 142233012,
+        "min_abs_gap_to_f1_threshold_sampled": 0.030563712120056152,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.04110360145568848,
+        "error_below_min_gap_sens80": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00020122528076171875,
+        "mean_abs_margin_error": 6.70225199428387e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 5.5524369171700165,
+        "sd_seconds_per_stay": 0.0458287675546883,
+        "client_upload_bytes": 1053698,
+        "min_abs_gap_to_f1_threshold_sampled": 0.030563712120056152,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.04110360145568848,
+        "error_below_min_gap_sens80": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 2.09808349609375e-05,
+        "mean_abs_margin_error": 1.2132152733101975e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09056950684996991,
+        "sd_seconds_per_stay": 0.0018258605370675566,
+        "client_upload_bytes": 1054119,
+        "min_abs_gap_to_f1_threshold_sampled": 0.030563712120056152,
+        "error_below_min_gap": true,
+        "decisions_agreeing_sens80": 100,
+        "min_abs_gap_to_sens80_threshold_sampled": 0.04110360145568848,
+        "error_below_min_gap_sens80": true
+      }
+    }
+  },
+  "runtime_seconds": 1800.437777694001
+}

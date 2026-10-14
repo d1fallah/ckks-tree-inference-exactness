@@ -1,0 +1,96 @@
+{
+  "asset_id": "s2_tfhe_calibration",
+  "records": [
+    {
+      "kind": "value",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/freeze_list/n_bits",
+      "reduce_how": null,
+      "raw": 6,
+      "fmt": null,
+      "formatted": "6",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/real_fhe_execution/n_real_fhe_executions",
+      "reduce_how": null,
+      "raw": 20,
+      "fmt": null,
+      "formatted": "20",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "reduce:mean",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/quantization_effect_full_grid/*/agreement_sign",
+      "reduce_how": "mean",
+      "raw": 0.98832,
+      "fmt": ".4f",
+      "formatted": "0.9883",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "reduce:mean",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/quantization_effect_full_grid/*/normalized_mae",
+      "reduce_how": "mean",
+      "raw": 0.00887849116922814,
+      "fmt": ".5f",
+      "formatted": "0.00888",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/real_fhe_execution/agreement_tfhe_vs_quantized_clear",
+      "reduce_how": null,
+      "raw": 1.0,
+      "fmt": ".4f",
+      "formatted": "1.0000",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/real_fhe_execution/online_latency_seconds_mean",
+      "reduce_how": null,
+      "raw": 87.29891736470005,
+      "fmt": ".2f",
+      "formatted": "87.30",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    },
+    {
+      "kind": "value",
+      "artifact": "m1_tfhe_calibration.json",
+      "pointer": "/real_fhe_execution/online_latency_seconds_std",
+      "reduce_how": null,
+      "raw": 0.9046159871751414,
+      "fmt": ".2f",
+      "formatted": "0.90",
+      "note": "",
+      "citation": null,
+      "locus": null,
+      "reason": null
+    }
+  ]
+}

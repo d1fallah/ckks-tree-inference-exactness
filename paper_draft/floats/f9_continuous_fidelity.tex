@@ -1,0 +1,12 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{f9_continuous_fidelity}
+\caption{Continuous-feature task (triage vital signs, age, and triage acuity; test split, five seeds; \textsc{simulated}). Left: decisions
+that differ from the plaintext model per 1{,}000 stays. Right: share of plaintext positive decisions lost. Circles: approximate comparison
+on full-precision inputs at degree $k$ (means over seeds, bars are $\pm$ one SD across seeds). Filled diamond: exact comparison on inputs
+quantized to \MOneCTBinsPrimary{} bins, degree \MOneCTDegreePrimary{}, which also runs on real ciphertexts (Table~\ref{tab:t13_continuous_real}).
+Hollow diamond: the same construction with \MOneCTBinsSens{} bins at degree \MOneCTDegreeSens{}, simulation only. At low degree the circuit
+adds positives and loses few plaintext positives, so the right panel alone understates the disagreement. $k=1$ is an additional diagnostic
+arm outside the evaluated degree family. Proxy cohort (MIMIC-IV-ED-derived).}
+\label{fig:continuous-fidelity}
+\end{figure*}

@@ -1,0 +1,292 @@
+{
+  "protocol": "docs/m1c_thermo_pilot_prespec.md",
+  "scope": "seed 42, validation split only, test split not read",
+  "use_acuity": true,
+  "auroc_full_precision_val": 0.8576370846129381,
+  "f1_full_precision_val": 0.3589852909827329,
+  "chains": {
+    "four_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      60
+    ],
+    "locked_seven_level": [
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60
+    ]
+  },
+  "seeded_serialization_check": "TenSEAL symmetric encryption gave 1,053,170 bytes against 1,052,708 for public-key encryption on synthetic data: no reduction",
+  "key_bytes_one_off": {
+    "n16384_four_level": {
+      "public_key_and_params": 1316135,
+      "relin_keys": 6585711,
+      "galois_keys": 171593724,
+      "total": 179495570
+    },
+    "n16384_locked_seven_level": {
+      "public_key_and_params": 1910043,
+      "relin_keys": 15287940,
+      "galois_keys": 398048835,
+      "total": 415246818
+    },
+    "n8192": {
+      "public_key_and_params": 495685,
+      "relin_keys": 2496950,
+      "galois_keys": 60071058,
+      "total": 63063693
+    }
+  },
+  "reference_points_prespec_addendum": "docs/m1c_thermo_pilot_prespec.md, Addendum 2026-10-12",
+  "results": {
+    "B=5": {
+      "B": 5,
+      "auroc_val": 0.8467285853365104,
+      "auroc_cost_vs_full_precision": 0.010908499276427674,
+      "f1_val_quantized": 0.33928221219847027,
+      "f1_val_full_precision": 0.3589852909827329,
+      "operating_points_margin": {
+        "f1": -1.5856272637403817,
+        "sens80": -2.9431936740875244
+      },
+      "n_splits_enumerated_ok": 2610,
+      "val_gap_to_threshold": {
+        "f1": {
+          "min_abs_gap": 2.4437904357910156e-05,
+          "n_stays_within_gate": 18
+        },
+        "sens80": {
+          "min_abs_gap": 4.76837158203125e-07,
+          "n_stays_within_gate": 18
+        }
+      },
+      "simulation": {
+        "max_abs_margin_difference_vs_booster": 4.5622106643605775e-06,
+        "n_differing_f1": 0,
+        "n_differing_sens80": 0
+      },
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00017833709716796875,
+        "mean_abs_margin_error": 5.761867214459926e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.131723489279999,
+        "sd_seconds_per_stay": 0.026192025945426974,
+        "client_upload_bytes": 37927097,
+        "min_abs_gap_to_f1_threshold_sampled": 0.009012103080749512,
+        "error_below_min_gap": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00018405914306640625,
+        "mean_abs_margin_error": 6.312692130450159e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.4480965389200042,
+        "sd_seconds_per_stay": 0.05146196326753039,
+        "client_upload_bytes": 1053388,
+        "min_abs_gap_to_f1_threshold_sampled": 0.009012103080749512,
+        "error_below_min_gap": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 2.09808349609375e-05,
+        "mean_abs_margin_error": 1.0456340532982722e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09130911155000263,
+        "sd_seconds_per_stay": 0.0016662519285347796,
+        "client_upload_bytes": 1053422,
+        "min_abs_gap_to_f1_threshold_sampled": 0.009012103080749512,
+        "error_below_min_gap": true
+      },
+      "exact_interpolation_7level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.0002231597900390625,
+        "mean_abs_margin_error": 7.608235318912193e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.074991457760002,
+        "sd_seconds_per_stay": 0.031046472278609422,
+        "client_upload_bytes": 9886614,
+        "min_abs_gap_to_f1_threshold_sampled": 0.009012103080749512,
+        "error_below_min_gap": true,
+        "degree": 9
+      },
+      "broadcast_thermometer_ring8192": {
+        "n_stays": 20,
+        "max_abs_margin_error": 0.002872973680496216,
+        "mean_abs_margin_error": 0.0015184283256530762,
+        "decisions_agreeing": 20,
+        "gate": 0.0005,
+        "all_within_gate": false,
+        "passes_circuit_gate": false,
+        "mean_seconds_per_stay": 0.5384849372500013,
+        "sd_seconds_per_stay": 0.00950733300980799,
+        "client_upload_bytes": 14252226,
+        "min_abs_gap_to_f1_threshold_sampled": 0.029810547828674316,
+        "error_below_min_gap": true
+      },
+      "runtime_seconds": 507.20210175700004
+    },
+    "B=8": {
+      "B": 8,
+      "auroc_val": 0.8515847524686554,
+      "auroc_cost_vs_full_precision": 0.0060523321442826905,
+      "f1_val_quantized": 0.3463885498724065,
+      "f1_val_full_precision": 0.3589852909827329,
+      "operating_points_margin": {
+        "f1": -1.3862943611198906,
+        "sens80": -2.9373631477355957
+      },
+      "n_splits_enumerated_ok": 2662,
+      "val_gap_to_threshold": {
+        "f1": {
+          "min_abs_gap": 2.1457672119140625e-06,
+          "n_stays_within_gate": 10
+        },
+        "sens80": {
+          "min_abs_gap": 9.322166442871094e-05,
+          "n_stays_within_gate": 7
+        }
+      },
+      "simulation": {
+        "max_abs_margin_difference_vs_booster": 4.444151269211716e-06,
+        "n_differing_f1": 0,
+        "n_differing_sens80": 0
+      },
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00018596649169921875,
+        "mean_abs_margin_error": 5.799084829050116e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 1.8717138185899989,
+        "sd_seconds_per_stay": 0.0805953689512647,
+        "client_upload_bytes": 66381157,
+        "min_abs_gap_to_f1_threshold_sampled": 0.01751255989074707,
+        "error_below_min_gap": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00019073486328125,
+        "mean_abs_margin_error": 6.166949606267735e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 2.685492327820008,
+        "sd_seconds_per_stay": 0.17096285396532349,
+        "client_upload_bytes": 1053965,
+        "min_abs_gap_to_f1_threshold_sampled": 0.01751255989074707,
+        "error_below_min_gap": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 2.09808349609375e-05,
+        "mean_abs_margin_error": 1.0664276487659663e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09249716923999131,
+        "sd_seconds_per_stay": 0.0043251252799682985,
+        "client_upload_bytes": 1053298,
+        "min_abs_gap_to_f1_threshold_sampled": 0.01751255989074707,
+        "error_below_min_gap": true
+      },
+      "runtime_seconds": 483.9101437589999
+    },
+    "B=16": {
+      "B": 16,
+      "auroc_val": 0.854200672640692,
+      "auroc_cost_vs_full_precision": 0.0034364119722460895,
+      "f1_val_quantized": 0.3505312739620988,
+      "f1_val_full_precision": 0.3589852909827329,
+      "operating_points_margin": {
+        "f1": -1.3862943611198906,
+        "sens80": -2.971362352371216
+      },
+      "n_splits_enumerated_ok": 2687,
+      "val_gap_to_threshold": {
+        "f1": {
+          "min_abs_gap": 0.00021660327911376953,
+          "n_stays_within_gate": 3
+        },
+        "sens80": {
+          "min_abs_gap": 4.76837158203125e-06,
+          "n_stays_within_gate": 30
+        }
+      },
+      "simulation": {
+        "max_abs_margin_difference_vs_booster": 4.640637305541873e-06,
+        "n_differing_f1": 0,
+        "n_differing_sens80": 0
+      },
+      "broadcast_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.0001659393310546875,
+        "mean_abs_margin_error": 5.5577194871148095e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 3.255958145070001,
+        "sd_seconds_per_stay": 0.05668588214284118,
+        "client_upload_bytes": 142242475,
+        "min_abs_gap_to_f1_threshold_sampled": 0.016174912452697754,
+        "error_below_min_gap": true
+      },
+      "packed_thermometer_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 0.00017070770263671875,
+        "mean_abs_margin_error": 5.8195368183078244e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 5.8094271336699945,
+        "sd_seconds_per_stay": 0.1321082339118144,
+        "client_upload_bytes": 1053802,
+        "min_abs_gap_to_f1_threshold_sampled": 0.016174912452697754,
+        "error_below_min_gap": true
+      },
+      "client_indicator_baseline_4level": {
+        "n_stays": 100,
+        "max_abs_margin_error": 1.811981201171875e-05,
+        "mean_abs_margin_error": 1.0173879672947805e-05,
+        "decisions_agreeing": 100,
+        "gate": 0.0005,
+        "all_within_gate": true,
+        "passes_circuit_gate": true,
+        "mean_seconds_per_stay": 0.09196937934000289,
+        "sd_seconds_per_stay": 0.004714915546542772,
+        "client_upload_bytes": 1053168,
+        "min_abs_gap_to_f1_threshold_sampled": 0.016174912452697754,
+        "error_below_min_gap": true
+      },
+      "runtime_seconds": 936.0071199380002
+    }
+  },
+  "runtime_seconds": 1942.9835560220001
+}

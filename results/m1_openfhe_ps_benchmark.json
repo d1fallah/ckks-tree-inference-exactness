@@ -1,0 +1,83 @@
+{
+  "protocol": "docs/step2_prespec_m1.md section D (added analysis S2.4b)",
+  "backend": "REAL OpenFHE CKKS (library-level comparison; see module docstring)",
+  "openfhe_version": "1.5.1.0.22.4 (pip wheel)",
+  "context": {
+    "ring_dim": 16384,
+    "multiplicative_depth": 7,
+    "scaling_mod_bits": 40,
+    "first_mod_bits": 60,
+    "security": "HEStd_128_classic",
+    "scaling_technique": "FLEXIBLEAUTO",
+    "key_switching": "HYBRID, num_large_digits = depth + 1 = 8 (one special modulus)"
+  },
+  "n_slots": 2751,
+  "n_warmup_discarded": 5,
+  "input": "2751 uniform values on [-a, a], a = 0.847059, seed 42",
+  "by_k": {
+    "k=3": {
+      "scalar_polynomial": {
+        "mean_s": 0.05387502085009146,
+        "sd_s": 0.019471979450870504,
+        "n_timed": 20
+      },
+      "with_per_slot_affine": {
+        "mean_s": 0.05999679885003388,
+        "sd_s": 0.017552412909609204,
+        "n_timed": 20
+      },
+      "levels_consumed_scalar": 3,
+      "levels_consumed_with_per_slot_affine": 4,
+      "max_abs_error_scalar_vs_frozen_polynomial": 4.366892815133028e-07,
+      "max_abs_error_affine_vs_frozen_polynomial": 3.093001763598835e-07
+    },
+    "k=5": {
+      "scalar_polynomial": {
+        "mean_s": 0.08755673825003214,
+        "sd_s": 0.016950522294483752,
+        "n_timed": 20
+      },
+      "with_per_slot_affine": {
+        "mean_s": 0.09672132235014033,
+        "sd_s": 0.02383260387282261,
+        "n_timed": 20
+      },
+      "levels_consumed_scalar": 3,
+      "levels_consumed_with_per_slot_affine": 4,
+      "max_abs_error_scalar_vs_frozen_polynomial": 5.286531692405561e-07,
+      "max_abs_error_affine_vs_frozen_polynomial": 3.2107599778896656e-07
+    },
+    "k=7": {
+      "scalar_polynomial": {
+        "mean_s": 0.13016243214992756,
+        "sd_s": 0.07620972872141546,
+        "n_timed": 20
+      },
+      "with_per_slot_affine": {
+        "mean_s": 0.11734764124994398,
+        "sd_s": 0.04543845613044206,
+        "n_timed": 20
+      },
+      "levels_consumed_scalar": 4,
+      "levels_consumed_with_per_slot_affine": 5,
+      "max_abs_error_scalar_vs_frozen_polynomial": 5.03107798865976e-07,
+      "max_abs_error_affine_vs_frozen_polynomial": 3.9577852695149573e-07
+    },
+    "k=9": {
+      "scalar_polynomial": {
+        "mean_s": 0.14542131700000027,
+        "sd_s": 0.06595164259814033,
+        "n_timed": 20
+      },
+      "with_per_slot_affine": {
+        "mean_s": 0.1371089176499936,
+        "sd_s": 0.02768433590198705,
+        "n_timed": 20
+      },
+      "levels_consumed_scalar": 4,
+      "levels_consumed_with_per_slot_affine": 5,
+      "max_abs_error_scalar_vs_frozen_polynomial": 5.288320382712541e-07,
+      "max_abs_error_affine_vs_frozen_polynomial": 4.857624560372642e-07
+    }
+  }
+}

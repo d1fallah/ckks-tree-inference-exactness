@@ -1,0 +1,136 @@
+{
+  "protocol": "docs/revision_prespec_m1.md (E2)",
+  "backend": "REAL TenSEAL/SEAL ciphertext execution (ckks_circuit.evaluate_circuit_tenseal, original evaluator), next to the SIMULATED numpy circuit and the plaintext model",
+  "configuration": {
+    "seed": 42,
+    "k": 3,
+    "polynomial_evaluator": "original",
+    "labels": [
+      "label_hypertension_uncomplicated",
+      "label_cardiac_arrhythmias",
+      "label_fluid_and_electrolyte_disorders",
+      "label_depression",
+      "label_chronic_pulmonary_disease"
+    ],
+    "n_test_stays": 32493,
+    "unit_size": 1000,
+    "one_seed_only": true
+  },
+  "n_evaluations": 162465,
+  "n_evaluations_expected": 162465,
+  "n_failed": 0,
+  "failures": [],
+  "n_stays_used_for_macro_f1": 32493,
+  "macro_f1": {
+    "plaintext": 0.5734589030968535,
+    "simulated": 0.5738234262895803,
+    "real": 0.5738234262895803
+  },
+  "delta_f1_real_vs_plaintext": {
+    "point_estimate": 0.00036452319272672895,
+    "ci_95_lower": 2.5512781422273868e-05,
+    "ci_95_upper": 0.001895300219445775,
+    "n_resamples": 2000,
+    "bootstrap_seed": 42
+  },
+  "delta_f1_simulated_vs_plaintext": {
+    "point_estimate": 0.00036452319272672895,
+    "ci_95_lower": 2.5512781422273868e-05,
+    "ci_95_upper": 0.001895300219445775,
+    "n_resamples": 2000,
+    "bootstrap_seed": 42
+  },
+  "tolerance": 0.03,
+  "criterion_real_delta_f1_within_tolerance": true,
+  "agreement_all_evaluations": {
+    "n_sign_agree_real_vs_simulated": 162463,
+    "sign_agreement_real_vs_simulated": 0.9999876896562336,
+    "n_decision_disagree_real_vs_simulated_at_threshold": 0,
+    "max_abs_margin_error_real_vs_simulated": 0.00017986819080828553,
+    "mean_abs_margin_error_real_vs_simulated": 5.374460796391816e-05
+  },
+  "per_label": {
+    "label_hypertension_uncomplicated": {
+      "n_evaluations": 32493,
+      "n_positive": 12334,
+      "f1_plaintext": 0.6797163890490892,
+      "f1_simulated": 0.6821981268253382,
+      "f1_real": 0.6821981268253382,
+      "sign_agreement_real_vs_simulated": 1.0,
+      "n_sign_disagree_real_vs_simulated": 0,
+      "decision_agreement_real_vs_simulated_at_threshold": 1.0,
+      "decision_agreement_real_vs_plaintext_at_threshold": 0.9365401778844674,
+      "n_decision_disagree_real_vs_simulated": 0,
+      "max_abs_margin_error_real_vs_simulated": 0.00017986819080828553,
+      "normalized_mae_real_vs_simulated": 5.3130103012917366e-06,
+      "mean_abs_margin_error_real_vs_simulated": 4.2124240922771505e-05,
+      "frozen_threshold_margin": -0.6190392084062235
+    },
+    "label_cardiac_arrhythmias": {
+      "n_evaluations": 32493,
+      "n_positive": 7448,
+      "f1_plaintext": 0.5550666177728883,
+      "f1_simulated": 0.554121994063844,
+      "f1_real": 0.554121994063844,
+      "sign_agreement_real_vs_simulated": 0.9999384482811683,
+      "n_sign_disagree_real_vs_simulated": 2,
+      "decision_agreement_real_vs_simulated_at_threshold": 1.0,
+      "decision_agreement_real_vs_plaintext_at_threshold": 0.9496814698550458,
+      "n_decision_disagree_real_vs_simulated": 0,
+      "max_abs_margin_error_real_vs_simulated": 0.00015209105328528594,
+      "normalized_mae_real_vs_simulated": 6.937418753657259e-06,
+      "mean_abs_margin_error_real_vs_simulated": 5.7955520677323925e-05,
+      "frozen_threshold_margin": -0.8001193001121131
+    },
+    "label_fluid_and_electrolyte_disorders": {
+      "n_evaluations": 32493,
+      "n_positive": 7429,
+      "f1_plaintext": 0.4227228500860714,
+      "f1_simulated": 0.41948965376643677,
+      "f1_real": 0.41948965376643677,
+      "sign_agreement_real_vs_simulated": 1.0,
+      "n_sign_disagree_real_vs_simulated": 0,
+      "decision_agreement_real_vs_simulated_at_threshold": 1.0,
+      "decision_agreement_real_vs_plaintext_at_threshold": 0.8802511310128336,
+      "n_decision_disagree_real_vs_simulated": 0,
+      "max_abs_margin_error_real_vs_simulated": 0.00011391889865342009,
+      "normalized_mae_real_vs_simulated": 9.65209352364274e-06,
+      "mean_abs_margin_error_real_vs_simulated": 4.656878056878889e-05,
+      "frozen_threshold_margin": -1.4500101755059984
+    },
+    "label_depression": {
+      "n_evaluations": 32493,
+      "n_positive": 7289,
+      "f1_plaintext": 0.5709595582748843,
+      "f1_simulated": 0.5726745626641558,
+      "f1_real": 0.5726745626641558,
+      "sign_agreement_real_vs_simulated": 1.0,
+      "n_sign_disagree_real_vs_simulated": 0,
+      "decision_agreement_real_vs_simulated_at_threshold": 1.0,
+      "decision_agreement_real_vs_plaintext_at_threshold": 0.9782106915335611,
+      "n_decision_disagree_real_vs_simulated": 0,
+      "max_abs_margin_error_real_vs_simulated": 0.00014810901764761297,
+      "normalized_mae_real_vs_simulated": 8.559757941670617e-06,
+      "mean_abs_margin_error_real_vs_simulated": 5.419579051028199e-05,
+      "frozen_threshold_margin": -1.1526795099383855
+    },
+    "label_chronic_pulmonary_disease": {
+      "n_evaluations": 32493,
+      "n_positive": 6839,
+      "f1_plaintext": 0.6388291003013344,
+      "f1_simulated": 0.6406327941281266,
+      "f1_real": 0.6406327941281266,
+      "sign_agreement_real_vs_simulated": 1.0,
+      "n_sign_disagree_real_vs_simulated": 0,
+      "decision_agreement_real_vs_simulated_at_threshold": 1.0,
+      "decision_agreement_real_vs_plaintext_at_threshold": 0.9842735358384883,
+      "n_decision_disagree_real_vs_simulated": 0,
+      "max_abs_margin_error_real_vs_simulated": 0.0001605056856952558,
+      "normalized_mae_real_vs_simulated": 7.674728001615037e-06,
+      "mean_abs_margin_error_real_vs_simulated": 6.787870714042452e-05,
+      "frozen_threshold_margin": -0.9946225751440619
+    }
+  },
+  "total_encrypt_evaluate_decrypt_cpu_seconds_across_workers": 162032.6,
+  "sha256_of_real_margins": "2bf5dd85a0bab8d5247c4ebf93bf86afbaeefd4f524a6f28e3be341634633be1"
+}

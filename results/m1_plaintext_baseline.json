@@ -1,0 +1,466 @@
+{
+  "n_estimators": 50,
+  "max_depth": 6,
+  "seeds": [
+    42,
+    123,
+    7,
+    456,
+    789
+  ],
+  "split_seed": 42,
+  "split": {
+    "train": 96788,
+    "val": 32437,
+    "test": 32493
+  },
+  "feature_dim": 134,
+  "label_cols": [
+    "label_hypertension_uncomplicated",
+    "label_cardiac_arrhythmias",
+    "label_fluid_and_electrolyte_disorders",
+    "label_depression",
+    "label_chronic_pulmonary_disease"
+  ],
+  "threshold_policy": "per-label, tuned to maximize F1 on the validation split only",
+  "macro_f1_tuned": {
+    "mean": 0.5724139668409918,
+    "std": 0.0007323171098694344
+  },
+  "macro_f1_at_0.5": {
+    "mean": 0.44518815602415485,
+    "std": 0.0017017082953433688
+  },
+  "mean_auroc": {
+    "mean": 0.7750099479063427,
+    "std": 0.00033202230627635965
+  },
+  "mean_auprc": {
+    "mean": 0.5508185424153995,
+    "std": 0.0007528237950119311
+  },
+  "per_label_across_seeds": {
+    "label_hypertension_uncomplicated": {
+      "test_prevalence": 0.37958945003539224,
+      "f1_tuned": {
+        "mean": 0.6780707980833206,
+        "std": 0.0014044393260440927
+      },
+      "f1_at_0.5": {
+        "mean": 0.6456746724852717,
+        "std": 0.0011346859760432394
+      },
+      "auroc": {
+        "mean": 0.8049954877533404,
+        "std": 0.0006223591106538167
+      },
+      "auprc": {
+        "mean": 0.6906902623460597,
+        "std": 0.0011194568423738434
+      },
+      "tuned_threshold_mean": 0.36000000000000004
+    },
+    "label_cardiac_arrhythmias": {
+      "test_prevalence": 0.22921860092943094,
+      "f1_tuned": {
+        "mean": 0.5506856442196923,
+        "std": 0.002514860510317984
+      },
+      "f1_at_0.5": {
+        "mean": 0.482632583801866,
+        "std": 0.003573657185337179
+      },
+      "auroc": {
+        "mean": 0.7932825940160557,
+        "std": 0.0007882016320808683
+      },
+      "auprc": {
+        "mean": 0.5783195872305086,
+        "std": 0.002236092252904689
+      },
+      "tuned_threshold_mean": 0.31
+    },
+    "label_fluid_and_electrolyte_disorders": {
+      "test_prevalence": 0.22863385960052934,
+      "f1_tuned": {
+        "mean": 0.4226439613971976,
+        "std": 0.0011625982182302094
+      },
+      "f1_at_0.5": {
+        "mean": 0.09406028545938691,
+        "std": 0.0017613287194210674
+      },
+      "auroc": {
+        "mean": 0.6547503277865228,
+        "std": 0.002408283479365063
+      },
+      "auprc": {
+        "mean": 0.33624667753946486,
+        "std": 0.0016983415786021804
+      },
+      "tuned_threshold_mean": 0.194
+    },
+    "label_depression": {
+      "test_prevalence": 0.22432523928230697,
+      "f1_tuned": {
+        "mean": 0.570056431163471,
+        "std": 0.000867609643308896
+      },
+      "f1_at_0.5": {
+        "mean": 0.39797386465637163,
+        "std": 0.004328817733391777
+      },
+      "auroc": {
+        "mean": 0.799716401691352,
+        "std": 0.0005397323214327817
+      },
+      "auprc": {
+        "mean": 0.48915939625479066,
+        "std": 0.00259252217688177
+      },
+      "tuned_threshold_mean": 0.248
+    },
+    "label_chronic_pulmonary_disease": {
+      "test_prevalence": 0.21047610254516358,
+      "f1_tuned": {
+        "mean": 0.640612999341277,
+        "std": 0.0011309658635334182
+      },
+      "f1_at_0.5": {
+        "mean": 0.6055993737178779,
+        "std": 0.0019632312898612346
+      },
+      "auroc": {
+        "mean": 0.8223049282844428,
+        "std": 0.0007439319792697068
+      },
+      "auprc": {
+        "mean": 0.659676788706174,
+        "std": 0.0005070558636718787
+      },
+      "tuned_threshold_mean": 0.296
+    }
+  },
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "macro_f1_tuned": 0.5734589030968535,
+      "macro_f1_at_0.5": 0.44336607374281645,
+      "mean_auroc": 0.7752483066577394,
+      "mean_auprc": 0.5502433523660455,
+      "per_label": [
+        {
+          "test_prevalence": 0.37958945003539224,
+          "tuned_threshold": 0.35,
+          "tuned_threshold_margin": -0.6190392084062235,
+          "predicted_positive_rate_tuned": 0.5275905579663313,
+          "predicted_positive_rate_at_0.5": 0.3596159172744899,
+          "f1_tuned": 0.6797163890490892,
+          "f1_at_0.5": 0.6454889878845914,
+          "auroc": 0.805829111377907,
+          "auprc": 0.6904843453195856
+        },
+        {
+          "test_prevalence": 0.22921860092943094,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.2743360108331025,
+          "predicted_positive_rate_at_0.5": 0.13538300557043056,
+          "f1_tuned": 0.5550666177728883,
+          "f1_at_0.5": 0.4792774542078163,
+          "auroc": 0.7933398400601794,
+          "auprc": 0.5774156798065208
+        },
+        {
+          "test_prevalence": 0.22863385960052934,
+          "tuned_threshold": 0.19,
+          "tuned_threshold_margin": -1.4500101755059984,
+          "predicted_positive_rate_tuned": 0.5937586557104607,
+          "predicted_positive_rate_at_0.5": 0.02763672175545502,
+          "f1_tuned": 0.4227228500860714,
+          "f1_at_0.5": 0.095112285336856,
+          "auroc": 0.6552963033559918,
+          "auprc": 0.3360650939120656
+        },
+        {
+          "test_prevalence": 0.22432523928230697,
+          "tuned_threshold": 0.24,
+          "tuned_threshold_margin": -1.1526795099383855,
+          "predicted_positive_rate_tuned": 0.3943618625550118,
+          "predicted_positive_rate_at_0.5": 0.13033576462622717,
+          "f1_tuned": 0.5709595582748843,
+          "f1_at_0.5": 0.3906629642485248,
+          "auroc": 0.7993888487040005,
+          "auprc": 0.48748667106893595
+        },
+        {
+          "test_prevalence": 0.21047610254516358,
+          "tuned_threshold": 0.27,
+          "tuned_threshold_margin": -0.9946225751440619,
+          "predicted_positive_rate_tuned": 0.21847782599329085,
+          "predicted_positive_rate_at_0.5": 0.15754162434985997,
+          "f1_tuned": 0.6388291003013344,
+          "f1_at_0.5": 0.6062886770362937,
+          "auroc": 0.8223874297906182,
+          "auprc": 0.6597649717231194
+        }
+      ]
+    },
+    {
+      "seed": 123,
+      "macro_f1_tuned": 0.5722812683597256,
+      "macro_f1_at_0.5": 0.4448675209191745,
+      "mean_auroc": 0.7750865657965614,
+      "mean_auprc": 0.5511339517622865,
+      "per_label": [
+        {
+          "test_prevalence": 0.37958945003539224,
+          "tuned_threshold": 0.36,
+          "tuned_threshold_margin": -0.5753641449035618,
+          "predicted_positive_rate_tuned": 0.5157110762318038,
+          "predicted_positive_rate_at_0.5": 0.360323762041055,
+          "f1_tuned": 0.677666632291774,
+          "f1_at_0.5": 0.6442891606355544,
+          "auroc": 0.8043219088640958,
+          "auprc": 0.6893447301160555
+        },
+        {
+          "test_prevalence": 0.22921860092943094,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.2746129935678454,
+          "predicted_positive_rate_at_0.5": 0.1349829193980242,
+          "f1_tuned": 0.548775273349215,
+          "f1_at_0.5": 0.48301504140611795,
+          "auroc": 0.7925769811975394,
+          "auprc": 0.5810319085527262
+        },
+        {
+          "test_prevalence": 0.22863385960052934,
+          "tuned_threshold": 0.2,
+          "tuned_threshold_margin": -1.3862943611198906,
+          "predicted_positive_rate_tuned": 0.5514726248730496,
+          "predicted_positive_rate_at_0.5": 0.02855999753793125,
+          "f1_tuned": 0.4244121824207038,
+          "f1_at_0.5": 0.09477085078377408,
+          "auroc": 0.6575316496539623,
+          "auprc": 0.33852942688606114
+        },
+        {
+          "test_prevalence": 0.22432523928230697,
+          "tuned_threshold": 0.26,
+          "tuned_threshold_margin": -1.0459685551826876,
+          "predicted_positive_rate_tuned": 0.3851291047302496,
+          "predicted_positive_rate_at_0.5": 0.13135136798695105,
+          "f1_tuned": 0.5693076806544463,
+          "f1_at_0.5": 0.3985463355542096,
+          "auroc": 0.7990994255158875,
+          "auprc": 0.4878124409689206
+        },
+        {
+          "test_prevalence": 0.21047610254516358,
+          "tuned_threshold": 0.28,
+          "tuned_threshold_margin": -0.9444616088408512,
+          "predicted_positive_rate_tuned": 0.21484627458221772,
+          "predicted_positive_rate_at_0.5": 0.1539100729387868,
+          "f1_tuned": 0.6412445730824892,
+          "f1_at_0.5": 0.6037162162162162,
+          "auroc": 0.8219028637513222,
+          "auprc": 0.658951252287669
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "macro_f1_tuned": 0.571419822928108,
+      "macro_f1_at_0.5": 0.44800299463838245,
+      "mean_auroc": 0.7744256781897302,
+      "mean_auprc": 0.5510815765771998,
+      "per_label": [
+        {
+          "test_prevalence": 0.37958945003539224,
+          "tuned_threshold": 0.37,
+          "tuned_threshold_margin": -0.5322168137473082,
+          "predicted_positive_rate_tuned": 0.49832271566183484,
+          "predicted_positive_rate_at_0.5": 0.36130858954236295,
+          "f1_tuned": 0.6764355324966697,
+          "f1_at_0.5": 0.6462573730996095,
+          "auroc": 0.8047472226897189,
+          "auprc": 0.6911149987710834
+        },
+        {
+          "test_prevalence": 0.22921860092943094,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.2735358384882898,
+          "predicted_positive_rate_at_0.5": 0.13778352260486873,
+          "f1_tuned": 0.5494613124387855,
+          "f1_at_0.5": 0.4885534591194969,
+          "auroc": 0.7944834877242445,
+          "auprc": 0.5797856809110574
+        },
+        {
+          "test_prevalence": 0.22863385960052934,
+          "tuned_threshold": 0.19,
+          "tuned_threshold_margin": -1.4500101755059984,
+          "predicted_positive_rate_tuned": 0.5981288277475149,
+          "predicted_positive_rate_at_0.5": 0.028498445819099497,
+          "f1_tuned": 0.42182846932698037,
+          "f1_at_0.5": 0.09599042489527229,
+          "auroc": 0.6517585649736539,
+          "auprc": 0.33470101698836036
+        },
+        {
+          "test_prevalence": 0.22432523928230697,
+          "tuned_threshold": 0.26,
+          "tuned_threshold_margin": -1.0459685551826876,
+          "predicted_positive_rate_tuned": 0.3805742775367002,
+          "predicted_positive_rate_at_0.5": 0.13516757455451944,
+          "f1_tuned": 0.5692190282370898,
+          "f1_at_0.5": 0.4011642838798048,
+          "auroc": 0.7997654436818472,
+          "auprc": 0.4899577171355745
+        },
+        {
+          "test_prevalence": 0.21047610254516358,
+          "tuned_threshold": 0.27,
+          "tuned_threshold_margin": -0.9946225751440619,
+          "predicted_positive_rate_tuned": 0.2190317914627766,
+          "predicted_positive_rate_at_0.5": 0.1580955898193457,
+          "f1_tuned": 0.6401547721410146,
+          "f1_at_0.5": 0.6080494321977288,
+          "auroc": 0.8213736718791865,
+          "auprc": 0.6598484690799232
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "macro_f1_tuned": 0.572603203935939,
+      "macro_f1_at_0.5": 0.4449271416712631,
+      "mean_auroc": 0.7751267119087837,
+      "mean_auprc": 0.5517569837028446,
+      "per_label": [
+        {
+          "test_prevalence": 0.37958945003539224,
+          "tuned_threshold": 0.35,
+          "tuned_threshold_margin": -0.6190392084062235,
+          "predicted_positive_rate_tuned": 0.5275597821069153,
+          "predicted_positive_rate_at_0.5": 0.3603545379004709,
+          "f1_tuned": 0.6793323381734292,
+          "f1_at_0.5": 0.6472569978788005,
+          "auroc": 0.8054489630527947,
+          "auprc": 0.6923363776802343
+        },
+        {
+          "test_prevalence": 0.22921860092943094,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.27605945896039147,
+          "predicted_positive_rate_at_0.5": 0.1343674022097067,
+          "f1_tuned": 0.5497624558411499,
+          "f1_at_0.5": 0.4807855087184696,
+          "auroc": 0.7934474042319958,
+          "auprc": 0.5781513582955754
+        },
+        {
+          "test_prevalence": 0.22863385960052934,
+          "tuned_threshold": 0.2,
+          "tuned_threshold_margin": -1.3862943611198906,
+          "predicted_positive_rate_tuned": 0.5579355553503832,
+          "predicted_positive_rate_at_0.5": 0.02800603206844551,
+          "f1_tuned": 0.4213944753110572,
+          "f1_at_0.5": 0.09185753687492505,
+          "auroc": 0.6528277755667795,
+          "auprc": 0.3345995857457665
+        },
+        {
+          "test_prevalence": 0.22432523928230697,
+          "tuned_threshold": 0.24,
+          "tuned_threshold_margin": -1.1526795099383855,
+          "predicted_positive_rate_tuned": 0.3967008278706183,
+          "predicted_positive_rate_at_0.5": 0.13107438525220816,
+          "f1_tuned": 0.5709896426978542,
+          "f1_at_0.5": 0.4012816072047108,
+          "auroc": 0.8005342395897194,
+          "auprc": 0.49336586766276846
+        },
+        {
+          "test_prevalence": 0.21047610254516358,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.20918351644969685,
+          "predicted_positive_rate_at_0.5": 0.15661834856738374,
+          "f1_tuned": 0.6415371076562042,
+          "f1_at_0.5": 0.6034540576794097,
+          "auroc": 0.8233751771026291,
+          "auprc": 0.6603317291298785
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "macro_f1_tuned": 0.5723066358843325,
+      "macro_f1_at_0.5": 0.4447770491491377,
+      "mean_auroc": 0.7751624769788988,
+      "mean_auprc": 0.5498768476686214,
+      "per_label": [
+        {
+          "test_prevalence": 0.37958945003539224,
+          "tuned_threshold": 0.37,
+          "tuned_threshold_margin": -0.5322168137473082,
+          "predicted_positive_rate_tuned": 0.5064167666882098,
+          "predicted_positive_rate_at_0.5": 0.36084695165112485,
+          "f1_tuned": 0.6772030984056411,
+          "f1_at_0.5": 0.6450808429278024,
+          "auroc": 0.8046302327821853,
+          "auprc": 0.6901708598433397
+        },
+        {
+          "test_prevalence": 0.22921860092943094,
+          "tuned_threshold": 0.31,
+          "tuned_threshold_margin": -0.8001193001121131,
+          "predicted_positive_rate_tuned": 0.2758440279444804,
+          "predicted_positive_rate_at_0.5": 0.13572154002400516,
+          "f1_tuned": 0.5503625616964232,
+          "f1_at_0.5": 0.4815314555574296,
+          "auroc": 0.7925652568663194,
+          "auprc": 0.5752133085866631
+        },
+        {
+          "test_prevalence": 0.22863385960052934,
+          "tuned_threshold": 0.19,
+          "tuned_threshold_margin": -1.4500101755059984,
+          "predicted_positive_rate_tuned": 0.5968362416520482,
+          "predicted_positive_rate_at_0.5": 0.02735973902071215,
+          "f1_tuned": 0.42286182984117515,
+          "f1_at_0.5": 0.09257032940610724,
+          "auroc": 0.6563373453822261,
+          "auprc": 0.3373382641650706
+        },
+        {
+          "test_prevalence": 0.22432523928230697,
+          "tuned_threshold": 0.24,
+          "tuned_threshold_margin": -1.1526795099383855,
+          "predicted_positive_rate_tuned": 0.3935616902101991,
+          "predicted_positive_rate_at_0.5": 0.13412119533437972,
+          "f1_tuned": 0.5698062459530806,
+          "f1_at_0.5": 0.39821413239460807,
+          "auroc": 0.7997940509653058,
+          "auprc": 0.4871742844377539
+        },
+        {
+          "test_prevalence": 0.21047610254516358,
+          "tuned_threshold": 0.35,
+          "tuned_threshold_margin": -0.6190392084062235,
+          "predicted_positive_rate_tuned": 0.19878127596713138,
+          "predicted_positive_rate_at_0.5": 0.15569507278490752,
+          "f1_tuned": 0.6412994435253422,
+          "f1_at_0.5": 0.6064884854597411,
+          "auroc": 0.8224854988984581,
+          "auprc": 0.6594875213102795
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "n_boosters": 15,
+  "n_splits": 39712,
+  "n_non_integer_thresholds": 0,
+  "smallest_threshold": 1.0,
+  "n_splits_where_ceil_with_tolerance_differs_from_ceil": 0,
+  "note": "thresholds read from the saved boosters of the thermometer study; counts only"
+}

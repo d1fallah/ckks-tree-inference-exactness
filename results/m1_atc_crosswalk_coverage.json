@@ -1,0 +1,28 @@
+{
+  "total_medrecon_rows": 2987342,
+  "sentinel_no_ndc_rows": 17897,
+  "real_ndc_rows": 2969445,
+  "distinct_real_ndcs": 9312,
+  "distinct_ndcs_mapped_to_atc": 5161,
+  "distinct_ndc_coverage_rate": 0.5542,
+  "rows_mapped_to_atc": 2492301,
+  "row_weighted_coverage_rate": 0.8393,
+  "rows_falling_back_to_etc": 477144,
+  "row_weighted_etc_fallback_rate": 0.1607,
+  "atc_level1_row_distribution": {
+    "N": 863721,
+    "A": 844639,
+    "C": 613462,
+    "R": 436594,
+    "B": 317366,
+    "D": 235725,
+    "S": 217071,
+    "G": 159790,
+    "M": 112624,
+    "J": 101441,
+    "H": 89605,
+    "L": 47361,
+    "V": 34584,
+    "P": 10753
+  }
+}

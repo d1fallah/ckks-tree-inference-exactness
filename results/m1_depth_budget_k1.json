@@ -1,0 +1,78 @@
+{
+  "protocol": "paper-prep code derivation; NOT a new experiment. Runs the same committed depth_accounting.walk_circuit used for k in {3,5,7,9} (src/probe_multiplicative_depth.py) at degree_k=1. No locked parameter (interval, gamma, coefficients) is touched or re-derived.",
+  "degree_k": 1,
+  "additional_diagnostic_arm": true,
+  "locked_family": [
+    3,
+    5,
+    7,
+    9
+  ],
+  "code_derived": {
+    "polynomial_depth": 1,
+    "path_product_depth": 3,
+    "total_multiplicative_depth": 4
+  },
+  "closed_form_previously_used_formula": {
+    "polynomial_depth": 1,
+    "path_product_depth": 3,
+    "total_multiplicative_depth": 4
+  },
+  "levels_available_on_locked_chain": 7,
+  "fits_locked_chain": true,
+  "slack_levels": 3,
+  "coeff_modulus_bits_needed_for_this_depth": 280,
+  "tc128_max_bits_at_N16384": 438,
+  "would_fit_N16384_at_128_bit_security": true,
+  "polynomial_operation_graph": [
+    {
+      "op": "ct*pt",
+      "a": "z",
+      "a_level": 0,
+      "out_level": 1
+    }
+  ],
+  "path_product_operation_graph": [
+    {
+      "op": "ct*ct",
+      "a": "P1",
+      "a_level": 1,
+      "b": "P2",
+      "b_level": 1,
+      "out_level": 2
+    },
+    {
+      "op": "ct*ct",
+      "a": "P0",
+      "a_level": 1,
+      "b": "(P1*P2)",
+      "b_level": 2,
+      "out_level": 3
+    },
+    {
+      "op": "ct*ct",
+      "a": "P4",
+      "a_level": 1,
+      "b": "P5",
+      "b_level": 1,
+      "out_level": 2
+    },
+    {
+      "op": "ct*ct",
+      "a": "P3",
+      "a_level": 1,
+      "b": "(P4*P5)",
+      "b_level": 2,
+      "out_level": 3
+    },
+    {
+      "op": "ct*ct",
+      "a": "(P0*(P1*P2))",
+      "a_level": 3,
+      "b": "(P3*(P4*P5))",
+      "b_level": 3,
+      "out_level": 4
+    }
+  ],
+  "cross_reference": "docs/k1_compatibility.md (utility result, simulated); results/m1_depth_probe.json (the same walk at k in {3,5,7,9}, cross-checked there against real ciphertexts)"
+}
